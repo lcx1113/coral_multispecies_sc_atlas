@@ -1,0 +1,85 @@
+```{r}
+setwd("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_mutispecies_260426")
+getwd()
+suppressMessages(source("../coral_cs_functions/helper.R"))
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(stringr)
+library(patchwork)
+library(Biostrings)
+
+fix_gene_name <- function(gene_names, prefix) {
+    gene_names<-gsub("-","_", gene_names)
+    ifelse(grepl(paste0("^", prefix), gene_names), gene_names, paste0(prefix, gene_names))
+}
+out_fn = "/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/260429_name_conversion"
+sps_list = c("Adig","Ahya", "Amur", "Fspp", "Gfas", "Hcoe", "Pcru", "Pdam", "Plut", "Spis", "Xesp")
+```
+
+```{r}
+
+for(spi in sps_list){
+    message(sprintf("Processing species: %s", spi))
+    if (spi == "Spis") {
+        spi_w = "Spin"
+	} else if (spi == "HcoeH" || spi == "HcoeI") {
+        spi_w = "Hcoe"
+    } else {
+		spi_w = spi
+	}
+    #read seurat object and transform
+    seu_fn = sprintf(
+    "/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_mutispecies_260426/results_metacell_%s_filt/dat.%s.seurat_final.rds",
+    spi_w, spi_w)
+    if (!file.exists(seu_fn)) {
+        warning(sprintf("Seurat file not found: %s", seu_fn))
+        next
+    }
+    message(sprintf("Reading Seurat object for species: %s", spi))
+    seu <- readRDS(seu_fn)
+    message(sprintf("Species %s: %d genes in seu", spi, nrow(seu@assays$RNA$counts)))
+    gene = fix_gene_name(rownames(seu@assays$RNA$counts), paste0(spi, "_"))
+
+    map_df <- data.frame(gene = gene, gene_seurat = rownames(seu@assays$RNA$counts))
+
+    message(sprintf("Reading fasta for species: %s", spi))
+    fasta_fn = sprintf("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/final_data/extended_protein_fasta_deduplicate_260426/%s_renamed_cleaned.longest.fasta", spi)
+    prot_fasta = readAAStringSet(fasta_fn)
+    desc <- names(prot_fasta)
+    temp_name = str_remove(desc, paste0("^", spi, "_"))
+    prot_df <- data.frame(protein_id = desc, transcript = str_remove(temp_name, "\\.p\\d+$"), gene = NA_character_)
+    
+    #read gtf and transform
+    message(sprintf("Reading GTF for species: %s", spi))
+    gtf_fn = sprintf("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/final_data/broccoli/reference_gtf/%s_long.annot.gtf",spi)
+    if (!file.exists(gtf_fn)) {
+    warning(sprintf("GTF file not found:  %s", gtf_fn))
+    next
+    }
+    mapping <- rtracklayer::import(gtf_fn)
+    transcript_to_gene <- dic_from_vecs(mapping$transcript_id, mapping$gene_id)
+    prot_df$gene <- transcript_to_gene[prot_df$transcript]
+    if (sum(is.na(prot_df$gene)) == nrow(prot_df)){
+        prot_to_gene <- dic_from_vecs(mapping$protein_id, mapping$gene_id)
+        prot_df$gene <- prot_to_gene[prot_df$protein_id]
+    }
+    prot_df$gene <- fix_gene_name(prot_df$gene, paste0(spi, "_"))
+    message(sprintf("Species %s: %d total proteins", spi, nrow(prot_df)))
+    message(sprintf("Species %s: %d genes unmapped", spi, sum(is.na(prot_df$gene))))
+
+    final_df <- map_df %>%
+        left_join(prot_df, by = c("gene" = "gene")) %>%
+        dplyr::select(gene, gene_seurat, protein_id)
+    message(sprintf("Species %s: %d genes mapped to protein", spi, sum(!is.na(final_df$protein_id))))
+
+    write.table(
+        final_df, 
+        sprintf("%s/match.%s.protein.seu.csv", out_fn, spi), 
+        sep = "\t", 
+        col.names = TRUE, 
+        row.names = FALSE, 
+        quote = FALSE
+    )
+}
+```

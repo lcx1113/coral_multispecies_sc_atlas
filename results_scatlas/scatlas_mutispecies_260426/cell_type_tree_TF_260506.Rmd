@@ -1,0 +1,719 @@
+```{r}
+#libraries
+setwd("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_mutispecies_260426")
+getwd()
+suppressMessages(source("../coral_cs_functions/Downstream_functions.R"))
+suppressMessages(source("../coral_cs_functions/Cross_species_functions.R"))
+suppressMessages(source("../coral_cs_functions/helper.R"))
+suppressMessages(require("umap"))
+suppressMessages(require("phangorn"))
+suppressMessages(require("ape"))
+suppressMessages(require("adephylo"))
+library(dplyr)
+graphics.off()
+message("=== Starting TF Heatmap (Fixed Order) ===\n")
+
+# input
+out_fn = "test/plot_TF_test_0.8_manual_selected_0506_new"
+dir.create(out_fn, showWarnings = FALSE)
+
+# species
+list_comparisons = list(
+	Spin = list(c("Spin", "Adig", "Ahya", "Amur", "Fspp", "Gfas", "Hcoe", "Pcru", "Pdam", "Plut", "Xesp"), ref = "Spin")
+)
+
+# orthogroups
+ogm <- read.table(
+    "/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/final_data/broccoli/Metazoa_all_genome_260426/orthogroup_conservation_integrated.csv",
+    sep = "\t",
+    header = TRUE,
+    quote = "",
+    stringsAsFactors = FALSE)
+oga <- read.table(
+    "/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/final_data/broccoli/Anthozoa_all_genome_260426/orthogroup_conservation.csv",
+    sep = "\t",
+    header = TRUE,
+    quote = "",
+    stringsAsFactors = FALSE)
+oga_gv = dic_from_vecs(names = oga$gene, terms = oga$orthogroup)
+ogm_gv = dic_from_vecs(names = ogm$gene, terms = ogm$orthogroup_name)
+ogm_gv_seu = dic_from_vecs(names = gsub("_", "-", ogm$gene), terms = ogm$orthogroup_name)
+
+# fc threshold
+fc_thr = 2.6
+
+# completeness
+ortholog_fraction = 0.8
+fraction_genes = 0.7
+
+# identify icc markers
+min_ec = 0
+
+focus = "cell_type"
+focid = "cts"
+
+# 固定排序
+celltype_order = c("gastrodermis", "gastrodermis_like_2", "gastrodermis_muscle", "gastrodermis_alga_hosting", "digestive_filaments",
+                   "epidermis", "calicoblast",
+                   "neurosecretory_progenitors", "neuron_Pou4_1", "neuron_Pou4_2", "neuron_Pou4_Gsx", "neuron_Pou4_Otp", "neuron_Isl", "neuron_Isl_Nkx6", "neuron_Atoh8", "gland_1_Xbp", "gland_2", "gland_3",
+                   "cnidocyte", "immune_nascent", "immune_macrophage", "immune_macrophage_like_1", "immune_macrophage_like_2",
+                   "germline_oocytes_1", "germline_oocytes_2",
+                   "unknown1", "unknown2", "unknown3", "unknown4", "unknown5")
+
+spi_order <- c("Hcoe", "Xesp", "Pdam", "Spis", "Fspp", "Pcru", "Plut", "Gfas", "Adig", "Amur", "Ahya")
+```
+
+```{r}
+for (nn in 1:length(list_comparisons)) {
+    
+    set_id = names(list_comparisons)[nn]
+	
+	sps_list = list_comparisons[[nn]][[1]]
+	sps_ref = list_comparisons[[nn]][["ref"]]
+	sps_query = sps_list [ !sps_list %in% sps_ref ]
+
+    # color annotations
+    ann_cts = c()
+    for (spi in sps_list) {
+		if (spi == "Spin") {
+            spi_w = "Spis"
+		} else {
+			spi_w = spi
+		}
+		ctt_spi_fn = sprintf("samap_annotation/annot.%s.leiden.csv", spi, spi)
+		ctt_spi = read.table(ctt_spi_fn, header = TRUE, comment.char = "", sep = "\t")
+		ann_spi_v = dic_from_vecs(sprintf("%s|%s", spi_w, ctt_spi$cell_type), ctt_spi$color)
+		ann_cts = c(ann_cts, ann_spi_v)
+	}
+
+	# load all ref gene from annotation
+	ref_genes_fn = sprintf("results_metacell_%s_filt/annot.%s.genes.csv", sps_ref, sps_ref)
+	if (! file.exists(ref_genes_fn)) {
+		warning(sprintf("File not found for %s: %s", sps_ref, ref_genes_fn))
+		next
+	}
+	ref_gene_all = read.table(ref_genes_fn, sep = "\t", header = TRUE)
+	ref_genes = ref_gene_all %>% mutate(sp1 = gene) %>% dplyr::select(sp1)
+
+    # loop query species, load icc ortholog pairs
+	for (spi in sps_query) {
+		message(sprintf("csps %s | load %s-%s ICC data...", set_id, sps_ref, spi))
+		icc_genes_fn = sprintf("results_metacell_%s_filt/csps/dat.icc.%s-%s.ec_scores.csv", sps_ref, sps_ref, spi)
+		if (file.exists(icc_genes_fn)) {
+			icc_genes_i = read.table(icc_genes_fn, header = TRUE)
+			icc_genes_i = icc_genes_i [ icc_genes_i$ec_value >= min_ec, ]
+		} else {
+			message(sprintf("MISSING! -> %s", icc_genes_fn))
+		}
+		
+		if (spi == sps_query[1]) {
+			icc_genes_f = merge(ref_genes, icc_genes_i[,c(1,2)], by = "sp1", all.x = TRUE, all.y = FALSE)
+		} else {
+			icc_genes_f = merge(icc_genes_f, icc_genes_i[,c(1,2)], by = "sp1", all.x = TRUE, all.y = FALSE)
+		}
+	}
+    colnames(icc_genes_f) = c(sps_ref, sps_query)
+    icc_genes_f = icc_genes_f[rowSums(!is.na(icc_genes_f)) >= ortholog_fraction * ncol(icc_genes_f), ]
+
+    fix_gene_name <- function(gene_names, prefix) {
+        gene_names<-gsub("-","_", gene_names)
+        ifelse(grepl(paste0("^", prefix), gene_names), gene_names, paste0(prefix, gene_names))
+    }
+
+    # loop species, load mcfp data
+	for (spi in sps_list) {
+        if (spi == "Spin") {
+            spi_w = "Spis"
+		} else if (spi == "HcoeH" || spi == "HcoeI") {
+			spi_w = "Hcoe"
+		} else {
+			spi_w = spi
+		}
+
+		message(sprintf("csps %s | load %s expression data...", set_id, spi))
+		fps_genes_fn = sprintf("results_metacell_%s_filt/dat.%s.expression.cts_fp.rds", spi, spi)
+		if (file.exists(fps_genes_fn)) {
+			fps_i = readRDS(fps_genes_fn)
+            rownames(fps_i)<-fix_gene_name(rownames(fps_i), prefix = paste0(spi_w, "_"))
+			fps_i_f = quantile_normalisation(fps_i)
+		} else {
+			message(sprintf("MISSING! -> %s", fps_genes_fn))
+		}
+
+		if (spi == sps_list[1]) {
+			fps_i_f = fps_i_f [ icc_genes_f[,spi] , ]
+			colnames(fps_i_f) = sprintf("%s|%s", spi_w, colnames(fps_i_f))
+			csps_m = fps_i_f
+		} else {
+			fps_i_f_df = fps_i_f %>% as.data.frame() %>% tibble::rownames_to_column(var = spi)
+			fps_i_f = icc_genes_f[, c(sps_ref, spi)] %>%
+				left_join(fps_i_f_df, by = spi) %>% 
+				dplyr::select(-all_of(sps_ref), -all_of(spi))
+			colnames(fps_i_f) = sprintf("%s|%s", spi_w, colnames(fps_i_f))
+			csps_m = cbind(csps_m, fps_i_f)
+		}
+	}
+
+	# remove markers with an excess of absences
+	csps_m = csps_m [ rowSums(!is.na(csps_m)) >= ncol(csps_m) * fraction_genes , ]
+    csps_m [ is.na(csps_m) ] = 0
+
+    ## TF筛选 ##
+	list_markers_tfs = data.frame()
+	for (spi in sps_list) {
+         if (spi == "Spin") {
+        spi_w = "Spis"
+		} else {
+			spi_w = spi
+		}
+		message(sprintf("csps %s | load %s markers...", set_id, spi))
+		mks_genes_fn = sprintf("results_metacell_%s_filt/seu.%s.markers.cts.csv", spi, spi)
+		mks_i = read.table(mks_genes_fn, sep = "\t", header = TRUE)
+		mks_i = mks_i [ !is.na(mks_i$gene) & mks_i$p_val_adj < 0.01 & mks_i$avg_log2FC > 0, ]
+        gene_annotate = read.table(sprintf("results_metacell_%s_filt/annot.%s.genes.csv", spi, spi), sep = "\t", header = TRUE)
+        gene_is_tf = dic_from_vecs(gene_annotate$gene, gene_annotate$is_tf)
+		mks_i$is_tf = gene_is_tf [ mks_i$gene ]
+
+		focus_nodes = unique(mks_i$focus_node)
+		for (foi in focus_nodes) {
+			mks_ii = mks_i [ mks_i$focus_node == foi & mks_i$is_tf, c("gene","orthogroup") ]
+			mks_ii = unique(mks_ii)
+			mks_ii = mks_ii[!is.na(mks_ii$gene) & mks_ii$gene != "", , drop = FALSE]
+			if (nrow(mks_ii) > 0) {
+				list_markers_tfs = rbind(list_markers_tfs, data.frame(focus_node = sprintf("%s|%s", spi_w, foi), gene = mks_ii$gene))
+			} else {
+				list_markers_tfs = rbind(list_markers_tfs, data.frame(focus_node = sprintf("%s|%s", spi_w, foi), gene = NA))
+			}
+		}
+	}
+
+	# 用 TF 基因 + csps_m 的交集
+	genes_for_plot = intersect(list_markers_tfs$gene, rownames(csps_m))
+	
+	#filter unconserved genes
+	filter_genes = c("Spis_XP_022788197_1", "Spis_XP_022783463_1", "Spis_XP_022809245_1",
+					 "Spis_XP_022784370_1", "Spis_XP_022782301_1",
+					 "Spis_XP_022782518_1", "Spis_XP_022794362_1",
+					 "Spis_XP_022792483_1", "Spis_XP_022791808_1", "Spis_XP_022807802_1",
+					 "Spis_XP_022801153_1",
+					 "Spis_XP_022796171_1", "Spis_XP_022809311_1",
+					 "Spis_XP_022782459_1",
+					 "Spis_XP_022780370_1",
+					 "Spis_XP_022790819_1",
+					 "Spis_XP_022801801_1", "Spis_XP_022789101_1", "Spis_XP_022792898_1",
+					 "Spis_XP_022798099_1", "Spis_XP_022785281_1", "Spis_XP_022779978_1",
+					 "Spis_XP_022800071_1", "Spis_XP_022784029_1", "Spis_XP_022787643_1",
+					 "Spis_XP_022799559_1", "Spis_XP_022804454_1", "Spis_XP_022786538_1",
+					 "Spis_XP_022782449_1", "Spis_XP_022808439_1",
+					 "Spis_XP_022800909_1", "Spis_XP_022778527_1", "Spis_XP_022795122_1",
+					 "Spis_XP_022795122_1", "Spis_XP_022796217_1", "Spis_XP_022791645_1",
+					 "Spis_XP_022791248_1", "Spis_XP_022807320_1", "Spis_XP_022788849_1",
+					 "Spis_XP_022787524_1", "Spis_XP_022804091_1", "Spis_XP_022785127_1",
+					 "Spis_XP_022785127_1", "Spis_XP_022802187_1", "Spis_XP_022794775_1",
+					 "Spis_XP_022794604_1", "Spis_XP_022781875_1", "Spis_XP_022794681_1",
+					 "Spis_XP_022784944_1", "Spis_XP_022794008_1", "Spis_XP_022793432_1",
+					 "Spis_XP_022785950_1", "Spis_XP_022789396_1", "Spis_XP_022781073_1",
+					 "Spis_XP_022780929_1", "Spis_XP_022787726_1", "Spis_XP_022782200_1",
+					 "Spis_XP_022780323_1", "Spis_XP_022788915_1", "Spis_XP_022802168_1")
+	filter_ct = c("Spis|gastrodermis_like_2", "Spis|Neuron_lsl_Nkx6", "Spis|immune_macrophage_like_1",
+				  "Fspp|unknown1", "Gfas|unknown1", "Gfas|unknown2", "Gfas|unknown3", "Pdam|unknown1", "Plut|unknown2", "Ahya|unknown1", "Ahya|unknown2", "Ahya|unknown3", "Adig|unknown5")
+	genes_for_plot = genes_for_plot [ ! genes_for_plot %in% filter_genes ]
+	# 固定顺序排列列：物种顺序 + 细胞类型顺序，并过滤不存在组合
+	col_df <- data.frame(
+	  col = colnames(csps_m),
+	  spi = sub("\\|.*","", colnames(csps_m)),
+	  ct  = sub(".*\\|","", colnames(csps_m)),
+	  stringsAsFactors = FALSE
+	)
+	col_df <- col_df[col_df$spi %in% spi_order & col_df$ct %in% celltype_order, ]
+	col_df$spi <- factor(col_df$spi, levels = spi_order)
+	col_df$ct  <- factor(col_df$ct, levels = celltype_order)
+	col_df <- col_df[order(col_df$ct, col_df$spi), ]
+	ordered_cols <- col_df$col
+	ordered_cols <- ordered_cols [ !(ordered_cols %in% filter_ct) ]
+
+	csps_m_order_f = csps_m [ genes_for_plot , ordered_cols ]
+
+	# top per metacell
+    spi = sps_list[1]
+    gene_annotate = read.table(sprintf("results_metacell_%s_filt/annot.%s.genes.csv", spi, spi), sep = "\t", header = TRUE)
+    gene_to_orthogroup = dic_from_vecs(gene_annotate$gene, gene_annotate$orthogroup_name)
+    gene_to_uniprot = dic_from_vecs(gene_annotate$gene, gene_annotate$Uniprot_name)
+	expr_m = csps_m_order_f 
+	top_markers = select_top_markers(expr_m, matrix_thr = 1.5, n_top_markers = 1e6, n_markers_rollmean = 2)
+	expr_m = expr_m [ top_markers, ]
+	top_cl_per_gene = colnames(expr_m) [ apply(expr_m, 1, which.max) ]
+	rownames(expr_m) = sprintf("%s | %s", rownames(expr_m), gene_to_uniprot[rownames(expr_m)]) 
+	rownames(expr_m) = stringr::str_trunc(rownames(expr_m), 100)
+
+	pp1 = plot_complex_heatmap(
+		expr_m,
+		name = "Footprint",
+		cluster_row = FALSE,
+		cluster_col = FALSE,
+		use_raster = FALSE,
+		color_min = 1,
+		color_max = 4,
+		color_mat = c("gray95","orange","orangered2","#520c52"),
+		cell_border = gpar(col = "white", lwd = 1, lty = 1),
+		heatmap_border = gpar(col = "black", lwd = 1, lty = 1),
+		categories_row = top_cl_per_gene,
+		categories_col = colnames(expr_m),
+		colors_row = ann_cts,
+		colors_col = ann_cts,
+		fontsize = 6
+	)
+
+	pdfheight = max(4, (nrow(expr_m)/8 + 6))
+	pp1@matrix_param$width  = unit(ncol(expr_m)/10, "in")
+	pp1@matrix_param$height = unit(nrow(expr_m)/10, "in")
+	pdf(sprintf("%s/csps.%s.fixed_ordered_heatmap_TFs_filtered.pdf", out_fn, set_id), width = 30, height = pdfheight)
+	print(pp1)
+	dev.off()
+
+	## Save matrix ##
+	saveRDS(csps_m, sprintf("%s/csps.%s.cspsmatrix.%s.rds", out_fn, set_id, focid))
+}
+```
+
+```{r}
+# completeness
+ortholog_fraction = 0.1
+fraction_genes = 0
+# identify icc markers
+min_ec = 0
+
+selected_Uniprot = c("USF2", "FOXB1", "ARI5A", "ARI5B", "PO4F1", "PRD13", "ARID3", "SIX2",
+					  "ATF3", "SPI1", "PAX3")
+
+for (nn in 1:length(list_comparisons)) {
+    
+    set_id = names(list_comparisons)[nn]
+	
+	sps_list = list_comparisons[[nn]][[1]]
+	sps_ref = list_comparisons[[nn]][["ref"]]
+	sps_query = sps_list [ !sps_list %in% sps_ref ]
+
+    # color annotations
+    ann_cts = c()
+    for (spi in sps_list) {
+		if (spi == "Spin") {
+            spi_w = "Spis"
+		} else {
+			spi_w = spi
+		}
+		ctt_spi_fn = sprintf("samap_annotation/annot.%s.leiden.csv", spi, spi)
+		ctt_spi = read.table(ctt_spi_fn, header = TRUE, comment.char = "", sep = "\t")
+		ann_spi_v = dic_from_vecs(sprintf("%s|%s", spi_w, ctt_spi$cell_type), ctt_spi$color)
+		ann_cts = c(ann_cts, ann_spi_v)
+	}
+
+	# load all ref gene from annotation
+	ref_genes_fn = sprintf("results_metacell_%s_filt/annot.%s.genes.csv", sps_ref, sps_ref)
+	if (! file.exists(ref_genes_fn)) {
+		warning(sprintf("File not found for %s: %s", sps_ref, ref_genes_fn))
+		next
+	}
+	ref_gene_all = read.table(ref_genes_fn, sep = "\t", header = TRUE)
+	ref_genes = ref_gene_all %>% mutate(sp1 = gene) %>% dplyr::select(sp1)
+
+    # loop query species, load icc ortholog pairs
+	for (spi in sps_query) {
+		message(sprintf("csps %s | load %s-%s ICC data...", set_id, sps_ref, spi))
+		icc_genes_fn = sprintf("results_metacell_%s_filt/csps/dat.icc.%s-%s.ec_scores.csv", sps_ref, sps_ref, spi)
+		if (file.exists(icc_genes_fn)) {
+			icc_genes_i = read.table(icc_genes_fn, header = TRUE)
+			icc_genes_i = icc_genes_i [ icc_genes_i$ec_value >= min_ec, ]
+		} else {
+			message(sprintf("MISSING! -> %s", icc_genes_fn))
+		}
+		
+		if (spi == sps_query[1]) {
+			icc_genes_f = merge(ref_genes, icc_genes_i[,c(1,2)], by = "sp1", all.x = TRUE, all.y = FALSE)
+		} else {
+			icc_genes_f = merge(icc_genes_f, icc_genes_i[,c(1,2)], by = "sp1", all.x = TRUE, all.y = FALSE)
+		}
+	}
+    colnames(icc_genes_f) = c(sps_ref, sps_query)
+    icc_genes_f = icc_genes_f[rowSums(!is.na(icc_genes_f)) >= ortholog_fraction * ncol(icc_genes_f), ]
+
+    fix_gene_name <- function(gene_names, prefix) {
+        gene_names<-gsub("-","_", gene_names)
+        ifelse(grepl(paste0("^", prefix), gene_names), gene_names, paste0(prefix, gene_names))
+    }
+
+    # loop species, load mcfp data
+	for (spi in sps_list) {
+        if (spi == "Spin") {
+            spi_w = "Spis"
+		} else if (spi == "HcoeH" || spi == "HcoeI") {
+			spi_w = "Hcoe"
+		} else {
+			spi_w = spi
+		}
+
+		message(sprintf("csps %s | load %s expression data...", set_id, spi))
+		fps_genes_fn = sprintf("results_metacell_%s_filt/dat.%s.expression.cts_fp.rds", spi, spi)
+		if (file.exists(fps_genes_fn)) {
+			fps_i = readRDS(fps_genes_fn)
+            rownames(fps_i)<-fix_gene_name(rownames(fps_i), prefix = paste0(spi_w, "_"))
+			fps_i_f = quantile_normalisation(fps_i)
+		} else {
+			message(sprintf("MISSING! -> %s", fps_genes_fn))
+		}
+
+		if (spi == sps_list[1]) {
+			fps_i_f = fps_i_f [ icc_genes_f[,spi] , ]
+			colnames(fps_i_f) = sprintf("%s|%s", spi_w, colnames(fps_i_f))
+			csps_m = fps_i_f
+		} else {
+			fps_i_f_df = fps_i_f %>% as.data.frame() %>% tibble::rownames_to_column(var = spi)
+			fps_i_f = icc_genes_f[, c(sps_ref, spi)] %>%
+				left_join(fps_i_f_df, by = spi) %>% 
+				dplyr::select(-all_of(sps_ref), -all_of(spi))
+			colnames(fps_i_f) = sprintf("%s|%s", spi_w, colnames(fps_i_f))
+			csps_m = cbind(csps_m, fps_i_f)
+		}
+	}
+
+	# remove markers with an excess of absences
+	csps_m = csps_m [ rowSums(!is.na(csps_m)) >= ncol(csps_m) * fraction_genes , ]
+    csps_m [ is.na(csps_m) ] = 0
+
+
+	list_markers_tfs = data.frame()
+	for (spi in sps_list) {
+         if (spi == "Spin") {
+        spi_w = "Spis"
+		} else {
+			spi_w = spi
+		}
+		message(sprintf("csps %s | load %s markers...", set_id, spi))
+		mks_genes_fn = sprintf("results_metacell_%s_filt/seu.%s.markers.cts.csv", spi, spi)
+		mks_i = read.table(mks_genes_fn, sep = "\t", header = TRUE)
+        gene_annotate = read.table(sprintf("results_metacell_%s_filt/annot.%s.genes.csv", spi, spi), sep = "\t", header = TRUE)
+        gene_is_tf = dic_from_vecs(gene_annotate$gene, gene_annotate$is_tf)
+		mks_i$is_tf = gene_is_tf [ mks_i$gene ]
+		mks_i = mks_i %>% filter(Uniprot_name %in% selected_Uniprot)
+
+		focus_nodes = unique(mks_i$focus_node)
+		for (foi in focus_nodes) {
+			mks_ii = mks_i [ mks_i$focus_node == foi & mks_i$is_tf, c("gene","orthogroup") ]
+			mks_ii = unique(mks_ii)
+			mks_ii = mks_ii[!is.na(mks_ii$gene) & mks_ii$gene != "", , drop = FALSE]
+			if (nrow(mks_ii) > 0) {
+				list_markers_tfs = rbind(list_markers_tfs, data.frame(focus_node = sprintf("%s|%s", spi_w, foi), gene = mks_ii$gene))
+			} else {
+				list_markers_tfs = rbind(list_markers_tfs, data.frame(focus_node = sprintf("%s|%s", spi_w, foi), gene = NA))
+			}
+		}
+	}
+	# 用 TF 基因 + csps_m 的交集
+	genes_for_plot = intersect(list_markers_tfs$gene, rownames(csps_m))
+	
+	#filter unconserved genes
+	filter_genes = c("Spis_XP_022788197_1", "Spis_XP_022783463_1", "Spis_XP_022809245_1",
+					 "Spis_XP_022784370_1", "Spis_XP_022782301_1",
+					 "Spis_XP_022782518_1", "Spis_XP_022794362_1",
+					 "Spis_XP_022792483_1", "Spis_XP_022791808_1", "Spis_XP_022807802_1",
+					 "Spis_XP_022801153_1",
+					 "Spis_XP_022796171_1", "Spis_XP_022809311_1",
+					 "Spis_XP_022782459_1",
+					 "Spis_XP_022780370_1",
+					 "Spis_XP_022790819_1",
+					 "Spis_XP_022801801_1", "Spis_XP_022789101_1", "Spis_XP_022792898_1",
+					 "Spis_XP_022798099_1", "Spis_XP_022785281_1", "Spis_XP_022779978_1",
+					 "Spis_XP_022800071_1", "Spis_XP_022784029_1", "Spis_XP_022787643_1",
+					 "Spis_XP_022799559_1", "Spis_XP_022804454_1", "Spis_XP_022786538_1",
+					 "Spis_XP_022782449_1", "Spis_XP_022808439_1",
+					 "Spis_XP_022800909_1", "Spis_XP_022778527_1", "Spis_XP_022795122_1",
+					 "Spis_XP_022795122_1", "Spis_XP_022796217_1", "Spis_XP_022791645_1",
+					 "Spis_XP_022791248_1", "Spis_XP_022807320_1", "Spis_XP_022788849_1",
+					 "Spis_XP_022787524_1", "Spis_XP_022804091_1", "Spis_XP_022785127_1",
+					 "Spis_XP_022785127_1", "Spis_XP_022802187_1", "Spis_XP_022794775_1",
+					 "Spis_XP_022794604_1", "Spis_XP_022781875_1", "Spis_XP_022794681_1",
+					 "Spis_XP_022784944_1", "Spis_XP_022794008_1", "Spis_XP_022793432_1",
+					 "Spis_XP_022785950_1", "Spis_XP_022789396_1", "Spis_XP_022781073_1",
+					 "Spis_XP_022780929_1", "Spis_XP_022787726_1", "Spis_XP_022782200_1",
+					 "Spis_XP_022780323_1", "Spis_XP_022788915_1", "Spis_XP_022802168_1")
+	filter_ct = c("Spis|gastrodermis_like_2", "Spis|Neuron_lsl_Nkx6", "Spis|immune_macrophage_like_1",
+				  "Fspp|unknown1", "Gfas|unknown1", "Gfas|unknown2", "Gfas|unknown3", "Pdam|unknown1", "Plut|unknown2", "Ahya|unknown1", "Ahya|unknown2", "Ahya|unknown3", "Adig|unknown5")
+	genes_for_plot = genes_for_plot [ ! genes_for_plot %in% filter_genes ]
+	# 固定顺序排列列：物种顺序 + 细胞类型顺序，并过滤不存在组合
+	col_df <- data.frame(
+	  col = colnames(csps_m),
+	  spi = sub("\\|.*","", colnames(csps_m)),
+	  ct  = sub(".*\\|","", colnames(csps_m)),
+	  stringsAsFactors = FALSE
+	)
+	col_df <- col_df[col_df$spi %in% spi_order & col_df$ct %in% celltype_order, ]
+	col_df$spi <- factor(col_df$spi, levels = spi_order)
+	col_df$ct  <- factor(col_df$ct, levels = celltype_order)
+	col_df <- col_df[order(col_df$ct, col_df$spi), ]
+	ordered_cols <- col_df$col
+	ordered_cols <- ordered_cols [ !(ordered_cols %in% filter_ct) ]
+
+	csps_m_order_f = csps_m [ genes_for_plot , ordered_cols ]
+	csps_m_order_f_selected = csps_m_order_f
+
+	# top per metacell
+    spi = sps_list[1]
+    gene_annotate = read.table(sprintf("results_metacell_%s_filt/annot.%s.genes.csv", spi, spi), sep = "\t", header = TRUE)
+    gene_to_orthogroup = dic_from_vecs(gene_annotate$gene, gene_annotate$orthogroup_name)
+    gene_to_uniprot = dic_from_vecs(gene_annotate$gene, gene_annotate$Uniprot_name)
+	expr_m = csps_m_order_f 
+	top_markers = select_top_markers(expr_m, matrix_thr = 1.5, n_top_markers = 1e6, n_markers_rollmean = 2)
+	expr_m = expr_m [ top_markers, ]
+	top_cl_per_gene = colnames(expr_m) [ apply(expr_m, 1, which.max) ]
+	rownames(expr_m) = sprintf("%s | %s", rownames(expr_m), gene_to_uniprot[rownames(expr_m)]) 
+	rownames(expr_m) = stringr::str_trunc(rownames(expr_m), 100)
+
+	pp1 = plot_complex_heatmap(
+		expr_m,
+		name = "Footprint",
+		cluster_row = FALSE,
+		cluster_col = FALSE,
+		use_raster = FALSE,
+		color_min = 1,
+		color_max = 4,
+		color_mat = c("gray95","orange","orangered2","#520c52"),
+		cell_border = gpar(col = "white", lwd = 1, lty = 1),
+		heatmap_border = gpar(col = "black", lwd = 1, lty = 1),
+		categories_row = top_cl_per_gene,
+		categories_col = colnames(expr_m),
+		colors_row = ann_cts,
+		colors_col = ann_cts,
+		fontsize = 6
+	)
+
+	pdfheight = max(4, (nrow(expr_m)/8 + 6))
+	pp1@matrix_param$width  = unit(ncol(expr_m)/10, "in")
+	pp1@matrix_param$height = unit(nrow(expr_m)/10, "in")
+	pdf(sprintf("%s/csps.%s.fixed_ordered_heatmap_TFs_selected.pdf", out_fn, set_id), width = 30, height = pdfheight)
+	print(pp1)
+	dev.off()
+}
+```
+
+```{r}
+# completeness
+ortholog_fraction = 0.8
+fraction_genes = 0.7
+
+# identify icc markers
+min_ec = 0
+
+for (nn in 1:length(list_comparisons)) {
+    
+    set_id = names(list_comparisons)[nn]
+	
+	sps_list = list_comparisons[[nn]][[1]]
+	sps_ref = list_comparisons[[nn]][["ref"]]
+	sps_query = sps_list [ !sps_list %in% sps_ref ]
+
+    # color annotations
+    ann_cts = c()
+    for (spi in sps_list) {
+		if (spi == "Spin") {
+            spi_w = "Spis"
+		} else {
+			spi_w = spi
+		}
+		ctt_spi_fn = sprintf("samap_annotation/annot.%s.leiden.csv", spi, spi)
+		ctt_spi = read.table(ctt_spi_fn, header = TRUE, comment.char = "", sep = "\t")
+		ann_spi_v = dic_from_vecs(sprintf("%s|%s", spi_w, ctt_spi$cell_type), ctt_spi$color)
+		ann_cts = c(ann_cts, ann_spi_v)
+	}
+
+	# load all ref gene from annotation
+	ref_genes_fn = sprintf("results_metacell_%s_filt/annot.%s.genes.csv", sps_ref, sps_ref)
+	if (! file.exists(ref_genes_fn)) {
+		warning(sprintf("File not found for %s: %s", sps_ref, ref_genes_fn))
+		next
+	}
+	ref_gene_all = read.table(ref_genes_fn, sep = "\t", header = TRUE)
+	ref_genes = ref_gene_all %>% mutate(sp1 = gene) %>% dplyr::select(sp1)
+
+    # loop query species, load icc ortholog pairs
+	for (spi in sps_query) {
+		message(sprintf("csps %s | load %s-%s ICC data...", set_id, sps_ref, spi))
+		icc_genes_fn = sprintf("results_metacell_%s_filt/csps/dat.icc.%s-%s.ec_scores.csv", sps_ref, sps_ref, spi)
+		if (file.exists(icc_genes_fn)) {
+			icc_genes_i = read.table(icc_genes_fn, header = TRUE)
+			icc_genes_i = icc_genes_i [ icc_genes_i$ec_value >= min_ec, ]
+		} else {
+			message(sprintf("MISSING! -> %s", icc_genes_fn))
+		}
+		
+		if (spi == sps_query[1]) {
+			icc_genes_f = merge(ref_genes, icc_genes_i[,c(1,2)], by = "sp1", all.x = TRUE, all.y = FALSE)
+		} else {
+			icc_genes_f = merge(icc_genes_f, icc_genes_i[,c(1,2)], by = "sp1", all.x = TRUE, all.y = FALSE)
+		}
+	}
+    colnames(icc_genes_f) = c(sps_ref, sps_query)
+    icc_genes_f = icc_genes_f[rowSums(!is.na(icc_genes_f)) >= ortholog_fraction * ncol(icc_genes_f), ]
+
+    fix_gene_name <- function(gene_names, prefix) {
+        gene_names<-gsub("-","_", gene_names)
+        ifelse(grepl(paste0("^", prefix), gene_names), gene_names, paste0(prefix, gene_names))
+    }
+
+    # loop species, load mcfp data
+	for (spi in sps_list) {
+        if (spi == "Spin") {
+            spi_w = "Spis"
+		} else if (spi == "HcoeH" || spi == "HcoeI") {
+			spi_w = "Hcoe"
+		} else {
+			spi_w = spi
+		}
+
+		message(sprintf("csps %s | load %s expression data...", set_id, spi))
+		fps_genes_fn = sprintf("results_metacell_%s_filt/dat.%s.expression.cts_fp.rds", spi, spi)
+		if (file.exists(fps_genes_fn)) {
+			fps_i = readRDS(fps_genes_fn)
+            rownames(fps_i)<-fix_gene_name(rownames(fps_i), prefix = paste0(spi_w, "_"))
+			fps_i_f = quantile_normalisation(fps_i)
+		} else {
+			message(sprintf("MISSING! -> %s", fps_genes_fn))
+		}
+
+		if (spi == sps_list[1]) {
+			fps_i_f = fps_i_f [ icc_genes_f[,spi] , ]
+			colnames(fps_i_f) = sprintf("%s|%s", spi_w, colnames(fps_i_f))
+			csps_m = fps_i_f
+		} else {
+			fps_i_f_df = fps_i_f %>% as.data.frame() %>% tibble::rownames_to_column(var = spi)
+			fps_i_f = icc_genes_f[, c(sps_ref, spi)] %>%
+				left_join(fps_i_f_df, by = spi) %>% 
+				dplyr::select(-all_of(sps_ref), -all_of(spi))
+			colnames(fps_i_f) = sprintf("%s|%s", spi_w, colnames(fps_i_f))
+			csps_m = cbind(csps_m, fps_i_f)
+		}
+	}
+
+	# remove markers with an excess of absences
+	csps_m = csps_m [ rowSums(!is.na(csps_m)) >= ncol(csps_m) * fraction_genes , ]
+    csps_m [ is.na(csps_m) ] = 0
+
+    ## TF筛选 ##
+	list_markers_tfs = data.frame()
+	for (spi in sps_list) {
+         if (spi == "Spin") {
+        spi_w = "Spis"
+		} else {
+			spi_w = spi
+		}
+		message(sprintf("csps %s | load %s markers...", set_id, spi))
+		mks_genes_fn = sprintf("results_metacell_%s_filt/seu.%s.markers.cts.csv", spi, spi)
+		mks_i = read.table(mks_genes_fn, sep = "\t", header = TRUE)
+		mks_i = mks_i [ !is.na(mks_i$gene) & mks_i$p_val_adj < 0.01 & mks_i$avg_log2FC > 0, ]
+        gene_annotate = read.table(sprintf("results_metacell_%s_filt/annot.%s.genes.csv", spi, spi), sep = "\t", header = TRUE)
+        gene_is_tf = dic_from_vecs(gene_annotate$gene, gene_annotate$is_tf)
+		mks_i$is_tf = gene_is_tf [ mks_i$gene ]
+
+		focus_nodes = unique(mks_i$focus_node)
+		for (foi in focus_nodes) {
+			mks_ii = mks_i [ mks_i$focus_node == foi & mks_i$is_tf, c("gene","orthogroup") ]
+			mks_ii = unique(mks_ii)
+			mks_ii = mks_ii[!is.na(mks_ii$gene) & mks_ii$gene != "", , drop = FALSE]
+			if (nrow(mks_ii) > 0) {
+				list_markers_tfs = rbind(list_markers_tfs, data.frame(focus_node = sprintf("%s|%s", spi_w, foi), gene = mks_ii$gene))
+			} else {
+				list_markers_tfs = rbind(list_markers_tfs, data.frame(focus_node = sprintf("%s|%s", spi_w, foi), gene = NA))
+			}
+		}
+	}
+}
+```
+
+
+```{r}
+# 用 TF 基因 + csps_m 的交集
+genes_for_plot = intersect(list_markers_tfs$gene, rownames(csps_m))
+
+#filter unconserved genes
+filter_genes = c("Spis_XP_022788197_1", "Spis_XP_022783463_1", "Spis_XP_022809245_1",
+					 "Spis_XP_022784370_1", "Spis_XP_022782301_1",
+					 "Spis_XP_022782518_1", "Spis_XP_022794362_1",
+					 "Spis_XP_022792483_1", "Spis_XP_022791808_1", "Spis_XP_022807802_1",
+					 "Spis_XP_022801153_1",
+					 "Spis_XP_022796171_1", "Spis_XP_022809311_1",
+					 "Spis_XP_022782459_1",
+					 "Spis_XP_022780370_1",
+					 "Spis_XP_022790819_1",
+					 "Spis_XP_022801801_1", "Spis_XP_022789101_1", "Spis_XP_022792898_1",
+					 "Spis_XP_022798099_1", "Spis_XP_022785281_1", "Spis_XP_022779978_1",
+					 "Spis_XP_022800071_1", "Spis_XP_022784029_1", "Spis_XP_022787643_1",
+					 "Spis_XP_022799559_1", "Spis_XP_022804454_1", "Spis_XP_022786538_1",
+					 "Spis_XP_022782449_1", "Spis_XP_022808439_1",
+					 "Spis_XP_022800909_1", "Spis_XP_022778527_1", "Spis_XP_022795122_1",
+					 "Spis_XP_022795122_1", "Spis_XP_022796217_1", "Spis_XP_022791645_1",
+					 "Spis_XP_022791248_1", "Spis_XP_022807320_1", "Spis_XP_022788849_1",
+					 "Spis_XP_022787524_1", "Spis_XP_022804091_1", "Spis_XP_022785127_1",
+					 "Spis_XP_022785127_1", "Spis_XP_022802187_1", "Spis_XP_022794775_1",
+					 "Spis_XP_022794604_1", "Spis_XP_022781875_1", "Spis_XP_022794681_1",
+					 "Spis_XP_022784944_1", "Spis_XP_022794008_1", "Spis_XP_022793432_1",
+					 "Spis_XP_022785950_1", "Spis_XP_022789396_1", "Spis_XP_022781073_1",
+					 "Spis_XP_022780929_1", "Spis_XP_022787726_1", "Spis_XP_022782200_1",
+					 "Spis_XP_022780323_1", "Spis_XP_022788915_1", "Spis_XP_022802168_1",
+					 "Spis_XP_022803289_1", "Spis_XP_022783718_1")
+	filter_ct = c("Spis|gastrodermis_like_2", "Spis|Neuron_lsl_Nkx6", "Spis|immune_macrophage_like_1",
+				  "Fspp|unknown1", "Gfas|unknown1", "Gfas|unknown2", "Gfas|unknown3", "Pdam|unknown1", "Plut|unknown2", "Ahya|unknown1", "Ahya|unknown2", "Ahya|unknown3", "Adig|unknown5")
+genes_for_plot = genes_for_plot [ ! genes_for_plot %in% filter_genes ]
+# 固定顺序排列列：物种顺序 + 细胞类型顺序，并过滤不存在组合
+col_df <- data.frame(
+	col = colnames(csps_m),
+	spi = sub("\\|.*","", colnames(csps_m)),
+	ct  = sub(".*\\|","", colnames(csps_m)),
+	stringsAsFactors = FALSE
+)
+col_df <- col_df[col_df$spi %in% spi_order & col_df$ct %in% celltype_order, ]
+col_df$spi <- factor(col_df$spi, levels = spi_order)
+col_df$ct  <- factor(col_df$ct, levels = celltype_order)
+col_df <- col_df[order(col_df$ct, col_df$spi), ]
+ordered_cols <- col_df$col
+ordered_cols <- ordered_cols [ !(ordered_cols %in% filter_ct) ]
+
+csps_m_order_f = csps_m [ genes_for_plot , ordered_cols ]
+csps_m_order_f_selected_filtered = csps_m_order_f_selected [ ! rownames(csps_m_order_f_selected) %in% filter_genes , ]
+csps_m_order_f = rbind(csps_m_order_f_selected_filtered, csps_m_order_f)
+# top per metacell
+spi = sps_list[1]
+gene_annotate = read.table(sprintf("results_metacell_%s_filt/annot.%s.genes.csv", spi, spi), sep = "\t", header = TRUE)
+gene_to_orthogroup = dic_from_vecs(gene_annotate$gene, gene_annotate$orthogroup_name)
+gene_to_uniprot = dic_from_vecs(gene_annotate$gene, gene_annotate$Uniprot_name)
+expr_m = csps_m_order_f 
+top_markers = select_top_markers(expr_m, matrix_thr = 1.5, n_top_markers = 1e6, n_markers_rollmean = 6)
+expr_m = expr_m [ top_markers, ]
+top_cl_per_gene = colnames(expr_m) [ apply(expr_m, 1, which.max) ]
+rownames(expr_m) = sprintf("%s | %s", rownames(expr_m), gene_to_uniprot[rownames(expr_m)]) 
+rownames(expr_m) = stringr::str_trunc(rownames(expr_m), 100)
+
+pp1 = plot_complex_heatmap(
+	expr_m,
+	name = "Footprint",
+	cluster_row = FALSE,
+	cluster_col = FALSE,
+	use_raster = FALSE,
+	color_min = 1,
+	color_max = 4,
+	color_mat = c("gray95","orange","orangered2","#520c52"),
+	cell_border = gpar(col = "white", lwd = 1, lty = 1),
+	heatmap_border = gpar(col = "black", lwd = 1, lty = 1),
+	categories_row = top_cl_per_gene,
+	categories_col = colnames(expr_m),
+	colors_row = ann_cts,
+	colors_col = ann_cts,
+	fontsize = 6
+)
+
+pdfheight = max(4, (nrow(expr_m)/8 + 6))
+pp1@matrix_param$width  = unit(ncol(expr_m)/10, "in")
+pp1@matrix_param$height = unit(nrow(expr_m)/10, "in")
+pdf(sprintf("%s/csps.%s.fixed_ordered_heatmap_TFs_manual_fixed.pdf", out_fn, set_id), width = 30, height = pdfheight)
+print(pp1)
+dev.off()
+
+```

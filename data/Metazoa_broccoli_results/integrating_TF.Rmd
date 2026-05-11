@@ -1,0 +1,361 @@
+```{r}
+# Load required libraries
+library(tidyverse)
+library(rtracklayer)
+setwd("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/final_data/broccoli")
+suppressMessages(source("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/coral_cs_functions/helper.R"))
+getwd()
+```
+
+```{r}
+POSSVM_DIR <- "/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/gene_family_annotation/260425_Metazoa_all_genome/possvm_results"  # POSSVM 输出目录
+OUTPUT_FILE <- "all_tf_orthogroups_consolidated.csv"
+
+cat("Step 1: Collecting POSSVM orthogroup files...\n")
+
+# 查找所有 orthology_groups.csv 文件
+og_files <- list.files(
+    path = POSSVM_DIR,
+    pattern = "\\.ortholog_groups\\.csv$",
+    full.names = TRUE,
+    recursive = FALSE
+)
+
+cat(sprintf("Found %d orthogroup files\n", length(og_files)))
+
+if (length(og_files) == 0) {
+    stop("No orthogroup files found in ", POSSVM_DIR)
+}
+cat(paste(head(basename(og_files), 5), collapse = "\n"), "\n\n")
+```
+
+```{r}
+all_orthogroups <- list()
+
+for (i in seq_along(og_files)) {
+    
+    file_path <- og_files[i]
+    file_name <- basename(file_path)
+    
+    # 提取 TF 家族和 cluster 信息（从文件名）
+    # 假设文件名格式：AF-4.cluster_1.orthology_groups.csv
+    tf_cluster <- str_remove(file_name, "\\.filtered\\.ortholog_groups\\.csv$")
+    
+    # 读取文件
+    tryCatch({
+        og_data <- read_tsv(file_path, show_col_types = FALSE)
+        
+        # 添加来源信息
+        og_data$source_file <- file_name
+        og_data$tf_cluster <- tf_cluster
+        og_data$reference_support = as.character(og_data$reference_support)
+        og_data$orthogroup_support = as.character(og_data$orthogroup_support)
+        all_orthogroups[[i]] <- og_data
+    }, error = function(e) {
+        cat(sprintf("\nWarning: Failed to read %s:  %s\n", file_name, e$message))
+    })
+}
+
+# 合并所有数据
+combined_og <- bind_rows(all_orthogroups)
+cat(sprintf("Total entries:  %d\n", nrow(combined_og)))
+cat(sprintf("Unique genes:    %d\n", n_distinct(combined_og$gene)))
+cat(sprintf("Unique orthogroups (raw): %d\n\n", n_distinct(combined_og$orthogroup)))
+```
+
+```{r}
+og_extracted <- combined_og %>%
+    select(gene, orthogroup, source_file, tf_cluster)
+
+# 解析 orthogroup 列
+# 格式:  AF-4.cluster_1.0:Aff1/Aff2/Aff3/Aff4
+# 需要提取:  TF家族 (AF-4), cluster (cluster_1), OG编号 (. 0), 基因名 (Aff1/Aff2/Aff3/Aff4)
+
+og_parsed <- og_extracted %>%
+    mutate(
+        # 提取 TF 家族名称（第一个点之前）
+        tf_family = str_extract(orthogroup, "^[^\\.]+"),
+        
+        # 提取 cluster 信息（cluster_X）
+        cluster = str_extract(orthogroup, "cluster_\\d+"),
+        
+        # 提取 OG 编号（冒号前的最后一个数字）
+        og_number = str_extract(orthogroup, "\\.(\\d+):", group = 1),
+        
+        # 提取基因名（冒号后的部分）
+        gene_names = str_extract(orthogroup, "(?<=:).+$"),
+
+        # 生成新的 orthogroup_name（去除 cluster 信息）
+        orthogroup_name = paste0(tf_family, ":", gene_names)
+    )
+
+cat("Step 4: Generating new orthogroup IDs...\n")
+
+# 为每个唯一的 orthogroup_name 分配一个新的 OG 编号
+unique_og_names <- og_parsed %>%
+    distinct(orthogroup) %>%
+    arrange(orthogroup) %>%
+    mutate(
+        new_og_id = sprintf("OG:%06d", row_number())
+    )
+
+cat(sprintf("Generated %d unique orthogroup IDs\n\n", nrow(unique_og_names)))
+
+# 合并回原数据
+og_with_new_ids <- og_parsed %>%
+    left_join(unique_og_names, by = "orthogroup")
+```
+
+```{r}
+df_long<- og_with_new_ids %>%
+    select(gene, orthogroup_name,new_og_id)%>%
+    mutate(
+        orthogroup= new_og_id,
+        protein_name= gene
+    )%>%
+    select(-gene, -new_og_id)
+files <- list.files("/home/data/Ruijie/workplace/broccoli/Metazoa_genome_fix_plut_ahya/results/Metazoa_genome_fix_ahya_plut",
+                    pattern = "_renamed_cleaned.longest\\.fasta$")
+sps_list <- sub("_renamed_cleaned.longest\\.fasta$", "", files)
+
+# Create a regex pattern from species list
+species_pattern <- paste0("^(", paste(sps_list, collapse = "|"), ")_")
+# Extract species from protein name
+df_long <- df_long %>%
+mutate(
+    species = str_extract(protein_name, species_pattern),
+    species = str_remove(species, "_$")
+) %>%# Filter to keep only proteins from species in the list
+filter(!is.na(species))
+
+# Remove species prefix and . p* suffix from protein names
+df_long <- df_long %>%
+mutate(
+    # Remove species prefix (e.g., "Spis_")
+    temp_name = str_remove(protein_name, paste0("^", species, "_")),
+    # Remove .p1, .p2, etc. suffix
+    transcript = str_remove(temp_name, "\\.p\\d+$")
+) %>%
+select(-temp_name)
+#fix Ffun for further mapping
+#df_long$transcript[df_long$species=="Fspp"]<- sub("Ffun_", "", df_long$transcript[df_long$species=="Fspp"])
+
+```
+```{r}
+gtf_suffix = "_long.annot.gtf"
+gtf_dir = "./reference_gtf_Metazoa/"
+gtf_sps_files <- list.files(gtf_dir, pattern = "_long.annot\\.gtf$")
+gtf_sps<- sub("_long.annot\\.gtf$", "", gtf_sps_files)
+ungtf_sps<- setdiff(sps_list, gtf_sps)
+common_sps<- intersect(sps_list, gtf_sps)
+print(ungtf_sps)
+df_long$gene<-NA
+# Read all GTF files
+for (species in common_sps) {
+cat(sprintf("\nReading GTF for %s...\n", species))
+
+gtf_file <- file.path(gtf_dir, paste0(species, gtf_suffix))
+
+if (!file.exists(gtf_file)) {
+    warning(sprintf("GTF file not found:  %s", gtf_file))
+    next
+}
+mapping <- rtracklayer::import(gtf_file)
+transcript_to_gene <- dic_from_vecs(mapping$transcript_id, mapping$gene_id)
+df_long$gene[df_long$species == species] <- transcript_to_gene[df_long$transcript[df_long$species == species]]
+
+if (sum(is.na(df_long$gene[df_long$species == species])) == sum(df_long$species == species)){
+    warning(sprintf("Species %s failed in transcrit, switch to protein", species))
+    prot_to_gene<-dic_from_vecs(mapping$protein_id[!is.na(mapping$protein_id)], mapping$gene_id[!is.na(mapping$protein_id)])
+    df_long$gene[df_long$species == species] <- prot_to_gene[df_long$transcript[df_long$species == species]]
+    }
+message(sprintf("Species %s: %d total genes", species, sum(df_long$species == species)))
+message(sprintf("Species %s: %d genes unmapped", species, sum(is.na(df_long$gene[df_long$species == species]))))
+
+message(sprintf("Fixing gene names for species %s", species))
+df_long$gene[df_long$species == species] <- fix_gene_name(df_long$gene[df_long$species == species], paste0(species, "_"))
+}
+for(species in ungtf_sps){
+    message(sprintf("Species %s has no GTF file, skipping...", species))
+    df_long$gene[df_long$species == species] <- fix_gene_name(df_long$transcript[df_long$species == species], paste0(species, "_"))
+}
+for(species in sps_list){
+    df_long$gene_name[df_long$species == species] <- sub(paste0(species, "_"),"", df_long$gene[df_long$species == species])
+}
+```
+
+```{r}
+df_final <- df_long %>%
+    select(orthogroup, species, gene, transcript, gene_name, orthogroup_name) %>%
+    arrange(orthogroup, species, gene, transcript, gene_name, orthogroup_name)
+write.table(df_final, 
+              file = "./Metazoa_all_genome_260426/TF_orthogroup_conservation_original.csv", 
+              sep = "\t", 
+              row.names = FALSE, 
+              quote = FALSE)
+dup_check <- df_final %>%
+    filter(species %in% c("Adig", "Amur", "Fspp", "Gfas", "HcoeH", "Pcru", "Pdam", "Plut", "Spin","Xesp"))%>%
+    count(transcript) %>%
+    filter(n > 1)
+
+cat(sprintf("Total genes:      %d\n", n_distinct(df_final$transcript)))
+cat(sprintf("Duplicate genes: %d (%.2f%%)\n", 
+            nrow(dup_check), 
+            nrow(dup_check) / n_distinct(df_final$transcript) * 100))
+```
+
+```{r}
+original_og<- read.table("./Metazoa_all_genome_260426/orthogroup_conservation.csv",
+                         sep = "\t",
+                         header = TRUE,
+                         quote = "",
+                         stringsAsFactors = FALSE)
+tf_og <- df_final
+
+original_og_cleaned <- original_og %>%
+    mutate(
+       orthogroup_name = if_else(
+            grepl("^OG:\\d+$", orthogroup_name),
+           NA_character_,
+            orthogroup_name
+        )
+    )
+#write.table(original_og_cleaned,
+#              file = "./Metazoa_all_genome_260426/orthogroup_conservation_original.csv", 
+#             sep = "\t", 
+#              row.names = FALSE, 
+#              quote = FALSE)
+n_replaced <- sum(is.na(original_og_cleaned$orthogroup_name)) - sum(is.na(original_og$orthogroup_name))
+cat(sprintf("  Replaced %d orthogroup_name entries to NA\n", n_replaced))
+```
+
+```{r}
+tf_genes <- unique(tf_og$gene)
+cat(sprintf("  TF genes to remove: %d\n", length(tf_genes)))
+original_og_no_tf <- original_og_cleaned %>%
+    filter(!gene %in% tf_genes)
+
+n_removed <- nrow(original_og_cleaned) - nrow(original_og_no_tf)
+cat(sprintf("  Removed %d entries from original orthogroups\n", n_removed))
+# 统计每个 orthogroup 的基因数
+og_sizes <- original_og_no_tf %>%
+    count(orthogroup, name = "n_genes")
+# 统计单基因 orthogroup
+singleton_ogs <- og_sizes %>% filter(n_genes == 1)
+cat(sprintf("  Singleton orthogroups: %d (%.1f%% of remaining OGs)\n", 
+            nrow(singleton_ogs),
+            nrow(singleton_ogs) / nrow(og_sizes) * 100))
+
+unique_original_ogs <- original_og_no_tf %>%
+    distinct(orthogroup, orthogroup_name) %>%
+    arrange(orthogroup) %>%
+    mutate(
+        new_orthogroup = sprintf("OG:%06d", row_number())
+    )
+cat(sprintf("  Original OGs remaining: %d\n", nrow(unique_original_ogs)))
+
+original_og_renumbered <- original_og_no_tf %>%
+    left_join(unique_original_ogs %>% select(orthogroup, new_orthogroup), 
+              by = "orthogroup") %>%
+    mutate(orthogroup = new_orthogroup) %>%
+    select(-new_orthogroup)
+
+cat(sprintf("  Renumbered entries: %d\n", nrow(original_og_renumbered)))
+# calculate new OG range
+og_numbers <- as.integer(str_extract(unique_original_ogs$new_orthogroup, "\\d+"))
+cat(sprintf("  New OG range: OG:%06d to OG:%06d\n", min(og_numbers), max(og_numbers)))
+```
+
+```{r}
+next_og_number <- max(og_numbers) + 1
+
+# 创建 TF orthogroup 映射
+unique_tf_ogs <- tf_og %>%
+    distinct(orthogroup, orthogroup_name) %>%
+    arrange(orthogroup_name) %>%  # 按名称排序，保持一致性
+    mutate(
+        new_orthogroup = sprintf("OG:%06d", row_number() + next_og_number - 1)
+    )
+
+cat(sprintf("  TF OGs:  %d\n", nrow(unique_tf_ogs)))
+
+# 应用新编号
+tf_og_renumbered <- tf_og %>%
+    left_join(unique_tf_ogs %>% select(orthogroup, new_orthogroup),
+              by = "orthogroup") %>%
+    mutate(orthogroup = new_orthogroup) %>%
+    select(-new_orthogroup)
+
+cat(sprintf("  Renumbered entries: %d\n", nrow(tf_og_renumbered)))
+
+# 显示编号范围
+tf_og_numbers <- as.integer(str_extract(unique_tf_ogs$new_orthogroup, "\\d+"))
+cat(sprintf("  New TF OG range: OG:%06d to OG:%06d\n", min(tf_og_numbers), max(tf_og_numbers)))
+```
+
+```{r}
+col_order <- c("orthogroup", "species", "gene", "transcript", "gene_name", "orthogroup_name")
+
+original_og_final <- original_og_renumbered %>% select(all_of(col_order))
+tf_og_final <- tf_og_renumbered %>% select(all_of(col_order))
+
+# 合并
+integrated_og <- bind_rows(
+    original_og_final,
+    tf_og_final
+)
+
+write.table(integrated_og,
+              file = "./Metazoa_all_genome_260426/orthogroup_conservation_integrated.csv", 
+              sep = "\t", 
+              row.names = FALSE, 
+              quote = FALSE)
+```
+
+```{r}
+ortho_data <- read_tsv("./Metazoa_all_genome_260426/orthogroup_conservation_integrated.csv", show_col_types = FALSE)
+
+# 标记 TF
+ortho_data <- ortho_data %>%
+    mutate(is_tf = grepl(":", orthogroup_name))
+
+# 检查重复
+dup_check <- ortho_data %>%
+    count(gene) %>%
+    filter(n > 1)
+
+cat(sprintf("Total genes:      %d\n", n_distinct(ortho_data$gene)))
+cat(sprintf("Duplicate genes: %d (%.2f%%)\n", 
+            nrow(dup_check), 
+            nrow(dup_check) / n_distinct(ortho_data$gene) * 100))
+
+if (nrow(dup_check) > 0) {
+    # 分类重复
+    dup_details <- ortho_data %>%
+        filter(gene %in% dup_check$gene) %>%
+        group_by(gene) %>%
+        summarise(
+            has_tf = any(is_tf),
+            has_nontf = any(! is_tf),
+            pattern = case_when(
+                has_tf & has_nontf ~ "TF + Non-TF",
+                has_tf ~ "TF only",
+                TRUE ~ "Non-TF only"
+            )
+        )
+    
+    cat("\nDuplication patterns:\n")
+    print(table(dup_details$pattern))
+    
+    # 检查严重问题
+    critical <- sum(dup_details$pattern == "TF + Non-TF")
+    if (critical > 0) {
+        cat(sprintf("\n❌ CRITICAL: %d genes in both TF and Non-TF orthogroups!\n", critical))
+    } else {
+        cat("\n✓ No critical issues\n")
+    }
+} else {
+    cat("\n✓ Perfect!  No duplicate genes found.\n")
+}
+```
+

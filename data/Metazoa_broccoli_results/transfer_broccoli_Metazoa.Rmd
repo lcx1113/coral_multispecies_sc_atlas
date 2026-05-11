@@ -1,0 +1,165 @@
+```{r}
+# Load required libraries
+library(tidyverse)
+library(rtracklayer)
+setwd("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/final_data/broccoli")
+suppressMessages(source("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/coral_cs_functions/helper.R"))
+getwd()
+```
+
+```{r}
+cat("Reading broccoli output file.. .\n")
+# Read the file with two columns: OG_name and protein_names
+broccoli_file <- "/home/data/Ruijie/workplace/broccoli/Metazoa_genome_fix_plut_ahya/results/Metazoa_genome_fix_ahya_plut/dir_step3/orthologous_groups.txt"
+df <- read.table(broccoli_file, 
+                header = TRUE, 
+                sep = "\t", 
+                stringsAsFactors = FALSE,
+                comment.char = "",
+                quote = "")
+
+cat(sprintf("Read %d orthogroups\n", nrow(df)))
+```
+
+```{r}
+cat("Converting to long format.. .\n")
+# Split protein_names by space and create one row per protein
+df_long <- df %>%
+    separate_rows(protein_names, sep = "\\s+") %>%
+    filter(protein_names != "")
+colnames(df_long)= c("orthogroup","protein_name")
+```
+
+```{r}
+files <- list.files("/home/data/Ruijie/workplace/broccoli/Metazoa_genome_fix_plut_ahya/results/Metazoa_genome_fix_ahya_plut",
+                    pattern = "_renamed_cleaned.longest\\.fasta$")
+sps_list <- sub("_renamed_cleaned.longest\\.fasta$", "", files)
+
+# Create a regex pattern from species list
+species_pattern <- paste0("^(", paste(sps_list, collapse = "|"), ")_")
+# Extract species from protein name
+df_long <- df_long %>%
+mutate(
+    species = str_extract(protein_name, species_pattern),
+    species = str_remove(species, "_$")
+) %>%# Filter to keep only proteins from species in the list
+filter(! is.na(species))
+  
+# Format orthogroup names (OG_1 -> OG: 000001)
+df_long <- df_long %>%
+mutate(
+    orthogroup_num = as.numeric(str_extract(orthogroup, "\\d+$")),
+    orthogroup = sprintf("OG:%06d", orthogroup_num)
+) %>%
+select(-orthogroup_num)
+```
+
+```{r}
+# Remove species prefix and . p* suffix from protein names
+df_long <- df_long %>%
+mutate(
+    # Remove species prefix (e.g., "Spis_")
+    temp_name = str_remove(protein_name, paste0("^", species, "_")),
+    # Remove .p1, .p2, etc. suffix
+    transcript = str_remove(temp_name, "\\.p\\d+$")
+) %>%
+select(-temp_name)
+#fix Ffun for further mapping
+#df_long$transcript[df_long$species=="Fspp"]<- sub("Ffun_", "", df_long$transcript[df_long$species=="Fspp"])
+```
+
+```{r}
+gtf_suffix = "_long.annot.gtf"
+gtf_dir = "./reference_gtf_Metazoa/"
+gtf_sps_files <- list.files(gtf_dir, pattern = "_long.annot\\.gtf$")
+gtf_sps<- sub("_long.annot\\.gtf$", "", gtf_sps_files)
+ungtf_sps<- setdiff(sps_list, gtf_sps)
+common_sps<- intersect(sps_list, gtf_sps)
+print(ungtf_sps)
+df_long$gene<-NA
+# Read all GTF files
+for (species in common_sps) {
+cat(sprintf("\nReading GTF for %s...\n", species))
+
+gtf_file <- file.path(gtf_dir, paste0(species, gtf_suffix))
+
+if (!file.exists(gtf_file)) {
+    warning(sprintf("GTF file not found:  %s", gtf_file))
+    next
+}
+mapping <- rtracklayer::import(gtf_file)
+transcript_to_gene <- dic_from_vecs(mapping$transcript_id, mapping$gene_id)
+df_long$gene[df_long$species == species] <- transcript_to_gene[df_long$transcript[df_long$species == species]]
+
+if (sum(is.na(df_long$gene[df_long$species == species])) == sum(df_long$species == species)){
+    warning(sprintf("Species %s failed in transcrit, switch to protein", species))
+    prot_to_gene<-dic_from_vecs(mapping$protein_id[!is.na(mapping$protein_id)], mapping$gene_id[!is.na(mapping$protein_id)])
+    df_long$gene[df_long$species == species] <- prot_to_gene[df_long$transcript[df_long$species == species]]
+    }
+message(sprintf("Species %s: %d total genes", species, sum(df_long$species == species)))
+message(sprintf("Species %s: %d genes unmapped", species, sum(is.na(df_long$gene[df_long$species == species]))))
+
+message(sprintf("Fixing gene names for species %s", species))
+df_long$gene[df_long$species == species] <- fix_gene_name(df_long$gene[df_long$species == species], paste0(species, "_"))
+}
+for(species in ungtf_sps){
+    message(sprintf("Species %s has no GTF file, skipping...", species))
+    df_long$gene[df_long$species == species] <- fix_gene_name(df_long$transcript[df_long$species == species], paste0(species, "_"))
+}
+for(species in sps_list){
+    df_long$gene_name[df_long$species == species] <- sub(paste0(species, "_"),"", df_long$gene[df_long$species == species])
+} 
+```
+
+```{r}
+mmus_genes <- df_long %>%
+  filter(species == "Mmus") %>%
+  group_by(orthogroup) %>%
+  arrange(gene_name) %>%
+  summarise(mmus_gene_name = paste(unique(gene_name), collapse = "/"), .groups = "drop")
+df_long <- df_long %>%
+  left_join(mmus_genes, by = "orthogroup") %>%
+  mutate(orthogroup_name = ifelse(! is.na(mmus_gene_name), mmus_gene_name, orthogroup)) %>%
+  select(-mmus_gene_name)
+
+df_final <- df_long %>%
+    select(orthogroup, species, gene, transcript, gene_name, orthogroup_name) %>%
+    arrange(orthogroup, species, gene, transcript, gene_name, orthogroup_name)
+
+df_final_cleaned <- df_final %>%
+    mutate(
+        orthogroup_name = if_else(
+            grepl("^OG:\\d+$", orthogroup_name),
+            NA_character_,
+            orthogroup_name
+        )
+    )
+
+write.table(df_final_cleaned, 
+              file = "./Metazoa_all_genome_260426/orthogroup_conservation.csv", 
+              sep = "\t", 
+              row.names = FALSE, 
+              quote = FALSE)
+```
+
+```{r}
+mus_gtf<- rtracklayer::import("./reference_gtf_Metazoa/Mmus_long.annot.gtf")
+transcript_to_gene <- dic_from_vecs(mus_gtf$transcript_id, mus_gtf$gene_id)
+prot_to_gene<-dic_from_vecs(mus_gtf$protein_id[!is.na(mus_gtf$protein_id)], mus_gtf$gene_id[!is.na(mus_gtf$protein_id)])
+mus_protein<- unique(mus_gtf$protein_id[!is.na(mus_gtf$protein_id)])
+mus_dic <- data.frame(
+    protein_id = mus_protein,
+    gene_id = NA,
+    stringsAsFactors = FALSE
+)
+mus_dic$gene_id <- prot_to_gene[mus_dic$protein_id]
+mus_dic$protein_id<- fix_gene_name(mus_dic$protein_id, "Mmus_")
+write.table(
+    mus_dic,
+    file = "./Metazoa_all_genome_260426/mus_gene_names.csv",
+    sep = "\t",
+    quote = FALSE,
+    row.names = FALSE,
+    col.names = FALSE
+)
+```

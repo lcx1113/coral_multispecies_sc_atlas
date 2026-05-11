@@ -1,0 +1,484 @@
+```{r}
+# Load required libraries
+library(tidyverse)
+library(rtracklayer)
+suppressMessages(source("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/coral_cs_functions/helper.R"))
+setwd("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/integrating_annotation/")
+getwd()
+ANNOT_PATTERN <- "annot.*.genes.csv"
+```
+
+```{r}
+sps_list = c("Adig", "Ahya", "Amur", "Fspp", "Gfas", "Hcoe", "Pcru", "Pdam", "Plut", "Spis", "Xesp")
+oga <- read.table(
+    "/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/final_data/broccoli/Anthozoa_all_genome_260426/orthogroup_conservation.csv",
+    sep = "\t",
+    header = TRUE,
+    quote = "",
+    stringsAsFactors = FALSE
+)
+oga_filtered <- oga %>%
+    filter(species %in% sps_list)%>%
+    select(-c(gene_name, orthogroup_name))
+
+for(spi in sps_list){
+    annot_fn= sprintf("./260428_gene_annote_all_genome/annot.%s.genes.csv", spi)
+    annot_df <- read.table(annot_fn, sep = "\t", header = TRUE, quote = "", stringsAsFactors = FALSE)
+    gene_to_spis<- dic_from_vecs(annot_df$gene, annot_df$spis_ortholog)
+    gene_to_name<- dic_from_vecs(annot_df$gene, annot_df$orthogroup_name)
+    gene_to_unip<- dic_from_vecs(annot_df$gene, annot_df$Uniprot_name)
+    gene_to_tf<- dic_from_vecs(annot_df$gene, annot_df$is_tf)
+    oga_filtered$spis_ortholog[oga_filtered$species==spi]<- gene_to_spis[oga_filtered$gene[oga_filtered$species==spi]]
+    oga_filtered$Mmus_name[oga_filtered$species==spi]<- gene_to_name[oga_filtered$gene[oga_filtered$species==spi]]
+    oga_filtered$Uniprot_name[oga_filtered$species==spi]<- gene_to_unip[oga_filtered$gene[oga_filtered$species==spi]]
+    oga_filtered$is_tf[oga_filtered$species==spi]<- gene_to_tf[oga_filtered$gene[oga_filtered$species==spi]]
+}
+write.table(oga_filtered, 
+              file = "orthogroup_annotation.csv", 
+              sep = "\t", 
+              row.names = FALSE, 
+              quote = FALSE)
+
+```
+
+```{r}
+gene_repeat_check <- oga_filtered %>%
+    count(orthogroup, gene, sort = TRUE)
+
+head(gene_repeat_check, 20)
+sum(gene_repeat_check$n > 1)
+
+oga<- oga_filtered
+oga <- oga %>%
+    mutate(
+        Uniprot_gene = ifelse(
+            is.na(Uniprot_name) | Uniprot_name == "" | ! grepl("\\|", Uniprot_name),
+            NA_character_,
+            gsub(".*\\|(.+?)_.*", "\\1", Uniprot_name)
+        )
+    )
+
+# 检查提取结果
+oga %>%
+    filter(! is.na(Uniprot_gene)) %>%
+    select(Uniprot_name, Uniprot_gene) %>%
+    head(20)
+```
+
+```{r}
+##跳过基因去重
+oga_final_cleaned<- oga %>%
+    select(orthogroup, species, gene, transcript, spis_ortholog, Mmus_name, Uniprot_gene, is_tf)
+write_tsv(oga_final_cleaned, "orthogroup_conservation_final.csv")
+# 查看当前数据
+head(oga_final_cleaned, 30)
+dim(oga_final_cleaned)
+
+# 按 orthogroup, spis_ortholog, species 重新排列
+oga_sorted <- oga_final_cleaned %>%
+    arrange(orthogroup, spis_ortholog, species)
+
+head(oga_sorted, 30)
+
+# 计算处理前的注释率
+annot_rate_before <- oga_final_cleaned %>%
+    summarise(
+        total_rows = n(),
+        spis_ortholog_annotated = sum(! is.na(spis_ortholog)),
+        Mmus_name_annotated = sum(!  is.na(Mmus_name)),
+        Uniprot_gene_annotated = sum(!is.na(Uniprot_gene)),
+        is_tf_annotated = sum(!is.na(is_tf)),
+        spis_ortholog_rate = spis_ortholog_annotated / total_rows * 100,
+        Mmus_name_rate = Mmus_name_annotated / total_rows * 100,
+        Uniprot_gene_rate = Uniprot_gene_annotated / total_rows * 100,
+        is_tf_rate = is_tf_annotated / total_rows * 100
+    )
+
+print(annot_rate_before)
+```
+
+```{r}
+oga_final_reannotated <- read_tsv("./260428_orthogroup_annotate/orthogroup_conservation_final.csv")
+# 统计每个 orthogroup 中 Mmus_name 的频率
+og_total_genes <- oga_final_reannotated %>%
+    group_by(orthogroup) %>%
+    summarise(total_genes = n(), .groups = "drop")
+mmus_stats <- oga_final_reannotated %>%
+    filter(!is.na(Mmus_name) & Mmus_name != "") %>%
+    group_by(orthogroup, Mmus_name) %>%
+    summarise(count = n(), .groups = "drop") %>%
+    # 合并总基因数
+    left_join(og_total_genes, by = "orthogroup") %>%
+    mutate(
+        frequency = count / total_genes
+    ) %>%
+    arrange(orthogroup, desc(count)) %>%
+    group_by(orthogroup) %>%
+    mutate(rank = row_number()) %>%
+    filter(rank <= 3) %>%
+    ungroup()
+
+
+# 查看结果
+head(mmus_stats, 20)
+
+# 转换为宽格式（每个 orthogroup 一行）
+mmus_wide <- mmus_stats %>%
+    select(orthogroup, Mmus_name, frequency, rank) %>%
+    pivot_wider(
+        id_cols = orthogroup,
+        names_from = rank,
+        values_from = c(Mmus_name, frequency),
+        names_glue = "{.value}_{rank}"
+    )
+
+head(mmus_wide, 10)
+
+# 统计每个 orthogroup 中 Uniprot_gene 的频率
+uniprot_stats <- oga_final_reannotated %>%
+    filter(!is.na(Uniprot_gene) & Uniprot_gene != "") %>%
+    group_by(orthogroup, Uniprot_gene) %>%
+    summarise(count = n(), .groups = "drop") %>%
+    left_join(og_total_genes, by = "orthogroup") %>%
+    mutate(frequency = count / total_genes) %>%
+    arrange(orthogroup, desc(count)) %>%
+    group_by(orthogroup) %>%
+    mutate(rank = row_number()) %>%
+    filter(rank <= 3) %>%
+    ungroup()
+
+# 查看结果
+head(uniprot_stats, 20)
+
+# 转换为宽格式
+uniprot_wide <- uniprot_stats %>%
+    select(orthogroup, Uniprot_gene, frequency, rank) %>%
+    pivot_wider(
+        id_cols = orthogroup,
+        names_from = rank,
+        values_from = c(Uniprot_gene, frequency),
+        names_glue = "{.value}_{rank}"
+    )
+
+head(uniprot_wide, 10)
+
+# 统计每个 orthogroup 中 TF 的比率
+tf_stats <- oga_final_reannotated %>%
+    group_by(orthogroup) %>%
+    summarise(
+        total_genes = n(),
+        n_tf = sum(is_tf == TRUE, na.rm = TRUE),
+        n_non_tf = sum(is_tf == FALSE, na.rm = TRUE),
+        n_tf_na = sum(is.na(is_tf)),
+        tf_ratio = n_tf / total_genes,
+        .groups = "drop"
+    )
+
+# 查看结果
+head(tf_stats, 20)
+
+# 查看 TF 比率分布
+summary(tf_stats$tf_ratio[tf_stats$tf_ratio != 0])
+
+# 统计有多少 orthogroup 包含 TF
+sum(tf_stats$n_tf > 0)
+sum(tf_stats$tf_ratio == 1)  # 全是 TF 的 orthogroup
+
+# 合并所有统计信息
+og_annotations <- oga_final_reannotated %>%
+    distinct(orthogroup) %>%
+    left_join(mmus_wide, by = "orthogroup") %>%
+    left_join(uniprot_wide, by = "orthogroup") %>%
+    left_join(tf_stats, by = "orthogroup")
+
+og_annotations_final <- og_annotations %>%
+    select(
+        orthogroup,
+        total_genes,
+        
+        # TF 信息
+        n_tf,
+        tf_ratio,
+        
+        # Mmus_name 前三
+        Mmus_name_1, frequency_1_mmus = frequency_1.x,
+        Mmus_name_2, frequency_2_mmus = frequency_2.x,
+        Mmus_name_3, frequency_3_mmus = frequency_3.x,
+        
+        # Uniprot_gene 前三
+        Uniprot_gene_1, frequency_1_uniprot = frequency_1.y,
+        Uniprot_gene_2, frequency_2_uniprot = frequency_2.y,
+        Uniprot_gene_3, frequency_3_uniprot = frequency_2.y
+    )
+# 查看结果
+head(og_annotations_final, 10)
+write_tsv(og_annotations_final, "./260428_orthogroup_annotate/orthogroup_status.csv")
+```
+
+```{r}
+# 统计不同场景的数量
+og_annotations_final %>%
+    mutate(
+        scenario = case_when(
+            tf_ratio >= 0.8 ~ "High_TF (>=0.8)",
+            tf_ratio > 0 ~ "Some_TF (0-0.8)",
+            TRUE ~ "No_TF (0)"
+        )
+    ) %>%
+    count(scenario)
+# 将 Mmus 和 Uniprot 的前3名整合成长格式
+all_candidates <- og_annotations_final %>%
+    select(orthogroup, tf_ratio,
+           Mmus_name_1, frequency_1_mmus,
+           Mmus_name_2, frequency_2_mmus,
+           Mmus_name_3, frequency_3_mmus,
+           Uniprot_gene_1, frequency_1_uniprot,
+           Uniprot_gene_2, frequency_2_uniprot,
+           Uniprot_gene_3, frequency_3_uniprot) %>%
+    pivot_longer(
+        cols = c(starts_with("Mmus_name_"), starts_with("Uniprot_gene_")),
+        names_to = "source_rank",
+        values_to = "annotation"
+    ) %>%
+    filter(!  is.na(annotation) & annotation != "") %>%
+    mutate(
+        source = ifelse(grepl("Mmus", source_rank), "Mmus", "Uniprot"),
+        rank = as.integer(str_extract(source_rank, "\\d+"))
+    ) %>%
+    # 添加对应的频率
+    left_join(
+        og_annotations_final %>%
+            select(orthogroup,
+                   frequency_1_mmus, frequency_2_mmus, frequency_3_mmus,
+                   frequency_1_uniprot, frequency_2_uniprot, frequency_3_uniprot) %>%
+            pivot_longer(
+                cols = starts_with("frequency_"),
+                names_to = "freq_col",
+                values_to = "frequency"
+            ) %>%
+            mutate(
+                source = ifelse(grepl("mmus", freq_col), "Mmus", "Uniprot"),
+                rank = as.integer(str_extract(freq_col, "\\d+"))
+            ) %>%
+            select(orthogroup, source, rank, frequency),
+        by = c("orthogroup", "source", "rank")
+    ) %>%
+    select(orthogroup, tf_ratio, annotation, frequency, source, rank)
+
+# 查看结果
+head(all_candidates, 20)
+```
+
+```{r}
+# 为每个 orthogroup 选择 first 和 second annotation
+select_annotations <- function(og_data) {
+    
+    orthogroup <- og_data$orthogroup[1]
+    tf_ratio <- og_data$tf_ratio[1]
+    
+    # 移除重复的注释（保留频率最高的）
+    candidates <- og_data %>%
+        group_by(annotation) %>%
+        slice_max(frequency, n = 1, with_ties = FALSE) %>%
+        ungroup() %>%
+        arrange(desc(frequency))
+    
+    # 初始化结果
+    first_annotation <- NA_character_
+    first_support <- NA_real_
+    second_annotation <- NA_character_
+    second_support <- NA_real_
+    
+    # ========== 场景 1: TF 比率 >= 0.8 ==========
+    if (tf_ratio >= 0.8) {
+        
+        # 找包含 ":" 的 Mmus 注释
+        tf_annots <- candidates %>%
+            filter(source == "Mmus" & grepl(":", annotation))
+        
+        if (nrow(tf_annots) > 0) {
+            # 使用第一个 TF 注释
+            first_annotation <- tf_annots$annotation[1]
+            first_support <- tf_annots$frequency[1]
+            
+            # 寻找 second annotation（频率 > 0.5，且不是 first）
+            other_annots <- candidates %>%
+                filter(annotation != first_annotation & frequency > 0.5) %>%
+                arrange(desc(frequency))
+            
+            if (nrow(other_annots) > 0) {
+                second_annotation <- other_annots$annotation[1]
+                second_support <- other_annots$frequency[1]
+            }
+        }
+    }
+    
+    # ========== 场景 2: 其他情况 ==========
+    if (is.na(first_annotation)) {
+        
+        # 找频率 > 0.5 的注释
+        high_freq <- candidates %>%
+            filter(frequency > 0.5)
+        
+        if (nrow(high_freq) > 0) {
+            
+            # 如果有多个相同频率，优先选 Uniprot
+            high_freq <- high_freq %>%
+                arrange(desc(frequency), desc(source == "Uniprot"))
+            
+            first_annotation <- high_freq$annotation[1]
+            first_support <- high_freq$frequency[1]
+            
+            # second annotation:  除 first 外频率最高且 > 0.2
+            other_annots <- candidates %>%
+                filter(annotation != first_annotation & frequency > 0.2) %>%
+                arrange(desc(frequency))
+            
+            if (nrow(other_annots) > 0) {
+                second_annotation <- other_annots$annotation[1]
+                second_support <- other_annots$frequency[1]
+            }
+            
+        } else {
+            # 没有 > 0.5 的注释
+            # first 保持 NA
+            # second 选频率 > 0.2 的最高
+            mid_freq <- candidates %>%
+                filter(frequency > 0.2) %>%
+                arrange(desc(frequency), desc(source == "Uniprot"))
+            
+            if (nrow(mid_freq) > 0) {
+                second_annotation <- mid_freq$annotation[1]
+                second_support <- mid_freq$frequency[1]
+            }
+        }
+    }
+    
+    # 返回结果
+    tibble(
+        orthogroup = orthogroup,
+        first_annotation = first_annotation,
+        first_support = first_support,
+        second_annotation = second_annotation,
+        second_support = second_support
+    )
+}
+
+# 测试函数
+test_og <- all_candidates %>% filter(orthogroup == "OG:009272")
+select_annotations(test_og)
+```
+
+```{r}
+# 对每个 orthogroup 应用函数
+og_final_annotations <- all_candidates %>%
+    group_by(orthogroup) %>%
+    group_modify(~select_annotations(.x)) %>%
+    ungroup()
+
+# 查看结果
+head(og_final_annotations, 20)
+
+# 添加 has_TF 列
+og_final_annotations <- og_annotations_final %>%
+    select(orthogroup, tf_ratio) %>%
+    left_join(og_final_annotations, by = "orthogroup") %>%
+    mutate(
+        has_TF = tf_ratio > 0
+    ) %>%
+    select(
+        orthogroup,
+        has_TF,
+        first_annotation,
+        first_support,
+        second_annotation,
+        second_support
+    )
+
+head(og_final_annotations, 30)
+
+# 检查有多少 orthogroup 没有候选注释
+missing_ogs <- og_annotations_final %>%
+    filter(! orthogroup %in% og_final_annotations$orthogroup) %>%
+    select(orthogroup, tf_ratio) %>%
+    mutate(
+        has_TF = tf_ratio > 0,
+        first_annotation = NA_character_,
+        first_support = NA_real_,
+        second_annotation = NA_character_,
+        second_support = NA_real_
+    ) %>%
+    select(-tf_ratio)
+cat(sprintf("\n缺失的 orthogroup: %d\n", nrow(missing_ogs)))
+write_tsv(og_final_annotations, "./260428_orthogroup_annotate/orthogroup_final_annotations.csv")
+```
+
+```{r}
+# 统计注释情况
+annotation_stats <- og_final_annotations %>%
+    summarise(
+        total_ogs = n(),
+        
+        # first annotation
+        with_first = sum(! is.na(first_annotation)),
+        pct_first = with_first / total_ogs * 100,
+        
+        # second annotation
+        with_second = sum(!  is.na(second_annotation)),
+        pct_second = with_second / total_ogs * 100,
+
+        # with either annotation
+        with_either = sum(! is.na(first_annotation) | !is.na(second_annotation)),
+        pct_either = with_either / total_ogs * 100,
+        
+        # has_TF
+        n_with_tf = sum(has_TF),
+        pct_with_tf = n_with_tf / total_ogs * 100,
+        
+        # both annotations
+        with_both = sum(! is.na(first_annotation) & !is.na(second_annotation)),
+        pct_both = with_both / total_ogs * 100
+    )
+
+print(annotation_stats)
+
+# 按 has_TF 分组统计
+og_final_annotations %>%
+    group_by(has_TF) %>%
+    summarise(
+        n_ogs = n(),
+        with_first = sum(! is.na(first_annotation)),
+        with_second = sum(! is.na(second_annotation)),
+        pct_first = with_first / n() * 100,
+        pct_second = with_second / n() * 100,
+        .groups = "drop"
+    )
+
+# 场景 1: TF orthogroup (tf_ratio >= 0.8) 的示例
+cat("\n=== 场景 1: TF Orthogroups ===\n")
+og_final_annotations %>%
+    inner_join(og_annotations %>% select(orthogroup, tf_ratio), by = "orthogroup") %>%
+    filter(tf_ratio >= 0.8) %>%
+    select(-tf_ratio) %>%
+    head(10)
+
+# 场景 2: 有高频注释 (> 0.5) 的示例
+cat("\n=== 场景 2: High Frequency Annotations ===\n")
+og_final_annotations %>%
+    filter(! is.na(first_annotation) & first_support > 0.5) %>%
+    head(10)
+
+# 场景 3: 只有中频注释 (0.3-0.5) 的示例
+cat("\n=== 场景 3: Medium Frequency Annotations ===\n")
+og_final_annotations %>%
+    filter(is.na(first_annotation) & ! is.na(second_annotation)) %>%
+    head(10)
+
+# 场景 4: 没有注释的
+cat("\n=== 场景 4: No Annotations ===\n")
+og_final_annotations %>%
+    filter(is.na(first_annotation) & is.na(second_annotation)) %>%
+    head(10)
+
+```
+

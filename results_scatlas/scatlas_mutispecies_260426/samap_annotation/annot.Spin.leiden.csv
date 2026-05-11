@@ -1,0 +1,65 @@
+cluster	cell_type	color	broad_cell_type	cluster_class	legacy_annotation_string
+lc001	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.94); gastrodermis_muscle(0.06)
+lc006	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.99)
+lc008	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.94)
+lc009	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.99)
+lc003	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.99)
+lc026	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.97)
+lc030	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.95)
+lc033	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.99)
+lc002	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.97)
+lc028	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.99)
+lc034	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.67); gastrodermis_like_2(0.26); gastrodermis_muscle(0.07)
+mc.0111	gastrodermis	wheat1	gastrodermis	metacell	gastrodermis; digestive_filaments
+mc.0048	gastrodermis	wheat1	gastrodermis	metacell	gastrodermis; digestive_filaments
+lc032	gastrodermis_like_2	wheat3	gastrodermis	leiden	gastrodermis_like_2(0.99)
+lc037	gastrodermis_like_2	wheat3	gastrodermis	leiden	gastrodermis_like_2(0.90); gastrodermis(0.10)
+lc038	gastrodermis_like_2	wheat3	gastrodermis	leiden	gastrodermis_like_2(0.82); gastrodermis(0.16)
+lc020	gastrodermis_muscle	burlywood4	gastrodermis	leiden	gastrodermis_muscle(0.53); gastrodermis(0.47)
+lc024	gastrodermis_muscle	burlywood4	gastrodermis	leiden	gastrodermis_muscle(0.81); gastrodermis(0.19)
+lc013	gastrodermis_alga_hosting	darkolivegreen3	gastrodermis	leiden	gastrodermis_alga_hosting(0.97)
+lc019	gastrodermis_alga_hosting	darkolivegreen3	gastrodermis	leiden	gastrodermis_alga_hosting(1.00)
+lc007	digestive_filaments	pink3	epidermis	leiden	digestive_filaments(0.45); gastrodermis(0.16); neurosecretory_progenitors(0.13); epidermis_1(0.10)
+mc.0145	digestive_filaments	pink3	epidermis	metacell	digestive_filaments; epidermis_1
+lc010	epidermis	cadetblue2	epidermis	leiden	epidermis_1(0.96)
+lc012	epidermis	cadetblue2	epidermis	leiden	epidermis_1(0.98)
+lc014	epidermis	cadetblue2	epidermis	leiden	epidermis_1(1.00)
+lc016	epidermis	cadetblue2	epidermis	leiden	epidermis_1(0.95)
+lc018	epidermis	cadetblue2	epidermis	leiden	epidermis_1(0.66); gastrodermis_like_2(0.25); epidermis_2(0.08)
+lc022	epidermis	cadetblue2	epidermis	leiden	epidermis_1(1.00)
+lc023	epidermis	cadetblue2	epidermis	leiden	epidermis_1(1.00)
+lc043	epidermis	cadetblue2	epidermis	leiden	epidermis_1(0.92)
+mc.0105	epidermis	cadetblue2	epidermis	metacell	epidermis_1; gastrodermis_like_2
+mc.0121	epidermis	cadetblue2	epidermis	metacell	epidermis_1; gastrodermis_like_2
+mc.0008	epidermis	cadetblue2	epidermis	metacell	epidermis_1; gastrodermis_like_2
+lc011	calicoblast	mediumpurple1	epidermis	leiden	calicoblast(0.99)
+lc036	calicoblast	mediumpurple1	epidermis	leiden	gastrodermis_like_1(0.84); calicoblast(0.15)
+lc029	neurosecretory_progenitors	slategray3	neurosecretory	leiden	neurosecretory_progenitors(0.82); gland_1(0.09)
+lc027	neuron_Pou4_1	royalblue1	neurosecretory	leiden	neuron_Pou4_2(0.76); neuron_Pou4_3(0.18)
+lc031	neuron_Pou4_2	royalblue2	neurosecretory	leiden	neuron_Pou4_1(0.78); neuron_Pou4_2(0.13)
+lc046	neuron_Pou4_2	royalblue2	neurosecretory	leiden	neuron_Pou4_1(1.00)
+mc.0001	neuron_Pou4_2	royalblue2	neurosecretory	metacell	neuron_Pou4_1; gland_2
+lc039	neuron_Pou4_Gsx	royalblue3	neurosecretory	leiden	neuron_Pou4_3(0.96)
+lc035	neuron_Pou4_Otp	royalblue4	neurosecretory	leiden	neuron_Etv1_Isl(1.00)
+lc015	neuron_Isl	steelblue1	neurosecretory	leiden	neuron_Etv1_Isl(0.90)
+mc.0116	neuron_Isl	steelblue1	neurosecretory	metacell	neuron_Etv1_Isl; gland_1
+mc.0169	neuron_Isl	steelblue1	neurosecretory	metacell	neuron_Etv1_Isl; gland_1
+mc.0030	neuron_Isl	steelblue1	neurosecretory	metacell	neuron_Etv1_Isl; gland_1
+mc.0052	neuron_Isl	steelblue1	neurosecretory	metacell	neuron_Etv1_Isl; gland_1; neurosecretory_progenitors
+mc.0033	neuron_Isl	steelblue1	neurosecretory	metacell	neuron_Etv1_Isl; gland_1
+lc042	neuron_Isl_Nkx6	steelblue2	neurosecretory	leiden	neuron_Etv1_Nkx2.2/9(1.00)
+lc005	neuron_Atoh8	steelblue3	neurosecretory	leiden	neuron_Atoh8(0.99)
+lc044	neuron_Atoh8	steelblue3	neurosecretory	leiden	neuron_Atoh8(1.00)
+lc045	gland_1_Xbp	sienna1	neurosecretory	leiden	gland_3(0.92)
+mc.0046	gland_1_Xbp	sienna1	neurosecretory	metacell	gland_3; digestive_filaments
+lc017	gland_2	sienna2	neurosecretory	leiden	gland_1(0.66); neuron_Etv1_Isl(0.16); gland_2(0.14)
+lc025	gland_2	sienna2	neurosecretory	leiden	gland_1(0.67); gland_2(0.18); neurosecretory_progenitors(0.08)
+lc004	gland_3	sienna3	neurosecretory	leiden	gland_2(0.37); neuron_Pou4_2(0.21); gland_1(0.20); neuron_Etv1_Isl(0.09); digestive_filaments(0.09)
+lc050	cnidocyte	mediumorchid3	neurosecretory	leiden	cnidocyte(0.97)
+mc.0125	cnidocyte	mediumorchid3	neurosecretory	metacell	cnidocyte; neurosecretory_progenitors
+lc041	immune_nascent	plum1	immune	leiden	immune_nascent(0.74); neurosecretory_progenitors(0.09)
+lc049	immune_macrophage	plum2	immune	leiden	immune_macrophage(1.00)
+lc040	immune_macrophage_like_1	plum3	immune	leiden	immune_macrophage_like(0.97)
+lc048	immune_macrophage_like_2	plum4	immune	leiden	immune_like(0.95)
+lc021	germline_oocytes_1	khaki2	germline	leiden	germline_oocytes_1(0.77); epidermis_1(0.15); gastrodermis(0.05)
+lc047	germline_oocytes_2	khaki3	germline	leiden	germline_oocytes_2(0.96)

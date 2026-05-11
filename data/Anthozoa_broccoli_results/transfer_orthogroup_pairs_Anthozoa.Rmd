@@ -1,0 +1,104 @@
+```{r}
+# Load required libraries
+library(tidyverse)
+library(rtracklayer)
+setwd("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/final_data/broccoli")
+suppressMessages(source("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/coral_cs_functions/helper.R"))
+getwd()
+```
+
+```{r}
+cat("Reading broccoli output file.. .\n")
+# Read the file with two columns: OG_name and protein_names
+broccoli_file <- "/home/data/Ruijie/workplace/broccoli/Anthozoa_genome_fix_plut_ahya/results/Anthozoa_genome_fix_ahya_plut/dir_step4/orthologous_pairs.txt"
+df <- read.table(broccoli_file, 
+                header = TRUE, 
+                sep = "\t", 
+                stringsAsFactors = FALSE,
+                comment.char = "",
+                quote = "")
+colnames(df)<- c("in_gene", "out_gene")
+cat(sprintf("Read %d orthogroups\n", nrow(df)))
+```
+
+```{r}
+sps_list <- c("Nvec", "Actieq", "Metsen", "Dialin", "Exapal", 
+                "Adig", "Amil", "Gfas", "Gasp", 
+                "Spis", "Ocupat", "Ocuarb", "Xesp", 
+                "Dgig", "Scocal", "Pdam", "Pcru", "Fspp", 
+                "Hcoe", "Amur", "Plut", "Ahya")
+# Create a regex pattern from species list
+species_pattern <- paste0("^(", paste(sps_list, collapse = "|"), ")_")
+# Extract species from protein name
+df <- df %>%
+mutate(
+    species_in = str_extract(in_gene, species_pattern),
+    species_in = str_remove(species_in, "_$"),
+    species_out = str_extract(out_gene, species_pattern),
+    species_out = str_remove(species_out, "_$")
+) # Filter to keep only proteins from species in the list
+
+df <- df %>%
+mutate(
+    # Remove species prefix (e.g., "Spis_")
+    temp_name_in = str_remove(in_gene, paste0("^", species_in, "_")),
+    temp_name_out = str_remove(out_gene, paste0("^", species_out, "_")),
+    # Remove .p1, .p2, etc. suffix
+    in_gene = str_remove(temp_name_in, "\\.p\\d+$"),
+    out_gene = str_remove(temp_name_out, "\\.p\\d+$")
+) %>%
+select(-temp_name_in, -temp_name_out)
+```
+
+```{r}
+gtf_suffix = "_long.annot.gtf"
+gtf_dir = "./reference_gtf"
+df$in_temp = NA
+df$out_temp = NA
+# Read all GTF files
+for (species in sps_list) {
+cat(sprintf("\nReading GTF for %s...\n", species))
+
+gtf_file <- file.path(gtf_dir, paste0(species, gtf_suffix))
+
+if (!file.exists(gtf_file)) {
+    warning(sprintf("GTF file not found:  %s", gtf_file))
+    next
+}
+
+mapping <- rtracklayer::import(gtf_file)
+transcript_to_gene <- dic_from_vecs(mapping$transcript_id, mapping$gene_id)
+df$in_temp[df$species_in == species] <- transcript_to_gene[df$in_gene[df$species_in == species]]
+df$out_temp[df$species_out == species] <- transcript_to_gene[df$out_gene[df$species_out == species]]
+
+
+if (sum(is.na(df$in_temp[df$species_in == species])) == sum(df$species_in == species)){
+    message(sprintf("Species %s failed in transcrit, switch to protein", species))
+    prot_to_gene<-dic_from_vecs(mapping$protein_id[!is.na(mapping$protein_id)], mapping$gene_id[!is.na(mapping$protein_id)])
+    df$in_temp[df$species_in == species] <- prot_to_gene[df$in_gene[df$species_in == species]]
+    df$out_temp[df$species_out == species] <- prot_to_gene[df$out_gene[df$species_out == species]]
+    }
+message(sprintf("Species_in %s: %d total genes", species, sum(df$species_in == species)))
+message(sprintf("Species_out %s: %d total genes", species, sum(df$species_out == species)))
+message(sprintf("Species_in %s: %d genes unmapped", species, sum(is.na(df$in_temp[df$species_in == species]))))
+message(sprintf("Species_out %s: %d genes unmapped", species, sum(is.na(df$out_temp[df$species_out == species]))))
+}
+```
+
+```{r}
+for (species in sps_list){
+    message(sprintf("Fixing gene names for species %s", species))
+    df$in_gene[df$species_in == species] <- fix_gene_name(df$in_temp[df$species_in == species], paste0(species, "_"))
+    df$out_gene[df$species_out == species] <- fix_gene_name(df$out_temp[df$species_out == species], paste0(species, "_"))
+}
+
+df_final <- df %>%
+    select(in_gene, out_gene)%>%
+    distinct(in_gene, out_gene)
+
+write.table(df_final, 
+              file = "./Anthozoa_all_genome_260426/orthogroup_pairs.genes.csv", 
+              sep = "\t", 
+              row.names = FALSE, 
+              quote = FALSE)
+```

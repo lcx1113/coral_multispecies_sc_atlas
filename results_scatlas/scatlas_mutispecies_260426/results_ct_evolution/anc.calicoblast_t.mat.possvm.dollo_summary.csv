@@ -1,0 +1,2979 @@
+orthogroup	presence	gain	loss	n_gains	n_losses	n_presences
+OG:000003	Adig,Amur	N9	Ahya	1	1	4
+OG:000006	Amur	Amur		1	0	1
+OG:000015	Spis	Spis		1	0	1
+OG:000016	Spis	Spis		1	0	1
+OG:000017	Adig,Ahya,Amur,Gfas,Pcru,Pdam,Plut,Spis	N3	Fspp	1	1	28
+OG:000018	Hcoe	Hcoe		1	0	1
+OG:000019	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:000024	Adig	Adig		1	0	1
+OG:000033	Gfas	Gfas		1	0	1
+OG:000034	Adig	Adig		1	0	1
+OG:000035	Hcoe	Hcoe		1	0	1
+OG:000047	Ahya,Amur,Gfas	N8	Adig	1	1	6
+OG:000054	Spis	Spis		1	0	1
+OG:000063	Amur,Fspp	N3	Adig,Ahya,Gfas,N6,Pcru,Plut	1	6	9
+OG:000070	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:000073	Hcoe	Hcoe		1	0	1
+OG:000078	Plut	Plut		1	0	1
+OG:000079	Amur	Amur		1	0	1
+OG:000087	Hcoe	Hcoe		1	0	1
+OG:000091	Hcoe	Hcoe		1	0	1
+OG:000111	Plut	Plut		1	0	1
+OG:000128	Hcoe	Hcoe		1	0	1
+OG:000129	Hcoe	Hcoe		1	0	1
+OG:000134	Amur	Amur		1	0	1
+OG:000135	Amur	Amur		1	0	1
+OG:000148	Pdam,Spis	N6		1	0	3
+OG:000152	Hcoe	Hcoe		1	0	1
+OG:000155	Gfas	Gfas		1	0	1
+OG:000165	Plut	Plut		1	0	1
+OG:000169	Adig,Ahya,Amur,Gfas,Spis	N3	N7,Pdam,Plut	1	3	14
+OG:000171	Adig	Adig		1	0	1
+OG:000172	Hcoe	Hcoe		1	0	1
+OG:000176	Pcru	Pcru		1	0	1
+OG:000179	Hcoe	Hcoe		1	0	1
+OG:000202	Fspp	Fspp		1	0	1
+OG:000208	Adig	Adig		1	0	1
+OG:000224	Pdam	Pdam		1	0	1
+OG:000225	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:000235	Hcoe	Hcoe		1	0	1
+OG:000236	Adig,Ahya	N9	Amur	1	1	4
+OG:000240	Gfas	Gfas		1	0	1
+OG:000251	Gfas	Gfas		1	0	1
+OG:000254	Pdam,Plut,Spis	N3	N7,N8	1	2	7
+OG:000261	Ahya	Ahya		1	0	1
+OG:000264	Gfas	Gfas		1	0	1
+OG:000268	Gfas,Pcru	N3	Fspp,N6,N9,Plut	1	4	7
+OG:000277	Adig,Gfas	N8	N10	1	1	4
+OG:000280	Spis	Spis		1	0	1
+OG:000288	Amur	Amur		1	0	1
+OG:000291	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:000292	Gfas,Hcoe,Plut	N1	N4,N9,Xesp	1	3	8
+OG:000304	Adig,Amur,Fspp,Gfas,Hcoe,Pcru,Pdam,Plut,Spis	N1	Ahya,Xesp	1	2	20
+OG:000306	Spis	Spis		1	0	1
+OG:000309	Amur	Amur		1	0	1
+OG:000311	Hcoe	Hcoe		1	0	1
+OG:000312	Spis	Spis		1	0	1
+OG:000321	Pcru	Pcru		1	0	1
+OG:000325	Hcoe	Hcoe		1	0	1
+OG:000335	Adig	Adig		1	0	1
+OG:000336	Ahya,Amur	N10		1	0	3
+OG:000354	Hcoe	Hcoe		1	0	1
+OG:000359	Gfas,Plut	N5	N9	1	1	4
+OG:000363	Ahya,Amur,Pdam,Spis	N3	Adig,Gfas,N7,Plut	1	4	11
+OG:000367	Hcoe	Hcoe		1	0	1
+OG:000370	Hcoe	Hcoe		1	0	1
+OG:000371	Adig	Adig		1	0	1
+OG:000379	Amur	Amur		1	0	1
+OG:000388	Gfas,Plut	N5	N9	1	1	4
+OG:000391	Adig,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	Ahya	1	1	20
+OG:000399	Spis	Spis		1	0	1
+OG:000405	Plut	Plut		1	0	1
+OG:000408	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:000414	Amur	Amur		1	0	1
+OG:000415	Gfas	Gfas		1	0	1
+OG:000417	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:000422	Adig,Gfas	N8	N10	1	1	4
+OG:000423	Fspp,Hcoe	N1	N5,N6,Pcru,Xesp	1	4	7
+OG:000428	Amur,Fspp,Pcru,Spis	N3	Adig,Ahya,Gfas,Pdam,Plut	1	5	12
+OG:000430	Amur	Amur		1	0	1
+OG:000432	Hcoe	Hcoe		1	0	1
+OG:000439	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:000443	Adig,Ahya,Spis	N3	Amur,Gfas,N7,Pdam,Plut	1	5	10
+OG:000446	Gfas	Gfas		1	0	1
+OG:000447	Adig	Adig		1	0	1
+OG:000454	Amur	Amur		1	0	1
+OG:000455	Spis	Spis		1	0	1
+OG:000463	Pcru	Pcru		1	0	1
+OG:000474	Amur,Fspp,Pcru	N3	Adig,Ahya,Gfas,N6,Plut	1	5	11
+OG:000475	Ahya,Amur,Plut,Spis	N3	Adig,Gfas,N7,Pdam	1	4	11
+OG:000493	Pdam	Pdam		1	0	1
+OG:000495	Fspp,Gfas,Pcru	N3	N6,N9,Plut	1	3	8
+OG:000496	Spis	Spis		1	0	1
+OG:000497	Gfas	Gfas		1	0	1
+OG:000507	Adig,Ahya,Amur,Gfas,Pcru,Plut	N3	Fspp,N6	1	2	13
+OG:000508	Spis	Spis		1	0	1
+OG:000510	Adig,Ahya,Hcoe	N1	Amur,Gfas,N4,Plut,Xesp	1	5	10
+OG:000512	Gfas	Gfas		1	0	1
+OG:000521	Amur	Amur		1	0	1
+OG:000526	Hcoe	Hcoe		1	0	1
+OG:000528	Adig,Amur,Fspp,Gfas,Hcoe,Pcru,Pdam,Spis	N1	Ahya,Plut,Xesp	1	3	19
+OG:000530	Ahya,Amur,Pdam	N3	Adig,Gfas,N7,Plut,Spis	1	5	10
+OG:000531	Pcru	Pcru		1	0	1
+OG:000536	Fspp,Pcru,Spis	N4	Pdam	1	1	6
+OG:000540	Amur	Amur		1	0	1
+OG:000543	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:000548	Spis	Spis		1	0	1
+OG:000551	Hcoe	Hcoe		1	0	1
+OG:000554	Plut	Plut		1	0	1
+OG:000566	Fspp	Fspp		1	0	1
+OG:000567	Adig,Ahya,Gfas,Pdam,Plut,Spis	N3	Amur,N7	1	2	13
+OG:000569	Adig,Amur,Spis	N3	Ahya,Gfas,N7,Pdam,Plut	1	5	10
+OG:000573	Amur,Pdam,Spis	N3	Adig,Ahya,Gfas,N7,Plut	1	5	10
+OG:000581	Gfas	Gfas		1	0	1
+OG:000585	Adig	Adig		1	0	1
+OG:000591	Spis	Spis		1	0	1
+OG:000593	Gfas	Gfas		1	0	1
+OG:000598	Hcoe	Hcoe		1	0	1
+OG:000611	Adig	Adig		1	0	1
+OG:000620	Hcoe	Hcoe		1	0	2
+OG:000625	Fspp,Plut,Spis	N3	N8,Pcru,Pdam	1	3	8
+OG:000634	Amur	Amur		1	0	1
+OG:000637	Adig,Amur,Fspp,Gfas,Plut	N3	Ahya,N6,Pcru	1	3	12
+OG:000638	Hcoe	Hcoe		1	0	1
+OG:000644	Plut	Plut		1	0	1
+OG:000645	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:000654	Fspp	Fspp		1	0	1
+OG:000670	Ahya	Ahya		1	0	1
+OG:000672	Adig,Gfas,Hcoe,Plut	N1	N10,N4,Xesp	1	3	10
+OG:000673	Fspp	Fspp		1	0	1
+OG:000680	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:000701	Pdam,Spis	N6		1	0	3
+OG:000704	Spis	Spis		1	0	1
+OG:000709	Ahya,Amur,Gfas,Hcoe,Pdam,Spis	N1	Adig,N7,Plut,Xesp	1	4	16
+OG:000711	Gfas	Gfas		1	0	1
+OG:000719	Amur	Amur		1	0	1
+OG:000729	Spis	Spis		1	0	1
+OG:000755	Hcoe	Hcoe		1	0	1
+OG:000768	Adig	Adig		1	0	1
+OG:000773	Ahya	Ahya		1	0	1
+OG:000780	Gfas	Gfas		1	0	1
+OG:000787	Adig,Gfas,Hcoe,Plut,Spis	N1	N10,N7,Pdam,Xesp	1	4	13
+OG:000788	Hcoe	Hcoe		1	0	1
+OG:000800	Hcoe	Hcoe		1	0	1
+OG:000803	Adig	Adig		1	0	1
+OG:000811	Amur	Amur		1	0	1
+OG:000815	Adig,Ahya,Amur,Fspp,Hcoe,Pdam,Plut,Spis	N1	Gfas,Pcru,Xesp	1	3	41
+OG:000821	Gfas,Hcoe,Spis	N1	N7,N9,Pdam,Plut,Xesp	1	5	10
+OG:000824	Ahya,Spis	N3	Adig,Amur,Gfas,N7,Pdam,Plut	1	6	9
+OG:000826	Pcru,Pdam	N4	Fspp,Spis	1	2	5
+OG:000827	Hcoe	Hcoe		1	0	1
+OG:000828	Amur	Amur		1	0	1
+OG:000834	Ahya	Ahya		1	0	1
+OG:000835	Adig,Amur,Fspp,Gfas,Hcoe,Pdam,Spis	N1	Ahya,Pcru,Plut,Xesp	1	4	17
+OG:000838	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:000839	Gfas	Gfas		1	0	1
+OG:000852	Spis	Spis		1	0	1
+OG:000861	Adig	Adig		1	0	1
+OG:000865	Amur	Amur		1	0	1
+OG:000872	Spis	Spis		1	0	1
+OG:000874	Amur	Amur		1	0	1
+OG:000879	Hcoe	Hcoe		1	0	2
+OG:000880	Adig	Adig		1	0	1
+OG:000886	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	7
+OG:000887	Spis	Spis		1	0	1
+OG:000889	Gfas	Gfas		1	0	1
+OG:000891	Pcru	Pcru		1	0	1
+OG:000903	Spis	Spis		1	0	1
+OG:000912	Fspp,Plut	N3	N6,N8,Pcru	1	3	6
+OG:000914	Plut	Plut		1	0	1
+OG:000915	Pcru	Pcru		1	0	1
+OG:000916	Spis	Spis		1	0	1
+OG:000917	Pcru	Pcru		1	0	1
+OG:000919	Adig,Ahya,Amur,Plut,Spis	N3	Gfas,N7,Pdam	1	3	16
+OG:000920	Pcru,Plut	N3	Fspp,N6,N8	1	3	6
+OG:000927	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Spis	N3	Plut	1	1	16
+OG:000936	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:000937	Fspp,Gfas	N3	N6,N9,Pcru,Plut	1	4	7
+OG:000941	Spis	Spis		1	0	1
+OG:000945	Pdam,Spis	N6		1	0	3
+OG:000951	Gfas,Pdam,Plut	N3	N7,N9,Spis	1	3	8
+OG:000959	Gfas	Gfas		1	0	1
+OG:000990	Spis	Spis		1	0	1
+OG:001002	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:001005	Ahya	Ahya		1	0	1
+OG:001006	Amur,Fspp,Hcoe,Pcru,Plut,Spis	N1	Adig,Ahya,Gfas,Pdam,Xesp	1	5	16
+OG:001008	Adig	Adig		1	0	1
+OG:001014	Adig,Ahya	N9	Amur	1	1	4
+OG:001017	Ahya	Ahya		1	0	1
+OG:001022	Fspp,Hcoe,Pcru	N1	N5,N6,Xesp	1	3	8
+OG:001026	Spis	Spis		1	0	1
+OG:001028	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:001033	Fspp,Pcru,Plut,Spis	N3	N8,Pdam	1	2	11
+OG:001035	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:001053	Plut	Plut		1	0	1
+OG:001055	Plut	Plut		1	0	1
+OG:001059	Fspp,Hcoe	N1	N5,N6,Pcru,Xesp	1	4	7
+OG:001084	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:001086	Ahya,Amur	N10		1	0	3
+OG:001090	Amur	Amur		1	0	1
+OG:001092	Fspp,Hcoe,Plut	N1	N6,N8,Pcru,Xesp	1	4	9
+OG:001095	Hcoe	Hcoe		1	0	1
+OG:001113	Ahya	Ahya		1	0	1
+OG:001120	Hcoe	Hcoe		1	0	1
+OG:001123	Hcoe	Hcoe		1	0	1
+OG:001125	Hcoe	Hcoe		1	0	1
+OG:001128	Hcoe	Hcoe		1	0	1
+OG:001129	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:001141	Gfas	Gfas		1	0	1
+OG:001144	Hcoe	Hcoe		1	0	1
+OG:001153	Ahya,Amur,Gfas,Pcru,Pdam,Plut,Spis	N3	Adig,Fspp	1	2	16
+OG:001156	Ahya	Ahya		1	0	1
+OG:001159	Ahya,Amur	N10		1	0	3
+OG:001165	Ahya	Ahya		1	0	1
+OG:001170	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:001177	Ahya,Amur,Gfas,Hcoe	N1	Adig,N4,Plut,Xesp	1	4	13
+OG:001178	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:001195	Adig,Plut	N5	Gfas,N10	1	2	5
+OG:001208	Fspp,Spis	N4	Pcru,Pdam	1	2	5
+OG:001209	Hcoe	Hcoe		1	0	1
+OG:001211	Plut	Plut		1	0	1
+OG:001218	Gfas	Gfas		1	0	1
+OG:001233	Spis	Spis		1	0	1
+OG:001238	Amur	Amur		1	0	1
+OG:001246	Spis	Spis		1	0	1
+OG:001266	Fspp	Fspp		1	0	1
+OG:001268	Amur	Amur		1	0	1
+OG:001272	Gfas	Gfas		1	0	1
+OG:001276	Spis	Spis		1	0	1
+OG:001284	Gfas,Pdam,Spis	N3	N7,N9,Plut	1	3	8
+OG:001293	Spis	Spis		1	0	1
+OG:001296	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:001307	Spis	Spis		1	0	1
+OG:001312	Gfas	Gfas		1	0	1
+OG:001317	Plut	Plut		1	0	1
+OG:001318	Amur	Amur		1	0	1
+OG:001320	Adig	Adig		1	0	1
+OG:001326	Gfas	Gfas		1	0	1
+OG:001332	Hcoe	Hcoe		1	0	2
+OG:001338	Amur	Amur		1	0	1
+OG:001341	Amur	Amur		1	0	1
+OG:001342	Hcoe	Hcoe		1	0	1
+OG:001343	Fspp	Fspp		1	0	1
+OG:001345	Hcoe	Hcoe		1	0	1
+OG:001348	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:001362	Spis	Spis		1	0	1
+OG:001371	Adig,Ahya,Amur	N9		1	0	5
+OG:001388	Hcoe	Hcoe		1	0	1
+OG:001394	Amur	Amur		1	0	1
+OG:001397	Spis	Spis		1	0	1
+OG:001403	Amur	Amur		1	0	1
+OG:001411	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:001417	Spis	Spis		1	0	1
+OG:001424	Adig,Plut	N5	Gfas,N10	1	2	5
+OG:001433	Amur	Amur		1	0	1
+OG:001439	Adig,Ahya,Amur,Fspp,Gfas,Hcoe,Pcru,Pdam,Plut,Spis	N1	Xesp	1	1	30
+OG:001449	Spis	Spis		1	0	1
+OG:001450	Ahya,Amur,Gfas,Plut	N5	Adig	1	1	8
+OG:001453	Amur	Amur		1	0	1
+OG:001455	Adig,Ahya,Gfas,Pdam,Plut,Spis	N3	Amur,N7	1	2	13
+OG:001462	Hcoe	Hcoe		1	0	1
+OG:001473	Adig	Adig		1	0	1
+OG:001496	Adig,Ahya,Amur,Gfas,Pcru,Plut	N3	Fspp,N6	1	2	13
+OG:001502	Fspp,Gfas,Pcru,Pdam	N3	N9,Plut,Spis	1	3	10
+OG:001507	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:001513	Fspp,Gfas,Hcoe,Pcru	N1	N6,N9,Plut,Xesp	1	4	11
+OG:001518	Ahya,Amur,Pcru,Pdam,Spis	N3	Adig,Fspp,Gfas,Plut	1	4	13
+OG:001524	Hcoe	Hcoe		1	0	1
+OG:001527	Amur,Fspp,Pdam,Spis	N3	Adig,Ahya,Gfas,Pcru,Plut	1	5	12
+OG:001535	Fspp,Gfas	N3	N6,N9,Pcru,Plut	1	4	7
+OG:001537	Hcoe	Hcoe		1	0	1
+OG:001549	Hcoe	Hcoe		1	0	1
+OG:001551	Spis	Spis		1	0	1
+OG:001560	Adig,Ahya	N9	Amur	1	1	4
+OG:001571	Spis	Spis		1	0	1
+OG:001573	Hcoe	Hcoe		1	0	1
+OG:001589	Spis	Spis		1	0	1
+OG:001596	Spis	Spis		1	0	1
+OG:001597	Spis	Spis		1	0	2
+OG:001616	Pcru	Pcru		1	0	1
+OG:001622	Gfas,Pcru,Spis	N3	Fspp,N9,Pdam,Plut	1	4	9
+OG:001624	Amur	Amur		1	0	1
+OG:001626	Hcoe	Hcoe		1	0	1
+OG:001639	Adig	Adig		1	0	1
+OG:001642	Pcru	Pcru		1	0	1
+OG:001646	Amur,Gfas,Hcoe,Pdam	N1	Adig,Ahya,N7,Plut,Spis,Xesp	1	6	15
+OG:001647	Hcoe,Plut	N1	N4,N8,Xesp	1	3	6
+OG:001652	Hcoe	Hcoe		1	0	1
+OG:001655	Hcoe	Hcoe		1	0	1
+OG:001664	Adig,Ahya,Amur,Pcru,Plut	N3	Fspp,Gfas,N6	1	3	14
+OG:001669	Hcoe	Hcoe		1	0	1
+OG:001671	Hcoe	Hcoe		1	0	1
+OG:001676	Fspp,Gfas,Pdam,Plut	N3	N9,Pcru,Spis	1	3	10
+OG:001680	Spis	Spis		1	0	1
+OG:001681	Hcoe	Hcoe		1	0	1
+OG:001686	Gfas	Gfas		1	0	1
+OG:001687	Pdam	Pdam		1	0	1
+OG:001689	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:001690	Fspp,Pcru	N7		1	0	3
+OG:001691	Adig,Amur,Spis	N3	Ahya,Gfas,N7,Pdam,Plut	1	5	13
+OG:001697	Adig	Adig		1	0	1
+OG:001698	Ahya,Fspp,Hcoe,Pcru	N1	Adig,Amur,Gfas,N6,Plut,Xesp	1	6	13
+OG:001705	Gfas	Gfas		1	0	1
+OG:001715	Hcoe	Hcoe		1	0	1
+OG:001722	Hcoe	Hcoe		1	0	1
+OG:001723	Pcru	Pcru		1	0	1
+OG:001729	Amur	Amur		1	0	1
+OG:001736	Pdam,Spis	N6		1	0	3
+OG:001743	Adig	Adig		1	0	1
+OG:001745	Fspp,Gfas,Pcru,Plut,Spis	N3	N9,Pdam	1	2	11
+OG:001758	Fspp,Spis	N4	Pcru,Pdam	1	2	6
+OG:001761	Adig,Hcoe,Plut,Spis	N1	Gfas,N10,N7,Pdam,Xesp	1	5	17
+OG:001770	Adig,Amur	N9	Ahya	1	1	4
+OG:001779	Adig,Ahya,Fspp,Pcru	N3	Amur,Gfas,N6,Plut	1	4	11
+OG:001782	Hcoe	Hcoe		1	0	1
+OG:001805	Hcoe	Hcoe		1	0	1
+OG:001814	Hcoe	Hcoe		1	0	1
+OG:001822	Adig,Gfas	N8	N10	1	1	5
+OG:001824	Amur	Amur		1	0	1
+OG:001838	Adig	Adig		1	0	1
+OG:001843	Amur,Plut,Spis	N3	Adig,Ahya,Gfas,N7,Pdam	1	5	11
+OG:001860	Amur,Gfas,Plut,Spis	N3	Adig,Ahya,N7,Pdam	1	4	11
+OG:001863	Ahya	Ahya		1	0	1
+OG:001879	Spis	Spis		1	0	1
+OG:001886	Amur	Amur		1	0	1
+OG:001890	Gfas	Gfas		1	0	1
+OG:001892	Gfas	Gfas		1	0	1
+OG:001893	Adig,Ahya,Amur,Fspp	N3	Gfas,N6,Pcru,Plut	1	4	12
+OG:001896	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:001901	Ahya,Fspp	N3	Adig,Amur,Gfas,N6,Pcru,Plut	1	6	9
+OG:001906	Hcoe	Hcoe		1	0	1
+OG:001907	Hcoe	Hcoe		1	0	1
+OG:001908	Hcoe	Hcoe		1	0	1
+OG:001913	Adig,Amur	N9	Ahya	1	1	4
+OG:001914	Gfas	Gfas		1	0	1
+OG:001917	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:001932	Amur	Amur		1	0	1
+OG:001933	Gfas	Gfas		1	0	1
+OG:001936	Adig,Amur	N9	Ahya	1	1	4
+OG:001940	Adig,Amur,Pdam,Spis	N3	Ahya,Gfas,N7,Plut	1	4	16
+OG:001953	Spis	Spis		1	0	1
+OG:001957	Hcoe	Hcoe		1	0	1
+OG:001958	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:001965	Gfas	Gfas		1	0	1
+OG:001967	Adig,Ahya,Amur	N9		1	0	5
+OG:001968	Plut	Plut		1	0	1
+OG:001999	Hcoe	Hcoe		1	0	1
+OG:002003	Fspp,Gfas	N3	N6,N9,Pcru,Plut	1	4	7
+OG:002004	Fspp	Fspp		1	0	1
+OG:002005	Spis	Spis		1	0	1
+OG:002018	Adig,Ahya,Plut	N5	Amur,Gfas	1	2	7
+OG:002020	Hcoe	Hcoe		1	0	1
+OG:002022	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:002024	Hcoe	Hcoe		1	0	1
+OG:002034	Hcoe	Hcoe		1	0	1
+OG:002035	Adig,Ahya,Gfas,Pdam,Plut,Spis	N3	Amur,N7	1	2	20
+OG:002043	Adig	Adig		1	0	1
+OG:002045	Gfas,Plut	N5	N9	1	1	4
+OG:002062	Hcoe	Hcoe		1	0	1
+OG:002063	Plut	Plut		1	0	1
+OG:002066	Ahya,Amur,Pcru,Pdam,Plut,Spis	N3	Adig,Fspp,Gfas	1	3	14
+OG:002067	Amur,Pcru,Pdam,Spis	N3	Adig,Ahya,Fspp,Gfas,Plut	1	5	12
+OG:002068	Adig	Adig		1	0	1
+OG:002071	Adig,Ahya,Amur,Fspp,Pcru,Plut	N3	Gfas,N6	1	2	13
+OG:002077	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:002080	Gfas	Gfas		1	0	1
+OG:002093	Amur,Gfas,Pcru	N3	Adig,Ahya,Fspp,N6,Plut	1	5	11
+OG:002096	Pdam	Pdam		1	0	1
+OG:002100	Hcoe	Hcoe		1	0	1
+OG:002101	Adig,Amur,Fspp,Gfas	N3	Ahya,N6,Pcru,Plut	1	4	11
+OG:002114	Plut	Plut		1	0	1
+OG:002125	Gfas	Gfas		1	0	1
+OG:002129	Gfas	Gfas		1	0	1
+OG:002132	Hcoe	Hcoe		1	0	1
+OG:002139	Spis	Spis		1	0	1
+OG:002140	Amur,Hcoe,Spis	N1	Adig,Ahya,Gfas,N7,Pdam,Plut,Xesp	1	7	12
+OG:002143	Spis	Spis		1	0	1
+OG:002145	Pcru	Pcru		1	0	1
+OG:002156	Adig,Ahya,Amur	N9		1	0	5
+OG:002161	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:002162	Fspp	Fspp		1	0	1
+OG:002167	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:002183	Gfas	Gfas		1	0	1
+OG:002191	Gfas	Gfas		1	0	1
+OG:002196	Adig,Ahya,Amur,Fspp,Hcoe,Pcru,Plut,Spis	N1	Gfas,Pdam,Xesp	1	3	23
+OG:002207	Spis	Spis		1	0	1
+OG:002208	Adig,Plut	N5	Gfas,N10	1	2	5
+OG:002209	Plut	Plut		1	0	1
+OG:002221	Spis	Spis		1	0	1
+OG:002227	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	9
+OG:002232	Adig	Adig		1	0	1
+OG:002243	Spis	Spis		1	0	1
+OG:002244	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:002245	Amur	Amur		1	0	1
+OG:002251	Adig	Adig		1	0	1
+OG:002254	Spis	Spis		1	0	1
+OG:002259	Amur	Amur		1	0	1
+OG:002263	Plut	Plut		1	0	1
+OG:002265	Hcoe	Hcoe		1	0	1
+OG:002268	Spis	Spis		1	0	1
+OG:002285	Hcoe	Hcoe		1	0	1
+OG:002297	Fspp	Fspp		1	0	1
+OG:002303	Spis	Spis		1	0	1
+OG:002333	Pcru	Pcru		1	0	1
+OG:002335	Spis	Spis		1	0	1
+OG:002336	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:002345	Adig,Ahya,Amur,Hcoe	N1	Gfas,N4,Plut,Xesp	1	4	11
+OG:002346	Adig,Ahya,Amur,Gfas,Hcoe	N1	N4,Plut,Xesp	1	3	12
+OG:002358	Fspp	Fspp		1	0	1
+OG:002378	Spis	Spis		1	0	1
+OG:002385	Amur	Amur		1	0	1
+OG:002388	Spis	Spis		1	0	1
+OG:002394	Spis	Spis		1	0	1
+OG:002395	Amur	Amur		1	0	1
+OG:002396	Spis	Spis		1	0	1
+OG:002404	Pcru	Pcru		1	0	1
+OG:002407	Spis	Spis		1	0	1
+OG:002412	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:002417	Gfas	Gfas		1	0	1
+OG:002423	Spis	Spis		1	0	1
+OG:002437	Ahya,Gfas,Pdam	N3	Adig,Amur,N7,Plut,Spis	1	5	10
+OG:002446	Amur,Pcru,Pdam	N3	Adig,Ahya,Fspp,Gfas,Plut,Spis	1	6	12
+OG:002447	Gfas	Gfas		1	0	1
+OG:002462	Amur	Amur		1	0	1
+OG:002466	Ahya,Plut,Spis	N3	Adig,Amur,Gfas,N7,Pdam	1	5	10
+OG:002469	Spis	Spis		1	0	1
+OG:002472	Hcoe	Hcoe		1	0	1
+OG:002481	Plut	Plut		1	0	1
+OG:002482	Spis	Spis		1	0	1
+OG:002509	Pdam,Plut	N3	N7,N8,Spis	1	3	6
+OG:002511	Ahya,Amur,Gfas,Hcoe	N1	Adig,N4,Plut,Xesp	1	4	11
+OG:002514	Fspp,Spis	N4	Pcru,Pdam	1	2	5
+OG:002529	Adig	Adig		1	0	1
+OG:002537	Gfas	Gfas		1	0	1
+OG:002538	Spis	Spis		1	0	1
+OG:002539	Ahya,Amur,Fspp,Gfas,Hcoe,Pdam,Plut	N1	Adig,Pcru,Spis,Xesp	1	4	17
+OG:002544	Ahya,Plut	N5	Adig,Amur,Gfas	1	3	6
+OG:002551	Gfas	Gfas		1	0	1
+OG:002553	Hcoe	Hcoe		1	0	1
+OG:002554	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:002555	Hcoe	Hcoe		1	0	1
+OG:002558	Amur	Amur		1	0	1
+OG:002559	Ahya,Amur	N10		1	0	3
+OG:002560	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:002581	Adig	Adig		1	0	1
+OG:002586	Adig,Ahya,Amur,Plut	N5	Gfas	1	1	8
+OG:002597	Amur	Amur		1	0	1
+OG:002600	Amur	Amur		1	0	1
+OG:002602	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:002603	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:002621	Adig	Adig		1	0	1
+OG:002624	Spis	Spis		1	0	1
+OG:002627	Amur	Amur		1	0	3
+OG:002629	Spis	Spis		1	0	1
+OG:002644	Gfas	Gfas		1	0	1
+OG:002655	Adig	Adig		1	0	1
+OG:002670	Gfas,Pdam	N3	N7,N9,Plut,Spis	1	4	7
+OG:002688	Gfas,Pdam	N3	N7,N9,Plut,Spis	1	4	7
+OG:002689	Spis	Spis		1	0	1
+OG:002696	Pcru	Pcru		1	0	1
+OG:002704	Ahya,Fspp,Gfas,Pcru,Spis	N3	Adig,Amur,Pdam,Plut	1	4	13
+OG:002712	Fspp,Spis	N4	Pcru,Pdam	1	2	5
+OG:002722	Gfas	Gfas		1	0	1
+OG:002726	Spis	Spis		1	0	1
+OG:002738	Hcoe	Hcoe		1	0	1
+OG:002745	Plut	Plut		1	0	1
+OG:002754	Hcoe	Hcoe		1	0	1
+OG:002755	Hcoe	Hcoe		1	0	1
+OG:002760	Ahya,Pdam,Spis	N3	Adig,Amur,Gfas,N7,Plut	1	5	11
+OG:002761	Gfas,Plut	N5	N9	1	1	4
+OG:002764	Adig,Amur	N9	Ahya	1	1	4
+OG:002780	Gfas	Gfas		1	0	1
+OG:002788	Amur	Amur		1	0	1
+OG:002789	Ahya,Amur,Gfas	N8	Adig	1	1	6
+OG:002801	Adig,Fspp	N3	Gfas,N10,N6,Pcru,Plut	1	5	8
+OG:002803	Amur	Amur		1	0	1
+OG:002804	Adig,Ahya,Amur,Gfas	N8		1	0	7
+OG:002812	Hcoe	Hcoe		1	0	1
+OG:002816	Adig,Ahya,Amur,Plut	N5	Gfas	1	1	8
+OG:002819	Adig,Amur,Fspp,Pcru,Pdam,Plut,Spis	N3	Ahya,Gfas	1	2	19
+OG:002827	Adig,Ahya,Amur,Fspp,Spis	N3	Gfas,Pcru,Pdam,Plut	1	4	13
+OG:002832	Fspp,Gfas,Pcru,Pdam	N3	N9,Plut,Spis	1	3	10
+OG:002835	Pcru	Pcru		1	0	1
+OG:002861	Adig	Adig		1	0	1
+OG:002867	Adig,Ahya,Hcoe	N1	Amur,Gfas,N4,Plut,Xesp	1	5	10
+OG:002877	Ahya	Ahya		1	0	1
+OG:002879	Adig,Ahya,Amur	N9		1	0	5
+OG:002880	Adig	Adig		1	0	1
+OG:002885	Amur,Fspp,Hcoe,Spis	N1	Adig,Ahya,Gfas,Pcru,Pdam,Plut,Xesp	1	7	15
+OG:002898	Adig,Fspp,Hcoe	N1	Gfas,N10,N6,Pcru,Plut,Xesp	1	6	11
+OG:002918	Amur	Amur		1	0	1
+OG:002919	Hcoe	Hcoe		1	0	1
+OG:002923	Ahya,Amur,Spis	N3	Adig,Gfas,N7,Pdam,Plut	1	5	10
+OG:002936	Ahya,Amur,Hcoe	N1	Adig,Gfas,N4,Plut,Xesp	1	5	10
+OG:002937	Amur	Amur		1	0	1
+OG:002953	Ahya	Ahya		1	0	1
+OG:002956	Gfas	Gfas		1	0	1
+OG:002958	Spis	Spis		1	0	1
+OG:002959	Spis	Spis		1	0	1
+OG:002960	Hcoe	Hcoe		1	0	1
+OG:002965	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:002968	Ahya	Ahya		1	0	1
+OG:002994	Spis	Spis		1	0	1
+OG:002998	Gfas	Gfas		1	0	1
+OG:003014	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:003016	Spis	Spis		1	0	1
+OG:003021	Pcru	Pcru		1	0	1
+OG:003027	Gfas	Gfas		1	0	1
+OG:003032	Hcoe	Hcoe		1	0	1
+OG:003033	Spis	Spis		1	0	1
+OG:003037	Pdam,Spis	N6		1	0	3
+OG:003041	Amur	Amur		1	0	1
+OG:003046	Gfas	Gfas		1	0	1
+OG:003050	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:003053	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:003061	Hcoe	Hcoe		1	0	1
+OG:003064	Spis	Spis		1	0	1
+OG:003076	Amur	Amur		1	0	1
+OG:003092	Spis	Spis		1	0	1
+OG:003098	Hcoe	Hcoe		1	0	1
+OG:003100	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:003117	Adig,Amur	N9	Ahya	1	1	4
+OG:003120	Amur,Gfas,Hcoe,Spis	N1	Adig,Ahya,N7,Pdam,Plut,Xesp	1	6	13
+OG:003135	Hcoe	Hcoe		1	0	1
+OG:003152	Plut	Plut		1	0	1
+OG:003156	Ahya	Ahya		1	0	1
+OG:003159	Pcru	Pcru		1	0	1
+OG:003160	Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	Adig	1	1	16
+OG:003162	Hcoe	Hcoe		1	0	2
+OG:003163	Adig	Adig		1	0	1
+OG:003166	Hcoe,Pcru	N1	Fspp,N5,N6,Xesp	1	4	8
+OG:003186	Adig,Fspp,Pcru,Spis	N3	Gfas,N10,Pdam,Plut	1	4	11
+OG:003206	Amur	Amur		1	0	1
+OG:003209	Amur	Amur		1	0	1
+OG:003216	Ahya,Amur,Gfas	N8	Adig	1	1	6
+OG:003223	Amur,Pdam	N3	Adig,Ahya,Gfas,N7,Plut,Spis	1	6	9
+OG:003229	Pdam,Spis	N6		1	0	4
+OG:003249	Fspp	Fspp		1	0	1
+OG:003255	Spis	Spis		1	0	1
+OG:003260	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:003263	Amur	Amur		1	0	1
+OG:003277	Amur,Pdam,Plut,Spis	N3	Adig,Ahya,Gfas,N7	1	4	11
+OG:003285	Ahya,Amur,Fspp,Gfas,Plut	N3	Adig,N6,Pcru	1	3	12
+OG:003291	Hcoe	Hcoe		1	0	1
+OG:003293	Ahya,Amur,Plut	N5	Adig,Gfas	1	2	7
+OG:003294	Amur,Fspp,Pcru,Spis	N3	Adig,Ahya,Gfas,Pdam,Plut	1	5	12
+OG:003307	Spis	Spis		1	0	1
+OG:003321	Adig,Amur	N9	Ahya	1	1	4
+OG:003325	Plut	Plut		1	0	1
+OG:003326	Pdam,Spis	N6		1	0	3
+OG:003329	Hcoe	Hcoe		1	0	1
+OG:003332	Fspp	Fspp		1	0	1
+OG:003333	Amur	Amur		1	0	1
+OG:003335	Spis	Spis		1	0	1
+OG:003343	Hcoe	Hcoe		1	0	1
+OG:003346	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:003347	Spis	Spis		1	0	1
+OG:003367	Spis	Spis		1	0	1
+OG:003368	Amur	Amur		1	0	1
+OG:003370	Spis	Spis		1	0	1
+OG:003385	Gfas	Gfas		1	0	1
+OG:003394	Adig,Ahya	N9	Amur	1	1	4
+OG:003395	Pdam	Pdam		1	0	1
+OG:003397	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	17
+OG:003419	Fspp,Pcru,Pdam,Spis	N4		1	0	7
+OG:003433	Hcoe	Hcoe		1	0	1
+OG:003443	Amur,Gfas,Pcru,Spis	N3	Adig,Ahya,Fspp,Pdam,Plut	1	5	12
+OG:003447	Hcoe	Hcoe		1	0	1
+OG:003451	Amur	Amur		1	0	1
+OG:003456	Ahya,Amur	N10		1	0	3
+OG:003465	Adig,Ahya,Amur,Pdam	N3	Gfas,N7,Plut,Spis	1	4	11
+OG:003467	Ahya,Amur,Plut	N5	Adig,Gfas	1	2	7
+OG:003468	Adig	Adig		1	0	1
+OG:003474	Hcoe	Hcoe		1	0	2
+OG:003482	Hcoe	Hcoe		1	0	1
+OG:003483	Spis	Spis		1	0	1
+OG:003485	Pcru	Pcru		1	0	2
+OG:003492	Adig	Adig		1	0	1
+OG:003493	Hcoe	Hcoe		1	0	1
+OG:003494	Spis	Spis		1	0	1
+OG:003499	Adig,Ahya,Amur,Plut,Spis	N3	Gfas,N7,Pdam	1	3	12
+OG:003508	Adig	Adig		1	0	1
+OG:003515	Hcoe	Hcoe		1	0	1
+OG:003519	Hcoe	Hcoe		1	0	1
+OG:003521	Ahya,Amur	N10		1	0	3
+OG:003525	Adig,Fspp	N3	Gfas,N10,N6,Pcru,Plut	1	5	8
+OG:003530	Adig	Adig		1	0	1
+OG:003536	Spis	Spis		1	0	1
+OG:003541	Gfas	Gfas		1	0	1
+OG:003555	Adig	Adig		1	0	1
+OG:003558	Hcoe	Hcoe		1	0	1
+OG:003567	Hcoe	Hcoe		1	0	1
+OG:003580	Gfas	Gfas		1	0	1
+OG:003583	Amur	Amur		1	0	1
+OG:003588	Hcoe	Hcoe		1	0	1
+OG:003594	Spis	Spis		1	0	1
+OG:003598	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:003609	Spis	Spis		1	0	1
+OG:003620	Gfas	Gfas		1	0	1
+OG:003628	Hcoe	Hcoe		1	0	1
+OG:003630	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:003644	Plut	Plut		1	0	1
+OG:003649	Hcoe	Hcoe		1	0	1
+OG:003662	Fspp,Pcru,Pdam,Spis	N4		1	0	7
+OG:003669	Gfas	Gfas		1	0	1
+OG:003674	Spis	Spis		1	0	1
+OG:003675	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:003680	Amur	Amur		1	0	1
+OG:003681	Amur,Gfas,Spis	N3	Adig,Ahya,N7,Pdam,Plut	1	5	10
+OG:003683	Amur,Fspp,Pcru	N3	Adig,Ahya,Gfas,N6,Plut	1	5	10
+OG:003694	Spis	Spis		1	0	1
+OG:003705	Amur	Amur		1	0	1
+OG:003708	Adig	Adig		1	0	1
+OG:003709	Adig,Fspp,Spis	N3	Gfas,N10,Pcru,Pdam,Plut	1	5	10
+OG:003711	Spis	Spis		1	0	1
+OG:003715	Adig,Ahya	N9	Amur	1	1	4
+OG:003716	Hcoe	Hcoe		1	0	1
+OG:003724	Hcoe	Hcoe		1	0	1
+OG:003725	Amur	Amur		1	0	1
+OG:003727	Adig	Adig		1	0	1
+OG:003729	Spis	Spis		1	0	1
+OG:003730	Gfas	Gfas		1	0	1
+OG:003737	Adig,Amur	N9	Ahya	1	1	4
+OG:003742	Spis	Spis		1	0	1
+OG:003747	Amur	Amur		1	0	1
+OG:003753	Gfas	Gfas		1	0	1
+OG:003756	Fspp,Gfas,Pcru,Pdam,Spis	N3	N9,Plut	1	2	13
+OG:003757	Fspp,Pcru,Spis	N4	Pdam	1	1	6
+OG:003769	Adig,Ahya	N9	Amur	1	1	4
+OG:003771	Spis	Spis		1	0	1
+OG:003779	Hcoe	Hcoe		1	0	1
+OG:003787	Adig	Adig		1	0	1
+OG:003802	Spis	Spis		1	0	1
+OG:003805	Adig,Hcoe,Spis	N1	Gfas,N10,N7,Pdam,Plut,Xesp	1	6	11
+OG:003822	Adig	Adig		1	0	1
+OG:003850	Spis	Spis		1	0	1
+OG:003854	Fspp,Hcoe,Pcru,Pdam,Plut	N1	N8,Spis,Xesp	1	3	12
+OG:003856	Plut	Plut		1	0	1
+OG:003860	Hcoe	Hcoe		1	0	1
+OG:003878	Spis	Spis		1	0	1
+OG:003880	Amur	Amur		1	0	1
+OG:003884	Gfas	Gfas		1	0	1
+OG:003885	Hcoe	Hcoe		1	0	1
+OG:003889	Plut	Plut		1	0	1
+OG:003890	Hcoe	Hcoe		1	0	1
+OG:003894	Hcoe	Hcoe		1	0	1
+OG:003900	Gfas	Gfas		1	0	1
+OG:003924	Adig	Adig		1	0	1
+OG:003927	Ahya	Ahya		1	0	1
+OG:003930	Gfas	Gfas		1	0	1
+OG:003943	Hcoe	Hcoe		1	0	1
+OG:003945	Amur	Amur		1	0	1
+OG:003946	Ahya,Fspp,Spis	N3	Adig,Amur,Gfas,Pcru,Pdam,Plut	1	6	12
+OG:003958	Adig,Amur,Fspp,Gfas	N3	Ahya,N6,Pcru,Plut	1	4	11
+OG:003959	Adig,Ahya,Amur,Gfas,Spis	N3	N7,Pdam,Plut	1	3	12
+OG:003960	Spis	Spis		1	0	1
+OG:003965	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:003967	Pdam	Pdam		1	0	1
+OG:003973	Hcoe	Hcoe		1	0	1
+OG:003976	Spis	Spis		1	0	1
+OG:003981	Adig,Amur,Spis	N3	Ahya,Gfas,N7,Pdam,Plut	1	5	10
+OG:003993	Hcoe	Hcoe		1	0	1
+OG:004005	Plut	Plut		1	0	1
+OG:004023	Adig,Amur	N9	Ahya	1	1	4
+OG:004025	Hcoe	Hcoe		1	0	1
+OG:004026	Spis	Spis		1	0	1
+OG:004031	Fspp,Pdam,Spis	N4	Pcru	1	1	6
+OG:004032	Spis	Spis		1	0	1
+OG:004035	Adig,Fspp,Gfas,Plut,Spis	N3	N10,Pcru,Pdam	1	3	12
+OG:004046	Amur	Amur		1	0	1
+OG:004057	Adig	Adig		1	0	4
+OG:004062	Ahya	Ahya		1	0	1
+OG:004089	Adig	Adig		1	0	1
+OG:004091	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:004094	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	10
+OG:004101	Gfas	Gfas		1	0	1
+OG:004109	Amur	Amur		1	0	1
+OG:004114	Adig,Amur,Gfas,Spis	N3	Ahya,N7,Pdam,Plut	1	4	11
+OG:004115	Gfas	Gfas		1	0	1
+OG:004129	Spis	Spis		1	0	1
+OG:004150	Hcoe	Hcoe		1	0	1
+OG:004164	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:004167	Adig,Ahya	N9	Amur	1	1	4
+OG:004173	Amur,Pdam	N3	Adig,Ahya,Gfas,N7,Plut,Spis	1	6	9
+OG:004176	Adig,Ahya,Amur	N9		1	0	5
+OG:004180	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:004181	Amur,Gfas,Pcru,Spis	N3	Adig,Ahya,Fspp,Pdam,Plut	1	5	13
+OG:004183	Plut	Plut		1	0	1
+OG:004186	Spis	Spis		1	0	1
+OG:004193	Hcoe	Hcoe		1	0	1
+OG:004195	Spis	Spis		1	0	1
+OG:004210	Amur	Amur		1	0	1
+OG:004239	Pdam,Spis	N6		1	0	3
+OG:004246	Plut	Plut		1	0	1
+OG:004248	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:004259	Spis	Spis		1	0	1
+OG:004260	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:004271	Amur	Amur		1	0	1
+OG:004276	Ahya,Amur,Gfas,Hcoe	N1	Adig,N4,Plut,Xesp	1	4	11
+OG:004278	Adig	Adig		1	0	1
+OG:004284	Adig,Amur	N9	Ahya	1	1	4
+OG:004288	Fspp,Gfas,Plut	N3	N6,N9,Pcru	1	3	8
+OG:004305	Amur	Amur		1	0	1
+OG:004310	Spis	Spis		1	0	1
+OG:004314	Hcoe	Hcoe		1	0	1
+OG:004317	Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	N9	1	1	25
+OG:004318	Hcoe	Hcoe		1	0	1
+OG:004322	Adig,Gfas,Hcoe,Spis	N1	N10,N7,Pdam,Plut,Xesp	1	5	13
+OG:004341	Spis	Spis		1	0	1
+OG:004359	Pdam,Spis	N6		1	0	3
+OG:004364	Gfas	Gfas		1	0	1
+OG:004365	Amur,Fspp,Gfas	N3	Adig,Ahya,N6,Pcru,Plut	1	5	10
+OG:004368	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:004375	Spis	Spis		1	0	1
+OG:004379	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:004402	Hcoe	Hcoe		1	0	1
+OG:004410	Spis	Spis		1	0	1
+OG:004414	Plut	Plut		1	0	1
+OG:004430	Ahya,Spis	N3	Adig,Amur,Gfas,N7,Pdam,Plut	1	6	9
+OG:004431	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:004435	Adig,Pdam	N3	Gfas,N10,N7,Plut,Spis	1	5	8
+OG:004440	Adig,Ahya,Amur,Gfas,Hcoe,Plut	N1	N4,Xesp	1	2	16
+OG:004442	Fspp	Fspp		1	0	1
+OG:004447	Amur,Gfas,Plut,Spis	N3	Adig,Ahya,N7,Pdam	1	4	11
+OG:004450	Amur,Gfas,Pdam,Plut,Spis	N3	Adig,Ahya,N7	1	3	12
+OG:004459	Fspp	Fspp		1	0	1
+OG:004460	Pcru	Pcru		1	0	1
+OG:004466	Ahya	Ahya		1	0	1
+OG:004473	Spis	Spis		1	0	1
+OG:004477	Spis	Spis		1	0	1
+OG:004479	Fspp,Hcoe,Pcru	N1	N5,N6,Xesp	1	3	8
+OG:004483	Spis	Spis		1	0	1
+OG:004484	Pdam,Spis	N6		1	0	4
+OG:004491	Amur	Amur		1	0	1
+OG:004497	Fspp	Fspp		1	0	1
+OG:004504	Plut	Plut		1	0	1
+OG:004524	Amur	Amur		1	0	1
+OG:004530	Amur	Amur		1	0	1
+OG:004540	Pdam,Spis	N6		1	0	3
+OG:004541	Gfas	Gfas		1	0	1
+OG:004542	Fspp	Fspp		1	0	1
+OG:004543	Gfas	Gfas		1	0	1
+OG:004545	Amur	Amur		1	0	1
+OG:004549	Gfas	Gfas		1	0	1
+OG:004566	Ahya,Pdam	N3	Adig,Amur,Gfas,N7,Plut,Spis	1	6	9
+OG:004579	Amur,Pdam,Spis	N3	Adig,Ahya,Gfas,N7,Plut	1	5	10
+OG:004581	Fspp,Pcru	N7		1	0	3
+OG:004586	Gfas,Hcoe,Spis	N1	N7,N9,Pdam,Plut,Xesp	1	5	11
+OG:004587	Spis	Spis		1	0	1
+OG:004597	Amur	Amur		1	0	1
+OG:004599	Gfas	Gfas		1	0	1
+OG:004619	Ahya,Amur,Pdam,Spis	N3	Adig,Gfas,N7,Plut	1	4	11
+OG:004633	Hcoe	Hcoe		1	0	1
+OG:004634	Spis	Spis		1	0	1
+OG:004646	Ahya,Pdam,Spis	N3	Adig,Amur,Gfas,N7,Plut	1	5	11
+OG:004647	Hcoe	Hcoe		1	0	1
+OG:004653	Adig	Adig		1	0	1
+OG:004660	Ahya,Amur,Spis	N3	Adig,Gfas,N7,Pdam,Plut	1	5	10
+OG:004671	Adig	Adig		1	0	1
+OG:004679	Spis	Spis		1	0	1
+OG:004682	Ahya,Spis	N3	Adig,Amur,Gfas,N7,Pdam,Plut	1	6	9
+OG:004687	Ahya	Ahya		1	0	1
+OG:004701	Amur	Amur		1	0	1
+OG:004709	Spis	Spis		1	0	1
+OG:004710	Fspp,Gfas	N3	N6,N9,Pcru,Plut	1	4	7
+OG:004711	Adig	Adig		1	0	1
+OG:004712	Adig	Adig		1	0	1
+OG:004714	Ahya,Amur,Spis	N3	Adig,Gfas,N7,Pdam,Plut	1	5	10
+OG:004716	Gfas	Gfas		1	0	1
+OG:004729	Ahya,Spis	N3	Adig,Amur,Gfas,N7,Pdam,Plut	1	6	9
+OG:004742	Amur	Amur		1	0	1
+OG:004754	Gfas,Plut	N5	N9	1	1	5
+OG:004758	Adig,Amur,Pdam,Spis	N3	Ahya,Gfas,N7,Plut	1	4	11
+OG:004768	Hcoe	Hcoe		1	0	1
+OG:004777	Pdam,Spis	N6		1	0	4
+OG:004785	Pdam,Spis	N6		1	0	3
+OG:004791	Ahya,Amur,Fspp,Hcoe,Pdam,Plut,Spis	N1	Adig,Gfas,Pcru,Xesp	1	4	28
+OG:004795	Gfas	Gfas		1	0	1
+OG:004824	Hcoe	Hcoe		1	0	1
+OG:004831	Ahya,Amur,Gfas,Plut	N5	Adig	1	1	11
+OG:004836	Fspp	Fspp		1	0	1
+OG:004844	Adig,Amur,Hcoe,Plut	N1	Ahya,Gfas,N4,Xesp	1	4	12
+OG:004887	Adig	Adig		1	0	1
+OG:004897	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:004908	Spis	Spis		1	0	1
+OG:004919	Hcoe	Hcoe		1	0	1
+OG:004937	Adig,Ahya,Fspp,Gfas,Pcru,Plut	N3	Amur,N6	1	2	14
+OG:004938	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:004940	Adig,Amur,Pdam,Plut	N3	Ahya,Gfas,N7,Spis	1	4	13
+OG:004941	Ahya,Pcru	N3	Adig,Amur,Fspp,Gfas,N6,Plut	1	6	9
+OG:004948	Plut	Plut		1	0	1
+OG:004960	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:004966	Amur,Hcoe,Spis	N1	Adig,Ahya,Gfas,N7,Pdam,Plut,Xesp	1	7	12
+OG:004971	Hcoe	Hcoe		1	0	1
+OG:004979	Hcoe	Hcoe		1	0	2
+OG:004983	Spis	Spis		1	0	1
+OG:004984	Pdam,Spis	N6		1	0	5
+OG:004988	Plut	Plut		1	0	1
+OG:004991	Spis	Spis		1	0	1
+OG:004992	Adig,Amur	N9	Ahya	1	1	4
+OG:004997	Fspp,Gfas,Plut	N3	N6,N9,Pcru	1	3	8
+OG:004998	Adig,Amur,Pdam	N3	Ahya,Gfas,N7,Plut,Spis	1	5	10
+OG:004999	Ahya,Amur,Gfas,Plut	N5	Adig	1	1	8
+OG:005004	Pdam,Spis	N6		1	0	3
+OG:005005	Adig,Fspp,Spis	N3	Gfas,N10,Pcru,Pdam,Plut	1	5	11
+OG:005007	Hcoe	Hcoe		1	0	1
+OG:005012	Spis	Spis		1	0	2
+OG:005014	Adig,Amur,Fspp,Pcru,Plut	N3	Ahya,Gfas,N6	1	3	12
+OG:005015	Fspp	Fspp		1	0	1
+OG:005021	Amur	Amur		1	0	2
+OG:005022	Adig,Ahya,Amur,Gfas,Plut,Spis	N3	N7,Pdam	1	2	17
+OG:005035	Plut	Plut		1	0	1
+OG:005036	Gfas	Gfas		1	0	1
+OG:005037	Fspp,Hcoe,Pcru	N1	N5,N6,Xesp	1	3	8
+OG:005042	Adig,Ahya,Amur,Gfas,Hcoe,Plut,Spis	N1	N7,Pdam,Xesp	1	3	25
+OG:005045	Ahya	Ahya		1	0	1
+OG:005048	Plut	Plut		1	0	1
+OG:005050	Ahya,Fspp,Gfas,Pcru,Pdam,Spis	N3	Adig,Amur,Plut	1	3	14
+OG:005052	Amur,Fspp,Pcru,Plut,Spis	N3	Adig,Ahya,Gfas,Pdam	1	4	13
+OG:005053	Plut	Plut		1	0	1
+OG:005055	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:005057	Spis	Spis		1	0	1
+OG:005069	Amur,Fspp	N3	Adig,Ahya,Gfas,N6,Pcru,Plut	1	6	9
+OG:005071	Hcoe,Pcru	N1	Fspp,N5,N6,Xesp	1	4	7
+OG:005072	Plut	Plut		1	0	1
+OG:005074	Plut	Plut		1	0	1
+OG:005075	Amur	Amur		1	0	1
+OG:005077	Spis	Spis		1	0	1
+OG:005078	Ahya	Ahya		1	0	1
+OG:005080	Fspp	Fspp		1	0	1
+OG:005083	Ahya	Ahya		1	0	1
+OG:005085	Spis	Spis		1	0	1
+OG:005088	Adig,Amur,Gfas,Plut	N5	Ahya	1	1	8
+OG:005093	Plut	Plut		1	0	1
+OG:005094	Adig,Ahya,Gfas,Plut	N5	Amur	1	1	8
+OG:005097	Adig,Gfas	N8	N10	1	1	6
+OG:005114	Ahya,Spis	N3	Adig,Amur,Gfas,N7,Pdam,Plut	1	6	10
+OG:005117	Spis	Spis		1	0	1
+OG:005118	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:005120	Spis	Spis		1	0	1
+OG:005125	Ahya,Fspp,Gfas,Pdam,Plut,Spis	N3	Adig,Amur,Pcru	1	3	17
+OG:005128	Pcru	Pcru		1	0	2
+OG:005129	Adig,Ahya,Pcru,Spis	N3	Amur,Fspp,Gfas,Pdam,Plut	1	5	13
+OG:005131	Plut	Plut		1	0	1
+OG:005132	Ahya,Spis	N3	Adig,Amur,Gfas,N7,Pdam,Plut	1	6	9
+OG:005133	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut	N3	Spis	1	1	16
+OG:005134	Amur	Amur		1	0	1
+OG:005139	Fspp	Fspp		1	0	1
+OG:005144	Gfas,Plut	N5	N9	1	1	5
+OG:005157	Hcoe,Pcru,Spis	N1	Fspp,N5,Pdam,Xesp	1	4	9
+OG:005160	Adig	Adig		1	0	1
+OG:005164	Gfas	Gfas		1	0	1
+OG:005169	Adig,Pcru,Plut	N3	Fspp,Gfas,N10,N6	1	4	9
+OG:005170	Adig,Amur,Gfas,Pcru	N3	Ahya,Fspp,N6,Plut	1	4	12
+OG:005181	Spis	Spis		1	0	1
+OG:005185	Spis	Spis		1	0	1
+OG:005191	Hcoe	Hcoe		1	0	1
+OG:005193	Adig,Ahya,Amur,Plut	N5	Gfas	1	1	8
+OG:005200	Pdam,Plut	N3	N7,N8,Spis	1	3	6
+OG:005223	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:005227	Hcoe	Hcoe		1	0	1
+OG:005228	Adig	Adig		1	0	1
+OG:005247	Spis	Spis		1	0	2
+OG:005257	Spis	Spis		1	0	1
+OG:005260	Spis	Spis		1	0	1
+OG:005261	Ahya	Ahya		1	0	1
+OG:005263	Adig,Ahya,Amur,Plut,Spis	N3	Gfas,N7,Pdam	1	3	14
+OG:005268	Adig	Adig		1	0	1
+OG:005269	Adig	Adig		1	0	1
+OG:005270	Gfas	Gfas		1	0	1
+OG:005279	Fspp	Fspp		1	0	1
+OG:005290	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:005291	Amur	Amur		1	0	1
+OG:005292	Ahya,Amur	N10		1	0	3
+OG:005299	Spis	Spis		1	0	1
+OG:005303	Plut	Plut		1	0	6
+OG:005305	Hcoe	Hcoe		1	0	1
+OG:005309	Gfas	Gfas		1	0	1
+OG:005315	Adig,Ahya,Fspp	N3	Amur,Gfas,N6,Pcru,Plut	1	5	11
+OG:005318	Spis	Spis		1	0	3
+OG:005326	Gfas	Gfas		1	0	1
+OG:005328	Fspp	Fspp		1	0	2
+OG:005329	Fspp,Spis	N4	Pcru,Pdam	1	2	5
+OG:005333	Fspp,Pcru,Pdam	N4	Spis	1	1	7
+OG:005339	Gfas	Gfas		1	0	1
+OG:005341	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:005342	Pdam	Pdam		1	0	1
+OG:005343	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:005354	Hcoe	Hcoe		1	0	1
+OG:005355	Hcoe	Hcoe		1	0	1
+OG:005365	Ahya,Pdam,Spis	N3	Adig,Amur,Gfas,N7,Plut	1	5	11
+OG:005366	Fspp,Hcoe,Spis	N1	N5,Pcru,Pdam,Xesp	1	4	10
+OG:005376	Pcru	Pcru		1	0	1
+OG:005381	Amur,Fspp,Gfas,Hcoe,Pcru,Pdam,Plut,Spis	N1	Adig,Ahya,Xesp	1	3	18
+OG:005388	Adig,Amur,Gfas,Plut	N5	Ahya	1	1	9
+OG:005393	Adig,Amur,Pcru,Plut	N3	Ahya,Fspp,Gfas,N6	1	4	11
+OG:005402	Gfas,Pdam,Spis	N3	N7,N9,Plut	1	3	8
+OG:005416	Spis	Spis		1	0	1
+OG:005428	Amur,Gfas,Pdam,Spis	N3	Adig,Ahya,N7,Plut	1	4	13
+OG:005429	Fspp	Fspp		1	0	1
+OG:005431	Adig,Amur,Plut	N5	Ahya,Gfas	1	2	7
+OG:005434	Gfas	Gfas		1	0	1
+OG:005435	Spis	Spis		1	0	1
+OG:005436	Amur,Pdam	N3	Adig,Ahya,Gfas,N7,Plut,Spis	1	6	9
+OG:005439	Pcru	Pcru		1	0	1
+OG:005440	Pcru	Pcru		1	0	1
+OG:005441	Spis	Spis		1	0	1
+OG:005446	Ahya,Fspp,Pcru,Plut,Spis	N3	Adig,Amur,Gfas,Pdam	1	4	13
+OG:005447	Adig,Ahya,Fspp,Gfas,Pdam,Spis	N3	Amur,Pcru,Plut	1	3	14
+OG:005448	Amur,Fspp,Gfas,Pcru,Plut	N3	Adig,Ahya,N6	1	3	14
+OG:005450	Adig,Ahya	N9	Amur	1	1	4
+OG:005457	Spis	Spis		1	0	1
+OG:005461	Pcru,Plut	N3	Fspp,N6,N8	1	3	6
+OG:005466	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:005473	Plut	Plut		1	0	1
+OG:005476	Amur	Amur		1	0	1
+OG:005490	Amur	Amur		1	0	1
+OG:005509	Amur	Amur		1	0	1
+OG:005519	Gfas	Gfas		1	0	1
+OG:005521	Plut	Plut		1	0	1
+OG:005523	Pcru	Pcru		1	0	1
+OG:005537	Pdam	Pdam		1	0	1
+OG:005538	Adig	Adig		1	0	1
+OG:005547	Amur,Pcru,Plut	N3	Adig,Ahya,Fspp,Gfas,N6	1	5	12
+OG:005548	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:005552	Adig	Adig		1	0	1
+OG:005555	Fspp,Plut	N3	N6,N8,Pcru	1	3	6
+OG:005557	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:005559	Spis	Spis		1	0	1
+OG:005574	Plut	Plut		1	0	1
+OG:005578	Gfas	Gfas		1	0	1
+OG:005579	Gfas	Gfas		1	0	1
+OG:005580	Adig,Amur,Gfas,Pcru,Pdam,Spis	N3	Ahya,Fspp,Plut	1	3	14
+OG:005586	Ahya,Gfas,Hcoe	N1	Adig,Amur,N4,Plut,Xesp	1	5	10
+OG:005587	Spis	Spis		1	0	1
+OG:005588	Adig,Amur	N9	Ahya	1	1	4
+OG:005593	Fspp	Fspp		1	0	1
+OG:005606	Hcoe	Hcoe		1	0	1
+OG:005622	Ahya	Ahya		1	0	1
+OG:005627	Amur	Amur		1	0	1
+OG:005645	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:005646	Hcoe	Hcoe		1	0	1
+OG:005657	Adig,Ahya,Gfas,Pcru	N3	Amur,Fspp,N6,Plut	1	4	11
+OG:005670	Fspp	Fspp		1	0	1
+OG:005681	Pcru	Pcru		1	0	1
+OG:005691	Ahya,Amur,Gfas,Hcoe	N1	Adig,N4,Plut,Xesp	1	4	11
+OG:005694	Amur,Fspp,Spis	N3	Adig,Ahya,Gfas,Pcru,Pdam,Plut	1	6	11
+OG:005703	Plut,Spis	N3	N7,N8,Pdam	1	3	7
+OG:005708	Fspp,Gfas,Pcru,Spis	N3	N9,Pdam,Plut	1	3	10
+OG:005711	Adig	Adig		1	0	1
+OG:005718	Pdam,Spis	N6		1	0	4
+OG:005723	Adig	Adig		1	0	1
+OG:005724	Fspp,Hcoe	N1	N5,N6,Pcru,Xesp	1	4	7
+OG:005728	Amur	Amur		1	0	1
+OG:005738	Spis	Spis		1	0	3
+OG:005741	Adig	Adig		1	0	1
+OG:005744	Gfas,Pdam,Plut	N3	N7,N9,Spis	1	3	8
+OG:005755	Adig,Amur	N9	Ahya	1	1	4
+OG:005758	Ahya,Amur,Gfas,Plut,Spis	N3	Adig,N7,Pdam	1	3	12
+OG:005764	Spis	Spis		1	0	1
+OG:005773	Spis	Spis		1	0	2
+OG:005777	Fspp,Gfas,Pcru	N3	N6,N9,Plut	1	3	8
+OG:005782	Ahya	Ahya		1	0	1
+OG:005789	Adig,Ahya,Plut	N5	Amur,Gfas	1	2	7
+OG:005791	Amur	Amur		1	0	1
+OG:005797	Pdam	Pdam		1	0	1
+OG:005799	Adig,Amur,Plut,Spis	N3	Ahya,Gfas,N7,Pdam	1	4	16
+OG:005810	Spis	Spis		1	0	1
+OG:005824	Spis	Spis		1	0	1
+OG:005825	Spis	Spis		1	0	1
+OG:005833	Ahya	Ahya		1	0	1
+OG:005840	Spis	Spis		1	0	1
+OG:005848	Hcoe	Hcoe		1	0	1
+OG:005855	Spis	Spis		1	0	1
+OG:005858	Spis	Spis		1	0	1
+OG:005864	Amur,Fspp,Gfas,Pcru	N3	Adig,Ahya,N6,Plut	1	4	11
+OG:005866	Gfas	Gfas		1	0	1
+OG:005868	Adig	Adig		1	0	1
+OG:005877	Adig	Adig		1	0	1
+OG:005878	Plut	Plut		1	0	1
+OG:005886	Gfas,Pcru	N3	Fspp,N6,N9,Plut	1	4	7
+OG:005887	Fspp,Pcru,Pdam	N4	Spis	1	1	6
+OG:005896	Amur,Fspp,Pdam,Plut	N3	Adig,Ahya,Gfas,Pcru,Spis	1	5	12
+OG:005902	Ahya	Ahya		1	0	1
+OG:005905	Adig,Ahya,Amur	N9		1	0	5
+OG:005907	Ahya	Ahya		1	0	1
+OG:005908	Adig,Ahya,Hcoe	N1	Amur,Gfas,N4,Plut,Xesp	1	5	13
+OG:005910	Adig	Adig		1	0	1
+OG:005915	Hcoe	Hcoe		1	0	1
+OG:005916	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:005919	Spis	Spis		1	0	1
+OG:005929	Ahya,Gfas,Pcru,Plut,Spis	N3	Adig,Amur,Fspp,Pdam	1	4	13
+OG:005948	Gfas	Gfas		1	0	2
+OG:005970	Adig,Ahya,Amur,Spis	N3	Gfas,N7,Pdam,Plut	1	4	11
+OG:005971	Spis	Spis		1	0	1
+OG:005972	Fspp	Fspp		1	0	1
+OG:005977	Fspp	Fspp		1	0	1
+OG:005978	Fspp,Gfas,Plut	N3	N6,N9,Pcru	1	3	8
+OG:005981	Adig,Ahya,Amur,Fspp,Gfas,Hcoe,Pcru,Plut	N1	N6,Xesp	1	2	20
+OG:005983	Amur	Amur		1	0	2
+OG:005984	Pcru	Pcru		1	0	1
+OG:005985	Adig,Ahya,Fspp,Hcoe,Spis	N1	Amur,Gfas,Pcru,Pdam,Plut,Xesp	1	6	15
+OG:005994	Ahya	Ahya		1	0	1
+OG:005996	Adig	Adig		1	0	1
+OG:005997	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	8
+OG:006009	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Spis	N3	Plut	1	1	17
+OG:006018	Adig,Plut,Spis	N3	Gfas,N10,N7,Pdam	1	4	9
+OG:006022	Adig,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	N10	1	1	14
+OG:006025	Pdam,Spis	N6		1	0	3
+OG:006036	Spis	Spis		1	0	1
+OG:006037	Spis	Spis		1	0	1
+OG:006038	Adig	Adig		1	0	1
+OG:006042	Amur	Amur		1	0	1
+OG:006047	Amur	Amur		1	0	1
+OG:006052	Ahya	Ahya		1	0	1
+OG:006061	Amur	Amur		1	0	1
+OG:006062	Ahya	Ahya		1	0	2
+OG:006072	Hcoe	Hcoe		1	0	1
+OG:006094	Amur,Hcoe,Spis	N1	Adig,Ahya,Gfas,N7,Pdam,Plut,Xesp	1	7	14
+OG:006100	Plut	Plut		1	0	1
+OG:006109	Spis	Spis		1	0	1
+OG:006119	Gfas	Gfas		1	0	1
+OG:006120	Hcoe	Hcoe		1	0	1
+OG:006128	Spis	Spis		1	0	1
+OG:006134	Spis	Spis		1	0	1
+OG:006143	Pdam,Spis	N6		1	0	3
+OG:006144	Ahya,Fspp	N3	Adig,Amur,Gfas,N6,Pcru,Plut	1	6	9
+OG:006146	Pdam,Plut	N3	N7,N8,Spis	1	3	7
+OG:006156	Adig,Amur	N9	Ahya	1	1	4
+OG:006167	Hcoe,Plut,Spis	N1	N7,N8,Pdam,Xesp	1	4	10
+OG:006169	Amur	Amur		1	0	1
+OG:006172	Ahya,Fspp,Hcoe,Plut	N1	Adig,Amur,Gfas,N6,Pcru,Xesp	1	6	13
+OG:006175	Spis	Spis		1	0	1
+OG:006176	Adig	Adig		1	0	1
+OG:006182	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	17
+OG:006183	Amur	Amur		1	0	1
+OG:006184	Amur	Amur		1	0	1
+OG:006190	Pdam	Pdam		1	0	1
+OG:006191	Fspp,Hcoe	N1	N5,N6,Pcru,Xesp	1	4	8
+OG:006192	Adig,Pcru	N3	Fspp,Gfas,N10,N6,Plut	1	5	8
+OG:006193	Adig	Adig		1	0	1
+OG:006199	Adig	Adig		1	0	1
+OG:006208	Hcoe	Hcoe		1	0	1
+OG:006211	Adig	Adig		1	0	1
+OG:006219	Pdam,Plut,Spis	N3	N7,N8	1	2	7
+OG:006225	Adig	Adig		1	0	1
+OG:006230	Adig,Amur,Gfas,Pcru,Spis	N3	Ahya,Fspp,Pdam,Plut	1	4	13
+OG:006237	Hcoe	Hcoe		1	0	1
+OG:006249	Spis	Spis		1	0	1
+OG:006268	Pcru	Pcru		1	0	1
+OG:006274	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:006277	Spis	Spis		1	0	1
+OG:006285	Adig,Ahya,Amur	N9		1	0	5
+OG:006288	Amur,Fspp,Gfas,Plut	N3	Adig,Ahya,N6,Pcru	1	4	11
+OG:006311	Gfas	Gfas		1	0	1
+OG:006313	Amur,Fspp,Hcoe,Plut,Spis	N1	Adig,Ahya,Gfas,Pcru,Pdam,Xesp	1	6	15
+OG:006315	Hcoe	Hcoe		1	0	1
+OG:006316	Fspp	Fspp		1	0	1
+OG:006317	Adig	Adig		1	0	1
+OG:006318	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:006324	Ahya	Ahya		1	0	1
+OG:006326	Adig,Ahya,Amur	N9		1	0	6
+OG:006329	Spis	Spis		1	0	3
+OG:006330	Fspp	Fspp		1	0	1
+OG:006332	Plut	Plut		1	0	1
+OG:006337	Plut	Plut		1	0	1
+OG:006338	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:006339	Fspp	Fspp		1	0	1
+OG:006348	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:006350	Adig	Adig		1	0	1
+OG:006352	Ahya	Ahya		1	0	1
+OG:006353	Plut	Plut		1	0	1
+OG:006359	Plut	Plut		1	0	1
+OG:006360	Adig,Amur,Fspp,Gfas,Pcru	N3	Ahya,N6,Plut	1	3	14
+OG:006363	Fspp	Fspp		1	0	1
+OG:006364	Amur,Fspp,Pcru	N3	Adig,Ahya,Gfas,N6,Plut	1	5	11
+OG:006378	Pdam,Spis	N6		1	0	3
+OG:006389	Gfas	Gfas		1	0	1
+OG:006395	Amur	Amur		1	0	1
+OG:006397	Plut,Spis	N3	N7,N8,Pdam	1	3	9
+OG:006406	Spis	Spis		1	0	1
+OG:006409	Adig,Ahya,Amur,Pdam,Spis	N3	Gfas,N7,Plut	1	3	12
+OG:006420	Pcru,Pdam	N4	Fspp,Spis	1	2	5
+OG:006424	Hcoe	Hcoe		1	0	1
+OG:006425	Adig,Ahya,Plut	N5	Amur,Gfas	1	2	7
+OG:006426	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:006431	Pdam,Spis	N6		1	0	4
+OG:006443	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	10
+OG:006446	Adig	Adig		1	0	1
+OG:006450	Adig	Adig		1	0	1
+OG:006464	Ahya	Ahya		1	0	1
+OG:006467	Fspp,Plut,Spis	N3	N8,Pcru,Pdam	1	3	9
+OG:006468	Plut	Plut		1	0	1
+OG:006472	Hcoe	Hcoe		1	0	1
+OG:006473	Adig,Ahya,Amur,Pcru	N3	Fspp,Gfas,N6,Plut	1	4	12
+OG:006478	Spis	Spis		1	0	1
+OG:006479	Adig,Ahya,Amur,Gfas,Plut,Spis	N3	N7,Pdam	1	2	16
+OG:006483	Adig,Amur	N9	Ahya	1	1	6
+OG:006493	Adig,Fspp	N3	Gfas,N10,N6,Pcru,Plut	1	5	8
+OG:006504	Pcru	Pcru		1	0	1
+OG:006506	Adig,Amur,Pdam	N3	Ahya,Gfas,N7,Plut,Spis	1	5	10
+OG:006510	Hcoe	Hcoe		1	0	1
+OG:006524	Gfas	Gfas		1	0	1
+OG:006540	Plut,Spis	N3	N7,N8,Pdam	1	3	8
+OG:006547	Spis	Spis		1	0	1
+OG:006549	Ahya,Gfas,Pdam	N3	Adig,Amur,N7,Plut,Spis	1	5	10
+OG:006551	Pcru,Pdam,Spis	N4	Fspp	1	1	6
+OG:006559	Fspp	Fspp		1	0	1
+OG:006561	Plut	Plut		1	0	1
+OG:006567	Amur,Gfas	N8	Adig,Ahya	1	2	8
+OG:006568	Amur	Amur		1	0	1
+OG:006570	Plut	Plut		1	0	1
+OG:006579	Adig,Pdam,Spis	N3	Gfas,N10,N7,Plut	1	4	9
+OG:006580	Adig,Gfas	N8	N10	1	1	4
+OG:006591	Plut	Plut		1	0	1
+OG:006592	Hcoe	Hcoe		1	0	1
+OG:006594	Amur	Amur		1	0	1
+OG:006600	Plut	Plut		1	0	1
+OG:006602	Ahya,Amur	N10		1	0	3
+OG:006603	Adig,Ahya,Amur,Pcru,Plut	N3	Fspp,Gfas,N6	1	3	12
+OG:006613	Spis	Spis		1	0	1
+OG:006618	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:006629	Ahya	Ahya		1	0	1
+OG:006636	Plut	Plut		1	0	1
+OG:006638	Pcru,Pdam,Spis	N4	Fspp	1	1	9
+OG:006643	Adig,Ahya,Amur,Gfas,Plut,Spis	N3	N7,Pdam	1	2	13
+OG:006646	Hcoe	Hcoe		1	0	1
+OG:006657	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:006658	Spis	Spis		1	0	1
+OG:006659	Hcoe	Hcoe		1	0	1
+OG:006661	Amur,Fspp,Plut,Spis	N3	Adig,Ahya,Gfas,Pcru,Pdam	1	5	12
+OG:006669	Amur	Amur		1	0	1
+OG:006672	Gfas	Gfas		1	0	1
+OG:006677	Ahya	Ahya		1	0	1
+OG:006685	Adig,Gfas,Spis	N3	N10,N7,Pdam,Plut	1	4	9
+OG:006691	Adig,Ahya,Hcoe	N1	Amur,Gfas,N4,Plut,Xesp	1	5	11
+OG:006702	Gfas,Hcoe,Pcru	N1	Fspp,N6,N9,Plut,Xesp	1	5	10
+OG:006710	Hcoe,Pdam,Spis	N1	N5,N7,Xesp	1	3	8
+OG:006711	Fspp	Fspp		1	0	1
+OG:006713	Adig,Amur,Hcoe,Plut,Spis	N1	Ahya,Gfas,N7,Pdam,Xesp	1	5	21
+OG:006714	Amur	Amur		1	0	2
+OG:006716	Ahya	Ahya		1	0	1
+OG:006717	Fspp,Gfas	N3	N6,N9,Pcru,Plut	1	4	7
+OG:006720	Adig,Fspp,Pdam,Spis	N3	Gfas,N10,Pcru,Plut	1	4	11
+OG:006722	Gfas,Pdam,Plut	N3	N7,N9,Spis	1	3	9
+OG:006724	Pcru	Pcru		1	0	1
+OG:006727	Spis	Spis		1	0	1
+OG:006739	Hcoe	Hcoe		1	0	1
+OG:006740	Adig,Ahya,Amur,Pcru,Pdam,Plut,Spis	N3	Fspp,Gfas	1	2	17
+OG:006743	Adig,Amur,Plut,Spis	N3	Ahya,Gfas,N7,Pdam	1	4	11
+OG:006750	Amur,Gfas,Spis	N3	Adig,Ahya,N7,Pdam,Plut	1	5	10
+OG:006751	Hcoe	Hcoe		1	0	1
+OG:006752	Adig,Amur,Fspp,Gfas,Pcru	N3	Ahya,N6,Plut	1	3	12
+OG:006760	Spis	Spis		1	0	1
+OG:006761	Plut	Plut		1	0	1
+OG:006767	Ahya,Amur,Hcoe	N1	Adig,Gfas,N4,Plut,Xesp	1	5	10
+OG:006776	Adig,Ahya	N9	Amur	1	1	4
+OG:006779	Plut	Plut		1	0	1
+OG:006780	Spis	Spis		1	0	1
+OG:006790	Pcru,Pdam,Spis	N4	Fspp	1	1	6
+OG:006795	Hcoe	Hcoe		1	0	1
+OG:006820	Ahya	Ahya		1	0	1
+OG:006829	Spis	Spis		1	0	1
+OG:006832	Spis	Spis		1	0	3
+OG:006833	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:006839	Amur	Amur		1	0	1
+OG:006847	Adig,Amur,Fspp,Gfas,Pcru,Pdam,Spis	N3	Ahya,Plut	1	2	16
+OG:006848	Adig	Adig		1	0	1
+OG:006860	Amur,Plut,Spis	N3	Adig,Ahya,Gfas,N7,Pdam	1	5	10
+OG:006862	Plut	Plut		1	0	1
+OG:006876	Ahya,Amur,Fspp,Gfas,Pdam,Plut,Spis	N3	Adig,Pcru	1	2	16
+OG:006890	Hcoe	Hcoe		1	0	1
+OG:006895	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:006896	Ahya,Hcoe,Plut	N1	Adig,Amur,Gfas,N4,Xesp	1	5	13
+OG:006901	Fspp	Fspp		1	0	1
+OG:006909	Amur	Amur		1	0	1
+OG:006914	Amur	Amur		1	0	1
+OG:006927	Adig,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	Ahya	1	1	20
+OG:006935	Gfas	Gfas		1	0	1
+OG:006942	Fspp	Fspp		1	0	1
+OG:006947	Adig,Ahya,Spis	N3	Amur,Gfas,N7,Pdam,Plut	1	5	12
+OG:006951	Ahya,Amur,Pcru,Pdam,Plut,Spis	N3	Adig,Fspp,Gfas	1	3	14
+OG:006952	Spis	Spis		1	0	1
+OG:006953	Adig	Adig		1	0	1
+OG:006963	Fspp,Gfas,Pcru,Spis	N3	N9,Pdam,Plut	1	3	11
+OG:006964	Adig,Hcoe,Plut,Spis	N1	Gfas,N10,N7,Pdam,Xesp	1	5	15
+OG:006967	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	24
+OG:006973	Spis	Spis		1	0	1
+OG:006974	Amur	Amur		1	0	1
+OG:006980	Adig,Ahya,Gfas,Spis	N3	Amur,N7,Pdam,Plut	1	4	18
+OG:007000	Spis	Spis		1	0	1
+OG:007001	Adig	Adig		1	0	1
+OG:007002	Pdam	Pdam		1	0	1
+OG:007010	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:007013	Spis	Spis		1	0	1
+OG:007015	Gfas,Pdam,Plut,Spis	N3	N7,N9	1	2	11
+OG:007017	Spis	Spis		1	0	1
+OG:007018	Spis	Spis		1	0	1
+OG:007019	Ahya,Fspp,Pcru,Plut,Spis	N3	Adig,Amur,Gfas,Pdam	1	4	17
+OG:007025	Fspp	Fspp		1	0	1
+OG:007028	Adig,Ahya,Amur,Gfas	N8		1	0	7
+OG:007029	Gfas	Gfas		1	0	1
+OG:007031	Amur	Amur		1	0	1
+OG:007037	Pdam	Pdam		1	0	1
+OG:007045	Hcoe	Hcoe		1	0	1
+OG:007049	Spis	Spis		1	0	1
+OG:007051	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:007052	Hcoe	Hcoe		1	0	1
+OG:007059	Fspp,Plut,Spis	N3	N8,Pcru,Pdam	1	3	8
+OG:007062	Pdam	Pdam		1	0	1
+OG:007065	Fspp	Fspp		1	0	1
+OG:007073	Adig	Adig		1	0	1
+OG:007082	Adig,Ahya,Fspp,Hcoe	N1	Amur,Gfas,N6,Pcru,Plut,Xesp	1	6	13
+OG:007085	Adig,Ahya,Amur	N9		1	0	5
+OG:007088	Hcoe	Hcoe		1	0	1
+OG:007091	Plut	Plut		1	0	1
+OG:007099	Gfas	Gfas		1	0	1
+OG:007109	Ahya,Amur,Pcru	N3	Adig,Fspp,Gfas,N6,Plut	1	5	11
+OG:007124	Hcoe	Hcoe		1	0	1
+OG:007127	Hcoe	Hcoe		1	0	1
+OG:007133	Ahya,Amur,Spis	N3	Adig,Gfas,N7,Pdam,Plut	1	5	10
+OG:007141	Hcoe	Hcoe		1	0	1
+OG:007148	Gfas	Gfas		1	0	1
+OG:007149	Hcoe	Hcoe		1	0	1
+OG:007150	Pdam,Plut	N3	N7,N8,Spis	1	3	7
+OG:007154	Ahya,Amur	N10		1	0	3
+OG:007156	Spis	Spis		1	0	1
+OG:007160	Adig,Plut,Spis	N3	Gfas,N10,N7,Pdam	1	4	11
+OG:007162	Amur	Amur		1	0	1
+OG:007170	Adig,Ahya,Amur,Fspp,Gfas,Hcoe,Pcru,Pdam,Plut,Spis	N1	Xesp	1	1	20
+OG:007171	Spis	Spis		1	0	1
+OG:007174	Ahya	Ahya		1	0	1
+OG:007179	Ahya,Amur,Spis	N3	Adig,Gfas,N7,Pdam,Plut	1	5	11
+OG:007181	Hcoe	Hcoe		1	0	1
+OG:007184	Spis	Spis		1	0	1
+OG:007189	Adig	Adig		1	0	1
+OG:007210	Ahya	Ahya		1	0	1
+OG:007211	Spis	Spis		1	0	1
+OG:007215	Fspp	Fspp		1	0	1
+OG:007220	Plut	Plut		1	0	1
+OG:007221	Spis	Spis		1	0	2
+OG:007227	Spis	Spis		1	0	2
+OG:007230	Gfas	Gfas		1	0	1
+OG:007232	Fspp,Plut	N3	N6,N8,Pcru	1	3	6
+OG:007233	Spis	Spis		1	0	1
+OG:007234	Spis	Spis		1	0	1
+OG:007240	Adig,Ahya,Amur,Gfas	N8		1	0	16
+OG:007246	Spis	Spis		1	0	1
+OG:007249	Pdam,Spis	N6		1	0	3
+OG:007252	Spis	Spis		1	0	1
+OG:007254	Plut	Plut		1	0	4
+OG:007255	Gfas	Gfas		1	0	1
+OG:007256	Hcoe	Hcoe		1	0	1
+OG:007265	Ahya,Amur,Gfas,Spis	N3	Adig,N7,Pdam,Plut	1	4	11
+OG:007285	Adig,Ahya	N9	Amur	1	1	5
+OG:007289	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:007293	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:007305	Adig	Adig		1	0	1
+OG:007315	Hcoe	Hcoe		1	0	2
+OG:007317	Fspp,Pcru	N7		1	0	3
+OG:007319	Amur	Amur		1	0	1
+OG:007323	Plut	Plut		1	0	1
+OG:007330	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	35
+OG:007332	Pdam	Pdam		1	0	1
+OG:007339	Adig,Ahya,Amur	N9		1	0	5
+OG:007344	Plut	Plut		1	0	1
+OG:007355	Hcoe	Hcoe		1	0	1
+OG:007357	Amur	Amur		1	0	1
+OG:007365	Adig	Adig		1	0	1
+OG:007366	Ahya	Ahya		1	0	1
+OG:007367	Gfas,Plut	N5	N9	1	1	4
+OG:007376	Amur	Amur		1	0	2
+OG:007379	Hcoe	Hcoe		1	0	1
+OG:007380	Fspp	Fspp		1	0	1
+OG:007386	Amur	Amur		1	0	1
+OG:007387	Spis	Spis		1	0	1
+OG:007388	Spis	Spis		1	0	1
+OG:007390	Adig	Adig		1	0	1
+OG:007393	Hcoe	Hcoe		1	0	1
+OG:007395	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:007401	Spis	Spis		1	0	1
+OG:007408	Amur,Pdam,Spis	N3	Adig,Ahya,Gfas,N7,Plut	1	5	10
+OG:007409	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:007410	Ahya	Ahya		1	0	1
+OG:007415	Adig,Ahya,Amur	N9		1	0	5
+OG:007421	Gfas	Gfas		1	0	1
+OG:007428	Amur	Amur		1	0	1
+OG:007429	Fspp,Pcru,Spis	N4	Pdam	1	1	6
+OG:007432	Plut	Plut		1	0	1
+OG:007433	Hcoe	Hcoe		1	0	1
+OG:007437	Hcoe,Pcru	N1	Fspp,N5,N6,Xesp	1	4	12
+OG:007439	Hcoe	Hcoe		1	0	1
+OG:007448	Fspp	Fspp		1	0	1
+OG:007449	Adig	Adig		1	0	1
+OG:007453	Spis	Spis		1	0	1
+OG:007455	Adig,Ahya,Amur,Gfas,Plut	N5		1	0	10
+OG:007461	Adig	Adig		1	0	1
+OG:007467	Amur	Amur		1	0	1
+OG:007474	Spis	Spis		1	0	1
+OG:007477	Plut	Plut		1	0	1
+OG:007478	Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	N9	1	1	12
+OG:007479	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:007488	Spis	Spis		1	0	1
+OG:007494	Adig,Fspp,Pdam,Plut,Spis	N3	Gfas,N10,Pcru	1	3	12
+OG:007495	Hcoe	Hcoe		1	0	1
+OG:007497	Hcoe	Hcoe		1	0	1
+OG:007498	Fspp,Spis	N4	Pcru,Pdam	1	2	5
+OG:007514	Pdam,Plut,Spis	N3	N7,N8	1	2	8
+OG:007515	Amur	Amur		1	0	1
+OG:007516	Amur,Fspp,Gfas,Pcru,Pdam,Spis	N3	Adig,Ahya,Plut	1	3	14
+OG:007517	Pcru,Plut	N3	Fspp,N6,N8	1	3	6
+OG:007519	Hcoe	Hcoe		1	0	1
+OG:007520	Amur,Fspp,Gfas,Spis	N3	Adig,Ahya,Pcru,Pdam,Plut	1	5	12
+OG:007525	Hcoe	Hcoe		1	0	1
+OG:007529	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:007533	Ahya	Ahya		1	0	1
+OG:007534	Spis	Spis		1	0	1
+OG:007539	Amur	Amur		1	0	1
+OG:007540	Adig,Amur,Pdam,Spis	N3	Ahya,Gfas,N7,Plut	1	4	11
+OG:007543	Adig,Gfas	N8	N10	1	1	4
+OG:007548	Spis	Spis		1	0	1
+OG:007550	Gfas	Gfas		1	0	1
+OG:007555	Adig	Adig		1	0	1
+OG:007558	Amur	Amur		1	0	1
+OG:007559	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	9
+OG:007562	Hcoe,Pcru	N1	Fspp,N5,N6,Xesp	1	4	7
+OG:007571	Adig,Ahya,Amur,Gfas,Pdam	N3	N7,Plut,Spis	1	3	19
+OG:007575	Hcoe	Hcoe		1	0	1
+OG:007579	Hcoe	Hcoe		1	0	1
+OG:007584	Adig,Ahya,Amur,Gfas	N8		1	0	7
+OG:007594	Adig	Adig		1	0	1
+OG:007595	Hcoe	Hcoe		1	0	1
+OG:007601	Amur,Plut,Spis	N3	Adig,Ahya,Gfas,N7,Pdam	1	5	10
+OG:007607	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	12
+OG:007614	Plut	Plut		1	0	1
+OG:007620	Adig,Amur	N9	Ahya	1	1	4
+OG:007622	Spis	Spis		1	0	2
+OG:007631	Amur	Amur		1	0	1
+OG:007632	Adig,Gfas	N8	N10	1	1	4
+OG:007633	Ahya,Amur	N10		1	0	3
+OG:007638	Hcoe	Hcoe		1	0	1
+OG:007660	Pdam,Plut,Spis	N3	N7,N8	1	2	7
+OG:007665	Adig	Adig		1	0	1
+OG:007666	Fspp	Fspp		1	0	1
+OG:007670	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:007671	Gfas	Gfas		1	0	1
+OG:007675	Pdam	Pdam		1	0	1
+OG:007677	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:007708	Hcoe	Hcoe		1	0	1
+OG:007709	Amur,Hcoe,Plut,Spis	N1	Adig,Ahya,Gfas,N7,Pdam,Xesp	1	6	15
+OG:007711	Spis	Spis		1	0	1
+OG:007747	Adig,Ahya,Gfas,Spis	N3	Amur,N7,Pdam,Plut	1	4	11
+OG:007748	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:007764	Fspp,Gfas,Plut	N3	N6,N9,Pcru	1	3	8
+OG:007765	Plut	Plut		1	0	1
+OG:007773	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:007782	Adig,Ahya	N9	Amur	1	1	8
+OG:007787	Adig	Adig		1	0	2
+OG:007796	Adig	Adig		1	0	1
+OG:007809	Amur	Amur		1	0	1
+OG:007818	Amur	Amur		1	0	1
+OG:007823	Fspp	Fspp		1	0	1
+OG:007824	Pdam	Pdam		1	0	1
+OG:007826	Amur	Amur		1	0	1
+OG:007827	Gfas	Gfas		1	0	1
+OG:007829	Adig,Ahya	N9	Amur	1	1	4
+OG:007839	Spis	Spis		1	0	1
+OG:007842	Ahya	Ahya		1	0	1
+OG:007847	Fspp,Pcru	N7		1	0	7
+OG:007855	Spis	Spis		1	0	1
+OG:007858	Adig	Adig		1	0	1
+OG:007865	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:007866	Amur	Amur		1	0	1
+OG:007867	Adig	Adig		1	0	1
+OG:007877	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:007903	Hcoe,Plut	N1	N4,N8,Xesp	1	3	6
+OG:007907	Plut	Plut		1	0	1
+OG:007914	Fspp,Hcoe	N1	N5,N6,Pcru,Xesp	1	4	7
+OG:007918	Fspp	Fspp		1	0	1
+OG:007919	Spis	Spis		1	0	1
+OG:007921	Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Spis	N3	Adig,Plut	1	2	19
+OG:007924	Fspp	Fspp		1	0	1
+OG:007926	Pdam	Pdam		1	0	1
+OG:007931	Hcoe	Hcoe		1	0	1
+OG:007944	Hcoe	Hcoe		1	0	2
+OG:007961	Adig,Ahya,Amur	N9		1	0	8
+OG:007972	Adig,Pdam,Spis	N3	Gfas,N10,N7,Plut	1	4	9
+OG:007973	Amur	Amur		1	0	1
+OG:007983	Amur	Amur		1	0	1
+OG:007984	Hcoe	Hcoe		1	0	1
+OG:007988	Spis	Spis		1	0	1
+OG:008000	Ahya,Amur	N10		1	0	3
+OG:008006	Plut	Plut		1	0	1
+OG:008020	Ahya,Amur,Gfas,Hcoe,Pcru,Plut	N1	Adig,Fspp,N6,Xesp	1	4	20
+OG:008044	Adig	Adig		1	0	1
+OG:008055	Pdam,Spis	N6		1	0	3
+OG:008072	Spis	Spis		1	0	1
+OG:008084	Ahya	Ahya		1	0	1
+OG:008090	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:008108	Hcoe	Hcoe		1	0	1
+OG:008123	Amur,Fspp,Gfas,Pdam,Spis	N3	Adig,Ahya,Pcru,Plut	1	4	14
+OG:008127	Gfas,Hcoe,Pdam,Spis	N1	N7,N9,Plut,Xesp	1	4	13
+OG:008129	Adig,Ahya,Amur,Plut,Spis	N3	Gfas,N7,Pdam	1	3	15
+OG:008132	Hcoe	Hcoe		1	0	1
+OG:008140	Plut	Plut		1	0	1
+OG:008146	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:008160	Ahya	Ahya		1	0	1
+OG:008168	Plut	Plut		1	0	1
+OG:008169	Spis	Spis		1	0	1
+OG:008173	Fspp	Fspp		1	0	1
+OG:008180	Spis	Spis		1	0	3
+OG:008182	Adig	Adig		1	0	1
+OG:008184	Plut	Plut		1	0	1
+OG:008197	Adig,Ahya,Amur,Pcru,Pdam,Spis	N3	Fspp,Gfas,Plut	1	3	20
+OG:008204	Adig	Adig		1	0	1
+OG:008226	Ahya,Fspp,Gfas,Pcru,Pdam,Spis	N3	Adig,Amur,Plut	1	3	15
+OG:008231	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:008245	Spis	Spis		1	0	3
+OG:008247	Plut	Plut		1	0	1
+OG:008250	Adig,Ahya,Amur,Gfas,Pcru,Pdam,Spis	N3	Fspp,Plut	1	2	15
+OG:008252	Adig	Adig		1	0	1
+OG:008253	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:008254	Spis	Spis		1	0	1
+OG:008261	Pdam	Pdam		1	0	1
+OG:008266	Ahya,Amur	N10		1	0	3
+OG:008268	Ahya	Ahya		1	0	1
+OG:008277	Pdam,Spis	N6		1	0	6
+OG:008279	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:008281	Spis	Spis		1	0	1
+OG:008287	Adig,Amur,Gfas	N8	Ahya	1	1	6
+OG:008288	Adig	Adig		1	0	1
+OG:008297	Hcoe	Hcoe		1	0	1
+OG:008298	Plut	Plut		1	0	1
+OG:008305	Hcoe,Plut,Spis	N1	N7,N8,Pdam,Xesp	1	4	11
+OG:008307	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Plut,Spis	N3	Pdam	1	1	17
+OG:008310	Hcoe	Hcoe		1	0	1
+OG:008315	Spis	Spis		1	0	1
+OG:008326	Plut	Plut		1	0	1
+OG:008328	Adig,Ahya	N9	Amur	1	1	6
+OG:008342	Adig	Adig		1	0	1
+OG:008354	Spis	Spis		1	0	1
+OG:008356	Spis	Spis		1	0	1
+OG:008368	Amur	Amur		1	0	1
+OG:008377	Spis	Spis		1	0	1
+OG:008395	Gfas	Gfas		1	0	1
+OG:008396	Plut	Plut		1	0	1
+OG:008403	Plut	Plut		1	0	1
+OG:008417	Hcoe	Hcoe		1	0	1
+OG:008428	Amur,Fspp,Gfas,Spis	N3	Adig,Ahya,Pcru,Pdam,Plut	1	5	12
+OG:008432	Ahya,Amur	N10		1	0	6
+OG:008451	Hcoe	Hcoe		1	0	1
+OG:008476	Gfas	Gfas		1	0	1
+OG:008478	Plut	Plut		1	0	1
+OG:008479	Adig,Amur	N9	Ahya	1	1	4
+OG:008489	Plut	Plut		1	0	1
+OG:008501	Spis	Spis		1	0	1
+OG:008502	Fspp,Hcoe	N1	N5,N6,Pcru,Xesp	1	4	7
+OG:008507	Hcoe	Hcoe		1	0	1
+OG:008518	Adig,Ahya,Amur,Hcoe	N1	Gfas,N4,Plut,Xesp	1	4	11
+OG:008519	Spis	Spis		1	0	1
+OG:008542	Amur,Gfas,Hcoe,Pdam	N1	Adig,Ahya,N7,Plut,Spis,Xesp	1	6	13
+OG:008565	Amur	Amur		1	0	1
+OG:008589	Adig,Ahya,Amur,Gfas	N8		1	0	7
+OG:008590	Adig,Ahya	N9	Amur	1	1	6
+OG:008596	Amur	Amur		1	0	1
+OG:008601	Adig,Amur	N9	Ahya	1	1	4
+OG:008602	Ahya	Ahya		1	0	1
+OG:008628	Gfas,Pdam	N3	N7,N9,Plut,Spis	1	4	7
+OG:008634	Spis	Spis		1	0	1
+OG:008636	Plut	Plut		1	0	1
+OG:008637	Adig,Fspp,Hcoe,Pcru,Spis	N1	Gfas,N10,Pdam,Plut,Xesp	1	5	14
+OG:008642	Adig	Adig		1	0	1
+OG:008645	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:008651	Spis	Spis		1	0	1
+OG:008654	Ahya	Ahya		1	0	1
+OG:008662	Ahya	Ahya		1	0	1
+OG:008671	Amur	Amur		1	0	1
+OG:008672	Ahya	Ahya		1	0	1
+OG:008674	Gfas,Pdam,Plut,Spis	N3	N7,N9	1	2	9
+OG:008684	Spis	Spis		1	0	1
+OG:008686	Gfas	Gfas		1	0	1
+OG:008693	Fspp,Gfas,Hcoe,Plut,Spis	N1	N9,Pcru,Pdam,Xesp	1	4	15
+OG:008700	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:008706	Amur	Amur		1	0	1
+OG:008708	Spis	Spis		1	0	1
+OG:008709	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:008711	Gfas	Gfas		1	0	1
+OG:008717	Adig,Amur,Hcoe,Pcru,Pdam,Spis	N1	Ahya,Fspp,Gfas,Plut,Xesp	1	5	17
+OG:008720	Adig,Fspp	N3	Gfas,N10,N6,Pcru,Plut	1	5	8
+OG:008726	Plut	Plut		1	0	1
+OG:008727	Amur	Amur		1	0	1
+OG:008735	Spis	Spis		1	0	1
+OG:008756	Fspp	Fspp		1	0	1
+OG:008771	Spis	Spis		1	0	2
+OG:008793	Hcoe	Hcoe		1	0	1
+OG:008796	Plut	Plut		1	0	1
+OG:008814	Adig	Adig		1	0	1
+OG:008823	Gfas	Gfas		1	0	2
+OG:008825	Hcoe	Hcoe		1	0	1
+OG:008843	Hcoe	Hcoe		1	0	1
+OG:008847	Hcoe	Hcoe		1	0	1
+OG:008850	Adig,Amur,Hcoe	N1	Ahya,Gfas,N4,Plut,Xesp	1	5	10
+OG:008854	Adig,Ahya,Amur	N9		1	0	5
+OG:008855	Plut	Plut		1	0	1
+OG:008857	Spis	Spis		1	0	1
+OG:008860	Pdam	Pdam		1	0	1
+OG:008871	Adig,Ahya	N9	Amur	1	1	4
+OG:008876	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	30
+OG:008901	Pcru	Pcru		1	0	1
+OG:008902	Hcoe	Hcoe		1	0	1
+OG:008908	Gfas	Gfas		1	0	1
+OG:008916	Hcoe	Hcoe		1	0	1
+OG:008942	Ahya	Ahya		1	0	1
+OG:008946	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:008950	Gfas,Pdam,Spis	N3	N7,N9,Plut	1	3	8
+OG:008965	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:008966	Fspp,Gfas,Hcoe,Pdam,Plut,Spis	N1	N9,Pcru,Xesp	1	3	14
+OG:008971	Fspp,Gfas,Pcru,Pdam,Spis	N3	N9,Plut	1	2	11
+OG:008982	Amur	Amur		1	0	2
+OG:008988	Ahya,Amur	N10		1	0	4
+OG:008993	Adig,Ahya,Amur,Gfas	N8		1	0	8
+OG:008996	Spis	Spis		1	0	1
+OG:008999	Adig	Adig		1	0	1
+OG:009002	Adig	Adig		1	0	1
+OG:009005	Adig,Gfas	N8	N10	1	1	4
+OG:009014	Adig	Adig		1	0	1
+OG:009016	Adig,Ahya,Amur,Gfas,Plut	N5		1	0	9
+OG:009017	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:009020	Hcoe	Hcoe		1	0	1
+OG:009022	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:009024	Spis	Spis		1	0	1
+OG:009030	Adig	Adig		1	0	1
+OG:009036	Fspp,Gfas	N3	N6,N9,Pcru,Plut	1	4	7
+OG:009043	Pdam	Pdam		1	0	1
+OG:009050	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:009056	Hcoe	Hcoe		1	0	1
+OG:009059	Hcoe	Hcoe		1	0	1
+OG:009061	Amur	Amur		1	0	1
+OG:009065	Spis	Spis		1	0	1
+OG:009067	Hcoe	Hcoe		1	0	1
+OG:009071	Amur,Pdam,Spis	N3	Adig,Ahya,Gfas,N7,Plut	1	5	10
+OG:009075	Pcru	Pcru		1	0	1
+OG:009076	Gfas,Pcru,Plut,Spis	N3	Fspp,N9,Pdam	1	3	12
+OG:009106	Spis	Spis		1	0	1
+OG:009120	Spis	Spis		1	0	1
+OG:009128	Hcoe	Hcoe		1	0	1
+OG:009131	Spis	Spis		1	0	1
+OG:009133	Plut	Plut		1	0	1
+OG:009138	Amur,Hcoe,Spis	N1	Adig,Ahya,Gfas,N7,Pdam,Plut,Xesp	1	7	12
+OG:009152	Amur,Fspp,Gfas,Plut,Spis	N3	Adig,Ahya,Pcru,Pdam	1	4	14
+OG:009176	Spis	Spis		1	0	1
+OG:009178	Hcoe	Hcoe		1	0	1
+OG:009179	Amur	Amur		1	0	1
+OG:009183	Adig,Amur,Gfas,Hcoe,Spis	N1	Ahya,N7,Pdam,Plut,Xesp	1	5	14
+OG:009185	Hcoe	Hcoe		1	0	1
+OG:009188	Amur,Hcoe,Spis	N1	Adig,Ahya,Gfas,N7,Pdam,Plut,Xesp	1	7	12
+OG:009190	Hcoe	Hcoe		1	0	1
+OG:009197	Amur	Amur		1	0	1
+OG:009210	Pdam	Pdam		1	0	1
+OG:009216	Pdam,Spis	N6		1	0	3
+OG:009228	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:009232	Adig,Amur,Pdam	N3	Ahya,Gfas,N7,Plut,Spis	1	5	10
+OG:009235	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:009246	Adig,Ahya,Amur,Fspp,Gfas	N3	N6,Pcru,Plut	1	3	12
+OG:009253	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	10
+OG:009254	Ahya,Fspp,Spis	N3	Adig,Amur,Gfas,Pcru,Pdam,Plut	1	6	11
+OG:009256	Plut	Plut		1	0	1
+OG:009268	Plut	Plut		1	0	1
+OG:009286	Hcoe	Hcoe		1	0	1
+OG:009287	Hcoe	Hcoe		1	0	1
+OG:009300	Spis	Spis		1	0	1
+OG:009301	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:009303	Hcoe	Hcoe		1	0	2
+OG:009306	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:009317	Gfas	Gfas		1	0	1
+OG:009318	Adig,Pcru,Plut	N3	Fspp,Gfas,N10,N6	1	4	9
+OG:009328	Spis	Spis		1	0	1
+OG:009329	Spis	Spis		1	0	1
+OG:009332	Fspp	Fspp		1	0	1
+OG:009335	Hcoe	Hcoe		1	0	1
+OG:009340	Hcoe	Hcoe		1	0	1
+OG:009349	Hcoe	Hcoe		1	0	1
+OG:009358	Spis	Spis		1	0	1
+OG:009361	Adig	Adig		1	0	1
+OG:009405	Ahya,Amur	N10		1	0	3
+OG:009408	Adig	Adig		1	0	1
+OG:009420	Hcoe	Hcoe		1	0	1
+OG:009422	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	8
+OG:009428	Gfas,Hcoe,Pcru,Spis	N1	Fspp,N9,Pdam,Plut,Xesp	1	5	12
+OG:009440	Hcoe	Hcoe		1	0	2
+OG:009459	Adig,Ahya,Fspp,Gfas,Hcoe,Pdam,Spis	N1	Amur,Pcru,Plut,Xesp	1	4	17
+OG:009480	Fspp	Fspp		1	0	1
+OG:009483	Amur	Amur		1	0	1
+OG:009487	Amur	Amur		1	0	1
+OG:009495	Plut	Plut		1	0	1
+OG:009498	Pdam,Spis	N6		1	0	3
+OG:009501	Fspp,Spis	N4	Pcru,Pdam	1	2	6
+OG:009502	Ahya,Amur,Fspp,Gfas,Hcoe,Pcru,Pdam,Spis	N1	Adig,Plut,Xesp	1	3	19
+OG:009508	Gfas,Pdam,Spis	N3	N7,N9,Plut	1	3	8
+OG:009517	Adig,Fspp	N3	Gfas,N10,N6,Pcru,Plut	1	5	8
+OG:009527	Hcoe	Hcoe		1	0	1
+OG:009529	Hcoe	Hcoe		1	0	1
+OG:009535	Gfas,Plut	N5	N9	1	1	4
+OG:009544	Hcoe	Hcoe		1	0	1
+OG:009553	Hcoe	Hcoe		1	0	1
+OG:009559	Hcoe	Hcoe		1	0	1
+OG:009561	Hcoe	Hcoe		1	0	1
+OG:009567	Pdam	Pdam		1	0	1
+OG:009568	Plut	Plut		1	0	1
+OG:009569	Adig	Adig		1	0	1
+OG:009576	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:009594	Adig	Adig		1	0	1
+OG:009595	Hcoe	Hcoe		1	0	1
+OG:009597	Hcoe	Hcoe		1	0	1
+OG:009601	Adig,Ahya,Amur,Pdam,Spis	N3	Gfas,N7,Plut	1	3	12
+OG:009602	Hcoe	Hcoe		1	0	2
+OG:009607	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:009613	Hcoe	Hcoe		1	0	1
+OG:009614	Hcoe	Hcoe		1	0	1
+OG:009620	Gfas	Gfas		1	0	1
+OG:009625	Adig	Adig		1	0	1
+OG:009626	Hcoe	Hcoe		1	0	2
+OG:009628	Hcoe	Hcoe		1	0	3
+OG:009630	Hcoe	Hcoe		1	0	3
+OG:009632	Ahya,Amur,Pcru,Spis	N3	Adig,Fspp,Gfas,Pdam,Plut	1	5	12
+OG:009635	Ahya,Pcru,Spis	N3	Adig,Amur,Fspp,Gfas,Pdam,Plut	1	6	11
+OG:009640	Ahya	Ahya		1	0	1
+OG:009641	Hcoe	Hcoe		1	0	2
+OG:009647	Adig,Gfas,Hcoe,Spis	N1	N10,N7,Pdam,Plut,Xesp	1	5	12
+OG:009661	Adig	Adig		1	0	1
+OG:009664	Fspp,Spis	N4	Pcru,Pdam	1	2	6
+OG:009666	Amur	Amur		1	0	1
+OG:009673	Spis	Spis		1	0	1
+OG:009675	Amur	Amur		1	0	1
+OG:009676	Hcoe	Hcoe		1	0	2
+OG:009677	Hcoe	Hcoe		1	0	2
+OG:009680	Hcoe	Hcoe		1	0	1
+OG:009692	Spis	Spis		1	0	1
+OG:009701	Spis	Spis		1	0	1
+OG:009713	Gfas	Gfas		1	0	1
+OG:009715	Hcoe	Hcoe		1	0	1
+OG:009720	Adig,Amur	N9	Ahya	1	1	6
+OG:009722	Hcoe	Hcoe		1	0	2
+OG:009725	Spis	Spis		1	0	1
+OG:009736	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:009742	Spis	Spis		1	0	2
+OG:009752	Adig,Plut,Spis	N3	Gfas,N10,N7,Pdam	1	4	12
+OG:009757	Gfas	Gfas		1	0	1
+OG:009761	Amur,Fspp,Pdam,Plut,Spis	N3	Adig,Ahya,Gfas,Pcru	1	4	15
+OG:009768	Spis	Spis		1	0	1
+OG:009784	Spis	Spis		1	0	1
+OG:009789	Hcoe,Plut	N1	N4,N8,Xesp	1	3	6
+OG:009791	Pdam,Spis	N6		1	0	3
+OG:009805	Plut	Plut		1	0	1
+OG:009808	Plut	Plut		1	0	2
+OG:009822	Spis	Spis		1	0	1
+OG:009834	Plut	Plut		1	0	1
+OG:009836	Plut	Plut		1	0	1
+OG:009837	Ahya	Ahya		1	0	1
+OG:009838	Adig,Plut	N5	Gfas,N10	1	2	5
+OG:009842	Hcoe,Pdam	N1	N5,N7,Spis,Xesp	1	4	7
+OG:009844	Spis	Spis		1	0	1
+OG:009854	Ahya,Amur,Plut	N5	Adig,Gfas	1	2	7
+OG:009856	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:009862	Plut	Plut		1	0	1
+OG:009872	Hcoe	Hcoe		1	0	2
+OG:009878	Hcoe	Hcoe		1	0	1
+OG:009879	Spis	Spis		1	0	1
+OG:009889	Gfas	Gfas		1	0	1
+OG:009900	Hcoe	Hcoe		1	0	1
+OG:009912	Adig,Ahya,Amur,Gfas,Hcoe,Pcru,Pdam,Spis	N1	Fspp,Plut,Xesp	1	3	20
+OG:009915	Hcoe	Hcoe		1	0	1
+OG:009916	Gfas	Gfas		1	0	1
+OG:009919	Hcoe	Hcoe		1	0	5
+OG:009924	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	10
+OG:009931	Plut	Plut		1	0	1
+OG:009933	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	8
+OG:009934	Hcoe	Hcoe		1	0	1
+OG:009940	Hcoe	Hcoe		1	0	2
+OG:009942	Amur	Amur		1	0	1
+OG:009944	Spis	Spis		1	0	1
+OG:009946	Ahya,Hcoe,Pcru	N1	Adig,Amur,Fspp,Gfas,N6,Plut,Xesp	1	7	12
+OG:009949	Hcoe	Hcoe		1	0	1
+OG:009970	Ahya,Fspp,Gfas,Pcru,Plut,Spis	N3	Adig,Amur,Pdam	1	3	14
+OG:009971	Adig,Amur,Fspp,Pcru,Pdam,Plut,Spis	N3	Ahya,Gfas	1	2	15
+OG:009985	Adig,Amur,Spis	N3	Ahya,Gfas,N7,Pdam,Plut	1	5	10
+OG:009993	Gfas	Gfas		1	0	1
+OG:009994	Fspp,Gfas,Spis	N3	N9,Pcru,Pdam,Plut	1	4	9
+OG:010001	Pdam,Spis	N6		1	0	3
+OG:010010	Gfas	Gfas		1	0	1
+OG:010012	Spis	Spis		1	0	2
+OG:010013	Hcoe	Hcoe		1	0	1
+OG:010015	Pcru	Pcru		1	0	1
+OG:010018	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	30
+OG:010024	Amur,Fspp,Gfas,Pcru	N3	Adig,Ahya,N6,Plut	1	4	11
+OG:010027	Ahya,Amur	N10		1	0	6
+OG:010028	Adig,Ahya,Amur,Hcoe,Spis	N1	Gfas,N7,Pdam,Plut,Xesp	1	5	14
+OG:010029	Plut	Plut		1	0	1
+OG:010034	Fspp	Fspp		1	0	1
+OG:010038	Spis	Spis		1	0	3
+OG:010043	Adig,Ahya,Amur,Pdam,Spis	N3	Gfas,N7,Plut	1	3	12
+OG:010044	Adig,Amur	N9	Ahya	1	1	4
+OG:010047	Hcoe	Hcoe		1	0	1
+OG:010048	Amur,Pcru,Plut	N3	Adig,Ahya,Fspp,Gfas,N6	1	5	10
+OG:010049	Pdam,Spis	N6		1	0	3
+OG:010057	Pcru	Pcru		1	0	1
+OG:010065	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:010066	Spis	Spis		1	0	1
+OG:010070	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:010086	Adig,Pcru,Pdam,Plut,Spis	N3	Fspp,Gfas,N10	1	3	12
+OG:010091	Plut	Plut		1	0	1
+OG:010106	Adig,Amur,Gfas,Pcru,Pdam,Spis	N3	Ahya,Fspp,Plut	1	3	14
+OG:010110	Ahya	Ahya		1	0	1
+OG:010125	Spis	Spis		1	0	1
+OG:010136	Ahya,Fspp	N3	Adig,Amur,Gfas,N6,Pcru,Plut	1	6	9
+OG:010141	Spis	Spis		1	0	1
+OG:010147	Amur	Amur		1	0	1
+OG:010154	Amur	Amur		1	0	1
+OG:010157	Adig	Adig		1	0	1
+OG:010165	Spis	Spis		1	0	1
+OG:010169	Adig,Ahya,Amur,Pcru	N3	Fspp,Gfas,N6,Plut	1	4	12
+OG:010170	Fspp	Fspp		1	0	1
+OG:010175	Fspp,Gfas,Pcru,Spis	N3	N9,Pdam,Plut	1	3	10
+OG:010180	Adig	Adig		1	0	1
+OG:010181	Hcoe	Hcoe		1	0	1
+OG:010185	Spis	Spis		1	0	1
+OG:010186	Plut	Plut		1	0	1
+OG:010187	Fspp	Fspp		1	0	1
+OG:010202	Hcoe	Hcoe		1	0	1
+OG:010206	Gfas	Gfas		1	0	1
+OG:010210	Gfas	Gfas		1	0	1
+OG:010214	Spis	Spis		1	0	1
+OG:010216	Adig	Adig		1	0	1
+OG:010220	Spis	Spis		1	0	1
+OG:010234	Adig,Ahya,Amur,Fspp,Pcru,Pdam,Spis	N3	Gfas,Plut	1	2	16
+OG:010245	Pcru,Pdam,Spis	N4	Fspp	1	1	6
+OG:010246	Spis	Spis		1	0	1
+OG:010253	Hcoe,Pdam,Plut,Spis	N1	N7,N8,Xesp	1	3	11
+OG:010265	Spis	Spis		1	0	1
+OG:010273	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:010278	Amur	Amur		1	0	1
+OG:010286	Fspp,Gfas,Plut	N3	N6,N9,Pcru	1	3	9
+OG:010287	Hcoe	Hcoe		1	0	2
+OG:010288	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:010297	Plut	Plut		1	0	1
+OG:010303	Adig,Ahya,Amur,Fspp,Plut	N3	Gfas,N6,Pcru	1	3	12
+OG:010304	Hcoe	Hcoe		1	0	1
+OG:010318	Pdam,Spis	N6		1	0	3
+OG:010332	Spis	Spis		1	0	1
+OG:010338	Gfas	Gfas		1	0	1
+OG:010343	Spis	Spis		1	0	1
+OG:010354	Ahya,Amur	N10		1	0	3
+OG:010366	Adig	Adig		1	0	1
+OG:010371	Hcoe	Hcoe		1	0	1
+OG:010373	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:010377	Amur,Fspp,Hcoe,Plut	N1	Adig,Ahya,Gfas,N6,Pcru,Xesp	1	6	13
+OG:010381	Pcru	Pcru		1	0	1
+OG:010386	Adig	Adig		1	0	1
+OG:010396	Spis	Spis		1	0	1
+OG:010398	Ahya,Gfas	N8	Adig,Amur	1	2	6
+OG:010399	Amur	Amur		1	0	1
+OG:010407	Fspp	Fspp		1	0	1
+OG:010431	Amur	Amur		1	0	1
+OG:010437	Hcoe	Hcoe		1	0	1
+OG:010443	Hcoe	Hcoe		1	0	1
+OG:010444	Gfas	Gfas		1	0	1
+OG:010448	Amur	Amur		1	0	1
+OG:010451	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:010465	Spis	Spis		1	0	1
+OG:010471	Fspp,Spis	N4	Pcru,Pdam	1	2	6
+OG:010472	Fspp,Gfas,Pcru,Pdam,Spis	N3	N9,Plut	1	2	14
+OG:010480	Spis	Spis		1	0	1
+OG:010487	Adig,Plut	N5	Gfas,N10	1	2	5
+OG:010489	Ahya	Ahya		1	0	1
+OG:010491	Adig,Ahya,Amur,Gfas,Pdam,Plut,Spis	N3	N7	1	1	14
+OG:010497	Gfas	Gfas		1	0	1
+OG:010517	Pdam	Pdam		1	0	1
+OG:010522	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	39
+OG:010525	Adig,Ahya,Amur,Fspp,Hcoe,Pcru,Spis	N1	Gfas,Pdam,Plut,Xesp	1	4	17
+OG:010526	Adig	Adig		1	0	1
+OG:010533	Adig	Adig		1	0	1
+OG:010541	Plut	Plut		1	0	1
+OG:010542	Hcoe	Hcoe		1	0	1
+OG:010543	Adig	Adig		1	0	1
+OG:010555	Amur,Fspp,Pcru	N3	Adig,Ahya,Gfas,N6,Plut	1	5	10
+OG:010567	Pcru	Pcru		1	0	1
+OG:010579	Adig,Ahya,Amur	N9		1	0	6
+OG:010584	Spis	Spis		1	0	1
+OG:010585	Adig	Adig		1	0	1
+OG:010596	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:010597	Ahya,Plut	N5	Adig,Amur,Gfas	1	3	6
+OG:010604	Plut	Plut		1	0	1
+OG:010612	Hcoe	Hcoe		1	0	3
+OG:010619	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	20
+OG:010623	Spis	Spis		1	0	1
+OG:010628	Adig,Ahya,Amur,Fspp,Pcru	N3	Gfas,N6,Plut	1	3	13
+OG:010629	Amur	Amur		1	0	1
+OG:010630	Spis	Spis		1	0	1
+OG:010632	Hcoe	Hcoe		1	0	1
+OG:010644	Spis	Spis		1	0	1
+OG:010646	Adig	Adig		1	0	1
+OG:010651	Hcoe	Hcoe		1	0	1
+OG:010656	Hcoe	Hcoe		1	0	1
+OG:010665	Pcru,Plut	N3	Fspp,N6,N8	1	3	6
+OG:010675	Ahya,Spis	N3	Adig,Amur,Gfas,N7,Pdam,Plut	1	6	9
+OG:010678	Spis	Spis		1	0	1
+OG:010682	Fspp,Gfas,Hcoe,Pcru,Spis	N1	N9,Pdam,Plut,Xesp	1	4	13
+OG:010696	Spis	Spis		1	0	1
+OG:010699	Amur	Amur		1	0	1
+OG:010700	Hcoe	Hcoe		1	0	2
+OG:010701	Hcoe	Hcoe		1	0	1
+OG:010712	Ahya,Gfas,Pdam,Spis	N3	Adig,Amur,N7,Plut	1	4	11
+OG:010734	Adig,Pdam,Spis	N3	Gfas,N10,N7,Plut	1	4	10
+OG:010751	Gfas	Gfas		1	0	1
+OG:010754	Hcoe	Hcoe		1	0	1
+OG:010758	Ahya,Amur,Hcoe	N1	Adig,Gfas,N4,Plut,Xesp	1	5	10
+OG:010764	Spis	Spis		1	0	1
+OG:010769	Pdam,Spis	N6		1	0	5
+OG:010781	Spis	Spis		1	0	1
+OG:010782	Fspp	Fspp		1	0	1
+OG:010787	Fspp,Pcru,Plut	N3	N6,N8	1	2	11
+OG:010792	Gfas	Gfas		1	0	2
+OG:010804	Hcoe	Hcoe		1	0	1
+OG:010805	Amur	Amur		1	0	1
+OG:010806	Plut	Plut		1	0	1
+OG:010834	Amur,Gfas,Pdam,Spis	N3	Adig,Ahya,N7,Plut	1	4	11
+OG:010842	Amur,Fspp	N3	Adig,Ahya,Gfas,N6,Pcru,Plut	1	6	9
+OG:010851	Hcoe	Hcoe		1	0	1
+OG:010855	Ahya,Pdam,Spis	N3	Adig,Amur,Gfas,N7,Plut	1	5	10
+OG:010858	Spis	Spis		1	0	1
+OG:010865	Spis	Spis		1	0	1
+OG:010873	Ahya,Amur,Fspp,Gfas,Pcru,Plut	N3	Adig,N6	1	2	13
+OG:010886	Spis	Spis		1	0	1
+OG:010898	Ahya	Ahya		1	0	1
+OG:010907	Adig	Adig		1	0	1
+OG:010914	Pcru	Pcru		1	0	1
+OG:010918	Adig	Adig		1	0	1
+OG:010926	Gfas	Gfas		1	0	1
+OG:010944	Adig	Adig		1	0	1
+OG:010950	Spis	Spis		1	0	1
+OG:010954	Plut	Plut		1	0	2
+OG:010957	Fspp	Fspp		1	0	1
+OG:010965	Adig,Ahya,Amur,Fspp,Plut,Spis	N3	Gfas,Pcru,Pdam	1	3	14
+OG:010970	Gfas,Pdam,Plut,Spis	N3	N7,N9	1	2	13
+OG:010971	Adig,Ahya,Amur,Gfas,Pcru,Spis	N3	Fspp,Pdam,Plut	1	3	14
+OG:010982	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:010985	Spis	Spis		1	0	1
+OG:010996	Adig	Adig		1	0	1
+OG:011013	Gfas	Gfas		1	0	1
+OG:011018	Ahya	Ahya		1	0	1
+OG:011032	Spis	Spis		1	0	1
+OG:011033	Pdam	Pdam		1	0	1
+OG:011043	Amur	Amur		1	0	1
+OG:011062	Spis	Spis		1	0	1
+OG:011069	Fspp,Gfas,Pcru,Pdam,Plut	N3	N9,Spis	1	2	11
+OG:011071	Fspp,Pcru,Plut,Spis	N3	N8,Pdam	1	2	9
+OG:011072	Plut	Plut		1	0	1
+OG:011073	Adig	Adig		1	0	1
+OG:011092	Ahya,Amur,Gfas	N8	Adig	1	1	8
+OG:011116	Fspp	Fspp		1	0	1
+OG:011117	Spis	Spis		1	0	1
+OG:011119	Fspp,Hcoe	N1	N5,N6,Pcru,Xesp	1	4	7
+OG:011138	Ahya	Ahya		1	0	1
+OG:011142	Spis	Spis		1	0	1
+OG:011147	Amur	Amur		1	0	1
+OG:011150	Adig,Amur,Fspp,Pdam,Spis	N3	Ahya,Gfas,Pcru,Plut	1	4	14
+OG:011153	Spis	Spis		1	0	1
+OG:011164	Adig,Ahya,Amur,Fspp,Pdam,Spis	N3	Gfas,Pcru,Plut	1	3	14
+OG:011172	Ahya,Amur,Gfas,Plut,Spis	N3	Adig,N7,Pdam	1	3	12
+OG:011185	Hcoe	Hcoe		1	0	2
+OG:011190	Fspp,Pcru,Spis	N4	Pdam	1	1	6
+OG:011192	Fspp	Fspp		1	0	1
+OG:011196	Ahya,Amur	N10		1	0	3
+OG:011225	Hcoe	Hcoe		1	0	1
+OG:011231	Gfas	Gfas		1	0	1
+OG:011237	Adig,Ahya,Amur,Gfas	N8		1	0	9
+OG:011254	Hcoe	Hcoe		1	0	1
+OG:011262	Spis	Spis		1	0	1
+OG:011263	Hcoe	Hcoe		1	0	1
+OG:011284	Ahya,Amur,Plut	N5	Adig,Gfas	1	2	7
+OG:011285	Ahya,Amur,Spis	N3	Adig,Gfas,N7,Pdam,Plut	1	5	10
+OG:011288	Fspp,Gfas,Pdam	N3	N9,Pcru,Plut,Spis	1	4	9
+OG:011296	Ahya	Ahya		1	0	1
+OG:011315	Spis	Spis		1	0	1
+OG:011324	Spis	Spis		1	0	1
+OG:011325	Ahya,Amur,Spis	N3	Adig,Gfas,N7,Pdam,Plut	1	5	10
+OG:011331	Ahya,Amur,Hcoe	N1	Adig,Gfas,N4,Plut,Xesp	1	5	10
+OG:011342	Spis	Spis		1	0	1
+OG:011358	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:011366	Adig	Adig		1	0	1
+OG:011368	Ahya	Ahya		1	0	1
+OG:011397	Gfas,Pdam,Plut	N3	N7,N9,Spis	1	3	8
+OG:011412	Fspp	Fspp		1	0	1
+OG:011458	Ahya,Amur	N10		1	0	3
+OG:011478	Adig	Adig		1	0	1
+OG:011492	Hcoe	Hcoe		1	0	1
+OG:011496	Gfas	Gfas		1	0	1
+OG:011498	Adig,Ahya,Amur,Gfas	N8		1	0	7
+OG:011502	Hcoe	Hcoe		1	0	1
+OG:011528	Hcoe	Hcoe		1	0	1
+OG:011532	Spis	Spis		1	0	1
+OG:011538	Spis	Spis		1	0	1
+OG:011561	Fspp	Fspp		1	0	1
+OG:011567	Adig	Adig		1	0	1
+OG:011603	Spis	Spis		1	0	1
+OG:011619	Hcoe	Hcoe		1	0	2
+OG:011627	Ahya	Ahya		1	0	1
+OG:011642	Hcoe	Hcoe		1	0	1
+OG:011675	Pcru	Pcru		1	0	1
+OG:011684	Plut	Plut		1	0	1
+OG:011700	Plut	Plut		1	0	1
+OG:011703	Fspp,Pcru,Pdam,Spis	N4		1	0	7
+OG:011728	Spis	Spis		1	0	1
+OG:011743	Spis	Spis		1	0	1
+OG:011751	Amur	Amur		1	0	1
+OG:011752	Adig	Adig		1	0	1
+OG:011756	Hcoe	Hcoe		1	0	1
+OG:011762	Adig	Adig		1	0	1
+OG:011769	Hcoe	Hcoe		1	0	1
+OG:011803	Pcru	Pcru		1	0	1
+OG:011834	Hcoe	Hcoe		1	0	3
+OG:011893	Fspp	Fspp		1	0	1
+OG:011918	Hcoe	Hcoe		1	0	1
+OG:011919	Hcoe	Hcoe		1	0	1
+OG:011968	Fspp,Pcru	N7		1	0	3
+OG:011993	Pcru	Pcru		1	0	1
+OG:012045	Amur	Amur		1	0	1
+OG:012046	Plut	Plut		1	0	1
+OG:012053	Amur	Amur		1	0	1
+OG:012060	Gfas	Gfas		1	0	1
+OG:012063	Ahya,Fspp,Gfas,Pcru	N3	Adig,Amur,N6,Plut	1	4	11
+OG:012069	Gfas	Gfas		1	0	1
+OG:012111	Hcoe	Hcoe		1	0	1
+OG:012134	Hcoe	Hcoe		1	0	1
+OG:012135	Hcoe	Hcoe		1	0	1
+OG:012312	Fspp	Fspp		1	0	1
+OG:012393	Amur	Amur		1	0	1
+OG:012460	Hcoe	Hcoe		1	0	1
+OG:012471	Hcoe	Hcoe		1	0	1
+OG:012483	Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	Adig	1	1	16
+OG:012486	Plut	Plut		1	0	1
+OG:012489	Fspp	Fspp		1	0	1
+OG:012492	Hcoe	Hcoe		1	0	1
+OG:012503	Gfas	Gfas		1	0	1
+OG:012504	Adig,Amur	N9	Ahya	1	1	4
+OG:012519	Hcoe	Hcoe		1	0	1
+OG:012524	Hcoe	Hcoe		1	0	1
+OG:012526	Gfas	Gfas		1	0	1
+OG:012547	Amur	Amur		1	0	1
+OG:012573	Fspp,Spis	N4	Pcru,Pdam	1	2	5
+OG:012574	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:012581	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:012583	Adig	Adig		1	0	1
+OG:012589	Adig,Amur,Fspp,Gfas,Pcru,Spis	N3	Ahya,Pdam,Plut	1	3	14
+OG:012591	Spis	Spis		1	0	1
+OG:012592	Adig,Gfas	N8	N10	1	1	4
+OG:012597	Amur	Amur		1	0	1
+OG:012602	Amur,Gfas,Pcru	N3	Adig,Ahya,Fspp,N6,Plut	1	5	10
+OG:012606	Adig	Adig		1	0	1
+OG:012611	Pdam	Pdam		1	0	1
+OG:012612	Amur	Amur		1	0	1
+OG:012614	Adig,Amur,Gfas,Hcoe,Plut,Spis	N1	Ahya,N7,Pdam,Xesp	1	4	15
+OG:012615	Spis	Spis		1	0	1
+OG:012619	Fspp,Pdam,Spis	N4	Pcru	1	1	6
+OG:012622	Hcoe	Hcoe		1	0	1
+OG:012643	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:012653	Spis	Spis		1	0	1
+OG:012675	Hcoe	Hcoe		1	0	1
+OG:012680	Amur	Amur		1	0	1
+OG:012688	Adig	Adig		1	0	1
+OG:012694	Adig	Adig		1	0	1
+OG:012707	Amur	Amur		1	0	1
+OG:012719	Fspp,Pdam,Spis	N4	Pcru	1	1	6
+OG:012733	Gfas	Gfas		1	0	1
+OG:012752	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:012754	Amur	Amur		1	0	1
+OG:012755	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:012778	Amur	Amur		1	0	1
+OG:012784	Ahya	Ahya		1	0	1
+OG:012791	Adig	Adig		1	0	1
+OG:012793	Ahya	Ahya		1	0	1
+OG:012813	Adig,Ahya,Amur,Gfas	N8		1	0	7
+OG:012818	Fspp,Pcru	N7		1	0	3
+OG:012821	Adig,Amur	N9	Ahya	1	1	4
+OG:012838	Adig,Ahya,Amur,Gfas	N8		1	0	7
+OG:012839	Ahya,Amur,Fspp,Gfas,Pdam,Spis	N3	Adig,Pcru,Plut	1	3	14
+OG:012840	Pdam	Pdam		1	0	1
+OG:012846	Adig	Adig		1	0	1
+OG:012873	Amur	Amur		1	0	1
+OG:012894	Gfas,Pdam,Spis	N3	N7,N9,Plut	1	3	8
+OG:012898	Hcoe	Hcoe		1	0	1
+OG:012919	Adig,Ahya	N9	Amur	1	1	4
+OG:012920	Adig	Adig		1	0	1
+OG:012922	Ahya	Ahya		1	0	1
+OG:012924	Ahya	Ahya		1	0	1
+OG:012934	Ahya,Fspp	N3	Adig,Amur,Gfas,N6,Pcru,Plut	1	6	9
+OG:012936	Adig,Amur,Gfas	N8	Ahya	1	1	6
+OG:012937	Adig,Ahya,Amur	N9		1	0	5
+OG:012952	Spis	Spis		1	0	1
+OG:012953	Gfas	Gfas		1	0	1
+OG:012954	Ahya,Fspp	N3	Adig,Amur,Gfas,N6,Pcru,Plut	1	6	9
+OG:012974	Spis	Spis		1	0	1
+OG:012975	Ahya,Amur,Pdam,Spis	N3	Adig,Gfas,N7,Plut	1	4	11
+OG:012976	Fspp,Spis	N4	Pcru,Pdam	1	2	5
+OG:012979	Adig,Ahya,Fspp	N3	Amur,Gfas,N6,Pcru,Plut	1	5	10
+OG:012980	Adig	Adig		1	0	1
+OG:012995	Gfas	Gfas		1	0	1
+OG:012996	Ahya,Amur,Fspp,Pdam,Spis	N3	Adig,Gfas,Pcru,Plut	1	4	13
+OG:012999	Fspp	Fspp		1	0	1
+OG:013005	Gfas	Gfas		1	0	1
+OG:013022	Amur	Amur		1	0	1
+OG:013023	Ahya	Ahya		1	0	1
+OG:013038	Fspp	Fspp		1	0	1
+OG:013039	Gfas	Gfas		1	0	1
+OG:013043	Ahya,Amur,Fspp	N3	Adig,Gfas,N6,Pcru,Plut	1	5	11
+OG:013052	Gfas	Gfas		1	0	1
+OG:013059	Amur,Fspp	N3	Adig,Ahya,Gfas,N6,Pcru,Plut	1	6	9
+OG:013061	Spis	Spis		1	0	1
+OG:013078	Ahya,Amur,Fspp	N3	Adig,Gfas,N6,Pcru,Plut	1	5	10
+OG:013116	Pcru,Plut,Spis	N3	Fspp,N8,Pdam	1	3	8
+OG:013117	Gfas,Plut	N5	N9	1	1	4
+OG:013124	Spis	Spis		1	0	1
+OG:013159	Gfas	Gfas		1	0	1
+OG:013163	Spis	Spis		1	0	1
+OG:013193	Gfas	Gfas		1	0	1
+OG:013197	Gfas	Gfas		1	0	1
+OG:013226	Ahya	Ahya		1	0	2
+OG:013234	Adig	Adig		1	0	1
+OG:013248	Hcoe	Hcoe		1	0	1
+OG:013256	Spis	Spis		1	0	1
+OG:013270	Gfas	Gfas		1	0	1
+OG:013278	Gfas	Gfas		1	0	1
+OG:013292	Adig,Ahya,Amur	N9		1	0	5
+OG:013293	Pdam	Pdam		1	0	1
+OG:013296	Spis	Spis		1	0	1
+OG:013308	Ahya	Ahya		1	0	1
+OG:013322	Spis	Spis		1	0	1
+OG:013326	Amur,Fspp	N3	Adig,Ahya,Gfas,N6,Pcru,Plut	1	6	9
+OG:013328	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:013402	Spis	Spis		1	0	1
+OG:013417	Spis	Spis		1	0	1
+OG:013454	Amur,Fspp,Hcoe,Pcru,Plut	N1	Adig,Ahya,Gfas,N6,Xesp	1	5	15
+OG:013465	Plut	Plut		1	0	1
+OG:013655	Hcoe	Hcoe		1	0	1
+OG:013665	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	10
+OG:013668	Fspp	Fspp		1	0	1
+OG:013670	Hcoe	Hcoe		1	0	1
+OG:013671	Hcoe	Hcoe		1	0	1
+OG:013677	Hcoe	Hcoe		1	0	1
+OG:013690	Adig	Adig		1	0	1
+OG:013691	Hcoe	Hcoe		1	0	1
+OG:013695	Hcoe	Hcoe		1	0	1
+OG:013702	Hcoe	Hcoe		1	0	1
+OG:013709	Hcoe	Hcoe		1	0	1
+OG:013713	Fspp	Fspp		1	0	1
+OG:013717	Hcoe	Hcoe		1	0	1
+OG:013718	Hcoe	Hcoe		1	0	1
+OG:013720	Plut	Plut		1	0	1
+OG:013721	Plut	Plut		1	0	1
+OG:013727	Hcoe	Hcoe		1	0	1
+OG:013733	Hcoe	Hcoe		1	0	1
+OG:013735	Pcru	Pcru		1	0	1
+OG:013743	Amur	Amur		1	0	1
+OG:013749	Spis	Spis		1	0	1
+OG:013750	Adig,Amur	N9	Ahya	1	1	4
+OG:013751	Adig	Adig		1	0	1
+OG:013776	Hcoe	Hcoe		1	0	1
+OG:013815	Plut	Plut		1	0	1
+OG:013827	Hcoe	Hcoe		1	0	2
+OG:013831	Hcoe	Hcoe		1	0	1
+OG:013838	Amur,Fspp,Gfas,Pdam,Spis	N3	Adig,Ahya,Pcru,Plut	1	4	14
+OG:013842	Pcru,Pdam	N4	Fspp,Spis	1	2	5
+OG:013848	Hcoe	Hcoe		1	0	1
+OG:013856	Ahya,Gfas,Pdam	N3	Adig,Amur,N7,Plut,Spis	1	5	10
+OG:013860	Adig	Adig		1	0	1
+OG:013863	Adig	Adig		1	0	1
+OG:013866	Amur,Fspp,Pcru,Spis	N3	Adig,Ahya,Gfas,Pdam,Plut	1	5	12
+OG:013869	Pdam	Pdam		1	0	1
+OG:013883	Adig	Adig		1	0	1
+OG:013915	Hcoe	Hcoe		1	0	4
+OG:013920	Hcoe	Hcoe		1	0	1
+OG:013921	Hcoe	Hcoe		1	0	1
+OG:013926	Hcoe	Hcoe		1	0	1
+OG:013951	Ahya,Amur,Pcru,Plut,Spis	N3	Adig,Fspp,Gfas,Pdam	1	4	13
+OG:013955	Adig,Amur	N9	Ahya	1	1	4
+OG:013956	Gfas	Gfas		1	0	1
+OG:013957	Amur	Amur		1	0	1
+OG:013967	Adig,Ahya,Amur,Pdam,Spis	N3	Gfas,N7,Plut	1	3	12
+OG:013975	Spis	Spis		1	0	1
+OG:013978	Pdam	Pdam		1	0	1
+OG:013988	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:014064	Gfas	Gfas		1	0	1
+OG:014130	Adig,Ahya,Amur,Gfas	N8		1	0	7
+OG:014157	Plut	Plut		1	0	1
+OG:014191	Hcoe	Hcoe		1	0	1
+OG:014224	Gfas	Gfas		1	0	1
+OG:014233	Plut	Plut		1	0	1
+OG:014235	Ahya,Gfas,Spis	N3	Adig,Amur,N7,Pdam,Plut	1	5	10
+OG:014239	Amur,Fspp,Gfas,Pdam,Plut,Spis	N3	Adig,Ahya,Pcru	1	3	14
+OG:014251	Pdam	Pdam		1	0	1
+OG:014253	Adig	Adig		1	0	1
+OG:014254	Spis	Spis		1	0	1
+OG:014258	Gfas	Gfas		1	0	1
+OG:014259	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	17
+OG:014264	Gfas	Gfas		1	0	1
+OG:014267	Fspp	Fspp		1	0	1
+OG:014271	Gfas	Gfas		1	0	1
+OG:014279	Pcru	Pcru		1	0	1
+OG:014287	Amur	Amur		1	0	1
+OG:014289	Hcoe	Hcoe		1	0	1
+OG:014371	Adig	Adig		1	0	1
+OG:014376	Spis	Spis		1	0	1
+OG:014377	Pcru	Pcru		1	0	1
+OG:014391	Adig	Adig		1	0	1
+OG:014403	Amur,Gfas,Pdam	N3	Adig,Ahya,N7,Plut,Spis	1	5	10
+OG:014404	Pdam	Pdam		1	0	1
+OG:014419	Spis	Spis		1	0	1
+OG:014425	Spis	Spis		1	0	1
+OG:014426	Amur	Amur		1	0	1
+OG:014430	Gfas,Hcoe,Pcru,Spis	N1	Fspp,N9,Pdam,Plut,Xesp	1	5	12
+OG:014434	Pdam	Pdam		1	0	1
+OG:014442	Adig,Ahya,Amur,Spis	N3	Gfas,N7,Pdam,Plut	1	4	11
+OG:014448	Hcoe	Hcoe		1	0	1
+OG:014461	Pcru	Pcru		1	0	1
+OG:014463	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:014479	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:014489	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:014492	Hcoe	Hcoe		1	0	1
+OG:014505	Ahya	Ahya		1	0	1
+OG:014524	Adig	Adig		1	0	1
+OG:014542	Amur	Amur		1	0	1
+OG:014545	Adig,Amur	N9	Ahya	1	1	4
+OG:014553	Adig,Hcoe,Pcru,Pdam,Plut,Spis	N1	Fspp,Gfas,N10,Xesp	1	4	15
+OG:014559	Amur	Amur		1	0	1
+OG:014571	Hcoe	Hcoe		1	0	1
+OG:014578	Ahya	Ahya		1	0	1
+OG:014579	Fspp	Fspp		1	0	1
+OG:014580	Adig,Amur	N9	Ahya	1	1	4
+OG:014608	Spis	Spis		1	0	1
+OG:014613	Pcru	Pcru		1	0	1
+OG:014624	Fspp	Fspp		1	0	1
+OG:014628	Gfas,Pdam	N3	N7,N9,Plut,Spis	1	4	7
+OG:014636	Fspp	Fspp		1	0	1
+OG:014638	Adig	Adig		1	0	1
+OG:014645	Gfas	Gfas		1	0	1
+OG:014657	Hcoe	Hcoe		1	0	2
+OG:014670	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:014691	Hcoe	Hcoe		1	0	1
+OG:014692	Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	Adig,Ahya	1	2	15
+OG:014701	Spis	Spis		1	0	1
+OG:014716	Hcoe	Hcoe		1	0	1
+OG:014747	Adig	Adig		1	0	1
+OG:014765	Pdam	Pdam		1	0	1
+OG:014770	Gfas	Gfas		1	0	1
+OG:014777	Hcoe	Hcoe		1	0	1
+OG:014781	Pdam,Spis	N6		1	0	3
+OG:014792	Pdam,Spis	N6		1	0	3
+OG:014793	Spis	Spis		1	0	1
+OG:014794	Pdam,Spis	N6		1	0	3
+OG:014796	Pdam,Spis	N6		1	0	3
+OG:014798	Pdam	Pdam		1	0	1
+OG:014812	Amur	Amur		1	0	1
+OG:014828	Amur	Amur		1	0	1
+OG:014842	Fspp	Fspp		1	0	1
+OG:014852	Hcoe	Hcoe		1	0	1
+OG:014856	Adig,Amur,Spis	N3	Ahya,Gfas,N7,Pdam,Plut	1	5	10
+OG:014860	Pdam	Pdam		1	0	1
+OG:014861	Hcoe	Hcoe		1	0	1
+OG:014879	Fspp,Plut	N3	N6,N8,Pcru	1	3	6
+OG:014894	Hcoe	Hcoe		1	0	1
+OG:014897	Spis	Spis		1	0	1
+OG:014899	Adig	Adig		1	0	1
+OG:014912	Pdam	Pdam		1	0	1
+OG:014916	Amur	Amur		1	0	1
+OG:014917	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:014924	Ahya,Amur	N10		1	0	3
+OG:014935	Gfas,Pdam	N3	N7,N9,Plut,Spis	1	4	7
+OG:014938	Adig,Ahya,Amur,Fspp,Gfas,Hcoe,Plut,Spis	N1	Pcru,Pdam,Xesp	1	3	18
+OG:014954	Ahya,Amur	N10		1	0	3
+OG:014971	Gfas,Pcru,Spis	N3	Fspp,N9,Pdam,Plut	1	4	9
+OG:014976	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:014988	Adig,Amur	N9	Ahya	1	1	4
+OG:014991	Gfas	Gfas		1	0	1
+OG:014993	Adig	Adig		1	0	1
+OG:014998	Hcoe	Hcoe		1	0	1
+OG:015006	Fspp,Gfas,Spis	N3	N9,Pcru,Pdam,Plut	1	4	9
+OG:015008	Amur	Amur		1	0	1
+OG:015029	Amur,Fspp,Pcru,Plut	N3	Adig,Ahya,Gfas,N6	1	4	11
+OG:015030	Hcoe	Hcoe		1	0	1
+OG:015035	Adig,Plut	N5	Gfas,N10	1	2	5
+OG:015050	Amur	Amur		1	0	1
+OG:015051	Spis	Spis		1	0	1
+OG:015054	Amur	Amur		1	0	1
+OG:015056	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:015057	Hcoe	Hcoe		1	0	1
+OG:015064	Hcoe,Plut,Spis	N1	N7,N8,Pdam,Xesp	1	4	9
+OG:015065	Pdam	Pdam		1	0	1
+OG:015080	Adig,Amur	N9	Ahya	1	1	4
+OG:015089	Ahya,Amur	N10		1	0	3
+OG:015094	Spis	Spis		1	0	1
+OG:015098	Amur	Amur		1	0	1
+OG:015103	Amur	Amur		1	0	1
+OG:015108	Gfas	Gfas		1	0	1
+OG:015112	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	24
+OG:015113	Ahya,Amur,Plut,Spis	N3	Adig,Gfas,N7,Pdam	1	4	12
+OG:015115	Hcoe	Hcoe		1	0	1
+OG:015127	Adig	Adig		1	0	1
+OG:015132	Amur	Amur		1	0	1
+OG:015138	Amur	Amur		1	0	1
+OG:015152	Adig	Adig		1	0	1
+OG:015155	Adig	Adig		1	0	1
+OG:015184	Amur,Fspp,Plut	N3	Adig,Ahya,Gfas,N6,Pcru	1	5	10
+OG:015190	Hcoe	Hcoe		1	0	1
+OG:015191	Adig	Adig		1	0	1
+OG:015197	Spis	Spis		1	0	1
+OG:015209	Gfas	Gfas		1	0	1
+OG:015212	Gfas,Pdam,Spis	N3	N7,N9,Plut	1	3	9
+OG:015216	Gfas	Gfas		1	0	1
+OG:015237	Hcoe	Hcoe		1	0	1
+OG:015247	Adig	Adig		1	0	1
+OG:015257	Hcoe	Hcoe		1	0	1
+OG:015263	Hcoe	Hcoe		1	0	1
+OG:015284	Hcoe	Hcoe		1	0	1
+OG:015290	Hcoe	Hcoe		1	0	1
+OG:015294	Amur	Amur		1	0	1
+OG:015295	Spis	Spis		1	0	1
+OG:015319	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	18
+OG:015440	Fspp,Plut	N3	N6,N8,Pcru	1	3	6
+OG:015466	Pdam,Spis	N6		1	0	3
+OG:015467	Amur	Amur		1	0	1
+OG:015469	Gfas,Pcru	N3	Fspp,N6,N9,Plut	1	4	7
+OG:015470	Amur	Amur		1	0	1
+OG:015483	Ahya	Ahya		1	0	1
+OG:015489	Plut	Plut		1	0	1
+OG:015492	Adig,Ahya,Amur	N9		1	0	5
+OG:015493	Amur	Amur		1	0	1
+OG:015500	Ahya,Amur	N10		1	0	3
+OG:015525	Amur	Amur		1	0	1
+OG:015533	Fspp	Fspp		1	0	1
+OG:015549	Gfas	Gfas		1	0	1
+OG:015559	Amur,Gfas,Pcru,Spis	N3	Adig,Ahya,Fspp,Pdam,Plut	1	5	12
+OG:015566	Adig	Adig		1	0	1
+OG:015571	Adig,Ahya,Fspp	N3	Amur,Gfas,N6,Pcru,Plut	1	5	10
+OG:015576	Pcru	Pcru		1	0	1
+OG:015590	Adig,Gfas	N8	N10	1	1	4
+OG:015591	Ahya,Amur,Pcru	N3	Adig,Fspp,Gfas,N6,Plut	1	5	10
+OG:015595	Spis	Spis		1	0	2
+OG:015596	Fspp	Fspp		1	0	1
+OG:015603	Spis	Spis		1	0	1
+OG:015611	Adig,Ahya,Amur,Gfas,Plut	N5		1	0	9
+OG:015612	Adig,Amur,Fspp,Gfas,Pdam,Spis	N3	Ahya,Pcru,Plut	1	3	14
+OG:015662	Adig	Adig		1	0	1
+OG:015680	Gfas	Gfas		1	0	1
+OG:015719	Adig	Adig		1	0	2
+OG:015726	Amur	Amur		1	0	1
+OG:015731	Gfas,Plut	N5	N9	1	1	4
+OG:015754	Gfas	Gfas		1	0	1
+OG:015763	Hcoe	Hcoe		1	0	1
+OG:015785	Spis	Spis		1	0	1
+OG:015792	Adig,Amur,Pcru	N3	Ahya,Fspp,Gfas,N6,Plut	1	5	10
+OG:015795	Adig	Adig		1	0	1
+OG:015802	Amur	Amur		1	0	1
+OG:015809	Adig	Adig		1	0	1
+OG:015815	Gfas	Gfas		1	0	1
+OG:015817	Adig,Pcru	N3	Fspp,Gfas,N10,N6,Plut	1	5	8
+OG:015818	Hcoe	Hcoe		1	0	1
+OG:015835	Amur	Amur		1	0	1
+OG:015838	Adig,Ahya,Amur,Fspp,Gfas,Pdam,Spis	N3	Pcru,Plut	1	2	15
+OG:015846	Fspp	Fspp		1	0	1
+OG:015850	Gfas	Gfas		1	0	1
+OG:015852	Adig,Ahya	N9	Amur	1	1	4
+OG:015858	Adig	Adig		1	0	1
+OG:015864	Spis	Spis		1	0	1
+OG:015871	Adig	Adig		1	0	1
+OG:015872	Spis	Spis		1	0	1
+OG:015876	Gfas	Gfas		1	0	1
+OG:015881	Hcoe	Hcoe		1	0	1
+OG:015883	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:015885	Fspp,Gfas,Pdam,Plut,Spis	N3	N9,Pcru	1	2	11
+OG:015887	Gfas	Gfas		1	0	1
+OG:015891	Hcoe	Hcoe		1	0	1
+OG:015892	Amur	Amur		1	0	1
+OG:015896	Adig	Adig		1	0	1
+OG:015900	Hcoe	Hcoe		1	0	2
+OG:015922	Spis	Spis		1	0	1
+OG:015924	Ahya,Amur,Gfas	N8	Adig	1	1	6
+OG:015932	Gfas	Gfas		1	0	1
+OG:015938	Spis	Spis		1	0	1
+OG:015946	Amur,Fspp,Gfas,Pdam,Spis	N3	Adig,Ahya,Pcru,Plut	1	4	13
+OG:015947	Hcoe	Hcoe		1	0	1
+OG:015954	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:015980	Gfas	Gfas		1	0	1
+OG:015987	Amur	Amur		1	0	1
+OG:016000	Adig,Ahya,Gfas	N8	Amur	1	1	6
+OG:016001	Hcoe	Hcoe		1	0	1
+OG:016009	Gfas	Gfas		1	0	1
+OG:016012	Adig,Amur,Fspp,Hcoe,Pcru	N1	Ahya,Gfas,N6,Plut,Xesp	1	5	15
+OG:016018	Ahya,Amur,Hcoe	N1	Adig,Gfas,N4,Plut,Xesp	1	5	10
+OG:016026	Fspp	Fspp		1	0	1
+OG:016044	Adig,Amur,Gfas,Pcru,Pdam	N3	Ahya,Fspp,Plut,Spis	1	4	13
+OG:016045	Amur,Gfas,Pcru	N3	Adig,Ahya,Fspp,N6,Plut	1	5	10
+OG:016046	Plut	Plut		1	0	1
+OG:016047	Spis	Spis		1	0	1
+OG:016064	Spis	Spis		1	0	1
+OG:016088	Amur	Amur		1	0	1
+OG:016090	Hcoe	Hcoe		1	0	1
+OG:016091	Gfas	Gfas		1	0	1
+OG:016095	Adig,Fspp	N3	Gfas,N10,N6,Pcru,Plut	1	5	8
+OG:016106	Amur	Amur		1	0	1
+OG:016115	Ahya,Amur	N10		1	0	3
+OG:016116	Hcoe	Hcoe		1	0	1
+OG:016118	Pcru	Pcru		1	0	1
+OG:016123	Amur,Fspp,Pdam	N3	Adig,Ahya,Gfas,Pcru,Plut,Spis	1	6	11
+OG:016132	Pcru	Pcru		1	0	1
+OG:016136	Amur	Amur		1	0	1
+OG:016139	Ahya	Ahya		1	0	1
+OG:016143	Amur	Amur		1	0	1
+OG:016154	Hcoe	Hcoe		1	0	1
+OG:016157	Hcoe	Hcoe		1	0	1
+OG:016158	Hcoe	Hcoe		1	0	1
+OG:016160	Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	Adig	1	1	16
+OG:016167	Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	Adig	1	1	16
+OG:016173	Spis	Spis		1	0	1
+OG:016186	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:016187	Hcoe	Hcoe		1	0	1
+OG:016190	Pcru	Pcru		1	0	1
+OG:016191	Hcoe	Hcoe		1	0	1
+OG:016197	Plut	Plut		1	0	1
+OG:016205	Hcoe	Hcoe		1	0	1
+OG:016208	Adig	Adig		1	0	1
+OG:016209	Adig	Adig		1	0	1
+OG:016216	Spis	Spis		1	0	1
+OG:016223	Amur	Amur		1	0	1
+OG:016226	Gfas	Gfas		1	0	1
+OG:016231	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:016237	Fspp,Pcru,Pdam,Plut,Spis	N3	N8	1	1	10
+OG:016263	Amur,Plut	N5	Adig,Ahya,Gfas	1	3	6
+OG:016270	Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	Adig	1	1	16
+OG:016278	Gfas	Gfas		1	0	1
+OG:016283	Spis	Spis		1	0	1
+OG:016289	Hcoe	Hcoe		1	0	1
+OG:016305	Fspp	Fspp		1	0	1
+OG:016316	Hcoe	Hcoe		1	0	1
+OG:016329	Fspp,Gfas,Hcoe	N1	N6,N9,Pcru,Plut,Xesp	1	5	10
+OG:016333	Gfas	Gfas		1	0	1
+OG:016334	Amur	Amur		1	0	1
+OG:016338	Hcoe,Plut,Spis	N1	N7,N8,Pdam,Xesp	1	4	9
+OG:016348	Ahya	Ahya		1	0	1
+OG:016349	Fspp	Fspp		1	0	1
+OG:016350	Fspp	Fspp		1	0	1
+OG:016355	Amur	Amur		1	0	1
+OG:016362	Amur,Fspp	N3	Adig,Ahya,Gfas,N6,Pcru,Plut	1	6	9
+OG:016367	Adig,Ahya,Amur	N9		1	0	5
+OG:016370	Spis	Spis		1	0	1
+OG:016374	Fspp	Fspp		1	0	1
+OG:016375	Adig	Adig		1	0	1
+OG:016383	Hcoe,Pcru	N1	Fspp,N5,N6,Xesp	1	4	7
+OG:016384	Hcoe	Hcoe		1	0	1
+OG:016403	Adig,Gfas,Pcru,Pdam,Plut,Spis	N3	Fspp,N10	1	2	13
+OG:016405	Pcru	Pcru		1	0	1
+OG:016427	Gfas	Gfas		1	0	1
+OG:016434	Ahya,Amur,Gfas,Plut	N5	Adig	1	1	9
+OG:016443	Hcoe	Hcoe		1	0	1
+OG:016449	Ahya,Amur	N10		1	0	3
+OG:016456	Plut	Plut		1	0	3
+OG:016474	Hcoe	Hcoe		1	0	1
+OG:016475	Gfas,Hcoe,Pcru,Pdam	N1	Fspp,N9,Plut,Spis,Xesp	1	5	12
+OG:016479	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:016484	Gfas	Gfas		1	0	1
+OG:016488	Fspp	Fspp		1	0	1
+OG:016492	Adig,Ahya	N9	Amur	1	1	4
+OG:016497	Gfas	Gfas		1	0	1
+OG:016503	Hcoe	Hcoe		1	0	1
+OG:016509	Hcoe	Hcoe		1	0	1
+OG:016511	Adig,Ahya,Amur	N9		1	0	5
+OG:016528	Fspp,Spis	N4	Pcru,Pdam	1	2	5
+OG:016532	Gfas	Gfas		1	0	1
+OG:016537	Fspp	Fspp		1	0	1
+OG:016540	Fspp,Gfas	N3	N6,N9,Pcru,Plut	1	4	7
+OG:016548	Spis	Spis		1	0	1
+OG:016559	Hcoe	Hcoe		1	0	1
+OG:016567	Amur	Amur		1	0	1
+OG:016576	Amur,Pcru,Spis	N3	Adig,Ahya,Fspp,Gfas,Pdam,Plut	1	6	12
+OG:016588	Adig,Ahya,Gfas	N8	Amur	1	1	6
+OG:016608	Adig	Adig		1	0	1
+OG:016613	Adig,Amur,Plut	N5	Ahya,Gfas	1	2	7
+OG:016614	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:016621	Gfas	Gfas		1	0	1
+OG:016625	Hcoe,Plut	N1	N4,N8,Xesp	1	3	6
+OG:016632	Hcoe	Hcoe		1	0	1
+OG:016646	Fspp	Fspp		1	0	1
+OG:016652	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:016654	Pdam	Pdam		1	0	1
+OG:016662	Adig,Amur	N9	Ahya	1	1	4
+OG:016673	Adig,Amur	N9	Ahya	1	1	4
+OG:016674	Hcoe	Hcoe		1	0	1
+OG:016681	Fspp	Fspp		1	0	1
+OG:016683	Pcru	Pcru		1	0	1
+OG:016685	Amur	Amur		1	0	1
+OG:016691	Fspp	Fspp		1	0	1
+OG:016693	Amur	Amur		1	0	1
+OG:016704	Adig	Adig		1	0	1
+OG:016710	Amur,Fspp,Gfas,Pcru	N3	Adig,Ahya,N6,Plut	1	4	11
+OG:016713	Fspp	Fspp		1	0	1
+OG:016718	Pdam	Pdam		1	0	1
+OG:016724	Adig,Ahya,Amur,Fspp,Gfas,Hcoe,Pdam,Spis	N1	Pcru,Plut,Xesp	1	3	20
+OG:016733	Fspp	Fspp		1	0	1
+OG:016735	Adig	Adig		1	0	1
+OG:016739	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:016742	Hcoe	Hcoe		1	0	1
+OG:016753	Adig,Ahya,Amur,Fspp,Spis	N3	Gfas,Pcru,Pdam,Plut	1	4	13
+OG:016754	Pcru,Plut	N3	Fspp,N6,N8	1	3	6
+OG:016761	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:016783	Plut	Plut		1	0	1
+OG:016785	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:016793	Adig,Fspp	N3	Gfas,N10,N6,Pcru,Plut	1	5	8
+OG:016802	Gfas	Gfas		1	0	1
+OG:016804	Adig,Fspp,Plut	N3	Gfas,N10,N6,Pcru	1	4	9
+OG:016805	Adig,Pdam,Spis	N3	Gfas,N10,N7,Plut	1	4	9
+OG:016806	Adig	Adig		1	0	1
+OG:016815	Adig,Ahya,Fspp	N3	Amur,Gfas,N6,Pcru,Plut	1	5	10
+OG:016816	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:016824	Hcoe	Hcoe		1	0	1
+OG:016832	Spis	Spis		1	0	1
+OG:016853	Amur	Amur		1	0	1
+OG:016855	Adig,Amur	N9	Ahya	1	1	4
+OG:016858	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:016873	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:016877	Fspp	Fspp		1	0	1
+OG:016882	Spis	Spis		1	0	1
+OG:016887	Adig	Adig		1	0	1
+OG:016890	Hcoe	Hcoe		1	0	1
+OG:016901	Gfas	Gfas		1	0	1
+OG:016907	Adig	Adig		1	0	1
+OG:016908	Gfas	Gfas		1	0	1
+OG:016922	Gfas	Gfas		1	0	1
+OG:016948	Spis	Spis		1	0	1
+OG:016951	Fspp	Fspp		1	0	1
+OG:016956	Gfas	Gfas		1	0	1
+OG:016958	Amur	Amur		1	0	1
+OG:016970	Gfas	Gfas		1	0	1
+OG:016979	Amur	Amur		1	0	1
+OG:016980	Hcoe	Hcoe		1	0	1
+OG:016981	Pcru	Pcru		1	0	1
+OG:016983	Plut	Plut		1	0	1
+OG:016987	Amur	Amur		1	0	1
+OG:017016	Fspp,Gfas,Pdam,Plut,Spis	N3	N9,Pcru	1	2	11
+OG:017017	Pdam	Pdam		1	0	1
+OG:017030	Adig,Ahya	N9	Amur	1	1	4
+OG:017031	Spis	Spis		1	0	1
+OG:017034	Plut	Plut		1	0	1
+OG:017045	Adig,Ahya,Fspp,Plut,Spis	N3	Amur,Gfas,Pcru,Pdam	1	4	14
+OG:017049	Hcoe	Hcoe		1	0	1
+OG:017050	Ahya,Amur,Fspp,Hcoe	N1	Adig,Gfas,N6,Pcru,Plut,Xesp	1	6	13
+OG:017060	Adig,Fspp,Pcru,Pdam,Plut,Spis	N3	Gfas,N10	1	2	13
+OG:017069	Adig,Amur,Gfas,Pdam,Plut,Spis	N3	Ahya,N7	1	2	13
+OG:017087	Adig	Adig		1	0	1
+OG:017112	Amur	Amur		1	0	1
+OG:017115	Amur	Amur		1	0	1
+OG:017122	Spis	Spis		1	0	1
+OG:017129	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:017144	Gfas	Gfas		1	0	1
+OG:017145	Gfas	Gfas		1	0	1
+OG:017146	Gfas	Gfas		1	0	1
+OG:017147	Gfas	Gfas		1	0	1
+OG:017174	Adig	Adig		1	0	1
+OG:017176	Spis	Spis		1	0	1
+OG:017177	Adig	Adig		1	0	1
+OG:017178	Pdam	Pdam		1	0	1
+OG:017181	Amur	Amur		1	0	1
+OG:017200	Gfas,Plut	N5	N9	1	1	4
+OG:017210	Fspp,Gfas,Spis	N3	N9,Pcru,Pdam,Plut	1	4	9
+OG:017215	Pdam,Spis	N6		1	0	3
+OG:017233	Plut	Plut		1	0	1
+OG:017253	Ahya,Amur	N10		1	0	3
+OG:017260	Fspp	Fspp		1	0	1
+OG:017267	Adig,Ahya,Hcoe,Plut	N1	Amur,Gfas,N4,Xesp	1	4	11
+OG:017270	Gfas	Gfas		1	0	1
+OG:017276	Adig,Ahya,Amur,Fspp,Gfas	N3	N6,Pcru,Plut	1	3	12
+OG:017293	Adig,Amur,Fspp,Gfas	N3	Ahya,N6,Pcru,Plut	1	4	11
+OG:017295	Gfas	Gfas		1	0	1
+OG:017296	Spis	Spis		1	0	1
+OG:017299	Gfas	Gfas		1	0	1
+OG:017307	Hcoe	Hcoe		1	0	1
+OG:017321	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:017331	Spis	Spis		1	0	1
+OG:017336	Adig	Adig		1	0	1
+OG:017341	Amur	Amur		1	0	1
+OG:017345	Gfas	Gfas		1	0	1
+OG:017354	Spis	Spis		1	0	1
+OG:017359	Hcoe	Hcoe		1	0	1
+OG:017392	Amur	Amur		1	0	1
+OG:017393	Adig,Ahya,Fspp,Gfas,Pcru,Pdam,Plut	N3	Amur,Spis	1	2	15
+OG:017396	Spis	Spis		1	0	1
+OG:017397	Adig	Adig		1	0	1
+OG:017430	Gfas	Gfas		1	0	1
+OG:017435	Hcoe	Hcoe		1	0	1
+OG:017446	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:017448	Gfas,Plut	N5	N9	1	1	5
+OG:017453	Plut	Plut		1	0	1
+OG:017455	Hcoe,Spis	N1	N5,N7,Pdam,Xesp	1	4	7
+OG:017458	Adig,Amur	N9	Ahya	1	1	4
+OG:017462	Amur	Amur		1	0	1
+OG:017478	Fspp,Pcru,Spis	N4	Pdam	1	1	6
+OG:017484	Fspp,Hcoe,Spis	N1	N5,Pcru,Pdam,Xesp	1	4	9
+OG:017485	Fspp	Fspp		1	0	1
+OG:017492	Hcoe	Hcoe		1	0	1
+OG:017510	Hcoe	Hcoe		1	0	1
+OG:017515	Hcoe	Hcoe		1	0	1
+OG:017519	Fspp	Fspp		1	0	1
+OG:017526	Hcoe	Hcoe		1	0	1
+OG:017528	Hcoe	Hcoe		1	0	1
+OG:017537	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:017539	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:017542	Hcoe	Hcoe		1	0	1
+OG:017547	Adig	Adig		1	0	1
+OG:017548	Ahya,Amur,Gfas,Spis	N3	Adig,N7,Pdam,Plut	1	4	11
+OG:017549	Spis	Spis		1	0	1
+OG:017565	Adig	Adig		1	0	1
+OG:017566	Adig,Ahya,Fspp	N3	Amur,Gfas,N6,Pcru,Plut	1	5	10
+OG:017572	Hcoe	Hcoe		1	0	1
+OG:017577	Hcoe	Hcoe		1	0	1
+OG:017586	Ahya	Ahya		1	0	1
+OG:017590	Plut	Plut		1	0	1
+OG:017606	Gfas	Gfas		1	0	1
+OG:017610	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:017627	Gfas	Gfas		1	0	1
+OG:017648	Adig,Ahya,Amur,Fspp,Gfas	N3	N6,Pcru,Plut	1	3	12
+OG:017650	Ahya,Gfas,Hcoe,Plut	N1	Adig,Amur,N4,Xesp	1	4	11
+OG:017653	Spis	Spis		1	0	1
+OG:017659	Adig	Adig		1	0	1
+OG:017665	Plut	Plut		1	0	1
+OG:017672	Hcoe	Hcoe		1	0	1
+OG:017673	Hcoe	Hcoe		1	0	1
+OG:017676	Adig,Ahya,Amur	N9		1	0	5
+OG:017677	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:017684	Plut	Plut		1	0	1
+OG:017692	Fspp	Fspp		1	0	1
+OG:017697	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:017701	Spis	Spis		1	0	1
+OG:017723	Gfas	Gfas		1	0	1
+OG:017724	Hcoe	Hcoe		1	0	1
+OG:017735	Amur	Amur		1	0	1
+OG:017736	Hcoe	Hcoe		1	0	1
+OG:017740	Adig,Ahya,Amur,Fspp,Pcru	N3	Gfas,N6,Plut	1	3	12
+OG:017741	Amur	Amur		1	0	1
+OG:017747	Fspp	Fspp		1	0	1
+OG:017748	Adig,Gfas	N8	N10	1	1	4
+OG:017749	Gfas	Gfas		1	0	1
+OG:017750	Spis	Spis		1	0	1
+OG:017752	Fspp,Gfas,Pcru	N3	N6,N9,Plut	1	3	8
+OG:017753	Ahya,Amur,Hcoe	N1	Adig,Gfas,N4,Plut,Xesp	1	5	10
+OG:017754	Spis	Spis		1	0	1
+OG:017757	Ahya,Amur	N10		1	0	3
+OG:017762	Adig,Gfas,Pdam,Plut,Spis	N3	N10,N7	1	2	11
+OG:017766	Hcoe	Hcoe		1	0	1
+OG:017767	Hcoe	Hcoe		1	0	1
+OG:017770	Fspp	Fspp		1	0	1
+OG:017773	Gfas	Gfas		1	0	1
+OG:017774	Hcoe	Hcoe		1	0	1
+OG:017781	Fspp	Fspp		1	0	1
+OG:017785	Gfas	Gfas		1	0	1
+OG:017788	Adig	Adig		1	0	1
+OG:017789	Spis	Spis		1	0	1
+OG:017790	Adig	Adig		1	0	1
+OG:017806	Spis	Spis		1	0	1
+OG:017825	Gfas	Gfas		1	0	1
+OG:017826	Gfas	Gfas		1	0	1
+OG:017829	Fspp,Gfas,Hcoe,Pdam,Plut,Spis	N1	N9,Pcru,Xesp	1	3	14
+OG:017840	Fspp	Fspp		1	0	1
+OG:017841	Hcoe	Hcoe		1	0	1
+OG:017846	Spis	Spis		1	0	1
+OG:017849	Adig	Adig		1	0	1
+OG:017851	Ahya,Amur	N10		1	0	3
+OG:017853	Adig	Adig		1	0	1
+OG:017857	Gfas	Gfas		1	0	1
+OG:017859	Fspp	Fspp		1	0	1
+OG:017878	Adig	Adig		1	0	1
+OG:017880	Fspp	Fspp		1	0	1
+OG:017888	Adig	Adig		1	0	1
+OG:017896	Adig	Adig		1	0	1
+OG:017903	Adig,Ahya,Amur	N9		1	0	5
+OG:017913	Adig,Ahya,Amur,Plut	N5	Gfas	1	1	8
+OG:017920	Hcoe	Hcoe		1	0	1
+OG:017929	Pdam,Spis	N6		1	0	3
+OG:017931	Ahya	Ahya		1	0	1
+OG:017953	Gfas	Gfas		1	0	1
+OG:017959	Hcoe	Hcoe		1	0	1
+OG:017960	Adig	Adig		1	0	1
+OG:017978	Gfas	Gfas		1	0	1
+OG:017989	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:017997	Adig,Gfas,Hcoe	N1	N10,N4,Plut,Xesp	1	4	9
+OG:017998	Fspp,Gfas,Hcoe	N1	N6,N9,Pcru,Plut,Xesp	1	5	10
+OG:018001	Adig,Ahya,Amur,Gfas,Hcoe,Plut	N1	N4,Xesp	1	2	13
+OG:018012	Spis	Spis		1	0	1
+OG:018016	Gfas	Gfas		1	0	1
+OG:018023	Hcoe	Hcoe		1	0	1
+OG:018025	Adig	Adig		1	0	1
+OG:018029	Spis	Spis		1	0	1
+OG:018034	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:018040	Adig	Adig		1	0	1
+OG:018043	Hcoe	Hcoe		1	0	1
+OG:018049	Spis	Spis		1	0	1
+OG:018051	Adig,Ahya	N9	Amur	1	1	6
+OG:018052	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:018061	Pcru	Pcru		1	0	1
+OG:018069	Adig,Ahya,Amur,Fspp,Pdam,Spis	N3	Gfas,Pcru,Plut	1	3	14
+OG:018083	Adig	Adig		1	0	1
+OG:018088	Plut	Plut		1	0	1
+OG:018095	Adig,Pcru	N3	Fspp,Gfas,N10,N6,Plut	1	5	8
+OG:018105	Adig	Adig		1	0	1
+OG:018122	Spis	Spis		1	0	1
+OG:018137	Adig,Gfas	N8	N10	1	1	4
+OG:018143	Adig,Ahya,Fspp,Gfas,Pcru,Plut	N3	Amur,N6	1	2	13
+OG:018151	Ahya	Ahya		1	0	1
+OG:018155	Hcoe	Hcoe		1	0	1
+OG:018177	Spis	Spis		1	0	1
+OG:018184	Gfas	Gfas		1	0	1
+OG:018191	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:018201	Gfas,Pcru	N3	Fspp,N6,N9,Plut	1	4	7
+OG:018203	Adig	Adig		1	0	1
+OG:018205	Spis	Spis		1	0	1
+OG:018211	Adig	Adig		1	0	1
+OG:018219	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:018223	Amur	Amur		1	0	1
+OG:018232	Adig	Adig		1	0	1
+OG:018233	Spis	Spis		1	0	1
+OG:018242	Plut	Plut		1	0	1
+OG:018244	Hcoe	Hcoe		1	0	1
+OG:018250	Hcoe	Hcoe		1	0	1
+OG:018267	Hcoe	Hcoe		1	0	1
+OG:018272	Hcoe	Hcoe		1	0	1
+OG:018275	Ahya	Ahya		1	0	1
+OG:018285	Gfas	Gfas		1	0	1
+OG:018286	Amur,Spis	N3	Adig,Ahya,Gfas,N7,Pdam,Plut	1	6	9
+OG:018289	Adig	Adig		1	0	1
+OG:018297	Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3	Adig	1	1	16
+OG:018310	Hcoe	Hcoe		1	0	1
+OG:018319	Adig,Pcru	N3	Fspp,Gfas,N10,N6,Plut	1	5	8
+OG:018325	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:018335	Gfas	Gfas		1	0	1
+OG:018341	Hcoe	Hcoe		1	0	1
+OG:018374	Amur	Amur		1	0	1
+OG:018383	Adig	Adig		1	0	1
+OG:018385	Plut	Plut		1	0	1
+OG:018402	Amur	Amur		1	0	1
+OG:018408	Hcoe	Hcoe		1	0	1
+OG:018419	Fspp	Fspp		1	0	1
+OG:018445	Amur	Amur		1	0	1
+OG:018452	Hcoe	Hcoe		1	0	1
+OG:018456	Hcoe	Hcoe		1	0	1
+OG:018460	Adig,Ahya,Amur	N9		1	0	5
+OG:018465	Spis	Spis		1	0	1
+OG:018467	Amur	Amur		1	0	1
+OG:018469	Spis	Spis		1	0	1
+OG:018470	Adig,Amur,Gfas,Pdam,Spis	N3	Ahya,N7,Plut	1	3	12
+OG:018472	Spis	Spis		1	0	1
+OG:018473	Adig,Gfas	N8	N10	1	1	4
+OG:018475	Plut	Plut		1	0	1
+OG:018479	Adig,Amur,Gfas,Hcoe	N1	Ahya,N4,Plut,Xesp	1	4	11
+OG:018481	Spis	Spis		1	0	1
+OG:018485	Gfas	Gfas		1	0	1
+OG:018503	Spis	Spis		1	0	1
+OG:018504	Pdam,Plut,Spis	N3	N7,N8	1	2	7
+OG:018529	Pdam,Plut,Spis	N3	N7,N8	1	2	7
+OG:018532	Spis	Spis		1	0	1
+OG:018535	Adig,Ahya,Amur,Gfas,Plut	N5		1	0	9
+OG:018536	Hcoe	Hcoe		1	0	1
+OG:018542	Spis	Spis		1	0	1
+OG:018545	Amur	Amur		1	0	1
+OG:018548	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:018556	Hcoe	Hcoe		1	0	1
+OG:018561	Ahya,Amur,Gfas,Hcoe,Plut	N1	Adig,N4,Xesp	1	3	12
+OG:018567	Spis	Spis		1	0	1
+OG:018570	Adig,Amur,Hcoe	N1	Ahya,Gfas,N4,Plut,Xesp	1	5	10
+OG:018584	Hcoe	Hcoe		1	0	1
+OG:018587	Plut	Plut		1	0	1
+OG:018600	Ahya,Amur,Gfas,Pcru,Plut,Spis	N3	Adig,Fspp,Pdam	1	3	14
+OG:018602	Fspp,Pcru,Pdam,Spis	N4		1	0	7
+OG:018612	Amur,Fspp,Gfas,Plut	N3	Adig,Ahya,N6,Pcru	1	4	12
+OG:018614	Pdam	Pdam		1	0	1
+OG:018616	Fspp	Fspp		1	0	1
+OG:018617	Spis	Spis		1	0	1
+OG:018631	Fspp	Fspp		1	0	1
+OG:018633	Adig,Amur,Gfas,Plut	N5	Ahya	1	1	8
+OG:018635	Amur,Pcru	N3	Adig,Ahya,Fspp,Gfas,N6,Plut	1	6	9
+OG:018636	Gfas	Gfas		1	0	1
+OG:018637	Amur,Hcoe,Spis	N1	Adig,Ahya,Gfas,N7,Pdam,Plut,Xesp	1	7	12
+OG:018638	Adig	Adig		1	0	1
+OG:018649	Fspp,Gfas,Pcru,Spis	N3	N9,Pdam,Plut	1	3	10
+OG:018651	Gfas	Gfas		1	0	1
+OG:018658	Ahya,Gfas	N8	Adig,Amur	1	2	5
+OG:018666	Gfas	Gfas		1	0	1
+OG:018667	Amur	Amur		1	0	1
+OG:018672	Adig,Amur,Gfas,Pdam,Spis	N3	Ahya,N7,Plut	1	3	12
+OG:018678	Gfas,Plut	N5	N9	1	1	4
+OG:018703	Adig,Fspp,Gfas,Hcoe,Pdam,Plut,Spis	N1	N10,Pcru,Xesp	1	3	16
+OG:018704	Amur	Amur		1	0	1
+OG:018715	Ahya,Amur,Fspp,Gfas,Pcru,Pdam	N3	Adig,Plut,Spis	1	3	14
+OG:018720	Spis	Spis		1	0	1
+OG:018726	Spis	Spis		1	0	1
+OG:018728	Gfas	Gfas		1	0	1
+OG:018730	Hcoe	Hcoe		1	0	1
+OG:018735	Hcoe,Plut	N1	N4,N8,Xesp	1	3	6
+OG:018737	Fspp	Fspp		1	0	1
+OG:018739	Adig,Ahya,Amur,Fspp,Pcru,Pdam,Plut,Spis	N3	Gfas	1	1	17
+OG:018740	Adig,Ahya,Pcru,Plut	N3	Amur,Fspp,Gfas,N6	1	4	11
+OG:018741	Adig	Adig		1	0	1
+OG:018745	Fspp,Gfas,Pcru	N3	N6,N9,Plut	1	3	8
+OG:018752	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:018759	Adig,Gfas,Pcru	N3	Fspp,N10,N6,Plut	1	4	9
+OG:018772	Ahya,Amur	N10		1	0	3
+OG:018774	Adig	Adig		1	0	1
+OG:018789	Hcoe	Hcoe		1	0	1
+OG:018790	Adig	Adig		1	0	1
+OG:018793	Spis	Spis		1	0	1
+OG:018799	Gfas	Gfas		1	0	1
+OG:018801	Amur	Amur		1	0	1
+OG:018802	Adig,Ahya,Amur,Fspp,Gfas,Hcoe,Pcru,Pdam,Plut,Spis	N1	Xesp	1	1	20
+OG:018811	Hcoe	Hcoe		1	0	1
+OG:018817	Adig	Adig		1	0	1
+OG:018822	Hcoe	Hcoe		1	0	1
+OG:018824	Gfas	Gfas		1	0	1
+OG:018830	Spis	Spis		1	0	1
+OG:018834	Ahya,Gfas	N8	Adig,Amur	1	2	5
+OG:018850	Adig,Ahya,Gfas	N8	Amur	1	1	7
+OG:018859	Hcoe	Hcoe		1	0	3
+OG:018862	Adig	Adig		1	0	1
+OG:018866	Plut	Plut		1	0	1
+OG:018873	Adig	Adig		1	0	1
+OG:018876	Ahya,Amur,Pdam,Spis	N3	Adig,Gfas,N7,Plut	1	4	11
+OG:018893	Hcoe	Hcoe		1	0	1
+OG:018901	Spis	Spis		1	0	1
+OG:018908	Adig,Amur	N9	Ahya	1	1	4
+OG:018919	Amur	Amur		1	0	1
+OG:018922	Pcru,Plut	N3	Fspp,N6,N8	1	3	7
+OG:018928	Spis	Spis		1	0	1
+OG:018946	Spis	Spis		1	0	1
+OG:018948	Fspp	Fspp		1	0	1
+OG:018951	Adig	Adig		1	0	1
+OG:018954	Gfas,Spis	N3	N7,N9,Pdam,Plut	1	4	7
+OG:018964	Spis	Spis		1	0	1
+OG:018965	Amur,Gfas,Hcoe,Pcru,Spis	N1	Adig,Ahya,Fspp,Pdam,Plut,Xesp	1	6	15
+OG:018969	Adig,Amur	N9	Ahya	1	1	4
+OG:018975	Adig,Hcoe,Spis	N1	Gfas,N10,N7,Pdam,Plut,Xesp	1	6	12
+OG:018977	Hcoe	Hcoe		1	0	1
+OG:018983	Spis	Spis		1	0	1
+OG:018986	Adig	Adig		1	0	1
+OG:018988	Fspp,Gfas	N3	N6,N9,Pcru,Plut	1	4	7
+OG:019001	Ahya	Ahya		1	0	1
+OG:019003	Fspp,Gfas,Spis	N3	N9,Pcru,Pdam,Plut	1	4	9
+OG:019021	Ahya,Fspp,Pcru,Pdam	N3	Adig,Amur,Gfas,Plut,Spis	1	5	12
+OG:019024	Gfas,Hcoe	N1	N4,N9,Plut,Xesp	1	4	7
+OG:019029	Hcoe	Hcoe		1	0	1
+OG:019032	Adig,Amur,Fspp,Gfas,Pcru,Pdam	N3	Ahya,Plut,Spis	1	3	14
+OG:019033	Plut	Plut		1	0	1
+OG:019052	Adig,Amur,Fspp,Plut	N3	Ahya,Gfas,N6,Pcru	1	4	11
+OG:019057	Hcoe	Hcoe		1	0	1
+OG:019066	Adig,Amur,Fspp	N3	Ahya,Gfas,N6,Pcru,Plut	1	5	10
+OG:019067	Spis	Spis		1	0	1
+OG:019072	Fspp	Fspp		1	0	1
+OG:019082	Spis	Spis		1	0	1
+OG:019085	Adig,Amur	N9	Ahya	1	1	4
+OG:019089	Hcoe	Hcoe		1	0	1
+OG:019090	Pdam	Pdam		1	0	1
+OG:019095	Pcru	Pcru		1	0	1
+OG:019096	Ahya,Fspp,Gfas,Pcru	N3	Adig,Amur,N6,Plut	1	4	11
+OG:019097	Spis	Spis		1	0	1
+OG:019098	Adig,Amur	N9	Ahya	1	1	4
+OG:019108	Amur	Amur		1	0	1
+OG:019109	Adig	Adig		1	0	1
+OG:019110	Hcoe	Hcoe		1	0	1
+OG:019112	Gfas,Plut	N5	N9	1	1	4
+OG:019113	Adig	Adig		1	0	1
+OG:019119	Adig	Adig		1	0	1
+OG:019120	Ahya	Ahya		1	0	1
+OG:019121	Ahya,Gfas,Hcoe,Pdam	N1	Adig,Amur,N7,Plut,Spis,Xesp	1	6	13
+OG:019134	Amur	Amur		1	0	1
+OG:019137	Spis	Spis		1	0	1
+OG:019142	Adig	Adig		1	0	1
+OG:019145	Ahya	Ahya		1	0	1
+OG:019158	Fspp	Fspp		1	0	1
+OG:019168	Adig	Adig		1	0	1
+OG:019169	Hcoe	Hcoe		1	0	1
+OG:019170	Amur	Amur		1	0	1
+OG:019171	Ahya	Ahya		1	0	1
+OG:019191	Hcoe	Hcoe		1	0	1
+OG:019203	Spis	Spis		1	0	1
+OG:019214	Amur	Amur		1	0	1
+OG:019215	Hcoe	Hcoe		1	0	1
+OG:019218	Fspp,Pcru	N7		1	0	3
+OG:019219	Fspp,Pcru	N7		1	0	3
+OG:019224	Adig,Amur	N9	Ahya	1	1	4
+OG:019226	Adig	Adig		1	0	1
+OG:019230	Adig	Adig		1	0	1
+OG:019234	Pdam,Spis	N6		1	0	3
+OG:019239	Gfas,Pdam	N3	N7,N9,Plut,Spis	1	4	7
+OG:019252	Pcru	Pcru		1	0	1
+OG:019258	Amur	Amur		1	0	1
+OG:019263	Fspp	Fspp		1	0	1
+OG:019268	Adig,Gfas,Pcru,Pdam,Plut,Spis	N3	Fspp,N10	1	2	13
+OG:019271	Amur,Pcru,Pdam,Spis	N3	Adig,Ahya,Fspp,Gfas,Plut	1	5	12
+OG:019295	Amur	Amur		1	0	1
+OG:019303	Amur,Fspp,Gfas,Spis	N3	Adig,Ahya,Pcru,Pdam,Plut	1	5	12
+OG:019309	Hcoe	Hcoe		1	0	1
+OG:019320	Adig	Adig		1	0	1
+OG:019323	Adig,Ahya	N9	Amur	1	1	4
+OG:019329	Pcru	Pcru		1	0	1
+OG:019332	Spis	Spis		1	0	1
+OG:019360	Hcoe	Hcoe		1	0	1
+OG:019361	Adig,Amur	N9	Ahya	1	1	4
+OG:019381	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:019387	Hcoe	Hcoe		1	0	1
+OG:019390	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:019409	Ahya	Ahya		1	0	1
+OG:019433	Ahya,Amur,Hcoe	N1	Adig,Gfas,N4,Plut,Xesp	1	5	10
+OG:019441	Hcoe	Hcoe		1	0	1
+OG:019442	Adig,Ahya,Amur,Spis	N3	Gfas,N7,Pdam,Plut	1	4	11
+OG:019451	Amur	Amur		1	0	1
+OG:019452	Adig,Spis	N3	Gfas,N10,N7,Pdam,Plut	1	5	8
+OG:019457	Ahya	Ahya		1	0	1
+OG:019459	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:019469	Hcoe,Pcru	N1	Fspp,N5,N6,Xesp	1	4	7
+OG:019474	Hcoe	Hcoe		1	0	1
+OG:019485	Hcoe	Hcoe		1	0	1
+OG:019494	Adig,Amur	N9	Ahya	1	1	4
+OG:019513	Pcru	Pcru		1	0	1
+OG:019524	Pcru	Pcru		1	0	1
+OG:019540	Gfas	Gfas		1	0	1
+OG:019546	Adig,Ahya,Amur,Fspp,Gfas,Pcru,Pdam,Plut,Spis	N3		1	0	17
+OG:019559	Plut	Plut		1	0	1
+OG:019569	Ahya,Pcru,Pdam,Plut,Spis	N3	Adig,Amur,Fspp,Gfas	1	4	13
+OG:019581	Hcoe,Pdam,Spis	N1	N5,N7,Xesp	1	3	8
+OG:019600	Spis	Spis		1	0	1
+OG:019603	Adig	Adig		1	0	1
+OG:019604	Hcoe,Plut	N1	N4,N8,Xesp	1	3	6
+OG:019605	Adig,Ahya,Amur,Pcru,Pdam,Plut,Spis	N3	Fspp,Gfas	1	2	15
+OG:019609	Hcoe	Hcoe		1	0	1
+OG:019623	Pcru,Pdam	N4	Fspp,Spis	1	2	5
+OG:019625	Plut	Plut		1	0	1
+OG:019629	Plut	Plut		1	0	1
+OG:019630	Hcoe	Hcoe		1	0	1
+OG:019631	Amur	Amur		1	0	1
+OG:019637	Gfas,Pdam,Spis	N3	N7,N9,Plut	1	3	8
+OG:019642	Adig,Amur	N9	Ahya	1	1	4
+OG:019648	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:019650	Ahya,Hcoe	N1	Adig,Amur,Gfas,N4,Plut,Xesp	1	6	9
+OG:019655	Hcoe	Hcoe		1	0	1
+OG:019660	Hcoe	Hcoe		1	0	1
+OG:019661	Fspp,Gfas	N3	N6,N9,Pcru,Plut	1	4	7
+OG:019664	Ahya,Spis	N3	Adig,Amur,Gfas,N7,Pdam,Plut	1	6	9
+OG:019665	Pdam	Pdam		1	0	1
+OG:019669	Fspp	Fspp		1	0	1
+OG:019676	Pdam	Pdam		1	0	1
+OG:019683	Adig,Hcoe,Plut	N1	Gfas,N10,N4,Xesp	1	4	9
+OG:019684	Fspp	Fspp		1	0	1
+OG:019691	Hcoe,Plut	N1	N4,N8,Xesp	1	3	6
+OG:019693	Adig	Adig		1	0	1
+OG:019698	Amur	Amur		1	0	1
+OG:019702	Plut	Plut		1	0	1
+OG:019703	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:019705	Gfas	Gfas		1	0	1
+OG:019711	Amur,Hcoe	N1	Adig,Ahya,Gfas,N4,Plut,Xesp	1	6	9
+OG:019741	Hcoe	Hcoe		1	0	1
+OG:019763	Gfas	Gfas		1	0	1
+OG:019771	Amur	Amur		1	0	1
+OG:019774	Hcoe	Hcoe		1	0	1
+OG:019784	Ahya,Amur,Fspp,Plut	N3	Adig,Gfas,N6,Pcru	1	4	11
+OG:019785	Adig,Ahya,Amur,Plut	N5	Gfas	1	1	8
+OG:019786	Adig,Ahya,Amur	N9		1	0	5
+OG:019794	Adig	Adig		1	0	1
+OG:019817	Plut	Plut		1	0	1
+OG:019828	Amur,Gfas	N8	Adig,Ahya	1	2	5
+OG:019837	Hcoe	Hcoe		1	0	1
+OG:019842	Pdam	Pdam		1	0	1
+OG:019871	Gfas,Pcru	N3	Fspp,N6,N9,Plut	1	4	7
+OG:019877	Amur	Amur		1	0	1
+OG:019888	Pcru	Pcru		1	0	1
+OG:019898	Adig	Adig		1	0	1
+OG:019903	Pcru	Pcru		1	0	1
+OG:019988	Adig,Gfas	N8	N10	1	1	4
+OG:020006	Adig	Adig		1	0	1
+OG:020017	Plut	Plut		1	0	1
+OG:020026	Adig	Adig		1	0	1
+OG:020034	Adig,Amur,Fspp,Plut	N3	Ahya,Gfas,N6,Pcru	1	4	11
+OG:020035	Gfas	Gfas		1	0	1
+OG:020050	Pcru,Spis	N4	Fspp,Pdam	1	2	5
+OG:020061	Hcoe	Hcoe		1	0	1
+OG:020067	Adig,Ahya	N9	Amur	1	1	4
+OG:020075	Ahya,Amur,Gfas,Pcru	N3	Adig,Fspp,N6,Plut	1	4	11
+OG:020082	Hcoe	Hcoe		1	0	1
+OG:020088	Plut	Plut		1	0	1
+OG:020096	Amur	Amur		1	0	1
+OG:020100	Gfas,Pdam,Spis	N3	N7,N9,Plut	1	3	9
+OG:020106	Adig,Ahya,Amur	N9		1	0	5
+OG:020108	Ahya,Amur	N10		1	0	3
+OG:020119	Adig	Adig		1	0	1
+OG:020133	Pdam,Spis	N6		1	0	3
+OG:020136	Amur,Fspp,Gfas,Hcoe,Pcru,Plut	N1	Adig,Ahya,N6,Xesp	1	4	15
+OG:020151	Plut	Plut		1	0	1
+OG:020159	Amur	Amur		1	0	1
+OG:020169	Ahya,Amur	N10		1	0	3
+OG:020170	Adig,Hcoe	N1	Gfas,N10,N4,Plut,Xesp	1	5	8
+OG:020184	Fspp	Fspp		1	0	1
+OG:020185	Gfas	Gfas		1	0	1
+OG:020200	Amur,Pdam	N3	Adig,Ahya,Gfas,N7,Plut,Spis	1	6	9
+OG:020204	Pdam	Pdam		1	0	1
+OG:020207	Plut,Spis	N3	N7,N8,Pdam	1	3	6
+OG:020217	Hcoe	Hcoe		1	0	1
+OG:020232	Amur,Fspp,Pcru,Pdam,Plut	N3	Adig,Ahya,Gfas,Spis	1	4	13
+OG:020242	Hcoe	Hcoe		1	0	1
+OG:020259	Adig	Adig		1	0	1
+OG:020268	Ahya,Amur,Pdam,Spis	N3	Adig,Gfas,N7,Plut	1	4	11
+OG:020276	Adig	Adig		1	0	2
+OG:020290	Adig,Amur	N9	Ahya	1	1	5
+OG:020291	Adig,Ahya,Amur	N9		1	0	5
+OG:020292	Amur	Amur		1	0	1
+OG:020314	Ahya	Ahya		1	0	1
+OG:020325	Ahya	Ahya		1	0	1
+OG:020332	Plut	Plut		1	0	1
+OG:020343	Ahya,Amur	N10		1	0	3
+OG:020348	Amur	Amur		1	0	1
+OG:020352	Fspp	Fspp		1	0	1
+OG:020353	Pdam	Pdam		1	0	1
+OG:020361	Adig	Adig		1	0	1
+OG:020372	Ahya,Amur	N10		1	0	4
+OG:020387	Amur	Amur		1	0	1
+OG:020390	Ahya,Amur	N10		1	0	3
+OG:020400	Amur	Amur		1	0	1
+OG:020402	Ahya	Ahya		1	0	1
+OG:020410	Spis	Spis		1	0	1
+OG:020411	Ahya	Ahya		1	0	1
+OG:020423	Pdam	Pdam		1	0	1
+OG:020424	Fspp	Fspp		1	0	1
+OG:020445	Hcoe	Hcoe		1	0	1
+OG:020494	Hcoe	Hcoe		1	0	2
+OG:020514	Amur	Amur		1	0	1
+OG:020527	Plut	Plut		1	0	1
+OG:020598	Hcoe	Hcoe		1	0	2
+OG:020610	Pdam	Pdam		1	0	1
+OG:020623	Adig	Adig		1	0	1
+OG:020629	Hcoe	Hcoe		1	0	1
+OG:020633	Hcoe	Hcoe		1	0	1
+OG:020649	Fspp	Fspp		1	0	1
+OG:020659	Adig	Adig		1	0	1
+OG:020668	Amur	Amur		1	0	1
+OG:020676	Gfas	Gfas		1	0	1
+OG:020714	Adig	Adig		1	0	1
+OG:020728	Hcoe	Hcoe		1	0	1
+OG:020758	Adig	Adig		1	0	1
+OG:020761	Adig,Gfas	N8	N10	1	1	4
+OG:020764	Spis	Spis		1	0	1
+OG:020807	Plut	Plut		1	0	1
+OG:020826	Hcoe	Hcoe		1	0	1
+OG:020832	Spis	Spis		1	0	1
+OG:020844	Fspp	Fspp		1	0	1
+OG:020847	Fspp	Fspp		1	0	1
+OG:020878	Hcoe	Hcoe		1	0	1
+OG:020961	Hcoe	Hcoe		1	0	1
+OG:020978	Hcoe	Hcoe		1	0	1
+OG:020979	Hcoe	Hcoe		1	0	1
+OG:020994	Hcoe	Hcoe		1	0	1
+OG:021032	Hcoe	Hcoe		1	0	1
+OG:021039	Hcoe	Hcoe		1	0	1
+OG:021067	Hcoe	Hcoe		1	0	1
+OG:021073	Hcoe	Hcoe		1	0	1
+OG:021080	Hcoe	Hcoe		1	0	1
+OG:021090	Hcoe	Hcoe		1	0	2
+OG:021102	Hcoe	Hcoe		1	0	1
+OG:021133	Plut	Plut		1	0	1
+OG:021203	Hcoe	Hcoe		1	0	1
+OG:021208	Hcoe	Hcoe		1	0	1
+OG:021335	Spis	Spis		1	0	1
+OG:021352	Spis	Spis		1	0	1
+OG:021382	Spis	Spis		1	0	1
+OG:021585	Hcoe	Hcoe		1	0	1
+OG:021586	Hcoe	Hcoe		1	0	2
+OG:021602	Spis	Spis		1	0	1
+OG:021661	Fspp	Fspp		1	0	1
