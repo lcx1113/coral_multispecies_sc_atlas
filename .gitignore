@@ -1,2 +1,7 @@
 # Ignore large annotation files
 *.gtf
+# too large for GitHub normal git
+data/Anthozoa_broccoli_results/orthogroup_pairs.genes.csv
+data/reference_gtf_Anthozoa/original_file/Amil.all.maker.noseq.gff
+data/reference_gtf_Anthozoa/original_file/equina_smart.rnam-trna.merged.ggf.curated.remredun.proteins.gff3
+results_scatlas/scatlas_mutispecies_260426/results_metacell_Spin_filt/seu.Spin.log2fc.cts.csv
