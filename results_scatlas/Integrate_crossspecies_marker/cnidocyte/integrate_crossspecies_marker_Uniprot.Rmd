@@ -1,0 +1,157 @@
+```{r}
+setwd("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_mutispecies_260426/")
+getwd()
+suppressMessages(source("../coral_cs_functions/helper.R"))
+library(dplyr)
+library(Biostrings)
+library(ggvenn)
+```
+
+```{r}
+sps_list = c("Adig", "Ahya", "Amur", "Fspp", "Gfas", "Hcoe", "Pcru", "Pdam", "Plut", "Spin", "Xesp")
+thr_pv = 1.1
+thr_FC = 0.5
+focus_celltype = "cnidocyte"
+mks_list = list()
+for(spi in sps_list){
+    # set working species
+    if (spi == "Spin") {
+        spi_w = "Spis"
+	} else if (spi == "HcoeH" || spi == "HcoeI") {
+        spi_w = "Hcoe"
+    } else {
+		spi_w = spi
+	}
+    #load celltype markers of different species
+    mks_genes_fn = sprintf("results_metacell_%s_filt/seu.%s.markers.cts.csv", spi, spi)
+    if (! file.exists(mks_genes_fn)) {
+        warning(sprintf("File not found for %s: %s", spi, mks_genes_fn))
+        next
+    }
+    mks = read.table(mks_genes_fn, sep = "\t", header = TRUE)
+    mks$spi = spi_w
+    # 移除不需要的列
+    cols_to_remove = c("gene_seurat", "orthogroup", "has_TF", 
+                        "first_annotation", "first_support", "second_annotation", "second_support")
+    mks = mks %>% filter(focus_node == focus_celltype) %>% 
+        select(-one_of(cols_to_remove))
+
+    mks_list[[spi]] = mks
+    message(sprintf("  %s: %d genes, %d cell types", 
+                    spi, 
+                    nrow(mks), 
+                    length(unique(mks$focus_node))))
+}
+# 合并所有物种的标记基因
+message("\nMerging all species...")
+mks_all = do.call(rbind, mks_list)
+rownames(mks_all) = NULL
+mks_all= mks_all %>%
+    filter(avg_log2FC >= thr_FC&p_val_adj <= thr_pv)
+message(sprintf("Total:  %d genes across %d species",
+                nrow(mks_all), 
+                length(unique(mks_all$spi))))
+```
+
+```{r}
+#---------------------------
+# 参数
+#---------------------------
+sps_order = c("Hcoe", "Xesp", "Pdam", "Spis", "Fspp", "Pcru", "Plut", "Gfas", "Adig", "Amur", "Ahya")
+conservation_threshold = 0.4
+
+#---------------------------
+# 计算全部物种内的保守 Uniprot_name（保留原始行）
+#---------------------------
+filter_conserved_uniprot_rows <- function(df, species_vec, thr = 0.7, species_order = NULL) {
+  species_vec = unique(species_vec)
+  if (!is.null(species_order)) {
+    species_vec = species_order[species_order %in% species_vec]
+  }
+
+  gene_conservation = df %>%
+    filter(!is.na(Uniprot_name) & Uniprot_name != "" & spi %in% species_vec) %>%
+    group_by(Uniprot_name) %>%
+    summarise(
+      n_spi_with_gene = n_distinct(spi),
+      species_with_gene = paste(unique(spi), collapse = ","),
+      .groups = "drop"
+    ) %>%
+    mutate(
+      spi_frac_in_group = n_spi_with_gene / length(species_vec),
+      is_conserved = spi_frac_in_group >= thr
+    )
+
+  if (!is.null(species_order)) {
+    gene_conservation = gene_conservation %>%
+      mutate(
+        species_with_gene = sapply(
+          strsplit(species_with_gene, ","),
+          function(spis) paste(species_order[species_order %in% spis], collapse = ",")
+        )
+      )
+  }
+
+  df_keep = df %>%
+    filter(spi %in% species_vec) %>%
+    inner_join(
+      gene_conservation %>% filter(is_conserved),
+      by = "Uniprot_name"
+    )
+
+  list(
+    conserved_uniprot = gene_conservation %>% filter(is_conserved) %>% pull(Uniprot_name),
+    conserved_rows = df_keep,
+    conservation_table = gene_conservation %>% filter(is_conserved)
+  )
+}
+
+#---------------------------
+# 计算全部物种保守 Uniprot_name
+#---------------------------
+res_all = filter_conserved_uniprot_rows(
+  mks_all,
+  sps_order,
+  conservation_threshold,
+  sps_order
+)
+
+mks_conserved = res_all$conserved_rows
+conserved_uniprot = res_all$conserved_uniprot
+conservation_table = res_all$conservation_table
+
+#---------------------------
+# 可视化（可选）
+#---------------------------
+length(conserved_uniprot)
+
+```
+
+```{r}
+# 1) 物种排序 & 物种内部基因名排序
+mks_conserved_sorted = mks_conserved %>%
+  mutate(
+    spi = factor(spi, levels = sps_order),
+    gene_sort = ifelse(is.na(gene) | gene == "", gene_seurat, gene)
+  ) %>%
+  arrange(-n_spi_with_gene, Uniprot_name, spi, gene_sort) %>%
+  select(-gene_sort)
+
+conservation_table<- conservation_table %>%
+  arrange(-n_spi_with_gene, Uniprot_name)
+
+# 2) 保存结果表
+out_dir = "/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/Integrate_crossspecies_marker"
+dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
+
+write.table(conservation_table,
+            file = file.path(out_dir, "cnidocyte_conserved_uniprot_summary.tsv"),
+            sep = "\t", row.names = FALSE, quote = FALSE)
+
+write.table(mks_conserved_sorted,
+            file = file.path(out_dir, "cnidocyte_conserved_uniprot_rows.tsv"),
+            sep = "\t", row.names = FALSE, quote = FALSE)
+
+# 3) 统计信息
+nrow(conservation_table)
+```
