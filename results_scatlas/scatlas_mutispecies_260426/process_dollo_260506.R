@@ -1,3 +1,6 @@
+## Adapted from: https://github.com/xgrau/oculina-coral-sc-atlas
+## With other modification to adapt to our dataset
+######################################################################################
 # libraries
 setwd("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_mutispecies_260426")
 getwd()
