@@ -1,3 +1,6 @@
+## Adapted from: https://github.com/xgrau/oculina-coral-sc-atlas
+## With other modification to adapt to our dataset
+####################################################################
 #libraries
 setwd("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_mutispecies_260426/")
 getwd()
@@ -14,7 +17,7 @@ fix_gene_name <- function(gene_names, prefix) {
     }
 
 # data index
-sps_list = c("Plut")
+sps_list = c("Adig", "Ahya", "Amur", "Fspp", "Gfas", "Hcoe", "Pcru", "Pdam", "Plut", "Spin", "Xesp")
 df <- read.table("/home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/251219_mc_lei/id2symbol.txt", 
                 header = TRUE, 
                 sep = "\t", 
@@ -621,13 +624,6 @@ for (spi in sps_list) {
     print(pp1)
     dev.off()
     message(sprintf("  Saved: %s/seu.%s.markers.top.mcs.pdf", out_fn, spi))
-    pp2 = DoHeatmap(seu, group.by = "cell_type", assay = "SCT", features = top_markers) + NoLegend()
-
-    pdf(sprintf("%s/seu.%s.heatmap.UMI.top.ct.pdf", out_fn, spi), 
-            width = 20 + (ncol(ct_fp_f) / 10), 
-            height = 10 + (nrow(ct_fp_f) / 20))
-        print(pp2)
-        dev.off()
 
     ## Leiden clusters heatmap ##
     message(sprintf("metacell | %s | expression maps, Leiden heatmaps...", spi))
@@ -671,30 +667,6 @@ for (spi in sps_list) {
     print(pp1)
     dev.off()
     message(sprintf("  Saved: %s/seu.%s.markers.top.lei.pdf", out_fn, spi))
-
-    pp2 = DoHeatmap(seu, group.by = "leiden", assay = "SCT", features = top_markers) + NoLegend()
-
-    cluster_umi <- data.frame(Cluster = seu$leiden, UMI = seu$nCount_RNA)
-    # violin plot for UMI distribution in each cluster
-    pp3 = ggplot(cluster_umi, aes(x = factor(Cluster), y = UMI, fill = factor(Cluster))) +
-    geom_violin(alpha = 0.7, trim = TRUE) +
-    geom_jitter(size = 0.1, alpha = 0.2) +
-    theme_minimal() +
-    labs(title = "UMIplot in each cluster", x = "Cluster", y = "UMI counts") +
-    theme(legend.position = "none") +
-    scale_y_log10()
-
-    pdf(sprintf("%s/seu.%s.heatmap.UMI.top.lei.pdf", out_fn, spi), 
-        width = 20 + (ncol(le_fp_f) / 10), 
-        height = 10 + (nrow(le_fp_f) / 20))
-    print(pp2)
-    dev.off()
-
-    pdf(sprintf("%s/seu.%s.UMI.lei.pdf", out_fn, spi), 
-        width = 10,
-        height = 5 )
-    print(pp3)
-    dev.off()
 
     ## Metacells heatmap ##
     message(sprintf("metacell | %s | expression maps, metacell heatmaps...", spi))
