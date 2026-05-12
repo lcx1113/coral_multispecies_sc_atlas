@@ -1,4 +1,4 @@
-## Adapted from: https://github.com/xgrau/oculina-coral-sc-atlas##
+## Adapted from: https://github.com/xgrau/oculina-coral-sc-atlas
 ##################################################################
 # libraries
 require("metacell")
