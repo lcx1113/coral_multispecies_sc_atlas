@@ -1,3 +1,5 @@
+## Adapted from: https://github.com/xgrau/oculina-coral-sc-atlas
+##################################################################
 require("WGCNA")
 require("flashClust")
 require("genefilter")
