@@ -1,1 +1,17 @@
 # coral_multispecies_sc_atlas
+## Introduction
+This repository contain code and some of the data in our mutispecies coral single cell transriptome analysis. 
+
+### Files in the repository
+- `data/`: protein sequence used, with broccoli code and results and TF annotation included.
+- `result_annotation/`: species annotation including gene_name, Uniprot_name, and orthogroup information. GO annotation was also provided
+- `result_csps/`: Code to do SAMap comparison between two specise and to all species used in `result_csps/SAMap/`. Also with Code to do protein phylogenic analysis in `result_csps/protein_phylogenetic_tree/`.
+- `result_scatlas/`: Code associated with single-cell transcriptome analysis, including raw data processing with dropest in `result_scatlas/dropEst_pipline/`, 3'extension in `result_scatlas/extension_3p/`, quality control of single cell data in `result_scatlas/QC/`, analysis with scatlas in `result_scatlas/scatlas_mutispecies_260426/` and cross-species conserved gene in `result_scatlas/Integrate_crossspecies_marker/`.
+
+
+
+## Credits
+
+Parts of this analysis workflow were adapted from:
+https://github.com/xgrau/oculina-coral-sc-atlas
+We adapted their framework of processing cross-species comparison to single cell transcriptome and modified some upstream scripts to fit our dataset. Thanks to their contribution! 
