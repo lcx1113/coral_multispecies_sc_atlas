@@ -1,3 +1,7 @@
+## Adapted from: https://github.com/xgrau/oculina-coral-sc-atlas
+## Added function plot_complex_dotmap() to plot dotmap
+## Added function fix_gene_name() to check species prefix
+##################################################################
 # libraries
 require("ComplexHeatmap")
 require("circlize")
