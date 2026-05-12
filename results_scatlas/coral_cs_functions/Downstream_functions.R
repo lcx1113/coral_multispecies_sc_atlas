@@ -1,3 +1,5 @@
+## Adapted from: https://github.com/sebepedroslab/Stylophora_single_cell_atlas
+##############################################################################
 # libraries
 require("metacell")
 require("tgconfig")
