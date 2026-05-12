@@ -12,5 +12,5 @@ This repository contain code and some of the data in our mutispecies coral singl
 ## Credits
 
 Parts of this analysis workflow were adapted from:
-https://github.com/xgrau/oculina-coral-sc-atlas
+https://github.com/xgrau/oculina-coral-sc-atlas. 
 We adapted their framework of processing cross-species comparison to single cell transcriptome and modified some upstream scripts to fit our dataset. Thanks to their contribution! 
