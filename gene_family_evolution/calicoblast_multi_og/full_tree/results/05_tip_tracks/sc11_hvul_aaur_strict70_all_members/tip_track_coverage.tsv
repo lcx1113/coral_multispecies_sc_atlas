@@ -1,0 +1,5 @@
+family_id	n_active_tips	n_observed	n_no_expression_dataset	n_gene_not_tested	n_celltype_not_present	n_other_expression_state	n_domain_hit_tips	n_no_domain_hit_tips	n_cdd_domain_hits	status
+FAM_CA	95	71	17	7	0	0	95	0	100	PASS
+FAM_FERLIN	27	18	7	2	0	0	25	2	211	PASS
+FAM_MEP1B	215	106	61	48	0	0	214	1	376	PASS
+FAM_SLC4	39	34	5	0	0	0	39	0	40	PASS

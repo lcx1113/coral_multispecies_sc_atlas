@@ -1,0 +1,2 @@
+started_utc	command	config	max_parallel
+2026-09-09T08:37:30Z	./run_log2fc_all_celltypes.sh 	/absolute/path/external_inputs/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_find_conserved_OG_260909/config/analysis_config.yaml	2

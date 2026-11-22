@@ -1,0 +1,14 @@
+SPECIES: FAMILY_COVERAGE
+Aaur: 1
+Adig: 1
+Ahya: 1
+Amur: 1
+Fspp: 1
+Gfas: 1
+Hcoe: 1
+Hvul: 1
+Pcru: 1
+Pdam: 1
+Plut: 1
+Spis: 1
+Xesp: 1

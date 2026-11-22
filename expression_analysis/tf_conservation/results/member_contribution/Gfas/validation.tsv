@@ -1,0 +1,2 @@
+object_species	n_candidate_ogs	n_reconstructed_ogs	raw_UMI_reconstruction_max_error	normalized_mean_reconstruction_max_error	source_RNA	source_RNA_sha256	reuse_policy
+Gfas	202	176	0	7.8159700933611e-14	/absolute/path/seurat_objects/dat.Gfas.seurat_final.rds	a64da174e20fafda6ebf5542a2070cedd45f63e2e21d77e2c4990b58a537906a	subset of validated current-version member contributions; excluded targets removed; original reconstruction error retained

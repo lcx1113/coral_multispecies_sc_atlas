@@ -1,0 +1,2 @@
+object_species	source_object	sha256	source_hash_matches_260909	started_utc	finished_utc	Seurat	n_ogs	n_cells
+Plut	/absolute/path/external_inputs/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_find_conserved_OG_260909/intermediate/02_og_sum_objects/Plut.OG_SUM.seurat.rds	1ddc1f8c7a90c505f18c630ee53eb9e1cc8df4542527611db18b9594088dbd7c	TRUE	2026-10-19 08:58:18 UTC	2026-10-19 08:58:58 UTC	5.3.0	12889	9734

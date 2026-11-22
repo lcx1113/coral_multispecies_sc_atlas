@@ -1,0 +1,13 @@
+object_species	orthology_species	target_celltype	n_target_cells	n_background_cells	n_ogs	n_wilcox_tested	n_fold_change_only
+Hcoe	Hcoe	calicoblast	862	10321	10116	10116	0
+Hcoe	Hcoe	calicoblast-like	1741	9442	10116	10116	0
+Hcoe	Hcoe	cnidocyte	188	10995	10116	10116	0
+Hcoe	Hcoe	epidermis	2149	9034	10116	10116	0
+Hcoe	Hcoe	gastrodermis	3037	8146	10116	10116	0
+Hcoe	Hcoe	gastrodermis_alga_hosting	217	10966	10116	10116	0
+Hcoe	Hcoe	gastrodermis_muscle	850	10333	10116	10116	0
+Hcoe	Hcoe	germline_oocytes_1	129	11054	10116	10116	0
+Hcoe	Hcoe	gland_3	139	11044	10116	10116	0
+Hcoe	Hcoe	neuron_Atoh8	152	11031	10116	10116	0
+Hcoe	Hcoe	neuron_Isl	270	10913	10116	10116	0
+Hcoe	Hcoe	neuron_Pou4_1	390	10793	10116	10116	0

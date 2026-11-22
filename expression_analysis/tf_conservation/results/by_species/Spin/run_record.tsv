@@ -1,0 +1,2 @@
+object_species	source_object	sha256	source_hash_matches_260909	started_utc	finished_utc	Seurat	n_ogs	n_cells
+Spin	/absolute/path/external_inputs/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_find_conserved_OG_260909/intermediate/02_og_sum_objects/Spin.OG_SUM.seurat.rds	d2d4f1b996479d17ab31fa4b1a32a082ca53a89e5c97da4aff16f5a902c01436	TRUE	2026-10-19 08:56:28 UTC	2026-10-19 08:58:08 UTC	5.3.0	14323	15053

@@ -1,0 +1,16 @@
+object_species	orthology_species	target_celltype	n_target_cells	n_background_cells	n_ogs	n_wilcox_tested	n_fold_change_only
+Pdam	Pdam	calicoblast	227	11479	12950	12950	0
+Pdam	Pdam	cnidocyte	352	11354	12950	12950	0
+Pdam	Pdam	digestive_filaments	637	11069	12950	12950	0
+Pdam	Pdam	epidermis	2704	9002	12950	12950	0
+Pdam	Pdam	gastrodermis	3603	8103	12950	12950	0
+Pdam	Pdam	gastrodermis_alga_hosting	573	11133	12950	12950	0
+Pdam	Pdam	gastrodermis_muscle	425	11281	12950	12950	0
+Pdam	Pdam	germline_oocytes_1	889	10817	12950	12950	0
+Pdam	Pdam	gland_1_Xbp	476	11230	12950	12950	0
+Pdam	Pdam	gland_3	725	10981	12950	12950	0
+Pdam	Pdam	immune_macrophage	502	11204	12950	12950	0
+Pdam	Pdam	immune_macrophage_like_2	44	11662	12950	12950	0
+Pdam	Pdam	neuron_Atoh8	223	11483	12950	12950	0
+Pdam	Pdam	neuron_Pou4_2	200	11506	12950	12950	0
+Pdam	Pdam	neuron_Pou4_Otp	126	11580	12950	12950	0

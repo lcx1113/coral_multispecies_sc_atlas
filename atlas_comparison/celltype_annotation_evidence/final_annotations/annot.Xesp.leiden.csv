@@ -1,0 +1,43 @@
+cluster	cell_type	color	broad_cell_type	cluster_class	legacy_annotation_string
+1	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.71); gastrodermis_muscle(0.44); gastrodermis_like_2(0.26)
+2	neurosecretory_progenitors	slategray3	neurosecretory	leiden	immune_macrophage_like_2(0.59); gastrodermis(0.21); epidermis(0.14); manual
+3	neurosecretory_progenitors	slategray3	neurosecretory	leiden	unknown1(1.00); neurosecretory_progenitors(0.41); epidermis(0.29); correlation_suppoted:neurosecretory_progenitors(r=0.306)
+4	epidermis	cadetblue2	epidermis	leiden	epidermis(0.90)
+5	gastrodermis	wheat1	gastrodermis	leiden	unknown2(1.00); gastrodermis(0.31); gastrodermis_muscle(0.19); correlation_suppoted:gastrodermis(r=0.271)
+6	neurosecretory_progenitors	slategray3	neurosecretory	leiden	unknown3(1.00); neurosecretory_progenitors(0.48); epidermis(0.12); neuron_Isl_Nkx6(0.12); correlation_suppoted:neurosecretory_progenitors(r=0.209)
+7	epidermis	cadetblue2	epidermis	leiden	epidermis(0.65); calicoblast(0.14)
+8	neurosecretory_progenitors	slategray3	neurosecretory	leiden	unknown4(1.00); neurosecretory_progenitors(0.35); epidermis(0.17); gastrodermis(0.11); correlation_suppoted:neurosecretory_progenitors(r=0.361)
+9	cnidocyte	mediumorchid3	cnidocyte	leiden	cnidocyte(0.67); neurosecretory_progenitors(0.18)
+10	epidermis_like_1	cadetblue3	epidermis	leiden	epidermis(0.83); manual
+11	unknown5	#676767	undefined	leiden	unknown5(1.00); epidermis(0.17); neurosecretory_progenitors(0.15); correlation_best:germline_oocytes_1(r=0.187); manual
+12	unknown26	#D1D1D1	undefined	leiden	epidermis(0.70); manual
+13	unknown5	#676767	undefined	leiden	unknown6(1.00); epidermis(0.23); correlation_best:germline_oocytes_1(r=0.095); manual
+14	germline_oocytes_1	khaki2	germline	leiden	germline_oocytes_1(0.76); gastrodermis(0.21)
+15	unknown7	#757575	undefined	leiden	unknown7(1.00); epidermis(0.15); gastrodermis(0.10); correlation_best:gland_1_Xbp(r=0.140)
+16	gland_3	sienna3	gland	leiden	gastrodermis(0.83); manual
+17	epidermis_like_1	cadetblue3	epidermis	leiden	unknown8(1.00); epidermis(0.40); correlation_best:neuron_Pou4_1(r=0.174); manual
+18	epidermis_like_2	cadetblue4	epidermis	leiden	epidermis(0.64); manual
+19	gastrodermis	wheat1	gastrodermis	leiden	unknown9(1.00); gastrodermis(0.39); gastrodermis_muscle(0.12); gland_1_Xbp(0.11); correlation_best:gastrodermis_muscle(r=0.247); manual
+20	gland_3	sienna3	gland	leiden	unknown10(1.00); gland_3(0.27); gastrodermis(0.11); correlation_best:gland_1_Xbp(r=0.086); manual
+21	unknown11	#8C8C8C	undefined	leiden	unknown11(1.00); calicoblast(0.20); gastrodermis(0.18); correlation_best:calicoblast(r=0.117)
+22	epidermis_like_1	cadetblue3	epidermis	leiden	unknown12(1.00); epidermis(0.46); gastrodermis(0.13); correlation_suppoted:epidermis(r=0.122); manual
+23	unknown13	#969696	undefined	leiden	unknown13(1.00); calicoblast(0.33); gastrodermis(0.24); correlation_best:neurosecretory_progenitors(r=0.209); manual
+24	immune_nascent	plum1	immune	leiden	immune_nascent(0.53); neuron_Isl(0.32); neurosecretory_progenitors(0.22); neuron_Pou4_Gsx(0.22); neuron_Pou4_2(0.12); gland_2(0.11)
+25	gastrodermis	wheat1	gastrodermis	leiden	unknown14(1.00); gastrodermis(0.45); gastrodermis_muscle(0.12); correlation_suppoted:gastrodermis(r=0.280)
+26	unknown25	#CBCBCB	undefined	leiden	gastrodermis(0.55); manual
+27	unknown26	#D1D1D1	undefined	leiden	epidermis(0.67); manual
+28	neurosecretory_progenitors	slategray3	neurosecretory	leiden	unknown15(1.00); neurosecretory_progenitors(0.44); epidermis(0.13); correlation_suppoted:neurosecretory_progenitors(r=0.335)
+29	calicoblast	mediumpurple1	calicoblast	leiden	unknown16(1.00); calicoblast(0.41); gastrodermis_alga_hosting(0.32); correlation_best:germline_oocytes_2(r=0.096); manual
+30	neuron_Pou4_1	royalblue1	neuron	leiden	neuron_Pou4_1(0.72); neuron_Pou4_2(0.14); epidermis(0.13)
+31	gastrodermis	wheat1	gastrodermis	leiden	gland_1_Xbp(0.70); gastrodermis(0.28); manual
+32	neuron_Pou4_2	royalblue2	neuron	leiden	unknown17(1.00); neuron_Pou4_2(0.46); epidermis(0.14); correlation_suppoted:neuron_Pou4_2(r=0.543)
+33	unknown18	#ACACAC	undefined	leiden	unknown18(1.00); epidermis(0.21); correlation_best:calicoblast(r=0.096); manual
+34	neuron_Atoh8	steelblue3	neuron	leiden	neuron_Atoh8(0.58)
+35	neuron_Pou4_Otp	royalblue4	neuron	leiden	neuron_Pou4_Otp(0.77)
+36	gastrodermis_alga_hosting	darkolivegreen3	gastrodermis	leiden	gastrodermis_alga_hosting(0.59)
+37	unknown19	#B0B0B0	undefined	leiden	unknown19(1.00); epidermis(0.26); correlation_best:neurosecretory_progenitors(r=0.297); manual
+38	unknown24	#C5C5C5	undefined	leiden	gastrodermis_alga_hosting(0.51); manual
+39	neuron_Pou4_Otp	royalblue4	neuron	leiden	unknown20(1.00); neuron_Pou4_Otp(0.41); neuron_Isl(0.17); correlation_best:digestive_filaments(r=0.178); manual
+40	gland_2	sienna2	gland	leiden	unknown21(1.00); gland_2(0.22); gland_3(0.16); correlation_best:gland_3(r=0.258); manual
+41	unknown22	#BCBCBC	undefined	leiden	unknown22(1.00); epidermis(0.13); correlation_best:calicoblast(r=0.147)
+42	neuron_Atoh8	steelblue3	neuron	leiden	unknown23(1.00); neuron_Atoh8(0.48); neuron_Pou4_Otp(0.11); correlation_suppoted:neuron_Atoh8(r=0.482)

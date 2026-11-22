@@ -1,0 +1,3 @@
+orthogroup	has_TF	first_annotation	first_support	second_annotation	second_support	gene_change
+OG:015782	FALSE	NA	NA	NA	NA	TRUE
+OG:018049	FALSE	Csgalnact2	0.928571428571429	CGAT1	0.6428571428571429	FALSE

@@ -1,0 +1,2 @@
+object_species	n_candidate_ogs	n_reconstructed_ogs	raw_UMI_reconstruction_max_error	normalized_mean_reconstruction_max_error	source_RNA	source_RNA_sha256	reuse_policy
+Ahya	202	174	0	8.5265128291212e-14	/absolute/path/seurat_objects/dat.Ahya.seurat_final.rds	3cb694fc94fdb63a3f8736bdf6d0af58197b0f457e038b427fe23ae251453767	subset of validated current-version member contributions; excluded targets removed; original reconstruction error retained

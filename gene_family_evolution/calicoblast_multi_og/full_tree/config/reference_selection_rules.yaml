@@ -1,0 +1,54 @@
+release: strict_candidates_dual70_corecomplete_261110
+stage: sequence_selection_only_no_tree_inference
+primary_hsp_evalue: 1.0e-10
+query_coverage_min: 0.7
+subject_coverage_min: 0.7
+coverage_definition: inclusive_union_of_significant_HSP_intervals_on_same_query_subject_pair
+identity_minimum: null
+topN: null
+reciprocal_best_hit_required: false
+low_coverage_rescue: false
+core_completeness:
+  source: existing_CDD_rpsbproc_representative_hits
+  accepted_incomplete_flags:
+  - '-'
+  definition: no_N_or_C_terminal_truncation_flag_under_rpsbproc_20_percent_terminal_rule
+  not_equivalent_to: exact_100_percent_model_coverage_or_full_protein_integrity_or_catalytic_activity
+  apply_combination_rule_to: only_hits_with_accepted_incomplete_flags
+  protein_terminal_position_alone_is_failure: false
+domain_rules:
+  FAM_CA:
+    any_of:
+    - Carb_anhydrase
+    - alpha_CA
+  FAM_FERLIN:
+    specific_C2_Ferlin_count_min: 2
+    any_of:
+    - FerB
+    - FerI
+    - Ferlin_C
+  FAM_MEP1B:
+    any_of:
+    - ZnMc_astacin_like
+    - Astacin
+    generic_ZnMc_alone_sufficient: false
+  FAM_SLC4:
+    any_of:
+    - Band_3_cyto
+    - HCO3_cotransp
+  FAM_GAS2L:
+    any_of:
+    - CH_GAS2-like
+    - CH_SF
+    all_of:
+    - GAS2
+additional_domains: retain_and_flag_as_in_parent
+SC11_members: unchanged_not_filtered
+GAS2L: audit_only_remains_deferred_no_rescue
+external_original_orthogroup: NA
+external_canonical_gene_id: NA
+query_support_OG_is_assignment: false
+counting_unit: family_species_unique_source_protein_id
+outputs:
+  tables: uncompressed_tsv
+  sequences: full_length_clean_reference_proteins_not_domain_fragments

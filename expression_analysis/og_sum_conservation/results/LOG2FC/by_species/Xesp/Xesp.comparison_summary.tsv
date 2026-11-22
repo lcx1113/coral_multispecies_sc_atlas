@@ -1,0 +1,17 @@
+object_species	orthology_species	target_celltype	n_target_cells	n_background_cells	n_ogs	n_wilcox_tested	n_fold_change_only
+Xesp	Xesp	calicoblast	272	18862	9849	9849	0
+Xesp	Xesp	cnidocyte	740	18394	9849	9849	0
+Xesp	Xesp	epidermis	1709	17425	9849	9849	0
+Xesp	Xesp	epidermis_like_1	1563	17571	9849	9849	0
+Xesp	Xesp	epidermis_like_2	472	18662	9849	9849	0
+Xesp	Xesp	gastrodermis	3155	15979	9849	9849	0
+Xesp	Xesp	gastrodermis_alga_hosting	139	18995	9849	9849	0
+Xesp	Xesp	germline_oocytes_1	529	18605	9849	9849	0
+Xesp	Xesp	gland_2	95	19039	9849	9849	0
+Xesp	Xesp	gland_3	924	18210	9849	9849	0
+Xesp	Xesp	immune_nascent	340	18794	9849	9849	0
+Xesp	Xesp	neuron_Atoh8	263	18871	9849	9849	0
+Xesp	Xesp	neuron_Pou4_1	269	18865	9849	9849	0
+Xesp	Xesp	neuron_Pou4_2	230	18904	9849	9849	0
+Xesp	Xesp	neuron_Pou4_Otp	263	18871	9849	9849	0
+Xesp	Xesp	neurosecretory_progenitors	3952	15182	9849	9849	0

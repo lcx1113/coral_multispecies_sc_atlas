@@ -1,0 +1,2 @@
+comparison_id	direction	n_species	core_min_species	broad_min_species	majority_min_species	shared_min_species	avg_log2fc_filter	pct_background_filter	p_val_adj_filter
+gastrodermis_alga_hosting	downregulated	11	11	9	6	2	< -0.25	> 0.05	< 0.05

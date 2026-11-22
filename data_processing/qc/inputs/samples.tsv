@@ -1,0 +1,10 @@
+sample_id	input_rds	mito_gene_file	apply_mito_filter
+Ahya	/absolute/path/counts/Ahya/est_out/cell.counts.rds	inputs/mito/ahya_mito_gene.txt	TRUE
+Adig	/absolute/path/counts/Adig/est_out/cell.counts.rds	inputs/mito/adig_mito_gene.txt	TRUE
+Amur	/absolute/path/counts/Amur/est_out/cell.counts.rds	inputs/mito/amur_mito_gene.txt	TRUE
+Fusp	/absolute/path/counts/Fusp/est_out/cell.counts.rds	inputs/mito/ffun_mito_gene.txt	TRUE
+Gfas	/absolute/path/counts/Gfas/est_out/cell.counts.rds	inputs/mito/gfas_mito_gene.txt	TRUE
+Hcoe	/absolute/path/counts/Hcoe/est_out/cell.counts.rds		FALSE
+Pcru	/absolute/path/counts/Pcru/est_out/cell.counts.rds		FALSE
+Pdam	/absolute/path/counts/Pdam/est_out/cell.counts.rds	inputs/mito/pdam_mito_gene_list.txt	TRUE
+Plut	/absolute/path/counts/Plut/est_out/cell.counts.rds	inputs/mito/plut_mito_gene_list.txt	TRUE

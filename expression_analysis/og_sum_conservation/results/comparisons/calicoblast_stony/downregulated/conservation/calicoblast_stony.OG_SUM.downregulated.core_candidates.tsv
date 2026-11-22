@@ -1,0 +1,3 @@
+orthogroup	n_species_present_in_broccoli	n_species_mapped_to_expression	n_species_tested	n_downregulated_species	downregulated_species	comparison_id	direction	n_species_in_comparison	core_min_species	broad_min_species	majority_min_species	shared_min_species	conservation_class	has_TF	first_annotation	first_support	second_annotation	second_support
+OG:001240	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	downregulated	9	9	7	5	2	core	FALSE	AI182371/C3/C4b/Hc	1	CO3	0.5818181818181818
+OG:007048	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	downregulated	9	9	7	5	2	core	FALSE	Col1a1/Col1a2/Col2a1/Col3a1/Col5a2	0.808510638297872	CO1A2	0.7021276595744681

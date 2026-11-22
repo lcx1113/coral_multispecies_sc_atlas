@@ -1,0 +1,2 @@
+object_species	n_candidate_ogs	n_reconstructed_ogs	raw_UMI_reconstruction_max_error	normalized_mean_reconstruction_max_error	source_RNA	source_RNA_sha256	reuse_policy
+Xesp	202	162	0	6.3948846218409e-14	/absolute/path/seurat_objects/dat.Xesp.seurat_final.rds	f08bdee76378c2fb7a48c7c61df35dc69eadb967c0ef94dd4e4fdccf8bdf5093	subset of validated current-version member contributions; excluded targets removed; original reconstruction error retained

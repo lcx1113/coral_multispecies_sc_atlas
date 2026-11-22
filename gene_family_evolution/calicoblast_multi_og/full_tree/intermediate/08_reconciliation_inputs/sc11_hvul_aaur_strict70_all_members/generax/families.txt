@@ -1,0 +1,21 @@
+[FAMILIES]
+- FAM_CA
+starting_gene_tree = ./intermediate/08_reconciliation_inputs/sc11_hvul_aaur_strict70_all_members/FAM_CA/trees/FAM_CA.ml_unrooted.nwk
+alignment = ./intermediate/06_alignments/FAM_CA/FAM_CA.clipkit.aln.faa
+mapping = ./intermediate/08_reconciliation_inputs/sc11_hvul_aaur_strict70_all_members/FAM_CA/mappings/FAM_CA.generax.map
+subst_model = WAG+F+R4
+- FAM_FERLIN
+starting_gene_tree = ./intermediate/08_reconciliation_inputs/sc11_hvul_aaur_strict70_all_members/FAM_FERLIN/trees/FAM_FERLIN.ml_unrooted.nwk
+alignment = ./intermediate/06_alignments/FAM_FERLIN/FAM_FERLIN.clipkit.aln.faa
+mapping = ./intermediate/08_reconciliation_inputs/sc11_hvul_aaur_strict70_all_members/FAM_FERLIN/mappings/FAM_FERLIN.generax.map
+subst_model = LG+F+I+G4
+- FAM_MEP1B
+starting_gene_tree = ./intermediate/08_reconciliation_inputs/sc11_hvul_aaur_strict70_all_members/FAM_MEP1B/trees/FAM_MEP1B.ml_unrooted.nwk
+alignment = ./intermediate/06_alignments/FAM_MEP1B/FAM_MEP1B.clipkit.aln.faa
+mapping = ./intermediate/08_reconciliation_inputs/sc11_hvul_aaur_strict70_all_members/FAM_MEP1B/mappings/FAM_MEP1B.generax.map
+subst_model = WAG+F+R6
+- FAM_SLC4
+starting_gene_tree = ./intermediate/08_reconciliation_inputs/sc11_hvul_aaur_strict70_all_members/FAM_SLC4/trees/FAM_SLC4.ml_unrooted.nwk
+alignment = ./intermediate/06_alignments/FAM_SLC4/FAM_SLC4.clipkit.aln.faa
+mapping = ./intermediate/08_reconciliation_inputs/sc11_hvul_aaur_strict70_all_members/FAM_SLC4/mappings/FAM_SLC4.generax.map
+subst_model = LG+F+I+G4

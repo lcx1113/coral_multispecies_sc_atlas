@@ -1,0 +1,10 @@
+comparison_id	object_species	full_file_exists	filtered_file_exists	full_file_is_gzip	n_full_rows	n_filtered_rows	content_checks_pass	status	message
+calicoblast_stony	Adig	TRUE	TRUE	TRUE	3493	538	TRUE	PASS	NA
+calicoblast_stony	Ahya	TRUE	TRUE	TRUE	4205	609	TRUE	PASS	NA
+calicoblast_stony	Amur	TRUE	TRUE	TRUE	3300	773	TRUE	PASS	NA
+calicoblast_stony	Fspp	TRUE	TRUE	TRUE	2395	462	TRUE	PASS	NA
+calicoblast_stony	Gfas	TRUE	TRUE	TRUE	3198	1010	TRUE	PASS	NA
+calicoblast_stony	Pcru	TRUE	TRUE	TRUE	2879	777	TRUE	PASS	NA
+calicoblast_stony	Pdam	TRUE	TRUE	TRUE	4414	343	TRUE	PASS	NA
+calicoblast_stony	Plut	TRUE	TRUE	TRUE	2954	275	TRUE	PASS	NA
+calicoblast_stony	Spin	TRUE	TRUE	TRUE	4076	745	TRUE	PASS	NA

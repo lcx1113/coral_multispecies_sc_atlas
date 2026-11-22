@@ -1,0 +1,12 @@
+object_species	orthology_species	n_cells	n_rna_features	n_mapped_rna_features	n_reused_mapping_features_absent_from_current_object	n_gene_og_pairs	n_og_features	n_mapped_ogs_removed_for_zero_counts	expected_full_umi_og_total	observed_og_sum_total	aggregation_total_match	normalization_sample_match	normalization_method	scale_factor	multi_og_gene_weight	output_file	reused_from_260909
+Adig	Adig	10471	28988	19513	0	19578	12265	0	16494236	16494236	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Adig.OG_SUM.seurat.rds	TRUE
+Ahya	Ahya	6153	22826	17815	0	17969	12613	0	8324151	8324151	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Ahya.OG_SUM.seurat.rds	TRUE
+Amur	Amur	8265	23295	17678	0	17847	12481	0	8526033	8526033	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Amur.OG_SUM.seurat.rds	TRUE
+Fspp	Fspp	9889	31258	21042	0	21165	13189	0	9440819	9440819	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Fspp.OG_SUM.seurat.rds	TRUE
+Gfas	Gfas	8798	27404	18659	0	18804	12861	2	7467177	7467177	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Gfas.OG_SUM.seurat.rds	TRUE
+Hcoe	Hcoe	11183	24385	16089	0	16104	10116	0	8871517	8871517	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Hcoe.OG_SUM.seurat.rds	TRUE
+Pcru	Pcru	9365	28660	20422	0	20471	12307	7	8609127	8609127	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Pcru.OG_SUM.seurat.rds	TRUE
+Pdam	Pdam	11706	21519	17134	0	17179	12950	0	14080907	14080907	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Pdam.OG_SUM.seurat.rds	TRUE
+Plut	Plut	9734	31238	21068	0	21175	12889	0	10939584	10939584	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Plut.OG_SUM.seurat.rds	TRUE
+Spin	Spis	15053	49751	27545	0	27605	14323	238	17677150	17677150	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Spin.OG_SUM.seurat.rds	TRUE
+Xesp	Xesp	19134	29015	21329	0	21643	9849	84	29323860	29323860	TRUE	TRUE	LogNormalize	10000	1	./intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	FALSE

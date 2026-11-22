@@ -1,0 +1,12 @@
+object_species	object_path	n_total_cells	n_pool_features	n_selected_cells	n_calicoblast	n_epidermis	n_gastrodermis
+Xesp	/absolute/path/seurat_objects/dat.Xesp.seurat_final.rds	19134	19597	5136	272	1709	3155
+Adig	/absolute/path/seurat_objects/dat.Adig.seurat_final.rds	10471	28056	5943	567	2766	2610
+Ahya	/absolute/path/seurat_objects/dat.Ahya.seurat_final.rds	6153	22389	3505	435	1242	1828
+Amur	/absolute/path/seurat_objects/dat.Amur.seurat_final.rds	8265	22446	5157	1504	757	2896
+Fspp	/absolute/path/seurat_objects/dat.Fspp.seurat_final.rds	9889	28930	6760	195	861	5704
+Gfas	/absolute/path/seurat_objects/dat.Gfas.seurat_final.rds	8798	25174	4841	1008	1591	2242
+Hcoe	/absolute/path/seurat_objects/dat.Hcoe.seurat_final.rds	11183	22753	6048	862	2149	3037
+Pcru	/absolute/path/seurat_objects/dat.Pcru.seurat_final.rds	9365	25460	5050	363	1901	2786
+Pdam	/absolute/path/seurat_objects/dat.Pdam.seurat_final.rds	11706	21185	6534	227	2704	3603
+Plut	/absolute/path/seurat_objects/dat.Plut.seurat_final.rds	9734	29444	6115	133	2651	3331
+Spin	/absolute/path/seurat_objects/dat.Spin.seurat_final.rds	15053	33501	8206	629	2940	4637

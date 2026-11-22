@@ -1,0 +1,16 @@
+parameter	value
+included_in_main_pipeline	FALSE
+target_mode	each_observed_label_separately
+exclude_target_regex	^(unknown|undefined)
+excluded_labels_remain_in_background	TRUE
+merge_target_labels	FALSE
+test_use	wilcox
+slot	data
+fc_slot	data
+min_pct	0
+min_diff_pct	-Inf
+logfc_threshold	0
+only_pos	FALSE
+min_cells_feature	1
+min_cells_group	3
+fold_change_pseudocount	1

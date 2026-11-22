@@ -1,0 +1,126 @@
+```{r}
+# Load required libraries
+library(tidyverse)
+library(rtracklayer)
+setwd("work/gene_annotation")
+suppressMessages(source("../../functions/helper.R"))
+getwd()
+```
+
+```{r}
+sps_list = c("Adig", "Ahya", "Amur", "Fspp", "Gfas", "Hcoe", "Pcru", "Pdam", "Plut", "Spin", "Xesp")
+oga <- read.table(
+    "/absolute/path/orthology_inputs/Anthozoa_all_genome_260426/orthogroup_conservation.csv",
+    sep = "\t",
+    header = TRUE,
+    quote = "",
+    stringsAsFactors = FALSE
+)
+ogm <- read.table(
+    "/absolute/path/orthology_inputs/Metazoa_all_genome_260426/orthogroup_conservation_integrated.csv",
+    sep = "\t",
+    header = TRUE,
+    quote = "",
+    stringsAsFactors = FALSE
+)
+ogm_gv <- dic_from_vecs(names = ogm$gene, terms = ogm$orthogroup_name)
+ogm_tv <- dic_from_vecs(names = ogm$transcript, terms = ogm$orthogroup_name)
+```
+
+```{r}
+for (spi in sps_list) {
+
+    # set working species
+    if (spi == "Spin") {
+        spi_w = "Spis"
+	} else if (spi == "HcoeH" || spi == "HcoeI") {
+        spi_w = "Hcoe"
+    } else {
+		spi_w = spi
+	}
+    # Load spi gene list (从 GTF 或者表达矩阵获取)
+    message(sprintf("  - Loading %s gene list from GTF...", spi))
+    suppressMessages(require("rtracklayer"))
+    
+    gtf_fn = sprintf("/absolute/path/orthology_inputs/reference_gtf_Metazoa/%s_long.annot.gtf",spi_w)
+    gene_txgtf = rtracklayer::import(gtf_fn)
+    
+    # 提取所有 gene_id
+    spi_gtf_genes = unique(gene_txgtf$gene_id)
+    # 移除可能的 NA 值
+    spi_gtf_genes = spi_gtf_genes[!is.na(spi_gtf_genes)]
+    spi_gtf_genes = fix_gene_name(spi_gtf_genes, paste0(spi_w, "_"))
+    # transcript to gene
+    transcript_to_gene <- dic_from_vecs(gene_txgtf$transcript_id, gene_txgtf$gene_id)
+    if(spi %in% c("Ahya", "Plut")){
+        transcript_to_gene <- dic_from_vecs(paste0(spi_w, "_", gene_txgtf$transcript_id), gene_txgtf$gene_id)
+    }
+    message(sprintf("    Loaded %d unique gene IDs from GTF", length(spi_gtf_genes)))
+
+    if(spi_w != "Spis"){
+        message(sprintf("  - Loading %s-Spis orthology...",spi))
+        og_pairs_spi_spis = clean_og_pairs(
+            og_pairs_fn = "/absolute/path/orthology_inputs/Anthozoa_all_genome_260426/orthogroup_pairs.genes.csv", 
+            sp1 = spi_w, 
+            sp2 = "Spis", 
+            t2g = FALSE,
+            header = TRUE
+        )
+        spi_to_spis = dic_from_vecs(og_pairs_spi_spis$sp1, og_pairs_spi_spis$sp2)
+        message(sprintf("    Found %d spi-Spis ortholog pairs", nrow(og_pairs_spi_spis)))
+    }else{
+        spi_to_spis = dic_from_vecs(spi_gtf_genes, spi_gtf_genes)
+    }
+    # Create gene annotation dataframe
+    gene_annot = data.frame(
+        gene = spi_gtf_genes,
+        spis_ortholog = spi_to_spis[spi_gtf_genes],
+        stringsAsFactors = FALSE
+    )
+    gna_i = ogm [ ogm$species == spi_w, ]
+    gna_i = gna_i%>%
+        select(gene, orthogroup_name)
+    gene_annot = merge(gene_annot, gna_i, by.x = "gene", by.y = "gene", all.x = TRUE, all.y = FALSE)
+
+    #Load Spis NCBI gene names
+    message("  - Loading Spis NCBI gene names...")
+    gnspis = read.table("/absolute/path/annotation_inputs/Spis_Genes_ncbi_dataset.tsv", header = TRUE, sep = "\t")
+    gnspis = gnspis[!is.na(gnspis$Protein.accession) & gnspis$Protein.accession != "", ]
+    gnspis$Name = gsub(" ", "_", gnspis$Name)
+    gnspis_v = dic_from_vecs(gnspis$Protein.accession, gnspis$Name)
+    message(sprintf("    Loaded %d Spis NCBI gene names", length(gnspis_v)))
+    # Add Spis NCBI gene name
+    gene_annot$spis_gene_name = gnspis_v[gene_annot$spis_ortholog]
+    # 移除重复
+    gene_annot = gene_annot[!duplicated(gene_annot$gene), ]
+    rownames(gene_annot) = gene_annot$gene
+
+    # Load Uniprot annotation
+    message("  - Loading Uniprot annotation...")
+    uniprot_fn = sprintf("../../reference_results/uniprot/%s_top_6species_longest.tsv", spi_w)
+    Uniprot_match <- read.table(uniprot_fn, sep = "\t")
+    Uniprot_match$V1 <- gsub("\\.p\\d+$", "", Uniprot_match$V1)
+    Uniprot_match$V1 <- transcript_to_gene[Uniprot_match$V1]
+    Uniprot_match$gene <- fix_gene_name(Uniprot_match$V1, paste0(spi_w, "_"))
+    gene_to_Unip<- dic_from_vecs(Uniprot_match$gene, Uniprot_match$V2)
+    gene_annot$Uniprot_name<- gene_to_Unip[gene_annot$gene]
+    
+    # 添加 is_tf 列
+    gene_is_tf = dic_from_vecs(gene_annot$gene, grepl(":",gene_annot$orthogroup_name))
+    gene_annot$is_tf = gene_is_tf[gene_annot$gene]
+
+    # 统计注释覆盖度
+    message(sprintf("  - Annotation coverage for spi:"))
+    message(sprintf("    Total genes: %d", nrow(gene_annot)))
+    message(sprintf("    Has Spis ortholog: %d (%.1f%%)", 
+                    sum(!is.na(gene_annot$spis_ortholog)),
+                    100 * sum(!is.na(gene_annot$spis_ortholog)) / nrow(gene_annot)))
+
+    # 保存 spi 注释表
+    write.table(
+        gene_annot,
+        sprintf("annot.%s.genes.csv", spi),
+        sep = "\t", row.names = FALSE, quote = FALSE
+    )
+    }
+```

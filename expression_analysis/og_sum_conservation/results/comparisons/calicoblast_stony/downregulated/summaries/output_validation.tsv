@@ -1,0 +1,11 @@
+validation_scope	comparison_id	object_species	n_rows	threshold_ok	identity_ok	duplicate_ok	status
+species_filtered	calicoblast_stony	Adig	606	TRUE	TRUE	TRUE	PASS
+species_filtered	calicoblast_stony	Ahya	102	TRUE	TRUE	TRUE	PASS
+species_filtered	calicoblast_stony	Amur	636	TRUE	TRUE	TRUE	PASS
+species_filtered	calicoblast_stony	Fspp	137	TRUE	TRUE	TRUE	PASS
+species_filtered	calicoblast_stony	Gfas	237	TRUE	TRUE	TRUE	PASS
+species_filtered	calicoblast_stony	Pcru	103	TRUE	TRUE	TRUE	PASS
+species_filtered	calicoblast_stony	Pdam	93	TRUE	TRUE	TRUE	PASS
+species_filtered	calicoblast_stony	Plut	72	TRUE	TRUE	TRUE	PASS
+species_filtered	calicoblast_stony	Spin	703	TRUE	TRUE	TRUE	PASS
+comparison_conservation	calicoblast_stony	NA	21743	TRUE	TRUE	TRUE	PASS

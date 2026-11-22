@@ -1,0 +1,11 @@
+Pdam__Pdam_XM_027193426.1.p1
+Fspp__Fspp_ffun1.m4.22490.m1.p1
+Pcru__Pcru_PcrG011144.mRNA1.p1
+Amur__Amur_amur_s0092.g19.t1.p1
+Adig__Adig_XM_015915890.1.p1
+Ahya__Ahya_ahya_s0001.g445.t1.p1
+Plut__Plut_plut2.m8.2745.m1.p1
+Spis__Spis_Spis_XP_022809001_1
+Hcoe__Hcoe_Hco12317-RA.p1
+Xesp__Xesp_Xe_004623-T1.p1
+-

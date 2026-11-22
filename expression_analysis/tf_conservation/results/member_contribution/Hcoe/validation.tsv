@@ -1,0 +1,2 @@
+object_species	n_candidate_ogs	n_reconstructed_ogs	raw_UMI_reconstruction_max_error	normalized_mean_reconstruction_max_error	source_RNA	source_RNA_sha256	reuse_policy
+Hcoe	202	164	0	3.5527136788005e-14	/absolute/path/seurat_objects/dat.Hcoe.seurat_final.rds	e486d53a11a26faf74e4737c979c43ed34b314f6ab3d1061b5bf5f216274ed90	subset of validated current-version member contributions; excluded targets removed; original reconstruction error retained

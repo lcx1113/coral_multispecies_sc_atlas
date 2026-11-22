@@ -1,0 +1,16 @@
+object_species	cell_type	n_target_cells	n_background_cells	statistics_origin	n_ogs_tested	n_tf_tested	n_tf_up	n_tf_down	source	max_descriptive_vs_test_difference
+Xesp	gastrodermis	3155	15979	recomputed_261026_original_marker_parameters	4250	254	66	66	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	8.88178419700125e-16
+Xesp	gastrodermis_alga_hosting	139	18995	reused_unchanged_formal_comparison	4106	243	11	16	../og_sum_conservation/results/comparisons/gastrodermis_alga_hosting/markers/full/Xesp.OG_SUM.all_tested.tsv.gz	5.32907051820075e-15
+Xesp	epidermis	1709	17425	recomputed_261026_original_marker_parameters	4036	228	69	86	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	8.88178419700125e-16
+Xesp	calicoblast	272	18862	reused_unchanged_formal_comparison	4191	236	24	26	../og_sum_conservation/results/comparisons/calicoblast/markers/full/Xesp.OG_SUM.all_tested.tsv.gz	5.32907051820075e-15
+Xesp	neurosecretory_progenitors	3952	15182	recomputed_261026_original_marker_parameters	4019	227	74	45	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	9.15933995315754e-16
+Xesp	neuron_Pou4_1	269	18865	recomputed_261026_original_marker_parameters	4562	263	69	17	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	8.88178419700125e-16
+Xesp	neuron_Pou4_2	230	18904	recomputed_261026_original_marker_parameters	4424	249	53	16	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	8.88178419700125e-16
+Xesp	neuron_Pou4_Otp	263	18871	recomputed_261026_original_marker_parameters	3977	236	30	31	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	8.88178419700125e-16
+Xesp	neuron_Atoh8	263	18871	recomputed_261026_original_marker_parameters	3981	235	36	36	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	8.88178419700125e-16
+Xesp	gland_2	95	19039	recomputed_261026_original_marker_parameters	4301	250	24	14	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	1.77635683940025e-15
+Xesp	gland_3	924	18210	recomputed_261026_original_marker_parameters	4350	251	78	16	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	5.82867087928207e-16
+Xesp	cnidocyte	740	18394	reused_unchanged_formal_comparison	3999	233	35	110	../og_sum_conservation/results/comparisons/cnidocyte/markers/full/Xesp.OG_SUM.all_tested.tsv.gz	5.10702591327572e-15
+Xesp	immune_nascent	340	18794	recomputed_261026_original_marker_parameters	3944	236	30	31	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	8.88178419700125e-16
+Xesp	germline_oocytes_1	529	18605	recomputed_261026_original_marker_parameters	5865	323	173	25	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	1.33226762955019e-15
+Xesp	unknown5	1215	17919	recomputed_261026_original_marker_parameters	3727	213	20	105	../og_sum_conservation/intermediate/02_og_sum_objects/Xesp.OG_SUM.seurat.rds	1.77635683940025e-15

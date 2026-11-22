@@ -1,0 +1,14 @@
+object_species	orthology_species	target_celltype	n_target_cells	n_background_cells	n_ogs	n_wilcox_tested	n_fold_change_only
+Gfas	Gfas	calicoblast	1008	7790	12861	12861	0
+Gfas	Gfas	cnidocyte	284	8514	12861	12861	0
+Gfas	Gfas	digestive_filaments	565	8233	12861	12861	0
+Gfas	Gfas	epidermis	1591	7207	12861	12861	0
+Gfas	Gfas	gastrodermis	2242	6556	12861	12861	0
+Gfas	Gfas	gastrodermis_alga_hosting	304	8494	12861	12861	0
+Gfas	Gfas	gastrodermis_muscle	643	8155	12861	12861	0
+Gfas	Gfas	gland_1_Xbp	183	8615	12861	12861	0
+Gfas	Gfas	gland_3	300	8498	12861	12861	0
+Gfas	Gfas	immune_macrophage	569	8229	12861	12861	0
+Gfas	Gfas	neuron_Atoh8	469	8329	12861	12861	0
+Gfas	Gfas	neuron_Isl	429	8369	12861	12861	0
+Gfas	Gfas	neuron_Pou4_1	211	8587	12861	12861	0

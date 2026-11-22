@@ -1,0 +1,8 @@
+column	identical_old_new
+avg_log2FC	TRUE
+p_val	TRUE
+p_val_adj	TRUE
+pct_target	TRUE
+pct_background	TRUE
+mean_normalized_target	TRUE
+mean_normalized_background	TRUE

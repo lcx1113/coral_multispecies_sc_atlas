@@ -1,0 +1,12 @@
+comparison_id	object_species	full_file_exists	filtered_file_exists	full_file_is_gzip	n_full_rows	n_filtered_rows	content_checks_pass	status	message
+gastrodermis_alga_hosting	Adig	TRUE	TRUE	TRUE	3442	208	TRUE	PASS	NA
+gastrodermis_alga_hosting	Ahya	TRUE	TRUE	TRUE	4030	268	TRUE	PASS	NA
+gastrodermis_alga_hosting	Amur	TRUE	TRUE	TRUE	3218	351	TRUE	PASS	NA
+gastrodermis_alga_hosting	Fspp	TRUE	TRUE	TRUE	2012	172	TRUE	PASS	NA
+gastrodermis_alga_hosting	Gfas	TRUE	TRUE	TRUE	2708	189	TRUE	PASS	NA
+gastrodermis_alga_hosting	Hcoe	TRUE	TRUE	TRUE	3157	563	TRUE	PASS	NA
+gastrodermis_alga_hosting	Pcru	TRUE	TRUE	TRUE	2190	132	TRUE	PASS	NA
+gastrodermis_alga_hosting	Pdam	TRUE	TRUE	TRUE	4346	553	TRUE	PASS	NA
+gastrodermis_alga_hosting	Plut	TRUE	TRUE	TRUE	2870	256	TRUE	PASS	NA
+gastrodermis_alga_hosting	Spin	TRUE	TRUE	TRUE	4080	913	TRUE	PASS	NA
+gastrodermis_alga_hosting	Xesp	TRUE	TRUE	TRUE	4106	289	TRUE	PASS	NA

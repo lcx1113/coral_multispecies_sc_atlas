@@ -1,0 +1,14 @@
+object_species	orthology_species	observed_label	target_celltype	n_cells	include_as_target	exclusion_reason	labels_merged
+Gfas	Gfas	calicoblast	calicoblast	1008	TRUE	NA	FALSE
+Gfas	Gfas	cnidocyte	cnidocyte	284	TRUE	NA	FALSE
+Gfas	Gfas	digestive_filaments	digestive_filaments	565	TRUE	NA	FALSE
+Gfas	Gfas	epidermis	epidermis	1591	TRUE	NA	FALSE
+Gfas	Gfas	gastrodermis	gastrodermis	2242	TRUE	NA	FALSE
+Gfas	Gfas	gastrodermis_alga_hosting	gastrodermis_alga_hosting	304	TRUE	NA	FALSE
+Gfas	Gfas	gastrodermis_muscle	gastrodermis_muscle	643	TRUE	NA	FALSE
+Gfas	Gfas	gland_1_Xbp	gland_1_Xbp	183	TRUE	NA	FALSE
+Gfas	Gfas	gland_3	gland_3	300	TRUE	NA	FALSE
+Gfas	Gfas	immune_macrophage	immune_macrophage	569	TRUE	NA	FALSE
+Gfas	Gfas	neuron_Atoh8	neuron_Atoh8	469	TRUE	NA	FALSE
+Gfas	Gfas	neuron_Isl	neuron_Isl	429	TRUE	NA	FALSE
+Gfas	Gfas	neuron_Pou4_1	neuron_Pou4_1	211	TRUE	NA	FALSE

@@ -1,0 +1,15 @@
+object_species	orthology_species	target_celltype	n_target_cells	n_background_cells	n_ogs	n_wilcox_tested	n_fold_change_only
+Amur	Amur	calicoblast	1504	6761	12481	12481	0
+Amur	Amur	cnidocyte	171	8094	12481	12481	0
+Amur	Amur	epidermis	757	7508	12481	12481	0
+Amur	Amur	gastrodermis	2896	5369	12481	12481	0
+Amur	Amur	gastrodermis_alga_hosting	539	7726	12481	12481	0
+Amur	Amur	gastrodermis_muscle	273	7992	12481	12481	0
+Amur	Amur	germline_oocytes_1	389	7876	12481	12481	0
+Amur	Amur	gland_1_Xbp	99	8166	12481	12481	0
+Amur	Amur	gland_2	601	7664	12481	12481	0
+Amur	Amur	gland_3	104	8161	12481	12481	0
+Amur	Amur	immune_macrophage	148	8117	12481	12481	0
+Amur	Amur	neuron_Atoh8	124	8141	12481	12481	0
+Amur	Amur	neuron_Pou4_1	508	7757	12481	12481	0
+Amur	Amur	neuron_Pou4_2	152	8113	12481	12481	0

@@ -1,0 +1,13 @@
+object_species	orthology_species	target_celltype	n_target_cells	n_background_cells	n_ogs	n_wilcox_tested	n_fold_change_only
+Pcru	Pcru	calicoblast	363	9002	12307	12307	0
+Pcru	Pcru	cnidocyte	118	9247	12307	12307	0
+Pcru	Pcru	epidermis	1901	7464	12307	12307	0
+Pcru	Pcru	gastrodermis	2786	6579	12307	12307	0
+Pcru	Pcru	gastrodermis_alga_hosting	515	8850	12307	12307	0
+Pcru	Pcru	gastrodermis_muscle	181	9184	12307	12307	0
+Pcru	Pcru	germline_oocytes_1	206	9159	12307	12307	0
+Pcru	Pcru	gland_1_Xbp	91	9274	12307	12307	0
+Pcru	Pcru	gland_3	221	9144	12307	12307	0
+Pcru	Pcru	immune_macrophage	147	9218	12307	12307	0
+Pcru	Pcru	neuron_Isl	100	9265	12307	12307	0
+Pcru	Pcru	neuron_Pou4_2	114	9251	12307	12307	0

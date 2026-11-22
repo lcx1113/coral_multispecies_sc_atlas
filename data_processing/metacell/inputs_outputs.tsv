@@ -1,0 +1,11 @@
+species	input_rds	adopted_output_rds	cells	selected_pcs	metacells	unassigned_cells	branch
+Adig	/absolute/path/selected_objects/Adig_selected_r1.4_reclustered.rds	output/Adig_ld_mc.rds	10471	23	117	0	constructed with supplied script; historical outputs only
+Ahya	/absolute/path/selected_objects/Ahya_selected_r2.8_reclustered.rds	output/Ahya_ld_mc.rds	6153	13	69	0	constructed with supplied script; historical outputs only
+Amur	/absolute/path/selected_objects/Amur_selected_r1.8_reclustered.rds	output/Amur_ld_mc.rds	8265	34	90	5	constructed with supplied script; historical outputs only
+Fusp	/absolute/path/selected_objects/Fusp_selected_r2.4_reclustered.rds	output/Fspp_ld_mc.rds	9889	38	111	4	constructed with supplied script; historical outputs only
+Gfas	/absolute/path/selected_objects/Gfas_selected_r1.5_reclustered.rds	output/Gfas_ld_mc.rds	8798	14	96	1	constructed with supplied script; historical outputs only
+Hcoe	/absolute/path/selected_objects/Hcoe_selected_r1.7_reclustered.rds	output/Hcoe_ld_mc.rds	11183	40	116	5	constructed with supplied script; historical outputs only
+Pdam	/absolute/path/selected_objects/Pdam_selected_r1.3_reclustered.rds	output/Pdam_ld_mc.rds	11706	30	122	0	constructed with supplied script; historical outputs only
+Plut	/absolute/path/selected_objects/Plut_selected_r2.9_reclustered.rds	output/Plut_ld_mc.rds	9734	35	107	2	constructed with supplied script; historical outputs only
+Xesp	/absolute/path/selected_objects/Xesp_selected_r2.3_reclustered.rds	output/Xesp_ld_mc.rds	19134	34	201	9	constructed with supplied script; historical outputs only
+Pcru	/absolute/path/selected_objects/Pcru_selected_r2.5_reclustered.rds	output/Pcru_ld_mc.rds	9365	31	105	0	constructed with supplied script; historical outputs only

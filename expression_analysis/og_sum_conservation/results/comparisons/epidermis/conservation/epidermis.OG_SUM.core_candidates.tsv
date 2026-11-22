@@ -1,0 +1,3 @@
+orthogroup	n_species_present_in_broccoli	n_species_mapped_to_expression	n_species_tested	n_positive_species	positive_species	comparison_id	n_species_in_comparison	core_min_species	broad_min_species	majority_min_species	shared_min_species	conservation_class	has_TF	first_annotation	first_support	second_annotation	second_support
+OG:013328	10	10	10	10	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Plut;Spin	epidermis	10	10	8	5	2	core	TRUE	Fez1:NA	0.538461538461538	NA	NA
+OG:019785	10	10	10	10	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Plut;Spin	epidermis	10	10	8	5	2	core	TRUE	Homeodomains:Pax2/Pax5/Pax8	1	PAX6	0.8181818181818182

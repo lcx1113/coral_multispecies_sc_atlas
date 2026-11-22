@@ -1,0 +1,2 @@
+object_species	n_candidate_ogs	n_reconstructed_ogs	raw_UMI_reconstruction_max_error	normalized_mean_reconstruction_max_error	source_RNA	source_RNA_sha256	reuse_policy
+Spin	202	183	0	2.27373675443232e-13	/absolute/path/seurat_objects/dat.Spin.seurat_final.rds	cdafb8cb6436f2d1d78e1bd2b7c6138224fa006009fa2294a81ad24650c82bbf	subset of validated current-version member contributions; excluded targets removed; original reconstruction error retained

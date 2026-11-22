@@ -1,0 +1,2 @@
+object_species	source_object	sha256	source_hash_matches_260909	started_utc	finished_utc	Seurat	n_ogs	n_cells
+Adig	/absolute/path/external_inputs/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_find_conserved_OG_260909/intermediate/02_og_sum_objects/Adig.OG_SUM.seurat.rds	051ace571d6f0649bf778b29e221c71bd8aee457dd1acb36106fea38f87a96ca	TRUE	2026-10-19 08:59:06 UTC	2026-10-19 08:59:47 UTC	5.3.0	12265	10471

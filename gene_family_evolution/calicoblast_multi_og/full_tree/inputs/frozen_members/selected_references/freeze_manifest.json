@@ -1,0 +1,17 @@
+{
+  "approved_families": [
+    "FAM_CA",
+    "FAM_FERLIN",
+    "FAM_MEP1B",
+    "FAM_SLC4"
+  ],
+  "decisions_sha256": "26dd0b13c20336e4c997d028e94ca08f5924bdb288d22e124bd663ebaa4318fb",
+  "deferred_families": [
+    "FAM_GAS2L"
+  ],
+  "n_selected": 90,
+  "rules_sha256": "b8e47e59d0263eda5b9aab7104b1b76d3455caa1cc96adce6c32a8944b1ba526",
+  "selected_fasta_sha256": "73b402a8202913ca26a0c11b5e234e4a0172a550643ae9b56e9bcddc3c170c39",
+  "selection": "dual70_and_unflagged_CDD_core_combination",
+  "status": "PASS"
+}

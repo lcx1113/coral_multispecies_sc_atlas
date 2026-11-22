@@ -1,0 +1,9 @@
+orthogroup	n_species_present_in_broccoli	n_species_mapped_to_expression	n_species_tested	n_downregulated_species	downregulated_species	comparison_id	direction	n_species_in_comparison	core_min_species	broad_min_species	majority_min_species	shared_min_species	conservation_class	has_TF	first_annotation	first_support	second_annotation	second_support
+OG:007048	11	11	11	11	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Plut;Spin;Xesp	calicoblast	downregulated	11	11	9	6	2	core	FALSE	Col1a1/Col1a2/Col2a1/Col3a1/Col5a2	0.808510638297872	CO1A2	0.7021276595744681
+OG:001240	11	11	11	10	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Plut;Spin	calicoblast	downregulated	11	11	9	6	2	broad_only	FALSE	AI182371/C3/C4b/Hc	1	CO3	0.5818181818181818
+OG:008065	11	11	11	10	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Spin;Xesp	calicoblast	downregulated	11	11	9	6	2	broad_only	FALSE	Col6a1	0.927927927927928	NA	NA
+OG:017337	11	11	11	10	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Spin;Xesp	calicoblast	downregulated	11	11	9	6	2	broad_only	FALSE	MYH7	1	Myh1/Myh13/Myh15/Myh2/Myh3/Myh4/Myh6/Myh7/Myh7b/Myh8	1
+OG:000406	11	11	11	9	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Spin	calicoblast	downregulated	11	11	9	6	2	broad_only	FALSE	4930486L24Rik/BC051665/Cts3/Cts6/Cts7/Cts8/Ctsj/Ctsl/Ctsll3/Ctsm/Ctsq/Ctsr	1	CATL1	0.9318181818181818
+OG:006767	11	11	11	9	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Spin;Xesp	calicoblast	downregulated	11	11	9	6	2	broad_only	FALSE	Cd248/Clec11a/Clec3a/Clec3b/Colec10/Colec11/Mbl1/Mbl2/Sftpa1/Sftpd	0.875912408759124	NA	NA
+OG:009491	11	11	11	9	Adig;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Plut;Spin	calicoblast	downregulated	11	11	9	6	2	broad_only	FALSE	NA	NA	NELL2	0.34782608695652173
+OG:017028	10	10	10	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Plut;Spin;Xesp	calicoblast	downregulated	11	11	9	6	2	broad_only	FALSE	Apob	1	APOB	0.6923076923076923

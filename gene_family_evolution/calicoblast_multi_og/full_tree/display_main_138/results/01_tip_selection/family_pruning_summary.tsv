@@ -1,0 +1,5 @@
+family_id	n_full_tree_tips	n_pure_reference_clades	n_reference_before	n_reference_after	n_reference_hidden	n_SC11_display_unchanged	n_display_before	n_display_after
+FAM_CA	95	4	17	6	11	29	46	35
+FAM_FERLIN	27	2	7	3	4	13	20	16
+FAM_MEP1B	215	13	61	20	41	38	99	58
+FAM_SLC4	39	3	5	5	0	24	29	29

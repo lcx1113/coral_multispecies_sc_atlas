@@ -1,0 +1,26 @@
+species	cluster	SAMap_best_cell_type	SAMap_similarity	correlation_best_cell_type	correlation_similarity	SATURN_nearest_cell_type	SATURN_second_nearest_cell_type
+Pdam	1	epidermis	epidermis(0.83); neuron_Pou4_1(0.11)	epidermis	epidermis(0.281); digestive_filaments(0.114)	epidermis	gland_2
+Pdam	2	gastrodermis	gastrodermis(0.71); gastrodermis_muscle(0.17); gastrodermis_like_2(0.15)	gastrodermis	gastrodermis(0.561); gastrodermis_muscle(0.531); gastrodermis_like_2(0.347); digestive_filaments(0.239); gastrodermis_alga_hosting(0.214)	gastrodermis	gastrodermis_like_2
+Pdam	3	epidermis	epidermis(0.76); neurosecretory_progenitors(0.15)	epidermis	epidermis(0.403); neurosecretory_progenitors(0.251); germline_oocytes_1(0.108)	epidermis	neuron_Isl_Nkx6
+Pdam	4	epidermis	epidermis(0.61); neuron_Pou4_1(0.13)	epidermis	epidermis(0.287); calicoblast(0.102)	epidermis	neuron_Pou4_Otp
+Pdam	5	gastrodermis	gastrodermis(0.83); gastrodermis_like_2(0.10)	gastrodermis	gastrodermis(0.518); gastrodermis_muscle(0.445); gastrodermis_like_2(0.322); digestive_filaments(0.214)	gastrodermis	gastrodermis
+Pdam	6	gastrodermis	gastrodermis(0.90)	gastrodermis	gastrodermis(0.372); gastrodermis_like_2(0.250); gastrodermis_muscle(0.213); digestive_filaments(0.168)	gastrodermis	immune_nascent
+Pdam	7	gastrodermis	gastrodermis(0.41); gastrodermis_like_2(0.39); gastrodermis_muscle(0.15)	gastrodermis	gastrodermis(0.506); gastrodermis_muscle(0.466); gastrodermis_like_2(0.401); digestive_filaments(0.258); gastrodermis_alga_hosting(0.107)	gastrodermis_like_2	gastrodermis
+Pdam	8	digestive_filaments	digestive_filaments(0.39); neuron_Pou4_1(0.23); neuron_Pou4_Gsx(0.22); neuron_Pou4_2(0.11)	digestive_filaments	digestive_filaments(0.419)	digestive_filaments	immune_nascent
+Pdam	9	gastrodermis	gastrodermis(0.70); gastrodermis_muscle(0.17)	gastrodermis_muscle	gastrodermis_muscle(0.461); gastrodermis(0.457); gastrodermis_like_2(0.274); digestive_filaments(0.187); gastrodermis_alga_hosting(0.123)	gastrodermis	gastrodermis
+Pdam	10	neuron_Isl	neuron_Isl(0.23); gland_3(0.16); gland_2(0.15)	gland_3	gland_3(0.262); gland_2(0.255); neuron_Pou4_2(0.206); neuron_Isl(0.196); digestive_filaments(0.139); neuron_Isl_Nkx6(0.115); neuron_Pou4_Gsx(0.115); neuron_Pou4_1(0.111)	gland_2	neuron_Isl_Nkx6
+Pdam	11	immune_macrophage	immune_macrophage(1.00); immune_nascent(0.92); immune_macrophage_like_1(0.68)	immune_macrophage	immune_macrophage(0.547); immune_macrophage_like_2(0.466); immune_macrophage_like_1(0.265); immune_nascent(0.151)	immune_macrophage	immune_macrophage_like_2
+Pdam	12	germline_oocytes_1	germline_oocytes_1(0.54); neurosecretory_progenitors(0.47); germline_oocytes_2(0.43)	germline_oocytes_1	germline_oocytes_1(0.539); neurosecretory_progenitors(0.357); epidermis(0.127); germline_oocytes_2(0.109)	neurosecretory_progenitors	gland_1_Xbp
+Pdam	13	germline_oocytes_1	germline_oocytes_1(0.39); gastrodermis(0.39); germline_oocytes_2(0.27)	germline_oocytes_1	germline_oocytes_1(0.631); gastrodermis_muscle(0.127); gastrodermis(0.121); neurosecretory_progenitors(0.115)	germline_oocytes_1	germline_oocytes_2
+Pdam	14	gastrodermis_muscle	gastrodermis_muscle(0.70); gastrodermis(0.21)	gastrodermis_muscle	gastrodermis_muscle(0.601); gastrodermis(0.369); gastrodermis_like_2(0.241); digestive_filaments(0.210); epidermis(0.112)	gastrodermis_muscle	gastrodermis_like_2
+Pdam	15	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.91)	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.608); gastrodermis(0.175); gastrodermis_muscle(0.132); immune_macrophage_like_1(0.119); gastrodermis_like_2(0.105)	gastrodermis_alga_hosting	neuron_Pou4_Otp
+Pdam	16	cnidocyte	cnidocyte(0.65)	cnidocyte	cnidocyte(0.732)	cnidocyte	neurosecretory_progenitors
+Pdam	17	gland_1_Xbp	gland_1_Xbp(0.72)	gland_1_Xbp	gland_1_Xbp(0.953)	gland_1_Xbp	epidermis
+Pdam	18	calicoblast	calicoblast(0.92)	calicoblast	calicoblast(0.515)	calicoblast	calicoblast
+Pdam	19	neuron_Atoh8	neuron_Atoh8(0.77)	neuron_Atoh8	neuron_Atoh8(0.478); neuron_Isl_Nkx6(0.297); neuron_Pou4_2(0.282); gland_2(0.168); gland_3(0.138); neuron_Isl(0.119); neuron_Pou4_1(0.104)	neuron_Atoh8	neuron_Atoh8
+Pdam	20	gland_1_Xbp	gland_1_Xbp(0.49)	gland_1_Xbp	gland_1_Xbp(0.581); immune_macrophage_like_1(0.109)	epidermis	epidermis
+Pdam	21	neuron_Pou4_2	neuron_Pou4_2(0.61); neuron_Isl_Nkx6(0.26)	neuron_Pou4_2	neuron_Pou4_2(0.696); neuron_Isl_Nkx6(0.364); gland_3(0.335); neuron_Pou4_1(0.304); neuron_Pou4_Gsx(0.275); gland_2(0.242); neuron_Isl(0.225); neuron_Atoh8(0.213); neuron_Pou4_Otp(0.104)	neuron_Pou4_2	neuron_Pou4_2
+Pdam	22	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.83); gastrodermis(0.12)	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.393); gastrodermis(0.133)	gastrodermis_alga_hosting	immune_macrophage_like_1
+Pdam	23	gland_3	gland_3(0.30); gland_2(0.21)	gland_3	gland_3(0.294); gland_2(0.150)	gland_3	neuron_Isl
+Pdam	24	neuron_Pou4_Otp	neuron_Pou4_Otp(0.78)	neuron_Pou4_Otp	neuron_Pou4_Otp(0.669); neuron_Isl(0.399); neuron_Pou4_Gsx(0.214); gland_2(0.167); neuron_Pou4_2(0.155); gland_3(0.149); neuron_Pou4_1(0.134)	neuron_Pou4_Otp	neuron_Isl
+Pdam	25	immune_macrophage_like_2	immune_macrophage_like_2(0.98)	immune_macrophage_like_2	immune_macrophage_like_2(0.990); immune_macrophage(0.680)	immune_macrophage_like_2	immune_macrophage_like_1

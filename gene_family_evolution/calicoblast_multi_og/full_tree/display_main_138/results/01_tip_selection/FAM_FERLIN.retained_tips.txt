@@ -1,0 +1,16 @@
+Aaur__Aaur_scaffold142.g27.t3
+Adig__Adig_XM_015903978.1.p1
+Ahya__Ahya_ahya_s0142.g31.t1.p1
+Amur__Amur_amur_s0236.g9.t1.p1
+Fspp__Fspp_ffun1.m4.22289.m1.p1
+Gfas__Gfas_gfas1.m1.2396.m1.p1
+Hcoe__Hcoe_Hco01312-RA.p1
+Hcoe__Hcoe_Hco01313-RA.p1
+Hcoe__Hcoe_Hco01314-RA.p1
+Hvul__Hvul_XP_065650061.1
+Hvul__Hvul_XP_065652291.1
+Pcru__Pcru_PcrG004146.mRNA1.p1
+Pdam__Pdam_XM_027201233.1.p1
+Plut__Plut_plut2.m8.14669.m1.p1
+Spis__Spis_Spis_XP_022792926_1
+Xesp__Xesp_Xe_013612-T1.p1

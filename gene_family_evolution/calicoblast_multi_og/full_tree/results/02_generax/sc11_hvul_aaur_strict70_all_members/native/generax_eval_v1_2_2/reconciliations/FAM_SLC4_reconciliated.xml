@@ -1,0 +1,706 @@
+<recPhylo 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.recg.org ./recGeneTreeXML.xsd"
+	xmlns="http://www.recg.org">
+<spTree>
+<phylogeny>
+<clade>
+		<name>Cnidaria</name>
+	<clade>
+			<name>Medusozoa</name>
+		<clade>
+				<name>Hvul</name>
+		</clade>
+		<clade>
+				<name>Aaur</name>
+		</clade>
+	</clade>
+	<clade>
+			<name>Anthozoa</name>
+		<clade>
+				<name>Octocorallia</name>
+			<clade>
+					<name>Xesp</name>
+			</clade>
+			<clade>
+					<name>Hcoe</name>
+			</clade>
+		</clade>
+		<clade>
+				<name>Scleractinia</name>
+			<clade>
+					<name>Vacatina</name>
+				<clade>
+						<name>Pocilloporidae</name>
+					<clade>
+							<name>Pdam</name>
+					</clade>
+					<clade>
+							<name>Spis</name>
+					</clade>
+				</clade>
+				<clade>
+						<name>Fungiidae</name>
+					<clade>
+							<name>Pcru</name>
+					</clade>
+					<clade>
+							<name>Fspp</name>
+					</clade>
+				</clade>
+			</clade>
+			<clade>
+					<name>Refertina</name>
+				<clade>
+						<name>Plut</name>
+				</clade>
+				<clade>
+						<name>Acropora_Galaxea</name>
+					<clade>
+							<name>Gfas</name>
+					</clade>
+					<clade>
+							<name>Acropora</name>
+						<clade>
+								<name>Adig</name>
+						</clade>
+						<clade>
+								<name>Amur_Ahya</name>
+							<clade>
+									<name>Amur</name>
+							</clade>
+							<clade>
+									<name>Ahya</name>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+		</clade>
+	</clade>
+</clade>
+</phylogeny>
+</spTree>
+<recGeneTree>
+<phylogeny rooted="true">
+<clade>
+	<name>NULL</name>
+	<eventsRec>
+		<duplication speciesLocation="Cnidaria"/>
+	</eventsRec>
+	<clade>
+		<name>87</name>
+		<eventsRec>
+			<duplication speciesLocation="Cnidaria"/>
+		</eventsRec>
+		<clade>
+			<name>91</name>
+			<eventsRec>
+				<duplication speciesLocation="Cnidaria"/>
+			</eventsRec>
+			<clade>
+				<name>100</name>
+				<eventsRec>
+					<speciation speciesLocation="Cnidaria"/>
+				</eventsRec>
+					<clade>
+					<name>loss</name>
+					<eventsRec>
+						<loss speciesLocation="Medusozoa"/>
+					</eventsRec>
+				</clade>
+				<clade>
+					<name>100</name>
+					<eventsRec>
+						<speciation speciesLocation="Anthozoa"/>
+					</eventsRec>
+						<clade>
+						<name>loss</name>
+						<eventsRec>
+							<loss speciesLocation="Scleractinia"/>
+						</eventsRec>
+					</clade>
+					<clade>
+						<name>100</name>
+						<eventsRec>
+							<speciation speciesLocation="Octocorallia"/>
+						</eventsRec>
+						<clade>
+							<name>Hcoe__Hcoe_Hco05935-RB.p1</name>
+							<eventsRec>
+								<leaf speciesLocation="Hcoe"/>
+							</eventsRec>
+						</clade>
+						<clade>
+							<name>Xesp__Xesp_Xe_021526-T1.p1</name>
+							<eventsRec>
+								<leaf speciesLocation="Xesp"/>
+							</eventsRec>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+			<clade>
+				<name>100</name>
+				<eventsRec>
+					<speciation speciesLocation="Cnidaria"/>
+				</eventsRec>
+				<clade>
+					<name>100</name>
+					<eventsRec>
+						<speciation speciesLocation="Anthozoa"/>
+					</eventsRec>
+						<clade>
+						<name>loss</name>
+						<eventsRec>
+							<loss speciesLocation="Octocorallia"/>
+						</eventsRec>
+					</clade>
+					<clade>
+						<name>100</name>
+						<eventsRec>
+							<duplication speciesLocation="Scleractinia"/>
+						</eventsRec>
+						<clade>
+							<name>99</name>
+							<eventsRec>
+								<speciation speciesLocation="Scleractinia"/>
+							</eventsRec>
+							<clade>
+								<name>100</name>
+								<eventsRec>
+									<duplication speciesLocation="Refertina"/>
+								</eventsRec>
+								<clade>
+									<name>100</name>
+									<eventsRec>
+										<speciation speciesLocation="Refertina"/>
+									</eventsRec>
+										<clade>
+										<name>loss</name>
+										<eventsRec>
+											<loss speciesLocation="Plut"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>100</name>
+										<eventsRec>
+											<speciation speciesLocation="Acropora_Galaxea"/>
+										</eventsRec>
+											<clade>
+											<name>loss</name>
+											<eventsRec>
+												<loss speciesLocation="Gfas"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>100</name>
+											<eventsRec>
+												<speciation speciesLocation="Acropora"/>
+											</eventsRec>
+											<clade>
+												<name>Adig__Adig_XM_015898144.1.p1</name>
+												<eventsRec>
+													<leaf speciesLocation="Adig"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>78</name>
+												<eventsRec>
+													<speciation speciesLocation="Amur_Ahya"/>
+												</eventsRec>
+												<clade>
+													<name>Ahya__Ahya_ahya_s0016.g8.t1.p1</name>
+													<eventsRec>
+														<leaf speciesLocation="Ahya"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>Amur__Amur_amur_s0137.g53.t1.p1</name>
+													<eventsRec>
+														<leaf speciesLocation="Amur"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>61</name>
+									<eventsRec>
+										<speciation speciesLocation="Refertina"/>
+									</eventsRec>
+									<clade>
+										<name>Gfas__Gfas_gfas1.m1.15495.m1.p1</name>
+										<eventsRec>
+											<speciation speciesLocation="Acropora_Galaxea"/>
+										</eventsRec>
+											<clade>
+											<name>loss</name>
+											<eventsRec>
+												<loss speciesLocation="Acropora"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>Gfas__Gfas_gfas1.m1.15495.m1.p1</name>
+											<eventsRec>
+												<leaf speciesLocation="Gfas"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>Plut__Plut_plut2.m8.17281.m1.p1</name>
+										<eventsRec>
+											<leaf speciesLocation="Plut"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>99</name>
+								<eventsRec>
+									<speciation speciesLocation="Vacatina"/>
+								</eventsRec>
+								<clade>
+									<name>100</name>
+									<eventsRec>
+										<speciation speciesLocation="Fungiidae"/>
+									</eventsRec>
+									<clade>
+										<name>Fspp__Fspp_ffun1.m4.11792.m1.p1</name>
+										<eventsRec>
+											<leaf speciesLocation="Fspp"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>Pcru__Pcru_PcrG005776.mRNA1.p1</name>
+										<eventsRec>
+											<leaf speciesLocation="Pcru"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>100</name>
+									<eventsRec>
+										<speciation speciesLocation="Pocilloporidae"/>
+									</eventsRec>
+									<clade>
+										<name>Pdam__Pdam_XM_027179931.1.p1</name>
+										<eventsRec>
+											<leaf speciesLocation="Pdam"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>Spis__Spis_Spis_XP_022788270_1</name>
+										<eventsRec>
+											<leaf speciesLocation="Spis"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>100</name>
+							<eventsRec>
+								<speciation speciesLocation="Scleractinia"/>
+							</eventsRec>
+							<clade>
+								<name>100</name>
+								<eventsRec>
+									<speciation speciesLocation="Refertina"/>
+								</eventsRec>
+								<clade>
+									<name>100</name>
+									<eventsRec>
+										<speciation speciesLocation="Acropora_Galaxea"/>
+									</eventsRec>
+										<clade>
+										<name>loss</name>
+										<eventsRec>
+											<loss speciesLocation="Gfas"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>100</name>
+										<eventsRec>
+											<speciation speciesLocation="Acropora"/>
+										</eventsRec>
+										<clade>
+											<name>Adig__Adig_XM_015898146.1.p1</name>
+											<eventsRec>
+												<leaf speciesLocation="Adig"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>81</name>
+											<eventsRec>
+												<speciation speciesLocation="Amur_Ahya"/>
+											</eventsRec>
+											<clade>
+												<name>Ahya__Ahya_ahya_s0016.g16.t1.p1</name>
+												<eventsRec>
+													<leaf speciesLocation="Ahya"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>Amur__Amur_amur_s0137.g46.t1.p1</name>
+												<eventsRec>
+													<leaf speciesLocation="Amur"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>Plut__Plut_plut2.m8.7611.m1.p1</name>
+									<eventsRec>
+										<leaf speciesLocation="Plut"/>
+									</eventsRec>
+								</clade>
+							</clade>
+							<clade>
+								<name>87</name>
+								<eventsRec>
+									<speciation speciesLocation="Vacatina"/>
+								</eventsRec>
+								<clade>
+									<name>100</name>
+									<eventsRec>
+										<duplication speciesLocation="Fungiidae"/>
+									</eventsRec>
+									<clade>
+										<name>92</name>
+										<eventsRec>
+											<speciation speciesLocation="Fungiidae"/>
+										</eventsRec>
+										<clade>
+											<name>Fspp__Fspp_ffun1.m4.11791.m1.p1</name>
+											<eventsRec>
+												<leaf speciesLocation="Fspp"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>Pcru__Pcru_PcrG005775.mRNA1.p1</name>
+											<eventsRec>
+												<leaf speciesLocation="Pcru"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>Pcru__Pcru_PcrG005771.mRNA1.p1</name>
+										<eventsRec>
+											<speciation speciesLocation="Fungiidae"/>
+										</eventsRec>
+											<clade>
+											<name>loss</name>
+											<eventsRec>
+												<loss speciesLocation="Fspp"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>Pcru__Pcru_PcrG005771.mRNA1.p1</name>
+											<eventsRec>
+												<leaf speciesLocation="Pcru"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>100</name>
+									<eventsRec>
+										<speciation speciesLocation="Pocilloporidae"/>
+									</eventsRec>
+									<clade>
+										<name>Pdam__Pdam_XM_027179932.1.p1</name>
+										<eventsRec>
+											<leaf speciesLocation="Pdam"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>Spis__Spis_Spis_XP_022788307_1</name>
+										<eventsRec>
+											<leaf speciesLocation="Spis"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<speciation speciesLocation="Medusozoa"/>
+					</eventsRec>
+					<clade>
+						<name>Hvul__Hvul_XP_065656521.1</name>
+						<eventsRec>
+							<leaf speciesLocation="Hvul"/>
+						</eventsRec>
+					</clade>
+					<clade>
+						<name>Aaur__Aaur_scaffold23.g22.t1</name>
+						<eventsRec>
+							<leaf speciesLocation="Aaur"/>
+						</eventsRec>
+					</clade>
+				</clade>
+			</clade>
+		</clade>
+		<clade>
+			<name>100</name>
+			<eventsRec>
+				<speciation speciesLocation="Cnidaria"/>
+			</eventsRec>
+			<clade>
+				<name>100</name>
+				<eventsRec>
+					<speciation speciesLocation="Medusozoa"/>
+				</eventsRec>
+				<clade>
+					<name>Aaur__Aaur_scaffold301.g2.t1</name>
+					<eventsRec>
+						<leaf speciesLocation="Aaur"/>
+					</eventsRec>
+				</clade>
+				<clade>
+					<name>Hvul__Hvul_XP_065646668.1</name>
+					<eventsRec>
+						<leaf speciesLocation="Hvul"/>
+					</eventsRec>
+				</clade>
+			</clade>
+			<clade>
+				<name>97</name>
+				<eventsRec>
+					<speciation speciesLocation="Anthozoa"/>
+				</eventsRec>
+				<clade>
+					<name>100</name>
+					<eventsRec>
+						<speciation speciesLocation="Scleractinia"/>
+					</eventsRec>
+					<clade>
+						<name>87</name>
+						<eventsRec>
+							<speciation speciesLocation="Refertina"/>
+						</eventsRec>
+						<clade>
+							<name>67</name>
+							<eventsRec>
+								<speciation speciesLocation="Acropora_Galaxea"/>
+							</eventsRec>
+							<clade>
+								<name>100</name>
+								<eventsRec>
+									<duplication speciesLocation="Acropora"/>
+								</eventsRec>
+								<clade>
+									<name>84</name>
+									<eventsRec>
+										<speciation speciesLocation="Acropora"/>
+									</eventsRec>
+									<clade>
+										<name>Adig__Adig_XM_015906776.1.p1</name>
+										<eventsRec>
+											<leaf speciesLocation="Adig"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>Amur__Amur_amur_s0028.g87.t1.p1</name>
+										<eventsRec>
+											<speciation speciesLocation="Amur_Ahya"/>
+										</eventsRec>
+											<clade>
+											<name>loss</name>
+											<eventsRec>
+												<loss speciesLocation="Ahya"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>Amur__Amur_amur_s0028.g87.t1.p1</name>
+											<eventsRec>
+												<leaf speciesLocation="Amur"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>62</name>
+									<eventsRec>
+										<speciation speciesLocation="Acropora"/>
+									</eventsRec>
+										<clade>
+										<name>loss</name>
+										<eventsRec>
+											<loss speciesLocation="Adig"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>62</name>
+										<eventsRec>
+											<speciation speciesLocation="Amur_Ahya"/>
+										</eventsRec>
+										<clade>
+											<name>Ahya__Ahya_ahya_s0040.g83.t2.p1</name>
+											<eventsRec>
+												<leaf speciesLocation="Ahya"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>Amur__Amur_amur_s2611.g1.t1.p1</name>
+											<eventsRec>
+												<leaf speciesLocation="Amur"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>Gfas__Gfas_gfas1.m1.13173.m1.p1</name>
+								<eventsRec>
+									<leaf speciesLocation="Gfas"/>
+								</eventsRec>
+							</clade>
+						</clade>
+						<clade>
+							<name>Plut__Plut_plut2.m8.6152.m1.p1</name>
+							<eventsRec>
+								<leaf speciesLocation="Plut"/>
+							</eventsRec>
+						</clade>
+					</clade>
+					<clade>
+						<name>73</name>
+						<eventsRec>
+							<speciation speciesLocation="Vacatina"/>
+						</eventsRec>
+						<clade>
+							<name>100</name>
+							<eventsRec>
+								<duplication speciesLocation="Fungiidae"/>
+							</eventsRec>
+							<clade>
+								<name>100</name>
+								<eventsRec>
+									<speciation speciesLocation="Fungiidae"/>
+								</eventsRec>
+								<clade>
+									<name>Fspp__Fspp_ffun1.m4.27682.m1.p1</name>
+									<eventsRec>
+										<leaf speciesLocation="Fspp"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>Pcru__Pcru_PcrG022701.mRNA1.p1</name>
+									<eventsRec>
+										<leaf speciesLocation="Pcru"/>
+									</eventsRec>
+								</clade>
+							</clade>
+							<clade>
+								<name>Pcru__Pcru_PcrG022702.mRNA1.p1</name>
+								<eventsRec>
+									<speciation speciesLocation="Fungiidae"/>
+								</eventsRec>
+									<clade>
+									<name>loss</name>
+									<eventsRec>
+										<loss speciesLocation="Fspp"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>Pcru__Pcru_PcrG022702.mRNA1.p1</name>
+									<eventsRec>
+										<leaf speciesLocation="Pcru"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>100</name>
+							<eventsRec>
+								<speciation speciesLocation="Pocilloporidae"/>
+							</eventsRec>
+							<clade>
+								<name>Pdam__Pdam_XM_027188027.1.p1</name>
+								<eventsRec>
+									<leaf speciesLocation="Pdam"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>Spis__Spis_Spis_XP_022801462_1</name>
+								<eventsRec>
+									<leaf speciesLocation="Spis"/>
+								</eventsRec>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+					<name>100</name>
+					<eventsRec>
+						<speciation speciesLocation="Octocorallia"/>
+					</eventsRec>
+					<clade>
+						<name>Hcoe__Hcoe_Hco14947-RA.p1</name>
+						<eventsRec>
+							<leaf speciesLocation="Hcoe"/>
+						</eventsRec>
+					</clade>
+					<clade>
+						<name>100</name>
+						<eventsRec>
+							<duplication speciesLocation="Xesp"/>
+						</eventsRec>
+						<clade>
+							<name>Xesp__Xesp_Xe_024706-T1.p1</name>
+							<eventsRec>
+								<leaf speciesLocation="Xesp"/>
+							</eventsRec>
+						</clade>
+						<clade>
+							<name>Xesp__Xesp_Xe_024708-T1.p1</name>
+							<eventsRec>
+								<leaf speciesLocation="Xesp"/>
+							</eventsRec>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+		</clade>
+	</clade>
+	<clade>
+		<name>Aaur__Aaur_scaffold71.g37.t1</name>
+		<eventsRec>
+			<speciation speciesLocation="Cnidaria"/>
+		</eventsRec>
+			<clade>
+			<name>loss</name>
+			<eventsRec>
+				<loss speciesLocation="Anthozoa"/>
+			</eventsRec>
+		</clade>
+		<clade>
+			<name>Aaur__Aaur_scaffold71.g37.t1</name>
+			<eventsRec>
+				<speciation speciesLocation="Medusozoa"/>
+			</eventsRec>
+				<clade>
+				<name>loss</name>
+				<eventsRec>
+					<loss speciesLocation="Hvul"/>
+				</eventsRec>
+			</clade>
+			<clade>
+				<name>Aaur__Aaur_scaffold71.g37.t1</name>
+				<eventsRec>
+					<leaf speciesLocation="Aaur"/>
+				</eventsRec>
+			</clade>
+		</clade>
+	</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

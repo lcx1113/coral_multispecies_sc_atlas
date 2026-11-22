@@ -1,0 +1,19 @@
+multiple_og_tracks:
+  active: true
+  celltype: calicoblast
+  expression_source: inputs/merged_tracks/tip_relative_expression.tsv
+  cdd_domain_hits_source: inputs/merged_tracks/cdd_domain_hits.tsv
+  cdd_sequence_status_source: inputs/merged_tracks/cdd_sequence_status.tsv
+  reuse_precomputed_expression: true
+  reuse_precomputed_cdd: true
+  recompute_expression: false
+  recompute_cdd: false
+  expression_primary_value: avg_log2FC
+  missing_expression_value: NA_not_zero
+  output_directory: results/05_tip_tracks/sc11_hvul_aaur_strict70_all_members
+  plot_output_directory: results/06_figures/og_expression_domains/sc11_hvul_aaur_strict70_all_members
+  tip_label_format: species | gene_id|orthogroup_name|Uniprot_name | original_orthogroup
+  pdf_width_inches: 42
+  pdf_height_per_tip_inches: 0.42
+  pdf_minimum_height_inches: 14
+  external_cdd_precomputed_in_reference_stage: true

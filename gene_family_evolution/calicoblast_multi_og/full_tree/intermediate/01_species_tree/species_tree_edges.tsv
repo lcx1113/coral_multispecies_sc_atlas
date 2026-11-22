@@ -1,0 +1,25 @@
+parent	child	child_kind	branch_length
+Cnidaria	Medusozoa	internal	
+Medusozoa	Hvul	tip	
+Medusozoa	Aaur	tip	
+Cnidaria	Anthozoa	internal	
+Anthozoa	Octocorallia	internal	
+Octocorallia	Xesp	tip	
+Octocorallia	Hcoe	tip	
+Anthozoa	Scleractinia	internal	
+Scleractinia	Vacatina	internal	
+Vacatina	Pocilloporidae	internal	
+Pocilloporidae	Pdam	tip	
+Pocilloporidae	Spis	tip	
+Vacatina	Fungiidae	internal	
+Fungiidae	Pcru	tip	
+Fungiidae	Fspp	tip	
+Scleractinia	Refertina	internal	
+Refertina	Plut	tip	
+Refertina	Acropora_Galaxea	internal	
+Acropora_Galaxea	Gfas	tip	
+Acropora_Galaxea	Acropora	internal	
+Acropora	Adig	tip	
+Acropora	Amur_Ahya	internal	
+Amur_Ahya	Amur	tip	
+Amur_Ahya	Ahya	tip	

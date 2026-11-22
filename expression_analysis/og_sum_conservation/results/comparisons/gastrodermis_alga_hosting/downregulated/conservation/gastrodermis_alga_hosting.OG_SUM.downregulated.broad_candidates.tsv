@@ -1,0 +1,2 @@
+orthogroup	n_species_present_in_broccoli	n_species_mapped_to_expression	n_species_tested	n_downregulated_species	downregulated_species	comparison_id	direction	n_species_in_comparison	core_min_species	broad_min_species	majority_min_species	shared_min_species	conservation_class	has_TF	first_annotation	first_support	second_annotation	second_support
+OG:019032	11	11	9	9	Adig;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin;Xesp	gastrodermis_alga_hosting	downregulated	11	11	9	6	2	broad_only	FALSE	MEX3C	1	Mex3a/Mex3b/Mex3c/Mex3d	1

@@ -1,0 +1,12 @@
+object_species	orthology_species_expected	orthology_species_mapping	orthology_species_match	n_cells	n_rna_features	n_mapping_rows	n_mapped_features	n_mapping_features_missing_from_new_object	mapping_features_missing_fraction	n_new_object_features_without_og_mapping	missing_mapping_features_example	status
+Adig	Adig	Adig	TRUE	10471	28988	19578	19513	0	0	9475	NA	PASS
+Ahya	Ahya	Ahya	TRUE	6153	22826	17969	17815	0	0	5011	NA	PASS
+Amur	Amur	Amur	TRUE	8265	23295	17847	17678	0	0	5617	NA	PASS
+Fspp	Fspp	Fspp	TRUE	9889	31258	21165	21042	0	0	10216	NA	PASS
+Gfas	Gfas	Gfas	TRUE	8798	27404	18804	18659	0	0	8745	NA	PASS
+Hcoe	Hcoe	Hcoe	TRUE	11183	24385	16104	16089	0	0	8296	NA	PASS
+Pcru	Pcru	Pcru	TRUE	9365	28660	20471	20422	0	0	8238	NA	PASS
+Pdam	Pdam	Pdam	TRUE	11706	21519	17179	17134	0	0	4385	NA	PASS
+Plut	Plut	Plut	TRUE	9734	31238	21175	21068	0	0	10170	NA	PASS
+Spin	Spis	Spis	TRUE	15053	49751	27605	27545	0	0	22206	NA	PASS
+Xesp	Xesp	Xesp	TRUE	19134	29015	21643	21329	0	0	7686	NA	PASS

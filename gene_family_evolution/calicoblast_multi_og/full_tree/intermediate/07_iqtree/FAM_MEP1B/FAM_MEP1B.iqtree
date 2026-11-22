@@ -1,0 +1,1076 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: /home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_orthogroup_genetree_versions/family_OG_filtered_SC11_Hvul_Aaur_261110/strict_candidates_dual70_corecomplete_261110/gene_tree_analysis/intermediate/06_alignments/FAM_MEP1B/FAM_MEP1B.clipkit.aln.faa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 1234
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 215 sequences with 293 amino-acid sites
+Number of constant sites: 1 (= 0.341297% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1 (= 0.341297% of all sites)
+Number of parsimony informative sites: 292
+Number of distinct site patterns: 293
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: WAG+F+R6
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+WAG+F+R6         -62235.586  125383.172 +    0.682  542167.172 -        0  127061.331 +    0.931
+WAG+F+I+R6       -62235.347  125384.695 +    0.318  543996.695 -        0  127066.533 +    0.069
+WAG+R6           -62408.913  125691.826 - 6.46e-68  508503.826 -        0  127300.061 - 1.35e-52
+WAG+I+R6         -62408.489  125692.977 - 3.63e-68  510256.977 -        0  127304.893 -  1.2e-53
+LG+I+R6          -62539.177  125954.354 - 6.35e-125  510518.354 -        0  127566.270 - 2.1e-110
+LG+R6            -62542.963  125959.925 - 3.92e-126  508771.925 -        0  127568.161 - 8.17e-111
+LG+I+R7          -62538.990  125957.979 - 1.04e-125  514037.979 -        0  127577.255 - 8.66e-113
+LG+R7            -62542.765  125963.530 - 6.46e-127  512283.530 -        0  127579.126 - 3.4e-113
+LG+I+R5          -62558.331  125988.661 - 2.26e-132  507052.661 -        0  127593.216 - 2.96e-116
+LG+R5            -62562.139  125994.279 - 1.36e-133  505314.279 -        0  127595.154 - 1.12e-116
+LG+I+R4          -62638.937  126145.875 - 1.64e-166  503725.875 -        0  127743.070 - 8.53e-149
+LG+R4            -62650.711  126167.422 - 3.43e-171  502011.422 -        0  127760.937 - 1.13e-152
+LG+I+G4          -62681.222  126220.444 - 1.05e-182  495160.444 -        0  127799.238 - 5.43e-161
+LG+G4            -62686.888  126229.777 - 9.9e-185  493453.777 +        1  127804.891 - 3.21e-162
+LG+F+I+R6        -62606.988  126127.976 - 1.26e-162  544739.976 -        0  127809.815 - 2.74e-163
+LG+F+R6          -62610.245  126132.491 - 1.32e-163  542916.491 -        0  127810.649 - 1.8e-163
+LG+I+R3          -62793.452  126450.905 - 9.51e-233  500562.905 -        0  128040.740 - 1.96e-213
+LG+R3            -62806.044  126474.089 - 8.79e-238  498858.089 -        0  128060.243 - 1.14e-217
+JTT+R6           -62821.193  126516.387 - 5.74e-247  509328.387 -        0  128124.622 - 1.2e-231
+JTT+I+R6         -62820.386  126516.772 - 4.74e-247  511080.772 -        0  128128.687 - 1.57e-232
+JTT+F+R6         -62774.089  126460.178 - 9.22e-235  543244.178 -        0  128138.337 - 1.26e-234
+JTT+F+I+R6       -62772.911  126459.822 - 1.1e-234  545071.822 -        0  128141.661 - 2.39e-235
+LG+I+R2          -63193.188  127246.376 -        0  497906.376 -        0  128828.850 -        0
+LG+R2            -63210.780  127279.560 -        0  496219.560 -        0  128858.354 -        0
+LG+I             -65549.844  131955.687 -        0  499179.687 -        0  133530.801 -        0
+LG               -65607.005  132068.011 -        0  497580.011 -        0  133639.444 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: WAG+F+R6
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0570
+  pi(R) = 0.0692
+  pi(N) = 0.0579
+  pi(D) = 0.0506
+  pi(C) = 0.0203
+  pi(Q) = 0.0397
+  pi(E) = 0.0437
+  pi(G) = 0.0865
+  pi(H) = 0.0242
+  pi(I) = 0.0673
+  pi(L) = 0.0642
+  pi(K) = 0.0653
+  pi(M) = 0.0284
+  pi(F) = 0.0421
+  pi(P) = 0.0379
+  pi(S) = 0.0798
+  pi(T) = 0.0511
+  pi(W) = 0.0139
+  pi(Y) = 0.0469
+  pi(V) = 0.0539
+
+Model of rate heterogeneity: FreeRate with 6 categories
+Site proportion and rates:  (0.0970,0.0981) (0.1559,0.3400) (0.2101,0.6532) (0.2402,1.0852) (0.2039,1.5412) (0.0930,2.4248)
+
+ Category  Relative_rate  Proportion
+  1         0.0981         0.0970
+  2         0.3400         0.1559
+  3         0.6532         0.2101
+  4         1.0852         0.2402
+  5         1.5412         0.2039
+  6         2.4248         0.0930
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -62138.7313 (s.e. 1577.6049)
+Unconstrained log-likelihood (without tree): -1664.2906
+Number of free parameters (#branches + #model parameters): 456
+Akaike information criterion (AIC) score: 125189.4625
+Corrected Akaike information criterion (AICc) score: 541973.4625
+Bayesian information criterion (BIC) score: 126867.6212
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 456
+Sample size (n, alignment length): 293
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 96.7936
+Sum of internal branch lengths: 31.9542 (33.0127% of tree length)
+
+WARNING: 4 near-zero internal branches (<0.0034) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Aaur__Aaur_scaffold1.g61.t2' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---------Aaur__Aaur_scaffold1.g61.t2
+|
+|                                                +--------Aaur__Aaur_scaffold108.g71.t1
+|                                             +--| (33)
+|                                             |  +----------------------Hcoe__Hcoe_Hco21047-RA.p1
+|                                          +--| (33)
+|                                          |  |  +-----------Hvul__Hvul_XP_065662288.1
+|                                          |  +--| (60)
+|                                          |     +-------Hvul__Hvul_XP_065663761.1
+|                                       +--| (49)
+|                                       |  +-------Aaur__Aaur_scaffold142.g50.t1
+|                                    +--| (48)
+|                                    |  +-------Aaur__Aaur_scaffold108.g75.t1
+|                                 +--| (71)
+|                                 |  +------Hcoe__Hcoe_Hco18067-RA.p1
+|                              +--| (83)
+|                              |  |    +-------Hcoe__Hcoe_Hco00702-RA.p1
+|                              |  +----| (73)
+|                              |       +--------------------------Xesp__Xesp_Xesp_orphan_4888.p2
+|                           +--| (71)
+|                           |  |        +----Aaur__Aaur_scaffold137.g17.t2
+|                           |  |  +-----| (100)
+|                           |  |  |     |  +--Aaur__Aaur_scaffold47.g20.t2
+|                           |  |  |     +--| (90)
+|                           |  |  |        +-----Hvul__Hvul_NP_001296648.1
+|                           |  +--| (61)
+|                           |     +------------------------Plut__Plut_plut2.m8.24788.m1.p1
+|                        +--| (32)
+|                        |  |                 +-----------Aaur__Aaur_scaffold24.g161.t2
+|                        |  |              +--| (64)
+|                        |  |              |  |       +--Aaur__Aaur_scaffold67.g26.t1
+|                        |  |              |  |  +----| (100)
+|                        |  |              |  |  |    +--Aaur__Aaur_scaffold67.g34.t1
+|                        |  |              |  +--| (95)
+|                        |  |              |     +----Aaur__Aaur_scaffold929.g1.t1
+|                        |  |           +--| (66)
+|                        |  |           |  |        +------Hvul__Hvul_XP_065648141.1
+|                        |  |           |  |     +--| (42)
+|                        |  |           |  |     |  +-------Hvul__Hvul_XP_065670967.1
+|                        |  |           |  |  +--| (39)
+|                        |  |           |  |  |  |     +--Hvul__Hvul_XP_065648147.1
+|                        |  |           |  |  |  |  +--| (100)
+|                        |  |           |  |  |  |  |  |  +--Hvul__Hvul_XP_065648148.1
+|                        |  |           |  |  |  |  |  +--| (93)
+|                        |  |           |  |  |  |  |     +--Hvul__Hvul_XP_065676037.1
+|                        |  |           |  |  |  +--| (79)
+|                        |  |           |  |  |     |     +--Hvul__Hvul_XP_065653482.1
+|                        |  |           |  |  |     |  +--| (94)
+|                        |  |           |  |  |     |  |  +--Hvul__Hvul_XP_065653483.1
+|                        |  |           |  |  |     +--| (100)
+|                        |  |           |  |  |        +--Hvul__Hvul_XP_065653485.1
+|                        |  |           |  +--| (99)
+|                        |  |           |     +-------Hvul__Hvul_XP_065648149.1
+|                        |  |        +--| (73)
+|                        |  |        |  |     +-------Hvul__Hvul_XP_065655121.1
+|                        |  |        |  |  +--| (91)
+|                        |  |        |  |  |  |       +---Hvul__Hvul_XP_065674702.1
+|                        |  |        |  |  |  |  +----| (100)
+|                        |  |        |  |  |  |  |    |  +--Hvul__Hvul_XP_065676271.1
+|                        |  |        |  |  |  |  |    +--| (100)
+|                        |  |        |  |  |  |  |       +--Hvul__Hvul_XP_065676273.1
+|                        |  |        |  |  |  +--| (100)
+|                        |  |        |  |  |     |    +--Hvul__Hvul_XP_065674733.1
+|                        |  |        |  |  |     +----| (100)
+|                        |  |        |  |  |          |  +--Hvul__Hvul_XP_065674734.1
+|                        |  |        |  |  |          +--| (98)
+|                        |  |        |  |  |             +--Hvul__Hvul_XP_065674768.1
+|                        |  |        |  +--| (93)
+|                        |  |        |     |       +--Hvul__Hvul_XP_065676194.1
+|                        |  |        |     +-------| (100)
+|                        |  |        |             +--Hvul__Hvul_XP_065676856.1
+|                        |  |     +--| (90)
+|                        |  |     |  +-------------------------Gfas__Gfas_gfas1.m1.15259.m1.p1
+|                        |  |  +--| (45)
+|                        |  |  |  |              +---Aaur__Aaur_scaffold38.g70.t1
+|                        |  |  |  |           +--| (85)
+|                        |  |  |  |           |  +-------Hvul__Hvul_XP_065662345.1
+|                        |  |  |  |     +-----| (100)
+|                        |  |  |  |     |     +----------Hvul__Hvul_XP_065666427.1
+|                        |  |  |  |  +--| (53)
+|                        |  |  |  |  |  |                                               +--Adig__Adig_XM_015891857.1.p1
+|                        |  |  |  |  |  |                                            +--| (100)
+|                        |  |  |  |  |  |                                            |  |  +**Ahya__Ahya_ahya_s0009.g124.t1.p1
+|                        |  |  |  |  |  |                                            |  +--| (95)
+|                        |  |  |  |  |  |                                            |     +--Amur__Amur_amur_s0532.g9.t1.p1
+|                        |  |  |  |  |  |                                         +--| (100)
+|                        |  |  |  |  |  |                                         |  |     +--Adig__Adig_XM_015924404.1.p1
+|                        |  |  |  |  |  |                                         |  |  +--| (78)
+|                        |  |  |  |  |  |                                         |  |  |  +--Ahya__Ahya_ahya_s0009.g121.t1.p1
+|                        |  |  |  |  |  |                                         |  +--| (100)
+|                        |  |  |  |  |  |                                         |     +--Amur__Amur_amur_s0487.g6.t1.p1
+|                        |  |  |  |  |  |                                      +--| (99)
+|                        |  |  |  |  |  |                                      |  |    +--Adig__Adig_XM_015924415.1.p1
+|                        |  |  |  |  |  |                                      |  +----| (100)
+|                        |  |  |  |  |  |                                      |       |  +--Ahya__Ahya_ahya_s0009.g120.t1.p1
+|                        |  |  |  |  |  |                                      |       +--| (100)
+|                        |  |  |  |  |  |                                      |          +--Amur__Amur_amur_s0487.g7.t1.p1
+|                        |  |  |  |  |  |                                   +--| (72)
+|                        |  |  |  |  |  |                                   |  +------Gfas__Gfas_gfas1.m1.20908.m1.p1
+|                        |  |  |  |  |  |                                +--| (68)
+|                        |  |  |  |  |  |                                |  |    +--Pdam__Pdam_XM_027183221.1.p1
+|                        |  |  |  |  |  |                                |  +----| (100)
+|                        |  |  |  |  |  |                                |       +---Spis__Spis_Spis_XP_022807096_1
+|                        |  |  |  |  |  |                             +--| (39)
+|                        |  |  |  |  |  |                             |  |      +--Plut__Plut_plut2.m8.28523.m1.p1
+|                        |  |  |  |  |  |                             |  |  +---| (100)
+|                        |  |  |  |  |  |                             |  |  |   +--Plut__Plut_plut2.m8.28527.m1.p1
+|                        |  |  |  |  |  |                             |  +--| (100)
+|                        |  |  |  |  |  |                             |     +--Plut__Plut_plut2.m8.28526.m1.p1
+|                        |  |  |  |  |  |                          +--| (29)
+|                        |  |  |  |  |  |                          |  +-----Plut__Plut_plut2.m8.29201.m1.p1
+|                        |  |  |  |  |  |                       +--| (22)
+|                        |  |  |  |  |  |                       |  |     +---------Gfas__Gfas_gfas1.m1.14098.m1.p1
+|                        |  |  |  |  |  |                       |  |  +--| (65)
+|                        |  |  |  |  |  |                       |  |  |  +---Plut__Plut_plut2.m8.28524.m1.p1
+|                        |  |  |  |  |  |                       |  +--| (46)
+|                        |  |  |  |  |  |                       |     +-----Gfas__Gfas_gfas1.m1.14099.m1.p1
+|                        |  |  |  |  |  |                    +--| (20)
+|                        |  |  |  |  |  |                    |  |        +--Fspp__Fspp_ffun1.m4.7098.m1.p1
+|                        |  |  |  |  |  |                    |  |     +--| (100)
+|                        |  |  |  |  |  |                    |  |     |  +--Pcru__Pcru_PcrG008259.mRNA1.p1
+|                        |  |  |  |  |  |                    |  |  +--| (75)
+|                        |  |  |  |  |  |                    |  |  |  |        +--Fspp__Fspp_ffun1.m4.7100.m1.p1
+|                        |  |  |  |  |  |                    |  |  |  |     +--| (100)
+|                        |  |  |  |  |  |                    |  |  |  |     |  +--Pcru__Pcru_PcrG008258.mRNA1.p1
+|                        |  |  |  |  |  |                    |  |  |  |  +--| (69)
+|                        |  |  |  |  |  |                    |  |  |  |  |  |  +--------Fspp__Fspp_ffun1.m4.7101.m1.p1
+|                        |  |  |  |  |  |                    |  |  |  |  |  +--| (100)
+|                        |  |  |  |  |  |                    |  |  |  |  |     +--Pcru__Pcru_PcrG008261.mRNA1.p1
+|                        |  |  |  |  |  |                    |  |  |  +--| (59)
+|                        |  |  |  |  |  |                    |  |  |     +--Pcru__Pcru_PcrG008260.mRNA1.p1
+|                        |  |  |  |  |  |                    |  +--| (77)
+|                        |  |  |  |  |  |                    |     |     +--Pdam__Pdam_XM_027183220.1.p1
+|                        |  |  |  |  |  |                    |     |  +--| (99)
+|                        |  |  |  |  |  |                    |     |  |  |  +--Spis__Spis_Spis_XP_022804316_1
+|                        |  |  |  |  |  |                    |     |  |  +--| (100)
+|                        |  |  |  |  |  |                    |     |  |     +--Spis__Spis_Spis_XP_022807097_1
+|                        |  |  |  |  |  |                    |     +--| (100)
+|                        |  |  |  |  |  |                    |        +----Pdam__Pdam_XM_027204075.1.p1
+|                        |  |  |  |  |  |                 +--| (96)
+|                        |  |  |  |  |  |                 |  |      +---Pdam__Pdam_XM_027183224.1.p1
+|                        |  |  |  |  |  |                 |  |   +--| (66)
+|                        |  |  |  |  |  |                 |  |   |  |     +--Spis__Spis_Spis_XP_022804303_1
+|                        |  |  |  |  |  |                 |  |   |  |  +--| (98)
+|                        |  |  |  |  |  |                 |  |   |  |  |  |  +--Spis__Spis_Spis_XP_022807095_1
+|                        |  |  |  |  |  |                 |  |   |  |  |  +--| (100)
+|                        |  |  |  |  |  |                 |  |   |  |  |     +**Spis__Spis_Spis_XP_022807101_1
+|                        |  |  |  |  |  |                 |  |   |  +--| (56)
+|                        |  |  |  |  |  |                 |  |   |     +--Spis__Spis_Spis_XP_022804319_1
+|                        |  |  |  |  |  |                 |  +---| (100)
+|                        |  |  |  |  |  |                 |      +--Pdam__Pdam_XM_027199705.1.p1
+|                        |  |  |  |  |  |              +--| (90)
+|                        |  |  |  |  |  |              |  |                             +--Adig__Adig_XM_015905307.1.p1
+|                        |  |  |  |  |  |              |  |                          +--| (100)
+|                        |  |  |  |  |  |              |  |                          |  |  +--Ahya__Ahya_ahya_s0019.g61.t1.p1
+|                        |  |  |  |  |  |              |  |                          |  +**| (99)
+|                        |  |  |  |  |  |              |  |                          |     +--Amur__Amur_amur_s0017.g25.t1.p1
+|                        |  |  |  |  |  |              |  |                       +--| (58)
+|                        |  |  |  |  |  |              |  |                       |  +--Gfas__Gfas_gfas1.m1.17827.m1.p1
+|                        |  |  |  |  |  |              |  |                    +**| (15)
+|                        |  |  |  |  |  |              |  |                    |  +------Fspp__Fspp_ffun1.m4.7103.m1.p1
+|                        |  |  |  |  |  |              |  |                 +--| (35)
+|                        |  |  |  |  |  |              |  |                 |  |     +--Fspp__Fspp_ffun1.m4.7105.m1.p1
+|                        |  |  |  |  |  |              |  |                 |  |  +--| (78)
+|                        |  |  |  |  |  |              |  |                 |  |  |  |        +--Fspp__Fspp_ffun1.m4.7106.m1.p1
+|                        |  |  |  |  |  |              |  |                 |  |  |  |     +--| (99)
+|                        |  |  |  |  |  |              |  |                 |  |  |  |     |  +--Pdam__Pdam_XM_027183205.1.p1
+|                        |  |  |  |  |  |              |  |                 |  |  |  |  +--| (95)
+|                        |  |  |  |  |  |              |  |                 |  |  |  |  |  +--Pcru__Pcru_PcrG008257.mRNA1.p1
+|                        |  |  |  |  |  |              |  |                 |  |  |  +--| (47)
+|                        |  |  |  |  |  |              |  |                 |  |  |     +--Pcru__Pcru_PcrG008254.mRNA1.p1
+|                        |  |  |  |  |  |              |  |                 |  +--| (73)
+|                        |  |  |  |  |  |              |  |                 |     |  +--Spis__Spis_Spis_XP_022807100_1
+|                        |  |  |  |  |  |              |  |                 |     +--| (99)
+|                        |  |  |  |  |  |              |  |                 |        +--Spis__Spis_Spis_XP_022807103_1
+|                        |  |  |  |  |  |              |  |              +--| (31)
+|                        |  |  |  |  |  |              |  |              |  +--Plut__Plut_plut2.m8.28528.m1.p1
+|                        |  |  |  |  |  |              |  |           +--| (30)
+|                        |  |  |  |  |  |              |  |           |  +---Plut__Plut_plut2.m8.28521.m1.p1
+|                        |  |  |  |  |  |              |  |        +--| (64)
+|                        |  |  |  |  |  |              |  |        |  |  +--Plut__Plut_plut2.m8.28520.m1.p1
+|                        |  |  |  |  |  |              |  |        |  +--| (81)
+|                        |  |  |  |  |  |              |  |        |     +---Plut__Plut_plut2.m8.28525.m1.p1
+|                        |  |  |  |  |  |              |  |     +--| (91)
+|                        |  |  |  |  |  |              |  |     |  |  +-----Pcru__Pcru_PcrG008253.mRNA1.p1
+|                        |  |  |  |  |  |              |  |     |  +--| (49)
+|                        |  |  |  |  |  |              |  |     |     +---Pdam__Pdam_XM_027183207.1.p1
+|                        |  |  |  |  |  |              |  |  +--| (57)
+|                        |  |  |  |  |  |              |  |  |  |           +--Fspp__Fspp_ffun1.m4.7102.m1.p1
+|                        |  |  |  |  |  |              |  |  |  |        +--| (100)
+|                        |  |  |  |  |  |              |  |  |  |        |  +--Pcru__Pcru_PcrG008255.mRNA1.p1
+|                        |  |  |  |  |  |              |  |  |  |     +--| (65)
+|                        |  |  |  |  |  |              |  |  |  |     |  |          +**Fspp__Fspp_ffun1.m4.7104.m1.p1
+|                        |  |  |  |  |  |              |  |  |  |     |  |     +----| (100)
+|                        |  |  |  |  |  |              |  |  |  |     |  |     |    +--Pcru__Pcru_PcrG008256.mRNA1.p1
+|                        |  |  |  |  |  |              |  |  |  |     |  |  +--| (56)
+|                        |  |  |  |  |  |              |  |  |  |     |  |  |  +-------------Gfas__Gfas_gfas1.m1.17553.m1.p1
+|                        |  |  |  |  |  |              |  |  |  |     |  +--| (77)
+|                        |  |  |  |  |  |              |  |  |  |     |     |      +--Spis__Spis_Spis_XP_022798324_1
+|                        |  |  |  |  |  |              |  |  |  |     |     +------| (100)
+|                        |  |  |  |  |  |              |  |  |  |     |            +----Spis__Spis_Spis_XP_022807102_1
+|                        |  |  |  |  |  |              |  |  |  |  +--| (62)
+|                        |  |  |  |  |  |              |  |  |  |  |  +---------Pdam__Pdam_XM_027183228.1.p1
+|                        |  |  |  |  |  |              |  |  |  +--| (92)
+|                        |  |  |  |  |  |              |  |  |     +----Gfas__Gfas_gfas1.m1.18699.m1.p1
+|                        |  |  |  |  |  |              |  +--| (75)
+|                        |  |  |  |  |  |              |     |                          +---------Adig__Adig_XM_015918970.1.p1
+|                        |  |  |  |  |  |              |     |                       +--| (97)
+|                        |  |  |  |  |  |              |     |                       |  +--Spis__Spis_Spis_XP_022788456_1
+|                        |  |  |  |  |  |              |     |                    +--| (94)
+|                        |  |  |  |  |  |              |     |                    |  +--Spis__Spis_Spis_XP_022787898_1
+|                        |  |  |  |  |  |              |     |                 +--| (97)
+|                        |  |  |  |  |  |              |     |                 |  +--Pdam__Pdam_XM_027200638.1.p1
+|                        |  |  |  |  |  |              |     |              +**| (73)
+|                        |  |  |  |  |  |              |     |              |  |  +--Adig__Adig_XM_015918971.1.p1
+|                        |  |  |  |  |  |              |     |              |  +--| (100)
+|                        |  |  |  |  |  |              |     |              |     |  +--Ahya__Ahya_ahya_s0138.g7.t1.p1
+|                        |  |  |  |  |  |              |     |              |     +--| (74)
+|                        |  |  |  |  |  |              |     |              |        +--Amur__Amur_amur_s0257.g10.t1.p1
+|                        |  |  |  |  |  |              |     |           +--| (99)
+|                        |  |  |  |  |  |              |     |           |  +--Gfas__Gfas_gfas1.m1.16406.m1.p1
+|                        |  |  |  |  |  |              |     |        +--| (86)
+|                        |  |  |  |  |  |              |     |        |  |  +--Fspp__Fspp_ffun1.m4.20007.m1.p1
+|                        |  |  |  |  |  |              |     |        |  +--| (100)
+|                        |  |  |  |  |  |              |     |        |     +--Pcru__Pcru_PcrG018271.mRNA1.p1
+|                        |  |  |  |  |  |              |     |     +--| (73)
+|                        |  |  |  |  |  |              |     |     |  |     +--Fspp__Fspp_ffun1.m4.20000.m1.p1
+|                        |  |  |  |  |  |              |     |     |  |  +--| (100)
+|                        |  |  |  |  |  |              |     |     |  |  |  +--Pcru__Pcru_PcrG018272.mRNA1.p1
+|                        |  |  |  |  |  |              |     |     |  +--| (98)
+|                        |  |  |  |  |  |              |     |     |     +---Plut__Plut_plut2.m8.6040.m1.p1
+|                        |  |  |  |  |  |              |     |  +--| (100)
+|                        |  |  |  |  |  |              |     |  |  |    +--Fspp__Fspp_ffun1.m4.11693.m1.p1
+|                        |  |  |  |  |  |              |     |  |  +----| (100)
+|                        |  |  |  |  |  |              |     |  |       +--Pcru__Pcru_PcrG007655.mRNA1.p1
+|                        |  |  |  |  |  |              |     +--| (99)
+|                        |  |  |  |  |  |              |        |         +--Fspp__Fspp_ffun1.m4.29330.m1.p1
+|                        |  |  |  |  |  |              |        |  +------| (100)
+|                        |  |  |  |  |  |              |        |  |      |  +--Pdam__Pdam_XM_027201996.1.p1
+|                        |  |  |  |  |  |              |        |  |      +--| (100)
+|                        |  |  |  |  |  |              |        |  |         +--Spis__Spis_Spis_XP_022808804_1
+|                        |  |  |  |  |  |              |        +--| (95)
+|                        |  |  |  |  |  |              |           |            +--Fspp__Fspp_ffun1.m4.31075.m1.p1
+|                        |  |  |  |  |  |              |           |         +--| (100)
+|                        |  |  |  |  |  |              |           |         |  +--Pcru__Pcru_PcrG000308.mRNA1.p1
+|                        |  |  |  |  |  |              |           |      +--| (66)
+|                        |  |  |  |  |  |              |           |      |  |  +--Pdam__Pdam_XM_027196461.1.p1
+|                        |  |  |  |  |  |              |           |      |  +--| (96)
+|                        |  |  |  |  |  |              |           |      |     +--Spis__Spis_Spis_XP_022805381_1
+|                        |  |  |  |  |  |              |           |  +---| (100)
+|                        |  |  |  |  |  |              |           |  |   +--Gfas__Gfas_gfas1.m1.15260.m1.p1
+|                        |  |  |  |  |  |              |           +--| (83)
+|                        |  |  |  |  |  |              |              |         +--Pcru__Pcru_PcrG006130.mRNA1.p1
+|                        |  |  |  |  |  |              |              |      +--| (66)
+|                        |  |  |  |  |  |              |              |      |  +---Plut__Plut_plut2.m8.7159.m1.p1
+|                        |  |  |  |  |  |              |              |   +--| (64)
+|                        |  |  |  |  |  |              |              |   |  +--Pdam__Pdam_XM_027201995.1.p1
+|                        |  |  |  |  |  |              |              +---| (100)
+|                        |  |  |  |  |  |              |                  +--Spis__Spis_Spis_XP_022802828_1
+|                        |  |  |  |  |  |           +--| (67)
+|                        |  |  |  |  |  |           |  |          +--Pcru__Pcru_PcrG013715.mRNA1.p1
+|                        |  |  |  |  |  |           |  +----------| (100)
+|                        |  |  |  |  |  |           |             |  +--Pdam__Pdam_XM_027187126.1.p1
+|                        |  |  |  |  |  |           |             +--| (71)
+|                        |  |  |  |  |  |           |                +--Plut__Plut_plut2.m8.19899.m1.p2
+|                        |  |  |  |  |  |        +--| (31)
+|                        |  |  |  |  |  |        |  |                    +--Adig__Adig_XM_015902993.1.p1
+|                        |  |  |  |  |  |        |  |                 +--| (100)
+|                        |  |  |  |  |  |        |  |                 |  |     +--Ahya__Ahya_ahya_s0088.g18.t1.p1
+|                        |  |  |  |  |  |        |  |                 |  |  +--| (85)
+|                        |  |  |  |  |  |        |  |                 |  |  |  +--Ahya__Ahya_ahya_s0921.g3.t2.p1
+|                        |  |  |  |  |  |        |  |                 |  +--| (76)
+|                        |  |  |  |  |  |        |  |                 |     +--Amur__Amur_amur_s0301.g14.t1.p1
+|                        |  |  |  |  |  |        |  |              +--| (72)
+|                        |  |  |  |  |  |        |  |              |  |  +--Gfas__Gfas_gfas1.m1.7736.m1.p1
+|                        |  |  |  |  |  |        |  |              |  +--| (52)
+|                        |  |  |  |  |  |        |  |              |     |  +--Plut__Plut_plut2.m8.7163.m1.p1
+|                        |  |  |  |  |  |        |  |              |     +--| (99)
+|                        |  |  |  |  |  |        |  |              |        +--Plut__Plut_plut2.m8.7164.m1.p1
+|                        |  |  |  |  |  |        |  |           +--| (48)
+|                        |  |  |  |  |  |        |  |           |  |         +--Fspp__Fspp_ffun1.m4.29332.m1.p1
+|                        |  |  |  |  |  |        |  |           |  |     +---| (100)
+|                        |  |  |  |  |  |        |  |           |  |     |   +--Pcru__Pcru_PcrG006132.mRNA1.p1
+|                        |  |  |  |  |  |        |  |           |  |  +--| (79)
+|                        |  |  |  |  |  |        |  |           |  |  |  +----Spis__Spis_Spis_XP_022799178_1
+|                        |  |  |  |  |  |        |  |           |  +--| (75)
+|                        |  |  |  |  |  |        |  |           |     |           +------------------------Fspp__Fspp_ffun1.m4.29334.m1.p1
+|                        |  |  |  |  |  |        |  |           |     |        +--| (41)
+|                        |  |  |  |  |  |        |  |           |     |        |  +--Fspp__Fspp_ffun1.m4.29401.m1.p1
+|                        |  |  |  |  |  |        |  |           |     |     +--| (53)
+|                        |  |  |  |  |  |        |  |           |     |     |  +--Pcru__Pcru_PcrG006136.mRNA1.p1
+|                        |  |  |  |  |  |        |  |           |     |  +--| (87)
+|                        |  |  |  |  |  |        |  |           |     |  |  |  +--Fspp__Fspp_ffun1.m4.29402.m1.p1
+|                        |  |  |  |  |  |        |  |           |     |  |  +--| (100)
+|                        |  |  |  |  |  |        |  |           |     |  |     +--Fspp__Fspp_ffun1.m4.29403.m1.p1
+|                        |  |  |  |  |  |        |  |           |     +--| (92)
+|                        |  |  |  |  |  |        |  |           |        |  +--Pcru__Pcru_PcrG006133.mRNA1.p1
+|                        |  |  |  |  |  |        |  |           |        +--| (100)
+|                        |  |  |  |  |  |        |  |           |           +--Pcru__Pcru_PcrG006135.mRNA1.p1
+|                        |  |  |  |  |  |        |  |        +--| (57)
+|                        |  |  |  |  |  |        |  |        |  |  +--Fspp__Fspp_ffun1.m4.29333.m1.p1
+|                        |  |  |  |  |  |        |  |        |  +--| (99)
+|                        |  |  |  |  |  |        |  |        |     +--Pcru__Pcru_PcrG006131.mRNA1.p1
+|                        |  |  |  |  |  |        |  |  +-----| (95)
+|                        |  |  |  |  |  |        |  |  |     +--Spis__Spis_Spis_XP_022808806_1
+|                        |  |  |  |  |  |        |  +--| (84)
+|                        |  |  |  |  |  |        |     |           +--Fspp__Fspp_ffun1.m4.7091.m1.p1
+|                        |  |  |  |  |  |        |     |        +--| (100)
+|                        |  |  |  |  |  |        |     |        |  +--Pcru__Pcru_PcrG008267.mRNA1.p1
+|                        |  |  |  |  |  |        |     |     +--| (100)
+|                        |  |  |  |  |  |        |     |     |  |     +--Fspp__Fspp_ffun1.m4.7092.m1.p1
+|                        |  |  |  |  |  |        |     |     |  |  +--| (90)
+|                        |  |  |  |  |  |        |     |     |  |  |  +--Fspp__Fspp_ffun1.m4.7093.m1.p1
+|                        |  |  |  |  |  |        |     |     |  +--| (79)
+|                        |  |  |  |  |  |        |     |     |     +---Pdam__Pdam_XM_027200514.1.p1
+|                        |  |  |  |  |  |        |     |  +--| (93)
+|                        |  |  |  |  |  |        |     |  |  +---Plut__Plut_plut2.m8.3243.m1.p1
+|                        |  |  |  |  |  |        |     +--| (73)
+|                        |  |  |  |  |  |        |        +-----Plut__Plut_plut2.m8.3238.m1.p1
+|                        |  |  |  |  |  |     +--| (69)
+|                        |  |  |  |  |  |     |  |     +---Fspp__Fspp_ffun1.m4.20939.m1.p1
+|                        |  |  |  |  |  |     |  |  +--| (69)
+|                        |  |  |  |  |  |     |  |  |  |   +-------Fspp__Fspp_ffun1.m4.22920.m1.p1
+|                        |  |  |  |  |  |     |  |  |  +---| (100)
+|                        |  |  |  |  |  |     |  |  |      +--Pcru__Pcru_PcrG027571.mRNA1.p1
+|                        |  |  |  |  |  |     |  +--| (91)
+|                        |  |  |  |  |  |     |     +-------------Plut__Plut_jamg1.model.Sc0000009.110.p1
+|                        |  |  |  |  |  |  +--| (39)
+|                        |  |  |  |  |  |  |  +----------Gfas__Gfas_gfas1.m1.20203.m1.p1
+|                        |  |  |  |  |  +--| (78)
+|                        |  |  |  |  |     |  +-----------Hcoe__Hcoe_Hco15503-RA.p1
+|                        |  |  |  |  |     +--| (38)
+|                        |  |  |  |  |        +----------Spis__Spis_Spis_XP_022798325_1
+|                        |  |  |  +--| (59)
+|                        |  |  |     +-------------------Gfas__Gfas_gfas1.m1.14491.m1.p1
+|                        |  +--| (34)
+|                        |     +------------------Hvul__Hvul_XP_065649635.1
+|                     +--| (53)
+|                     |  +--------------Aaur__Aaur_scaffold109.g38.t1
+|                  +--| (56)
+|                  |  |           +-----------Aaur__Aaur_scaffold205.g16.t1
+|                  |  |        +--| (57)
+|                  |  |        |  +-----------------Aaur__Aaur_scaffold41.g106.t3
+|                  |  |     +--| (79)
+|                  |  |     |  +--------------Aaur__Aaur_scaffold205.g18.t1
+|                  |  |  +--| (78)
+|                  |  |  |  +-----------------Hvul__Hvul_XP_065670144.1
+|                  |  +--| (77)
+|                  |     |            +--Adig__Adig_XM_015900715.1.p1
+|                  |     |         +--| (99)
+|                  |     |         |  |  +--Ahya__Ahya_ahya_s0004.g169.t1.p1
+|                  |     |         |  +--| (92)
+|                  |     |         |     +--Amur__Amur_amur_s0011.g63.t1.p1
+|                  |     +---------| (100)
+|                  |               |           +--Fspp__Fspp_ffun1.m4.18921.m1.p1
+|                  |               |        +--| (100)
+|                  |               |        |  +--Pcru__Pcru_PcrG028042.mRNA1.p1
+|                  |               |     +--| (99)
+|                  |               |     |  |  +--Pdam__Pdam_XM_027203348.1.p1
+|                  |               |     |  +--| (100)
+|                  |               |     |     +--Spis__Spis_Spis_XP_022785469_1
+|                  |               |  +--| (48)
+|                  |               |  |  +--Gfas__Gfas_gfas1.m1.7031.m1.p1
+|                  |               +--| (92)
+|                  |                  +--Plut__Plut_plut2.m8.7857.m1.p1
+|               +--| (53)
+|               |  |     +----------Aaur__Aaur_scaffold182.g51.t1
+|               |  |  +--| (97)
+|               |  |  |  +-----------Hvul__Hvul_XP_065661592.1
+|               |  +--| (51)
+|               |     |            +--Hvul__Hvul_XP_065673822.1
+|               |     |         +--| (87)
+|               |     |         |  +------Hvul__Hvul_XP_065674393.1
+|               |     +---------| (100)
+|               |               |  +---Hvul__Hvul_XP_065674789.1
+|               |               +--| (94)
+|               |                  +-----Hvul__Hvul_XP_065676757.1
+|           +---| (94)
+|           |   |               +---Aaur__Aaur_scaffold3.g171.t1
+|           |   |           +---| (100)
+|           |   |           |   |     +--Aaur__Aaur_scaffold65.g23.t1
+|           |   |           |   +-----| (100)
+|           |   |           |         +--Aaur__Aaur_scaffold65.g28.t1
+|           |   |        +--| (96)
+|           |   |        |  |    +---Hvul__Hvul_XP_065649630.1
+|           |   |        |  +----| (100)
+|           |   |        |       +----Hvul__Hvul_XP_065649633.1
+|           |   |     +--| (87)
+|           |   |     |  |   +-----Aaur__Aaur_scaffold48.g46.t3
+|           |   |     |  +---| (100)
+|           |   |     |      +----Aaur__Aaur_scaffold6.g16.t3
+|           |   |  +--| (70)
+|           |   |  |  |  +-----Aaur__Aaur_scaffold47.g45.t2
+|           |   |  |  +--| (94)
+|           |   |  |     +-------------Hvul__Hvul_NP_001296695.1
+|           |   +--| (36)
+|           |      |  +---------------------Hvul__Hvul_XP_065646353.1
+|           |      +--| (70)
+|           |         +--------Hvul__Hvul_XP_065668721.1
+|        +--| (44)
+|        |  |      +----Hcoe__Hcoe_Hco02034-RA.p1
+|        |  +------| (100)
+|        |         +----Xesp__Xesp_Xe_015665-T1.p1
+|     +--| (96)
+|     |  |                   +**Ahya__Ahya_ahya_s0047.g16.t2.p1
+|     |  |               +---| (100)
+|     |  |               |   |  +--Ahya__Ahya_ahya_s1848.g1.t1.p1
+|     |  |               |   +**| (73)
+|     |  |               |      +--Amur__Amur_amur_s0313.g10.t2.p1
+|     |  |            +--| (51)
+|     |  |            |  +--Gfas__Gfas_gfas1.m1.18023.m1.p1
+|     |  |         +--| (77)
+|     |  |         |  +--Plut__Plut_plut2.m8.3131.m1.p1
+|     |  |      +--| (45)
+|     |  |      |  |  +--Pdam__Pdam_XM_027190379.1.p1
+|     |  |      |  +--| (100)
+|     |  |      |     +--Spis__Spis_Spis_XP_022800497_1
+|     |  +------| (100)
+|     |         |  +--Fspp__Fspp_ffun1.m4.8046.m1.p1
+|     |         +--| (97)
+|     |            +--Pcru__Pcru_PcrG020036.mRNA1.p1
+|  +--| (57)
+|  |  |   +------Hvul__Hvul_XP_065663209.1
+|  |  +---| (100)
+|  |      +-----Hvul__Hvul_XP_065663211.1
++--| (80)
+|  +-----------Hvul__Hvul_XP_065646878.1
+|
++-------Aaur__Aaur_scaffold3.g222.t2
+
+Tree in newick format:
+
+(Aaur__Aaur_scaffold1.g61.t2:0.6895406927,((((((((((((((((Aaur__Aaur_scaffold108.g71.t1:0.6155194871,Hcoe__Hcoe_Hco21047-RA.p1:1.6128362688)33:0.2540826554,(Hvul__Hvul_XP_065662288.1:0.8519420141,Hvul__Hvul_XP_065663761.1:0.6041246345)60:0.0946870646)33:0.1070290433,Aaur__Aaur_scaffold142.g50.t1:0.6005420082)49:0.0677386988,Aaur__Aaur_scaffold108.g75.t1:0.5941443621)48:0.0317127174,Hcoe__Hcoe_Hco18067-RA.p1:0.4994007002)71:0.1212166323,(Hcoe__Hcoe_Hco00702-RA.p1:0.5411207100,Xesp__Xesp_Xesp_orphan_4888.p2:1.8630306201)73:0.3938672398)83:0.2298658419,((Aaur__Aaur_scaffold137.g17.t2:0.3558001280,(Aaur__Aaur_scaffold47.g20.t2:0.1820598195,Hvul__Hvul_NP_001296648.1:0.4448504098)90:0.2208747353)100:0.4706628808,Plut__Plut_plut2.m8.24788.m1.p1:1.7365388103)61:0.0396623673)71:0.2223182813,((((((Aaur__Aaur_scaffold24.g161.t2:0.8356696831,((Aaur__Aaur_scaffold67.g26.t1:0.0474667716,Aaur__Aaur_scaffold67.g34.t1:0.0502744807)100:0.3398537202,Aaur__Aaur_scaffold929.g1.t1:0.3934604181)95:0.1903190548)64:0.0926483650,(((Hvul__Hvul_XP_065648141.1:0.4889549719,Hvul__Hvul_XP_065670967.1:0.6047329809)42:0.1248647202,((Hvul__Hvul_XP_065648147.1:0.1091066686,(Hvul__Hvul_XP_065648148.1:0.0984638228,Hvul__Hvul_XP_065676037.1:0.2099879699)93:0.0953874585)100:0.2540005606,((Hvul__Hvul_XP_065653482.1:0.1241854452,Hvul__Hvul_XP_065653483.1:0.1146795334)94:0.0697753181,Hvul__Hvul_XP_065653485.1:0.1586913347)100:0.2195527844)79:0.1552520752)39:0.1276654832,Hvul__Hvul_XP_065648149.1:0.6031478799)99:0.2528852014)66:0.1240615589,((Hvul__Hvul_XP_065655121.1:0.5995811656,((Hvul__Hvul_XP_065674702.1:0.2899408822,(Hvul__Hvul_XP_065676271.1:0.0611224310,Hvul__Hvul_XP_065676273.1:0.0275159689)100:0.2299635643)100:0.3627392362,(Hvul__Hvul_XP_065674733.1:0.1357487460,(Hvul__Hvul_XP_065674734.1:0.1124573366,Hvul__Hvul_XP_065674768.1:0.0759932311)98:0.0855790421)100:0.3889519024)100:0.2639727500)91:0.1690365791,(Hvul__Hvul_XP_065676194.1:0.1662840052,Hvul__Hvul_XP_065676856.1:0.1610452458)100:0.5880503087)93:0.1309175292)73:0.1398755140,Gfas__Gfas_gfas1.m1.15259.m1.p1:1.8084567773)90:0.1719589819,((((Aaur__Aaur_scaffold38.g70.t1:0.3144718518,Hvul__Hvul_XP_065662345.1:0.5736332855)85:0.1778792117,Hvul__Hvul_XP_065666427.1:0.7819622156)100:0.4421003654,((((((((((((((((Adig__Adig_XM_015891857.1.p1:0.0242779618,(Ahya__Ahya_ahya_s0009.g124.t1.p1:0.0000022999,Amur__Amur_amur_s0532.g9.t1.p1:0.0096170695)95:0.0173119710)100:0.0854459723,((Adig__Adig_XM_015924404.1.p1:0.0344681933,Ahya__Ahya_ahya_s0009.g121.t1.p1:0.0184694819)78:0.0050389802,Amur__Amur_amur_s0487.g6.t1.p1:0.0122738675)100:0.0846718613)100:0.2117255690,(Adig__Adig_XM_015924415.1.p1:0.0142054839,(Ahya__Ahya_ahya_s0009.g120.t1.p1:0.0064701446,Amur__Amur_amur_s0487.g7.t1.p1:0.0427418651)100:0.0703211603)100:0.3967978077)99:0.1785018379,Gfas__Gfas_gfas1.m1.20908.m1.p1:0.5135334576)72:0.0653017134,(Pdam__Pdam_XM_027183221.1.p1:0.2045904079,Spis__Spis_Spis_XP_022807096_1:0.2819178104)100:0.3714407423)68:0.0598951387,((Plut__Plut_plut2.m8.28523.m1.p1:0.1500246232,Plut__Plut_plut2.m8.28527.m1.p1:0.1390978465)100:0.2752730662,Plut__Plut_plut2.m8.28526.m1.p1:0.1573995664)100:0.2262009967)39:0.0277289235,Plut__Plut_plut2.m8.29201.m1.p1:0.4583534113)29:0.0348118988,((Gfas__Gfas_gfas1.m1.14098.m1.p1:0.6731733608,Plut__Plut_plut2.m8.28524.m1.p1:0.3289354166)65:0.0578889585,Gfas__Gfas_gfas1.m1.14099.m1.p1:0.4532449017)46:0.0952714580)22:0.0301746482,(((Fspp__Fspp_ffun1.m4.7098.m1.p1:0.0848249495,Pcru__Pcru_PcrG008259.mRNA1.p1:0.0824953918)100:0.2177576943,(((Fspp__Fspp_ffun1.m4.7100.m1.p1:0.1275894795,Pcru__Pcru_PcrG008258.mRNA1.p1:0.0461740652)100:0.2264823654,(Fspp__Fspp_ffun1.m4.7101.m1.p1:0.6394015924,Pcru__Pcru_PcrG008261.mRNA1.p1:0.0135164015)100:0.2409496201)69:0.0489073749,Pcru__Pcru_PcrG008260.mRNA1.p1:0.1436264103)59:0.0361393541)75:0.0699686096,((Pdam__Pdam_XM_027183220.1.p1:0.0933112736,(Spis__Spis_Spis_XP_022804316_1:0.0743784564,Spis__Spis_Spis_XP_022807097_1:0.0116320406)100:0.0624600914)99:0.1567004791,Pdam__Pdam_XM_027204075.1.p1:0.3851943630)100:0.1716351780)77:0.1037614723)20:0.0390902398,((Pdam__Pdam_XM_027183224.1.p1:0.2825151314,((Spis__Spis_Spis_XP_022804303_1:0.0841550739,(Spis__Spis_Spis_XP_022807095_1:0.0195369008,Spis__Spis_Spis_XP_022807101_1:0.0000022384)100:0.0703870644)98:0.1426975153,Spis__Spis_Spis_XP_022804319_1:0.1873181004)56:0.0387184627)66:0.0431040659,Pdam__Pdam_XM_027199705.1.p1:0.1840209315)100:0.3278094466)96:0.1660270291,((((((((((Adig__Adig_XM_015905307.1.p1:0.1056767204,(Ahya__Ahya_ahya_s0019.g61.t1.p1:0.0151991996,Amur__Amur_amur_s0017.g25.t1.p1:0.0075176845)99:0.0000029102)100:0.2043995172,Gfas__Gfas_gfas1.m1.17827.m1.p1:0.0871287685)58:0.0322795758,Fspp__Fspp_ffun1.m4.7103.m1.p1:0.5222793072)15:0.0000026536,((Fspp__Fspp_ffun1.m4.7105.m1.p1:0.0259583360,(((Fspp__Fspp_ffun1.m4.7106.m1.p1:0.0997719323,Pdam__Pdam_XM_027183205.1.p1:0.2107771737)99:0.1188712155,Pcru__Pcru_PcrG008257.mRNA1.p1:0.0130389871)95:0.0844891874,Pcru__Pcru_PcrG008254.mRNA1.p1:0.1841696832)47:0.0113534519)78:0.0423036559,(Spis__Spis_Spis_XP_022807100_1:0.1413663249,Spis__Spis_Spis_XP_022807103_1:0.0176174177)99:0.0654012480)73:0.0300760756)35:0.0169684966,Plut__Plut_plut2.m8.28528.m1.p1:0.1434954321)31:0.0174518085,Plut__Plut_plut2.m8.28521.m1.p1:0.2944725104)30:0.0234006667,(Plut__Plut_plut2.m8.28520.m1.p1:0.1110443614,Plut__Plut_plut2.m8.28525.m1.p1:0.2712926727)81:0.0572159563)64:0.0495776458,(Pcru__Pcru_PcrG008253.mRNA1.p1:0.4665795943,Pdam__Pdam_XM_027183207.1.p1:0.2905947798)49:0.0406700702)91:0.0884874954,((((Fspp__Fspp_ffun1.m4.7102.m1.p1:0.0132090932,Pcru__Pcru_PcrG008255.mRNA1.p1:0.0411465713)100:0.2669774868,(((Fspp__Fspp_ffun1.m4.7104.m1.p1:0.0000023916,Pcru__Pcru_PcrG008256.mRNA1.p1:0.0110299735)100:0.3858926202,Gfas__Gfas_gfas1.m1.17553.m1.p1:0.9439907587)56:0.1205282163,(Spis__Spis_Spis_XP_022798324_1:0.0258199999,Spis__Spis_Spis_XP_022807102_1:0.3587368605)100:0.4918180299)77:0.1672549644)65:0.0542640613,Pdam__Pdam_XM_027183228.1.p1:0.6974675369)62:0.0446974414,Gfas__Gfas_gfas1.m1.18699.m1.p1:0.3844658167)92:0.1293938305)57:0.0388559246,(((((((((Adig__Adig_XM_015918970.1.p1:0.7237365001,Spis__Spis_Spis_XP_022788456_1:0.0186582564)97:0.0736247387,Spis__Spis_Spis_XP_022787898_1:0.0097846969)94:0.0442337362,Pdam__Pdam_XM_027200638.1.p1:0.0070724780)97:0.0745368582,(Adig__Adig_XM_015918971.1.p1:0.0354597216,(Ahya__Ahya_ahya_s0138.g7.t1.p1:0.0088947573,Amur__Amur_amur_s0257.g10.t1.p1:0.0255202192)74:0.0078978947)100:0.2670192267)73:0.0029212545,Gfas__Gfas_gfas1.m1.16406.m1.p1:0.0688293373)99:0.0857928696,(Fspp__Fspp_ffun1.m4.20007.m1.p1:0.0065448068,Pcru__Pcru_PcrG018271.mRNA1.p1:0.0114914024)100:0.0645102842)86:0.0511989977,((Fspp__Fspp_ffun1.m4.20000.m1.p1:0.0554782425,Pcru__Pcru_PcrG018272.mRNA1.p1:0.0137458479)100:0.1046780715,Plut__Plut_plut2.m8.6040.m1.p1:0.3125070499)98:0.0676026359)73:0.0533812313,(Fspp__Fspp_ffun1.m4.11693.m1.p1:0.0195196914,Pcru__Pcru_PcrG007655.mRNA1.p1:0.0584506891)100:0.3839308407)100:0.2589593575,((Fspp__Fspp_ffun1.m4.29330.m1.p1:0.2120705251,(Pdam__Pdam_XM_027201996.1.p1:0.2101350761,Spis__Spis_Spis_XP_022808804_1:0.0656213871)100:0.1074191074)100:0.5014756332,((((Fspp__Fspp_ffun1.m4.31075.m1.p1:0.1672993793,Pcru__Pcru_PcrG000308.mRNA1.p1:0.0099878113)100:0.1318629503,(Pdam__Pdam_XM_027196461.1.p1:0.0434411071,Spis__Spis_Spis_XP_022805381_1:0.0795725858)96:0.0979281536)66:0.0585773539,Gfas__Gfas_gfas1.m1.15260.m1.p1:0.2395157054)100:0.3355852028,(((Pcru__Pcru_PcrG006130.mRNA1.p1:0.0798487988,Plut__Plut_plut2.m8.7159.m1.p1:0.3104337104)66:0.0808470087,Pdam__Pdam_XM_027201995.1.p1:0.0841301484)64:0.0798382060,Spis__Spis_Spis_XP_022802828_1:0.0287765878)100:0.3000879293)83:0.0740295751)95:0.1124558880)99:0.1594814916)75:0.0520063932)90:0.0832153658,(Pcru__Pcru_PcrG013715.mRNA1.p1:0.1454745269,(Pdam__Pdam_XM_027187126.1.p1:0.1718505250,Plut__Plut_plut2.m8.19899.m1.p2:0.1888913608)71:0.0716301556)100:0.7808193500)67:0.0680543302,((((((Adig__Adig_XM_015902993.1.p1:0.0123361291,((Ahya__Ahya_ahya_s0088.g18.t1.p1:0.0155265028,Ahya__Ahya_ahya_s0921.g3.t2.p1:0.0038676055)85:0.0039286781,Amur__Amur_amur_s0301.g14.t1.p1:0.0233407660)76:0.0069770998)100:0.2611413048,(Gfas__Gfas_gfas1.m1.7736.m1.p1:0.1740070824,(Plut__Plut_plut2.m8.7163.m1.p1:0.0275490728,Plut__Plut_plut2.m8.7164.m1.p1:0.1406027426)99:0.1151779436)52:0.0164149523)72:0.0721719510,(((Fspp__Fspp_ffun1.m4.29332.m1.p1:0.0937511978,Pcru__Pcru_PcrG006132.mRNA1.p1:0.0231130260)100:0.2857335895,Spis__Spis_Spis_XP_022799178_1:0.3785864623)79:0.0611693786,((((Fspp__Fspp_ffun1.m4.29334.m1.p1:1.6935584877,Fspp__Fspp_ffun1.m4.29401.m1.p1:0.0300231132)41:0.0224044538,Pcru__Pcru_PcrG006136.mRNA1.p1:0.0364988820)53:0.0171526495,(Fspp__Fspp_ffun1.m4.29402.m1.p1:0.0719215019,Fspp__Fspp_ffun1.m4.29403.m1.p1:0.0527774677)100:0.0658880102)87:0.0429161210,(Pcru__Pcru_PcrG006133.mRNA1.p1:0.0101766012,Pcru__Pcru_PcrG006135.mRNA1.p1:0.0100702561)100:0.0907831543)92:0.0782724557)75:0.0721208756)48:0.0210775290,(Fspp__Fspp_ffun1.m4.29333.m1.p1:0.0600153775,Pcru__Pcru_PcrG006131.mRNA1.p1:0.0216412592)99:0.0980001403)57:0.0578733578,Spis__Spis_Spis_XP_022808806_1:0.1561103895)95:0.4278748364,((((Fspp__Fspp_ffun1.m4.7091.m1.p1:0.0344198193,Pcru__Pcru_PcrG008267.mRNA1.p1:0.0369745614)100:0.1884495071,((Fspp__Fspp_ffun1.m4.7092.m1.p1:0.2156797418,Fspp__Fspp_ffun1.m4.7093.m1.p1:0.2213845418)90:0.1322303396,Pdam__Pdam_XM_027200514.1.p1:0.3290018886)79:0.0655859296)100:0.1835279660,Plut__Plut_plut2.m8.3243.m1.p1:0.2832417107)93:0.1096280786,Plut__Plut_plut2.m8.3238.m1.p1:0.4088992679)73:0.0727611114)84:0.1406254967)31:0.0151637823,((Fspp__Fspp_ffun1.m4.20939.m1.p1:0.3343139790,(Fspp__Fspp_ffun1.m4.22920.m1.p1:0.5600446462,Pcru__Pcru_PcrG027571.mRNA1.p1:0.1164411253)100:0.3110190662)69:0.0624736305,Plut__Plut_jamg1.model.Sc0000009.110.p1:0.9666057487)91:0.1196690080)69:0.0861953114,Gfas__Gfas_gfas1.m1.20203.m1.p1:0.7588769629)39:0.0386654249,(Hcoe__Hcoe_Hco15503-RA.p1:0.8143682363,Spis__Spis_Spis_XP_022798325_1:0.7636352897)38:0.0439104796)78:0.0956414626)53:0.0288969417,Gfas__Gfas_gfas1.m1.14491.m1.p1:1.3479897357)59:0.0733355031)45:0.0393887507,Hvul__Hvul_XP_065649635.1:1.2866178337)34:0.0604954582)32:0.0418283044,Aaur__Aaur_scaffold109.g38.t1:1.0292271465)53:0.0381806387,((((Aaur__Aaur_scaffold205.g16.t1:0.8292923366,Aaur__Aaur_scaffold41.g106.t3:1.2676425026)57:0.1381438262,Aaur__Aaur_scaffold205.g18.t1:1.0471430115)79:0.1695161114,Hvul__Hvul_XP_065670144.1:1.2630666208)78:0.1735184764,((Adig__Adig_XM_015900715.1.p1:0.0405537906,(Ahya__Ahya_ahya_s0004.g169.t1.p1:0.0168283018,Amur__Amur_amur_s0011.g63.t1.p1:0.0397202043)92:0.0169781022)99:0.2493877908,((((Fspp__Fspp_ffun1.m4.18921.m1.p1:0.0377354756,Pcru__Pcru_PcrG028042.mRNA1.p1:0.0085279756)100:0.1455210958,(Pdam__Pdam_XM_027203348.1.p1:0.0354186309,Spis__Spis_Spis_XP_022785469_1:0.0381738353)100:0.1970649162)99:0.1011186965,Gfas__Gfas_gfas1.m1.7031.m1.p1:0.2120139235)48:0.0306942390,Plut__Plut_plut2.m8.7857.m1.p1:0.2413082690)92:0.1446955183)100:0.7399103170)77:0.2046200192)56:0.0901501186,((Aaur__Aaur_scaffold182.g51.t1:0.7483397201,Hvul__Hvul_XP_065661592.1:0.8656110287)97:0.2619453596,((Hvul__Hvul_XP_065673822.1:0.2239622083,Hvul__Hvul_XP_065674393.1:0.4950371092)87:0.1013762291,(Hvul__Hvul_XP_065674789.1:0.3210397237,Hvul__Hvul_XP_065676757.1:0.4071161165)94:0.1845227612)100:0.7218530941)51:0.0779103409)53:0.0735721519,(((((Aaur__Aaur_scaffold3.g171.t1:0.3118926333,(Aaur__Aaur_scaffold65.g23.t1:0.0436425003,Aaur__Aaur_scaffold65.g28.t1:0.0336954417)100:0.4580577275)100:0.2770705012,(Hvul__Hvul_XP_065649630.1:0.2988819928,Hvul__Hvul_XP_065649633.1:0.3376168022)100:0.3464866555)96:0.1634054676,(Aaur__Aaur_scaffold48.g46.t3:0.4226223683,Aaur__Aaur_scaffold6.g16.t3:0.3960568216)100:0.3006035396)87:0.1104646995,(Aaur__Aaur_scaffold47.g45.t2:0.4242362416,Hvul__Hvul_NP_001296695.1:0.9591057682)94:0.1757762655)70:0.0657563013,(Hvul__Hvul_XP_065646353.1:1.4846778685,Hvul__Hvul_XP_065668721.1:0.6645378097)70:0.2466250970)36:0.0438894609)94:0.2810002177,(Hcoe__Hcoe_Hco02034-RA.p1:0.3666562604,Xesp__Xesp_Xe_015665-T1.p1:0.3725022038)100:0.5017903983)44:0.0695205610,(((((Ahya__Ahya_ahya_s0047.g16.t2.p1:0.0000024515,(Ahya__Ahya_ahya_s1848.g1.t1.p1:0.0400959000,Amur__Amur_amur_s0313.g10.t2.p1:0.0198352032)73:0.0001785199)100:0.3166479059,Gfas__Gfas_gfas1.m1.18023.m1.p1:0.2035202138)51:0.0877893608,Plut__Plut_plut2.m8.3131.m1.p1:0.1904041524)77:0.1115669280,(Pdam__Pdam_XM_027190379.1.p1:0.0919844730,Spis__Spis_Spis_XP_022800497_1:0.0698213716)100:0.2581291481)45:0.0515774437,(Fspp__Fspp_ffun1.m4.8046.m1.p1:0.0215258806,Pcru__Pcru_PcrG020036.mRNA1.p1:0.0250151546)97:0.1275835693)100:0.4945181167)96:0.1701296915,(Hvul__Hvul_XP_065663209.1:0.5208198718,Hvul__Hvul_XP_065663211.1:0.4535948322)100:0.3224042251)57:0.0681673850,Hvul__Hvul_XP_065646878.1:0.8329484203)80:0.1921331294,Aaur__Aaur_scaffold3.g222.t2:0.5544550123);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -62141.528189
+Robinson-Foulds distance between ML tree and consensus tree: 20
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------Aaur__Aaur_scaffold1.g61.t2
+|
+|                                             +-----------Aaur__Aaur_scaffold108.g71.t1
+|                                          +--| (43)
+|                                          |  |  +-----------Hvul__Hvul_XP_065662288.1
+|                                          |  +--| (60)
+|                                          |     +-------Hvul__Hvul_XP_065663761.1
+|                                       +--| (49)
+|                                       |  |  +-----Aaur__Aaur_scaffold142.g50.t1
+|                                       |  +--| (45)
+|                                       |     +----------------------Hcoe__Hcoe_Hco21047-RA.p1
+|                                    +--| (48)
+|                                    |  +-------Aaur__Aaur_scaffold108.g75.t1
+|                                 +--| (71)
+|                                 |  +------Hcoe__Hcoe_Hco18067-RA.p1
+|                              +--| (83)
+|                              |  |    +------Hcoe__Hcoe_Hco00702-RA.p1
+|                              |  +----| (73)
+|                              |       +--------------------------Xesp__Xesp_Xesp_orphan_4888.p2
+|                           +--| (71)
+|                           |  |        +----Aaur__Aaur_scaffold137.g17.t2
+|                           |  |  +-----| (100)
+|                           |  |  |     |  +--Aaur__Aaur_scaffold47.g20.t2
+|                           |  |  |     +--| (90)
+|                           |  |  |        +-----Hvul__Hvul_NP_001296648.1
+|                           |  +--| (61)
+|                           |     +------------------------Plut__Plut_plut2.m8.24788.m1.p1
+|                        +--| (32)
+|                        |  |                 +-----------Aaur__Aaur_scaffold24.g161.t2
+|                        |  |              +--| (64)
+|                        |  |              |  |       +--Aaur__Aaur_scaffold67.g26.t1
+|                        |  |              |  |  +----| (100)
+|                        |  |              |  |  |    +--Aaur__Aaur_scaffold67.g34.t1
+|                        |  |              |  +--| (95)
+|                        |  |              |     +----Aaur__Aaur_scaffold929.g1.t1
+|                        |  |           +--| (66)
+|                        |  |           |  |         +------Hvul__Hvul_XP_065648141.1
+|                        |  |           |  |      +--| (42)
+|                        |  |           |  |      |  +-------Hvul__Hvul_XP_065670967.1
+|                        |  |           |  |   +--| (45)
+|                        |  |           |  |   |  +--------Hvul__Hvul_XP_065648149.1
+|                        |  |           |  +---| (99)
+|                        |  |           |      |      +--Hvul__Hvul_XP_065648147.1
+|                        |  |           |      |  +---| (100)
+|                        |  |           |      |  |   |  +--Hvul__Hvul_XP_065648148.1
+|                        |  |           |      |  |   +--| (93)
+|                        |  |           |      |  |      +--Hvul__Hvul_XP_065676037.1
+|                        |  |           |      +--| (79)
+|                        |  |           |         |     +--Hvul__Hvul_XP_065653482.1
+|                        |  |           |         |  +--| (94)
+|                        |  |           |         |  |  +--Hvul__Hvul_XP_065653483.1
+|                        |  |           |         +--| (100)
+|                        |  |           |            +--Hvul__Hvul_XP_065653485.1
+|                        |  |        +--| (73)
+|                        |  |        |  |     +-------Hvul__Hvul_XP_065655121.1
+|                        |  |        |  |  +--| (91)
+|                        |  |        |  |  |  |       +---Hvul__Hvul_XP_065674702.1
+|                        |  |        |  |  |  |  +----| (100)
+|                        |  |        |  |  |  |  |    |  +--Hvul__Hvul_XP_065676271.1
+|                        |  |        |  |  |  |  |    +--| (100)
+|                        |  |        |  |  |  |  |       +--Hvul__Hvul_XP_065676273.1
+|                        |  |        |  |  |  +--| (100)
+|                        |  |        |  |  |     |    +--Hvul__Hvul_XP_065674733.1
+|                        |  |        |  |  |     +----| (100)
+|                        |  |        |  |  |          |  +--Hvul__Hvul_XP_065674734.1
+|                        |  |        |  |  |          +--| (98)
+|                        |  |        |  |  |             +--Hvul__Hvul_XP_065674768.1
+|                        |  |        |  +--| (93)
+|                        |  |        |     |       +--Hvul__Hvul_XP_065676194.1
+|                        |  |        |     +-------| (100)
+|                        |  |        |             +--Hvul__Hvul_XP_065676856.1
+|                        |  |     +--| (90)
+|                        |  |     |  +-------------------------Gfas__Gfas_gfas1.m1.15259.m1.p1
+|                        |  |  +--| (45)
+|                        |  |  |  |              +---Aaur__Aaur_scaffold38.g70.t1
+|                        |  |  |  |           +--| (85)
+|                        |  |  |  |           |  +-------Hvul__Hvul_XP_065662345.1
+|                        |  |  |  |     +-----| (100)
+|                        |  |  |  |     |     +----------Hvul__Hvul_XP_065666427.1
+|                        |  |  |  |  +--| (53)
+|                        |  |  |  |  |  |                                         +--Adig__Adig_XM_015891857.1.p1
+|                        |  |  |  |  |  |                                      +--| (100)
+|                        |  |  |  |  |  |                                      |  |  +--Ahya__Ahya_ahya_s0009.g124.t1.p1
+|                        |  |  |  |  |  |                                      |  +--| (95)
+|                        |  |  |  |  |  |                                      |     +--Amur__Amur_amur_s0532.g9.t1.p1
+|                        |  |  |  |  |  |                                   +--| (100)
+|                        |  |  |  |  |  |                                   |  |     +--Adig__Adig_XM_015924404.1.p1
+|                        |  |  |  |  |  |                                   |  |  +--| (78)
+|                        |  |  |  |  |  |                                   |  |  |  +--Ahya__Ahya_ahya_s0009.g121.t1.p1
+|                        |  |  |  |  |  |                                   |  +--| (100)
+|                        |  |  |  |  |  |                                   |     +--Amur__Amur_amur_s0487.g6.t1.p1
+|                        |  |  |  |  |  |                                +--| (99)
+|                        |  |  |  |  |  |                                |  |    +--Adig__Adig_XM_015924415.1.p1
+|                        |  |  |  |  |  |                                |  +----| (100)
+|                        |  |  |  |  |  |                                |       |  +--Ahya__Ahya_ahya_s0009.g120.t1.p1
+|                        |  |  |  |  |  |                                |       +--| (100)
+|                        |  |  |  |  |  |                                |          +--Amur__Amur_amur_s0487.g7.t1.p1
+|                        |  |  |  |  |  |                             +--| (72)
+|                        |  |  |  |  |  |                             |  +------Gfas__Gfas_gfas1.m1.20908.m1.p1
+|                        |  |  |  |  |  |                          +--| (68)
+|                        |  |  |  |  |  |                          |  |    +--Pdam__Pdam_XM_027183221.1.p1
+|                        |  |  |  |  |  |                          |  +----| (100)
+|                        |  |  |  |  |  |                          |       +---Spis__Spis_Spis_XP_022807096_1
+|                        |  |  |  |  |  |                       +--| (39)
+|                        |  |  |  |  |  |                       |  |      +--Plut__Plut_plut2.m8.28523.m1.p1
+|                        |  |  |  |  |  |                       |  |  +---| (100)
+|                        |  |  |  |  |  |                       |  |  |   +--Plut__Plut_plut2.m8.28527.m1.p1
+|                        |  |  |  |  |  |                       |  +--| (100)
+|                        |  |  |  |  |  |                       |     +--Plut__Plut_plut2.m8.28526.m1.p1
+|                        |  |  |  |  |  |                    +--| (29)
+|                        |  |  |  |  |  |                    |  +-----Plut__Plut_plut2.m8.29201.m1.p1
+|                        |  |  |  |  |  |                 +--| (22)
+|                        |  |  |  |  |  |                 |  |     +--------Gfas__Gfas_gfas1.m1.14098.m1.p1
+|                        |  |  |  |  |  |                 |  |  +--| (65)
+|                        |  |  |  |  |  |                 |  |  |  +---Plut__Plut_plut2.m8.28524.m1.p1
+|                        |  |  |  |  |  |                 |  +--| (46)
+|                        |  |  |  |  |  |                 |     +-----Gfas__Gfas_gfas1.m1.14099.m1.p1
+|                        |  |  |  |  |  |              +--| (96)
+|                        |  |  |  |  |  |              |  |           +--Fspp__Fspp_ffun1.m4.7098.m1.p1
+|                        |  |  |  |  |  |              |  |        +--| (100)
+|                        |  |  |  |  |  |              |  |        |  +--Pcru__Pcru_PcrG008259.mRNA1.p1
+|                        |  |  |  |  |  |              |  |     +--| (75)
+|                        |  |  |  |  |  |              |  |     |  |        +--Fspp__Fspp_ffun1.m4.7100.m1.p1
+|                        |  |  |  |  |  |              |  |     |  |     +--| (100)
+|                        |  |  |  |  |  |              |  |     |  |     |  +--Pcru__Pcru_PcrG008258.mRNA1.p1
+|                        |  |  |  |  |  |              |  |     |  |  +--| (69)
+|                        |  |  |  |  |  |              |  |     |  |  |  |  +--------Fspp__Fspp_ffun1.m4.7101.m1.p1
+|                        |  |  |  |  |  |              |  |     |  |  |  +--| (100)
+|                        |  |  |  |  |  |              |  |     |  |  |     +--Pcru__Pcru_PcrG008261.mRNA1.p1
+|                        |  |  |  |  |  |              |  |     |  +--| (59)
+|                        |  |  |  |  |  |              |  |     |     +--Pcru__Pcru_PcrG008260.mRNA1.p1
+|                        |  |  |  |  |  |              |  |  +--| (77)
+|                        |  |  |  |  |  |              |  |  |  |     +--Pdam__Pdam_XM_027183220.1.p1
+|                        |  |  |  |  |  |              |  |  |  |  +--| (99)
+|                        |  |  |  |  |  |              |  |  |  |  |  |  +--Spis__Spis_Spis_XP_022804316_1
+|                        |  |  |  |  |  |              |  |  |  |  |  +--| (100)
+|                        |  |  |  |  |  |              |  |  |  |  |     +--Spis__Spis_Spis_XP_022807097_1
+|                        |  |  |  |  |  |              |  |  |  +--| (100)
+|                        |  |  |  |  |  |              |  |  |     +----Pdam__Pdam_XM_027204075.1.p1
+|                        |  |  |  |  |  |              |  +--| (22)
+|                        |  |  |  |  |  |              |     |      +---Pdam__Pdam_XM_027183224.1.p1
+|                        |  |  |  |  |  |              |     |   +--| (66)
+|                        |  |  |  |  |  |              |     |   |  |     +--Spis__Spis_Spis_XP_022804303_1
+|                        |  |  |  |  |  |              |     |   |  |  +--| (98)
+|                        |  |  |  |  |  |              |     |   |  |  |  |  +--Spis__Spis_Spis_XP_022807095_1
+|                        |  |  |  |  |  |              |     |   |  |  |  +--| (100)
+|                        |  |  |  |  |  |              |     |   |  |  |     +--Spis__Spis_Spis_XP_022807101_1
+|                        |  |  |  |  |  |              |     |   |  +--| (56)
+|                        |  |  |  |  |  |              |     |   |     +--Spis__Spis_Spis_XP_022804319_1
+|                        |  |  |  |  |  |              |     +---| (100)
+|                        |  |  |  |  |  |              |         +--Pdam__Pdam_XM_027199705.1.p1
+|                        |  |  |  |  |  |           +--| (90)
+|                        |  |  |  |  |  |           |  |                          +--Adig__Adig_XM_015905307.1.p1
+|                        |  |  |  |  |  |           |  |                       +--| (100)
+|                        |  |  |  |  |  |           |  |                       |  |  +--Ahya__Ahya_ahya_s0019.g61.t1.p1
+|                        |  |  |  |  |  |           |  |                       |  +--| (99)
+|                        |  |  |  |  |  |           |  |                       |     +--Amur__Amur_amur_s0017.g25.t1.p1
+|                        |  |  |  |  |  |           |  |                    +--| (58)
+|                        |  |  |  |  |  |           |  |                    |  +--Gfas__Gfas_gfas1.m1.17827.m1.p1
+|                        |  |  |  |  |  |           |  |                 +--| (34)
+|                        |  |  |  |  |  |           |  |                 |  |     +--Fspp__Fspp_ffun1.m4.7105.m1.p1
+|                        |  |  |  |  |  |           |  |                 |  |  +--| (78)
+|                        |  |  |  |  |  |           |  |                 |  |  |  |        +--Fspp__Fspp_ffun1.m4.7106.m1.p1
+|                        |  |  |  |  |  |           |  |                 |  |  |  |     +--| (99)
+|                        |  |  |  |  |  |           |  |                 |  |  |  |     |  +--Pdam__Pdam_XM_027183205.1.p1
+|                        |  |  |  |  |  |           |  |                 |  |  |  |  +--| (95)
+|                        |  |  |  |  |  |           |  |                 |  |  |  |  |  +--Pcru__Pcru_PcrG008257.mRNA1.p1
+|                        |  |  |  |  |  |           |  |                 |  |  |  +--| (47)
+|                        |  |  |  |  |  |           |  |                 |  |  |     +--Pcru__Pcru_PcrG008254.mRNA1.p1
+|                        |  |  |  |  |  |           |  |                 |  +--| (73)
+|                        |  |  |  |  |  |           |  |                 |     |  +--Spis__Spis_Spis_XP_022807100_1
+|                        |  |  |  |  |  |           |  |                 |     +--| (99)
+|                        |  |  |  |  |  |           |  |                 |        +--Spis__Spis_Spis_XP_022807103_1
+|                        |  |  |  |  |  |           |  |              +--| (15)
+|                        |  |  |  |  |  |           |  |              |  |  +---Plut__Plut_plut2.m8.28521.m1.p1
+|                        |  |  |  |  |  |           |  |              |  +--| (38)
+|                        |  |  |  |  |  |           |  |              |     +--Plut__Plut_plut2.m8.28528.m1.p1
+|                        |  |  |  |  |  |           |  |           +--| (39)
+|                        |  |  |  |  |  |           |  |           |  |  +--Plut__Plut_plut2.m8.28520.m1.p1
+|                        |  |  |  |  |  |           |  |           |  +--| (81)
+|                        |  |  |  |  |  |           |  |           |     +---Plut__Plut_plut2.m8.28525.m1.p1
+|                        |  |  |  |  |  |           |  |        +--| (64)
+|                        |  |  |  |  |  |           |  |        |  +------Fspp__Fspp_ffun1.m4.7103.m1.p1
+|                        |  |  |  |  |  |           |  |     +--| (91)
+|                        |  |  |  |  |  |           |  |     |  |  +------Pcru__Pcru_PcrG008253.mRNA1.p1
+|                        |  |  |  |  |  |           |  |     |  +--| (49)
+|                        |  |  |  |  |  |           |  |     |     +---Pdam__Pdam_XM_027183207.1.p1
+|                        |  |  |  |  |  |           |  |  +--| (57)
+|                        |  |  |  |  |  |           |  |  |  |           +--Fspp__Fspp_ffun1.m4.7102.m1.p1
+|                        |  |  |  |  |  |           |  |  |  |        +--| (100)
+|                        |  |  |  |  |  |           |  |  |  |        |  +--Pcru__Pcru_PcrG008255.mRNA1.p1
+|                        |  |  |  |  |  |           |  |  |  |     +--| (65)
+|                        |  |  |  |  |  |           |  |  |  |     |  |          +--Fspp__Fspp_ffun1.m4.7104.m1.p1
+|                        |  |  |  |  |  |           |  |  |  |     |  |     +----| (100)
+|                        |  |  |  |  |  |           |  |  |  |     |  |     |    +--Pcru__Pcru_PcrG008256.mRNA1.p1
+|                        |  |  |  |  |  |           |  |  |  |     |  |  +--| (56)
+|                        |  |  |  |  |  |           |  |  |  |     |  |  |  +-------------Gfas__Gfas_gfas1.m1.17553.m1.p1
+|                        |  |  |  |  |  |           |  |  |  |     |  +--| (77)
+|                        |  |  |  |  |  |           |  |  |  |     |     |      +--Spis__Spis_Spis_XP_022798324_1
+|                        |  |  |  |  |  |           |  |  |  |     |     +------| (100)
+|                        |  |  |  |  |  |           |  |  |  |     |            +----Spis__Spis_Spis_XP_022807102_1
+|                        |  |  |  |  |  |           |  |  |  |  +--| (62)
+|                        |  |  |  |  |  |           |  |  |  |  |  +---------Pdam__Pdam_XM_027183228.1.p1
+|                        |  |  |  |  |  |           |  |  |  +--| (92)
+|                        |  |  |  |  |  |           |  |  |     +----Gfas__Gfas_gfas1.m1.18699.m1.p1
+|                        |  |  |  |  |  |           |  +--| (75)
+|                        |  |  |  |  |  |           |     |                          +---------Adig__Adig_XM_015918970.1.p1
+|                        |  |  |  |  |  |           |     |                       +--| (97)
+|                        |  |  |  |  |  |           |     |                       |  +--Spis__Spis_Spis_XP_022788456_1
+|                        |  |  |  |  |  |           |     |                    +--| (94)
+|                        |  |  |  |  |  |           |     |                    |  +--Spis__Spis_Spis_XP_022787898_1
+|                        |  |  |  |  |  |           |     |                 +--| (97)
+|                        |  |  |  |  |  |           |     |                 |  +--Pdam__Pdam_XM_027200638.1.p1
+|                        |  |  |  |  |  |           |     |              +--| (73)
+|                        |  |  |  |  |  |           |     |              |  |  +--Adig__Adig_XM_015918971.1.p1
+|                        |  |  |  |  |  |           |     |              |  +--| (100)
+|                        |  |  |  |  |  |           |     |              |     |  +--Ahya__Ahya_ahya_s0138.g7.t1.p1
+|                        |  |  |  |  |  |           |     |              |     +--| (74)
+|                        |  |  |  |  |  |           |     |              |        +--Amur__Amur_amur_s0257.g10.t1.p1
+|                        |  |  |  |  |  |           |     |           +--| (99)
+|                        |  |  |  |  |  |           |     |           |  +--Gfas__Gfas_gfas1.m1.16406.m1.p1
+|                        |  |  |  |  |  |           |     |        +--| (86)
+|                        |  |  |  |  |  |           |     |        |  |  +--Fspp__Fspp_ffun1.m4.20007.m1.p1
+|                        |  |  |  |  |  |           |     |        |  +--| (100)
+|                        |  |  |  |  |  |           |     |        |     +--Pcru__Pcru_PcrG018271.mRNA1.p1
+|                        |  |  |  |  |  |           |     |     +--| (73)
+|                        |  |  |  |  |  |           |     |     |  |     +--Fspp__Fspp_ffun1.m4.20000.m1.p1
+|                        |  |  |  |  |  |           |     |     |  |  +--| (100)
+|                        |  |  |  |  |  |           |     |     |  |  |  +--Pcru__Pcru_PcrG018272.mRNA1.p1
+|                        |  |  |  |  |  |           |     |     |  +--| (98)
+|                        |  |  |  |  |  |           |     |     |     +---Plut__Plut_plut2.m8.6040.m1.p1
+|                        |  |  |  |  |  |           |     |  +--| (100)
+|                        |  |  |  |  |  |           |     |  |  |    +--Fspp__Fspp_ffun1.m4.11693.m1.p1
+|                        |  |  |  |  |  |           |     |  |  +----| (100)
+|                        |  |  |  |  |  |           |     |  |       +--Pcru__Pcru_PcrG007655.mRNA1.p1
+|                        |  |  |  |  |  |           |     +--| (99)
+|                        |  |  |  |  |  |           |        |         +--Fspp__Fspp_ffun1.m4.29330.m1.p1
+|                        |  |  |  |  |  |           |        |  +------| (100)
+|                        |  |  |  |  |  |           |        |  |      |  +--Pdam__Pdam_XM_027201996.1.p1
+|                        |  |  |  |  |  |           |        |  |      +--| (100)
+|                        |  |  |  |  |  |           |        |  |         +--Spis__Spis_Spis_XP_022808804_1
+|                        |  |  |  |  |  |           |        +--| (95)
+|                        |  |  |  |  |  |           |           |            +--Fspp__Fspp_ffun1.m4.31075.m1.p1
+|                        |  |  |  |  |  |           |           |         +--| (100)
+|                        |  |  |  |  |  |           |           |         |  +--Pcru__Pcru_PcrG000308.mRNA1.p1
+|                        |  |  |  |  |  |           |           |      +--| (66)
+|                        |  |  |  |  |  |           |           |      |  |  +--Pdam__Pdam_XM_027196461.1.p1
+|                        |  |  |  |  |  |           |           |      |  +--| (96)
+|                        |  |  |  |  |  |           |           |      |     +--Spis__Spis_Spis_XP_022805381_1
+|                        |  |  |  |  |  |           |           |  +---| (100)
+|                        |  |  |  |  |  |           |           |  |   +--Gfas__Gfas_gfas1.m1.15260.m1.p1
+|                        |  |  |  |  |  |           |           +--| (83)
+|                        |  |  |  |  |  |           |              |         +--Pcru__Pcru_PcrG006130.mRNA1.p1
+|                        |  |  |  |  |  |           |              |      +--| (66)
+|                        |  |  |  |  |  |           |              |      |  +---Plut__Plut_plut2.m8.7159.m1.p1
+|                        |  |  |  |  |  |           |              |   +--| (64)
+|                        |  |  |  |  |  |           |              |   |  +--Pdam__Pdam_XM_027201995.1.p1
+|                        |  |  |  |  |  |           |              +---| (100)
+|                        |  |  |  |  |  |           |                  +--Spis__Spis_Spis_XP_022802828_1
+|                        |  |  |  |  |  |        +--| (67)
+|                        |  |  |  |  |  |        |  |          +--Pcru__Pcru_PcrG013715.mRNA1.p1
+|                        |  |  |  |  |  |        |  +----------| (100)
+|                        |  |  |  |  |  |        |             |  +--Pdam__Pdam_XM_027187126.1.p1
+|                        |  |  |  |  |  |        |             +--| (71)
+|                        |  |  |  |  |  |        |                +--Plut__Plut_plut2.m8.19899.m1.p2
+|                        |  |  |  |  |  |     +--| (69)
+|                        |  |  |  |  |  |     |  |                       +--Adig__Adig_XM_015902993.1.p1
+|                        |  |  |  |  |  |     |  |                    +--| (100)
+|                        |  |  |  |  |  |     |  |                    |  |     +--Ahya__Ahya_ahya_s0088.g18.t1.p1
+|                        |  |  |  |  |  |     |  |                    |  |  +--| (85)
+|                        |  |  |  |  |  |     |  |                    |  |  |  +--Ahya__Ahya_ahya_s0921.g3.t2.p1
+|                        |  |  |  |  |  |     |  |                    |  +--| (76)
+|                        |  |  |  |  |  |     |  |                    |     +--Amur__Amur_amur_s0301.g14.t1.p1
+|                        |  |  |  |  |  |     |  |                 +--| (72)
+|                        |  |  |  |  |  |     |  |                 |  |  +--Gfas__Gfas_gfas1.m1.7736.m1.p1
+|                        |  |  |  |  |  |     |  |                 |  +--| (52)
+|                        |  |  |  |  |  |     |  |                 |     |  +--Plut__Plut_plut2.m8.7163.m1.p1
+|                        |  |  |  |  |  |     |  |                 |     +--| (99)
+|                        |  |  |  |  |  |     |  |                 |        +--Plut__Plut_plut2.m8.7164.m1.p1
+|                        |  |  |  |  |  |     |  |              +--| (48)
+|                        |  |  |  |  |  |     |  |              |  |         +--Fspp__Fspp_ffun1.m4.29332.m1.p1
+|                        |  |  |  |  |  |     |  |              |  |     +---| (100)
+|                        |  |  |  |  |  |     |  |              |  |     |   +--Pcru__Pcru_PcrG006132.mRNA1.p1
+|                        |  |  |  |  |  |     |  |              |  |  +--| (79)
+|                        |  |  |  |  |  |     |  |              |  |  |  +----Spis__Spis_Spis_XP_022799178_1
+|                        |  |  |  |  |  |     |  |              |  +--| (75)
+|                        |  |  |  |  |  |     |  |              |     |        +------------------------Fspp__Fspp_ffun1.m4.29334.m1.p1
+|                        |  |  |  |  |  |     |  |              |     |     +--| (53)
+|                        |  |  |  |  |  |     |  |              |     |     |  |  +--Fspp__Fspp_ffun1.m4.29401.m1.p1
+|                        |  |  |  |  |  |     |  |              |     |     |  +--| (50)
+|                        |  |  |  |  |  |     |  |              |     |     |     +--Pcru__Pcru_PcrG006136.mRNA1.p1
+|                        |  |  |  |  |  |     |  |              |     |  +--| (87)
+|                        |  |  |  |  |  |     |  |              |     |  |  |  +--Fspp__Fspp_ffun1.m4.29402.m1.p1
+|                        |  |  |  |  |  |     |  |              |     |  |  +--| (100)
+|                        |  |  |  |  |  |     |  |              |     |  |     +--Fspp__Fspp_ffun1.m4.29403.m1.p1
+|                        |  |  |  |  |  |     |  |              |     +--| (92)
+|                        |  |  |  |  |  |     |  |              |        |  +--Pcru__Pcru_PcrG006133.mRNA1.p1
+|                        |  |  |  |  |  |     |  |              |        +--| (100)
+|                        |  |  |  |  |  |     |  |              |           +--Pcru__Pcru_PcrG006135.mRNA1.p1
+|                        |  |  |  |  |  |     |  |           +--| (57)
+|                        |  |  |  |  |  |     |  |           |  |  +--Fspp__Fspp_ffun1.m4.29333.m1.p1
+|                        |  |  |  |  |  |     |  |           |  +--| (99)
+|                        |  |  |  |  |  |     |  |           |     +--Pcru__Pcru_PcrG006131.mRNA1.p1
+|                        |  |  |  |  |  |     |  |     +-----| (95)
+|                        |  |  |  |  |  |     |  |     |     +--Spis__Spis_Spis_XP_022808806_1
+|                        |  |  |  |  |  |     |  |  +--| (84)
+|                        |  |  |  |  |  |     |  |  |  |           +--Fspp__Fspp_ffun1.m4.7091.m1.p1
+|                        |  |  |  |  |  |     |  |  |  |        +--| (100)
+|                        |  |  |  |  |  |     |  |  |  |        |  +--Pcru__Pcru_PcrG008267.mRNA1.p1
+|                        |  |  |  |  |  |     |  |  |  |     +--| (100)
+|                        |  |  |  |  |  |     |  |  |  |     |  |     +--Fspp__Fspp_ffun1.m4.7092.m1.p1
+|                        |  |  |  |  |  |     |  |  |  |     |  |  +--| (90)
+|                        |  |  |  |  |  |     |  |  |  |     |  |  |  +--Fspp__Fspp_ffun1.m4.7093.m1.p1
+|                        |  |  |  |  |  |     |  |  |  |     |  +--| (79)
+|                        |  |  |  |  |  |     |  |  |  |     |     +---Pdam__Pdam_XM_027200514.1.p1
+|                        |  |  |  |  |  |     |  |  |  |  +--| (93)
+|                        |  |  |  |  |  |     |  |  |  |  |  +---Plut__Plut_plut2.m8.3243.m1.p1
+|                        |  |  |  |  |  |     |  |  |  +--| (73)
+|                        |  |  |  |  |  |     |  |  |     +-----Plut__Plut_plut2.m8.3238.m1.p1
+|                        |  |  |  |  |  |     |  +--| (38)
+|                        |  |  |  |  |  |     |     |     +---Fspp__Fspp_ffun1.m4.20939.m1.p1
+|                        |  |  |  |  |  |     |     |  +--| (69)
+|                        |  |  |  |  |  |     |     |  |  |   +-------Fspp__Fspp_ffun1.m4.22920.m1.p1
+|                        |  |  |  |  |  |     |     |  |  +---| (100)
+|                        |  |  |  |  |  |     |     |  |      +--Pcru__Pcru_PcrG027571.mRNA1.p1
+|                        |  |  |  |  |  |     |     +--| (91)
+|                        |  |  |  |  |  |     |        +-------------Plut__Plut_jamg1.model.Sc0000009.110.p1
+|                        |  |  |  |  |  |  +--| (39)
+|                        |  |  |  |  |  |  |  +----------Gfas__Gfas_gfas1.m1.20203.m1.p1
+|                        |  |  |  |  |  +--| (78)
+|                        |  |  |  |  |     |  +-----------Hcoe__Hcoe_Hco15503-RA.p1
+|                        |  |  |  |  |     +--| (38)
+|                        |  |  |  |  |        +----------Spis__Spis_Spis_XP_022798325_1
+|                        |  |  |  +--| (59)
+|                        |  |  |     +-------------------Gfas__Gfas_gfas1.m1.14491.m1.p1
+|                        |  +--| (34)
+|                        |     +------------------Hvul__Hvul_XP_065649635.1
+|                     +--| (53)
+|                     |  +--------------Aaur__Aaur_scaffold109.g38.t1
+|                  +--| (56)
+|                  |  |           +-----------Aaur__Aaur_scaffold205.g16.t1
+|                  |  |        +--| (57)
+|                  |  |        |  +-----------------Aaur__Aaur_scaffold41.g106.t3
+|                  |  |     +--| (79)
+|                  |  |     |  +--------------Aaur__Aaur_scaffold205.g18.t1
+|                  |  |  +--| (78)
+|                  |  |  |  +-----------------Hvul__Hvul_XP_065670144.1
+|                  |  +--| (77)
+|                  |     |            +--Adig__Adig_XM_015900715.1.p1
+|                  |     |         +--| (99)
+|                  |     |         |  |  +--Ahya__Ahya_ahya_s0004.g169.t1.p1
+|                  |     |         |  +--| (92)
+|                  |     |         |     +--Amur__Amur_amur_s0011.g63.t1.p1
+|                  |     +---------| (100)
+|                  |               |           +--Fspp__Fspp_ffun1.m4.18921.m1.p1
+|                  |               |        +--| (100)
+|                  |               |        |  +--Pcru__Pcru_PcrG028042.mRNA1.p1
+|                  |               |     +--| (99)
+|                  |               |     |  |  +--Pdam__Pdam_XM_027203348.1.p1
+|                  |               |     |  +--| (100)
+|                  |               |     |     +--Spis__Spis_Spis_XP_022785469_1
+|                  |               |  +--| (48)
+|                  |               |  |  +--Gfas__Gfas_gfas1.m1.7031.m1.p1
+|                  |               +--| (92)
+|                  |                  +--Plut__Plut_plut2.m8.7857.m1.p1
+|               +--| (53)
+|               |  |     +----------Aaur__Aaur_scaffold182.g51.t1
+|               |  |  +--| (97)
+|               |  |  |  +-----------Hvul__Hvul_XP_065661592.1
+|               |  +--| (51)
+|               |     |            +--Hvul__Hvul_XP_065673822.1
+|               |     |         +--| (87)
+|               |     |         |  +------Hvul__Hvul_XP_065674393.1
+|               |     +---------| (100)
+|               |               |  +---Hvul__Hvul_XP_065674789.1
+|               |               +--| (94)
+|               |                  +-----Hvul__Hvul_XP_065676757.1
+|           +---| (94)
+|           |   |               +---Aaur__Aaur_scaffold3.g171.t1
+|           |   |           +---| (100)
+|           |   |           |   |     +--Aaur__Aaur_scaffold65.g23.t1
+|           |   |           |   +-----| (100)
+|           |   |           |         +--Aaur__Aaur_scaffold65.g28.t1
+|           |   |        +--| (96)
+|           |   |        |  |    +---Hvul__Hvul_XP_065649630.1
+|           |   |        |  +----| (100)
+|           |   |        |       +----Hvul__Hvul_XP_065649633.1
+|           |   |     +--| (87)
+|           |   |     |  |   +-----Aaur__Aaur_scaffold48.g46.t3
+|           |   |     |  +---| (100)
+|           |   |     |      +----Aaur__Aaur_scaffold6.g16.t3
+|           |   |  +--| (70)
+|           |   |  |  |  +-----Aaur__Aaur_scaffold47.g45.t2
+|           |   |  |  +--| (94)
+|           |   |  |     +-------------Hvul__Hvul_NP_001296695.1
+|           |   +--| (36)
+|           |      |  +---------------------Hvul__Hvul_XP_065646353.1
+|           |      +--| (70)
+|           |         +--------Hvul__Hvul_XP_065668721.1
+|        +--| (44)
+|        |  |      +----Hcoe__Hcoe_Hco02034-RA.p1
+|        |  +------| (100)
+|        |         +----Xesp__Xesp_Xe_015665-T1.p1
+|     +--| (96)
+|     |  |                   +--Ahya__Ahya_ahya_s0047.g16.t2.p1
+|     |  |               +---| (100)
+|     |  |               |   |  +--Ahya__Ahya_ahya_s1848.g1.t1.p1
+|     |  |               |   +--| (73)
+|     |  |               |      +--Amur__Amur_amur_s0313.g10.t2.p1
+|     |  |            +--| (51)
+|     |  |            |  +--Gfas__Gfas_gfas1.m1.18023.m1.p1
+|     |  |         +--| (77)
+|     |  |         |  +--Plut__Plut_plut2.m8.3131.m1.p1
+|     |  |      +--| (45)
+|     |  |      |  |  +--Pdam__Pdam_XM_027190379.1.p1
+|     |  |      |  +--| (100)
+|     |  |      |     +--Spis__Spis_Spis_XP_022800497_1
+|     |  +------| (100)
+|     |         |  +--Fspp__Fspp_ffun1.m4.8046.m1.p1
+|     |         +--| (97)
+|     |            +--Pcru__Pcru_PcrG020036.mRNA1.p1
+|  +--| (57)
+|  |  |   +------Hvul__Hvul_XP_065663209.1
+|  |  +---| (100)
+|  |      +-----Hvul__Hvul_XP_065663211.1
++--| (80)
+|  +-----------Hvul__Hvul_XP_065646878.1
+|
++-------Aaur__Aaur_scaffold3.g222.t2
+
+
+Consensus tree in newick format: 
+
+(Aaur__Aaur_scaffold1.g61.t2:0.6905676022,(((((((((((((((Aaur__Aaur_scaffold108.g71.t1:0.8688969764,(Hvul__Hvul_XP_065662288.1:0.8537432194,Hvul__Hvul_XP_065663761.1:0.6051419156)60:0.0940995283)43:0.1130806656,(Aaur__Aaur_scaffold142.g50.t1:0.4486694419,Hcoe__Hcoe_Hco21047-RA.p1:1.5542245794)45:0.1526937109)49:0.0672259974,Aaur__Aaur_scaffold108.g75.t1:0.5959770546)48:0.0302249369,Hcoe__Hcoe_Hco18067-RA.p1:0.5002144345)71:0.1231818229,(Hcoe__Hcoe_Hco00702-RA.p1:0.5393488176,Xesp__Xesp_Xesp_orphan_4888.p2:1.8706467443)73:0.3976214847)83:0.2287638540,((Aaur__Aaur_scaffold137.g17.t2:0.3572695909,(Aaur__Aaur_scaffold47.g20.t2:0.1824808601,Hvul__Hvul_NP_001296648.1:0.4460582691)90:0.2205764934)100:0.4699959124,Plut__Plut_plut2.m8.24788.m1.p1:1.7391816835)61:0.0394070056)71:0.2262286733,((((((Aaur__Aaur_scaffold24.g161.t2:0.8220708344,((Aaur__Aaur_scaffold67.g26.t1:0.0503624870,Aaur__Aaur_scaffold67.g34.t1:0.0478032341)100:0.3459146481,Aaur__Aaur_scaffold929.g1.t1:0.3897848138)95:0.2027227255)64:0.0909062115,(((Hvul__Hvul_XP_065648141.1:0.4942775799,Hvul__Hvul_XP_065670967.1:0.5956471329)42:0.0715227462,Hvul__Hvul_XP_065648149.1:0.6488742088)45:0.1316829540,((Hvul__Hvul_XP_065648147.1:0.1097056159,(Hvul__Hvul_XP_065648148.1:0.0983821826,Hvul__Hvul_XP_065676037.1:0.2108062789)93:0.0957006327)100:0.2702246558,((Hvul__Hvul_XP_065653482.1:0.1242665647,Hvul__Hvul_XP_065653483.1:0.1150732076)94:0.0670808197,Hvul__Hvul_XP_065653485.1:0.1620212263)100:0.2021608867)79:0.1581779831)99:0.2968597628)66:0.1261546586,((Hvul__Hvul_XP_065655121.1:0.5978178460,((Hvul__Hvul_XP_065674702.1:0.2901536114,(Hvul__Hvul_XP_065676271.1:0.0614089247,Hvul__Hvul_XP_065676273.1:0.0273735164)100:0.2306421281)100:0.3632306429,(Hvul__Hvul_XP_065674733.1:0.1358978043,(Hvul__Hvul_XP_065674734.1:0.1126735299,Hvul__Hvul_XP_065674768.1:0.0760548361)98:0.0857418062)100:0.3896389241)100:0.2675297603)91:0.1690960757,(Hvul__Hvul_XP_065676194.1:0.1681505870,Hvul__Hvul_XP_065676856.1:0.1599583013)100:0.5904874136)93:0.1248587429)73:0.1438942199,Gfas__Gfas_gfas1.m1.15259.m1.p1:1.8078500601)90:0.1785057912,((((Aaur__Aaur_scaffold38.g70.t1:0.3139034070,Hvul__Hvul_XP_065662345.1:0.5741198839)85:0.1791791062,Hvul__Hvul_XP_065666427.1:0.7835497480)100:0.4430837295,((((((((((((((Adig__Adig_XM_015891857.1.p1:0.0242487789,(Ahya__Ahya_ahya_s0009.g124.t1.p1:0.0000026721,Amur__Amur_amur_s0532.g9.t1.p1:0.0096627173)95:0.0174986914)100:0.0861084630,((Adig__Adig_XM_015924404.1.p1:0.0345173228,Ahya__Ahya_ahya_s0009.g121.t1.p1:0.0185097119)78:0.0049718838,Amur__Amur_amur_s0487.g6.t1.p1:0.0123389765)100:0.0847634802)100:0.2118176375,(Adig__Adig_XM_015924415.1.p1:0.0148412316,(Ahya__Ahya_ahya_s0009.g120.t1.p1:0.0065245527,Amur__Amur_amur_s0487.g7.t1.p1:0.0428181107)100:0.0696921951)100:0.3982672958)99:0.1765516392,Gfas__Gfas_gfas1.m1.20908.m1.p1:0.5132125606)72:0.0649339572,(Pdam__Pdam_XM_027183221.1.p1:0.2047097028,Spis__Spis_Spis_XP_022807096_1:0.2827643478)100:0.3746685921)68:0.0564851626,((Plut__Plut_plut2.m8.28523.m1.p1:0.1483270765,Plut__Plut_plut2.m8.28527.m1.p1:0.1410223108)100:0.2776379438,Plut__Plut_plut2.m8.28526.m1.p1:0.1558446385)100:0.2304037031)39:0.0256281949,Plut__Plut_plut2.m8.29201.m1.p1:0.4604954846)29:0.0359553217,((Gfas__Gfas_gfas1.m1.14098.m1.p1:0.6736841221,Plut__Plut_plut2.m8.28524.m1.p1:0.3250650074)65:0.0661365131,Gfas__Gfas_gfas1.m1.14099.m1.p1:0.4495179009)46:0.0934362786)22:0.0364710934,((((Fspp__Fspp_ffun1.m4.7098.m1.p1:0.0849891590,Pcru__Pcru_PcrG008259.mRNA1.p1:0.0828405054)100:0.2207734171,(((Fspp__Fspp_ffun1.m4.7100.m1.p1:0.1276705273,Pcru__Pcru_PcrG008258.mRNA1.p1:0.0463965559)100:0.2266666996,(Fspp__Fspp_ffun1.m4.7101.m1.p1:0.6407424735,Pcru__Pcru_PcrG008261.mRNA1.p1:0.0129996105)100:0.2443926085)69:0.0490015449,Pcru__Pcru_PcrG008260.mRNA1.p1:0.1431466780)59:0.0359641561)75:0.0629538365,((Pdam__Pdam_XM_027183220.1.p1:0.0927558340,(Spis__Spis_Spis_XP_022804316_1:0.0745165450,Spis__Spis_Spis_XP_022807097_1:0.0117754116)100:0.0631741028)99:0.1583747591,Pdam__Pdam_XM_027204075.1.p1:0.3844139696)100:0.1826791107)77:0.0902686039,((Pdam__Pdam_XM_027183224.1.p1:0.2841432651,((Spis__Spis_Spis_XP_022804303_1:0.0842148098,(Spis__Spis_Spis_XP_022807095_1:0.0195600170,Spis__Spis_Spis_XP_022807101_1:0.0000029379)100:0.0706790243)98:0.1439462084,Spis__Spis_Spis_XP_022804319_1:0.1881317316)56:0.0385154138)66:0.0473076204,Pdam__Pdam_XM_027199705.1.p1:0.1811658790)100:0.3369229927)22:0.0323942378)96:0.1757177160,(((((((((Adig__Adig_XM_015905307.1.p1:0.1059139934,(Ahya__Ahya_ahya_s0019.g61.t1.p1:0.0152303766,Amur__Amur_amur_s0017.g25.t1.p1:0.0075321627)99:0.0000026520)100:0.2069953598,Gfas__Gfas_gfas1.m1.17827.m1.p1:0.0821687914)58:0.0280660094,((Fspp__Fspp_ffun1.m4.7105.m1.p1:0.0253753860,(((Fspp__Fspp_ffun1.m4.7106.m1.p1:0.0997801225,Pdam__Pdam_XM_027183205.1.p1:0.2114271170)99:0.1203006410,Pcru__Pcru_PcrG008257.mRNA1.p1:0.0119730318)95:0.0855387006,Pcru__Pcru_PcrG008254.mRNA1.p1:0.1860480298)47:0.0107575023)78:0.0372792057,(Spis__Spis_Spis_XP_022807100_1:0.1397039042,Spis__Spis_Spis_XP_022807103_1:0.0207496771)99:0.0694015294)73:0.0320346926)34:0.0249723637,(Plut__Plut_plut2.m8.28521.m1.p1:0.2900038366,Plut__Plut_plut2.m8.28528.m1.p1:0.1308461745)38:0.0235694841)15:0.0167457745,(Plut__Plut_plut2.m8.28520.m1.p1:0.1088726798,Plut__Plut_plut2.m8.28525.m1.p1:0.2773474041)81:0.0648759168)39:0.0354642714,Fspp__Fspp_ffun1.m4.7103.m1.p1:0.5088675398)64:0.0235424421,(Pcru__Pcru_PcrG008253.mRNA1.p1:0.4802098144,Pdam__Pdam_XM_027183207.1.p1:0.2821442120)49:0.0423187904)91:0.0965718836,((((Fspp__Fspp_ffun1.m4.7102.m1.p1:0.0132010883,Pcru__Pcru_PcrG008255.mRNA1.p1:0.0412450159)100:0.2696153273,(((Fspp__Fspp_ffun1.m4.7104.m1.p1:0.0000026721,Pcru__Pcru_PcrG008256.mRNA1.p1:0.0110414638)100:0.3874914429,Gfas__Gfas_gfas1.m1.17553.m1.p1:0.9457744796)56:0.1206054277,(Spis__Spis_Spis_XP_022798324_1:0.0265326616,Spis__Spis_Spis_XP_022807102_1:0.3586067330)100:0.4892587020)77:0.1659717325)65:0.0611070094,Pdam__Pdam_XM_027183228.1.p1:0.6873533345)62:0.0426791375,Gfas__Gfas_gfas1.m1.18699.m1.p1:0.3854179848)92:0.1311268113)57:0.0382130024,(((((((((Adig__Adig_XM_015918970.1.p1:0.7254923473,Spis__Spis_Spis_XP_022788456_1:0.0187016810)97:0.0737409884,Spis__Spis_Spis_XP_022787898_1:0.0098166297)94:0.0444986969,Pdam__Pdam_XM_027200638.1.p1:0.0070709465)97:0.0749874385,(Adig__Adig_XM_015918971.1.p1:0.0354325891,(Ahya__Ahya_ahya_s0138.g7.t1.p1:0.0089332522,Amur__Amur_amur_s0257.g10.t1.p1:0.0255438598)74:0.0080154334)100:0.2670148919)73:0.0028378911,Gfas__Gfas_gfas1.m1.16406.m1.p1:0.0688793905)99:0.0854932522,(Fspp__Fspp_ffun1.m4.20007.m1.p1:0.0065377069,Pcru__Pcru_PcrG018271.mRNA1.p1:0.0116138002)100:0.0651982289)86:0.0504274697,((Fspp__Fspp_ffun1.m4.20000.m1.p1:0.0556318942,Pcru__Pcru_PcrG018272.mRNA1.p1:0.0137523045)100:0.1061175277,Plut__Plut_plut2.m8.6040.m1.p1:0.3119333141)98:0.0682816534)73:0.0524510740,(Fspp__Fspp_ffun1.m4.11693.m1.p1:0.0192182051,Pcru__Pcru_PcrG007655.mRNA1.p1:0.0589123218)100:0.3846938466)100:0.2574594755,((Fspp__Fspp_ffun1.m4.29330.m1.p1:0.2120654148,(Pdam__Pdam_XM_027201996.1.p1:0.2105033212,Spis__Spis_Spis_XP_022808804_1:0.0658880582)100:0.1079335156)100:0.5065743288,((((Fspp__Fspp_ffun1.m4.31075.m1.p1:0.1675913451,Pcru__Pcru_PcrG000308.mRNA1.p1:0.0100034383)100:0.1325811024,(Pdam__Pdam_XM_027196461.1.p1:0.0435967445,Spis__Spis_Spis_XP_022805381_1:0.0796404661)96:0.0977713335)66:0.0585570795,Gfas__Gfas_gfas1.m1.15260.m1.p1:0.2402005940)100:0.3363811996,(((Pcru__Pcru_PcrG006130.mRNA1.p1:0.0799734578,Plut__Plut_plut2.m8.7159.m1.p1:0.3111703255)66:0.0809174077,Pdam__Pdam_XM_027201995.1.p1:0.0842982299)64:0.0798666237,Spis__Spis_Spis_XP_022802828_1:0.0291300002)100:0.2999294746)83:0.0722355386)95:0.1156633071)99:0.1599205766)75:0.0470600078)90:0.0783380098,(Pcru__Pcru_PcrG013715.mRNA1.p1:0.1455255177,(Pdam__Pdam_XM_027187126.1.p1:0.1725843058,Plut__Plut_plut2.m8.19899.m1.p2:0.1887092708)71:0.0715373726)100:0.7845379580)67:0.0711942029,(((((((Adig__Adig_XM_015902993.1.p1:0.0124300142,((Ahya__Ahya_ahya_s0088.g18.t1.p1:0.0155607888,Ahya__Ahya_ahya_s0921.g3.t2.p1:0.0038754802)85:0.0039367815,Amur__Amur_amur_s0301.g14.t1.p1:0.0233920865)76:0.0069247037)100:0.2622122752,(Gfas__Gfas_gfas1.m1.7736.m1.p1:0.1743458129,(Plut__Plut_plut2.m8.7163.m1.p1:0.0276326871,Plut__Plut_plut2.m8.7164.m1.p1:0.1409184626)99:0.1154629361)52:0.0163765216)72:0.0721263152,(((Fspp__Fspp_ffun1.m4.29332.m1.p1:0.0939997473,Pcru__Pcru_PcrG006132.mRNA1.p1:0.0231760095)100:0.2865102503,Spis__Spis_Spis_XP_022799178_1:0.3791882003)79:0.0610769507,(((Fspp__Fspp_ffun1.m4.29334.m1.p1:1.7283017630,(Fspp__Fspp_ffun1.m4.29401.m1.p1:0.0534258119,Pcru__Pcru_PcrG006136.mRNA1.p1:0.0341498067)50:0.0207715969)53:0.0000028867,(Fspp__Fspp_ffun1.m4.29402.m1.p1:0.0717583672,Fspp__Fspp_ffun1.m4.29403.m1.p1:0.0531126696)100:0.0657773515)87:0.0421542902,(Pcru__Pcru_PcrG006133.mRNA1.p1:0.0101738856,Pcru__Pcru_PcrG006135.mRNA1.p1:0.0100985098)100:0.0905160721)92:0.0787883785)75:0.0727137562)48:0.0223696110,(Fspp__Fspp_ffun1.m4.29333.m1.p1:0.0601349840,Pcru__Pcru_PcrG006131.mRNA1.p1:0.0216972746)99:0.0968069079)57:0.0574138319,Spis__Spis_Spis_XP_022808806_1:0.1563406769)95:0.4289222226,((((Fspp__Fspp_ffun1.m4.7091.m1.p1:0.0345096237,Pcru__Pcru_PcrG008267.mRNA1.p1:0.0370529483)100:0.1876498192,((Fspp__Fspp_ffun1.m4.7092.m1.p1:0.2165288333,Fspp__Fspp_ffun1.m4.7093.m1.p1:0.2213515648)90:0.1324341470,Pdam__Pdam_XM_027200514.1.p1:0.3292257918)79:0.0662748783)100:0.1842898618,Plut__Plut_plut2.m8.3243.m1.p1:0.2846312841)93:0.1118092824,Plut__Plut_plut2.m8.3238.m1.p1:0.4062985286)73:0.0647761578)84:0.1304967620,((Fspp__Fspp_ffun1.m4.20939.m1.p1:0.3362113529,(Fspp__Fspp_ffun1.m4.22920.m1.p1:0.5610274598,Pcru__Pcru_PcrG027571.mRNA1.p1:0.1165550522)100:0.3086511779)69:0.0611705299,Plut__Plut_jamg1.model.Sc0000009.110.p1:0.9721273730)91:0.1200199809)38:0.0325657913)69:0.0875683132,Gfas__Gfas_gfas1.m1.20203.m1.p1:0.7537569546)39:0.0387251015,(Hcoe__Hcoe_Hco15503-RA.p1:0.8173896265,Spis__Spis_Spis_XP_022798325_1:0.7588651990)38:0.0393288125)78:0.1003854271)53:0.0275853446,Gfas__Gfas_gfas1.m1.14491.m1.p1:1.3539162490)59:0.0705300100)45:0.0436643525,Hvul__Hvul_XP_065649635.1:1.2933234432)34:0.0580247577)32:0.0414663454,Aaur__Aaur_scaffold109.g38.t1:1.0279942776)53:0.0387565301,((((Aaur__Aaur_scaffold205.g16.t1:0.8311212432,Aaur__Aaur_scaffold41.g106.t3:1.2669541160)57:0.1387966139,Aaur__Aaur_scaffold205.g18.t1:1.0482422495)79:0.1708723653,Hvul__Hvul_XP_065670144.1:1.2674557268)78:0.1738329757,((Adig__Adig_XM_015900715.1.p1:0.0405285129,(Ahya__Ahya_ahya_s0004.g169.t1.p1:0.0168676682,Amur__Amur_amur_s0011.g63.t1.p1:0.0398021366)92:0.0171047702)99:0.2498525327,((((Fspp__Fspp_ffun1.m4.18921.m1.p1:0.0378178645,Pcru__Pcru_PcrG028042.mRNA1.p1:0.0085513451)100:0.1458262942,(Pdam__Pdam_XM_027203348.1.p1:0.0355083248,Spis__Spis_Spis_XP_022785469_1:0.0382508270)100:0.1973865803)99:0.1012032759,Gfas__Gfas_gfas1.m1.7031.m1.p1:0.2125423759)48:0.0311185534,Plut__Plut_plut2.m8.7857.m1.p1:0.2415644889)92:0.1447817672)100:0.7371603885)77:0.2048003605)56:0.0911029211,((Aaur__Aaur_scaffold182.g51.t1:0.7498028534,Hvul__Hvul_XP_065661592.1:0.8672756552)97:0.2617681657,((Hvul__Hvul_XP_065673822.1:0.2242751948,Hvul__Hvul_XP_065674393.1:0.4962266780)87:0.1025788919,(Hvul__Hvul_XP_065674789.1:0.3210265263,Hvul__Hvul_XP_065676757.1:0.4085384231)94:0.1842649991)100:0.7242005594)51:0.0788343798)53:0.0734225479,(((((Aaur__Aaur_scaffold3.g171.t1:0.3115976788,(Aaur__Aaur_scaffold65.g23.t1:0.0437150543,Aaur__Aaur_scaffold65.g28.t1:0.0338061595)100:0.4598349131)100:0.2775955127,(Hvul__Hvul_XP_065649630.1:0.2993949671,Hvul__Hvul_XP_065649633.1:0.3382238182)100:0.3474853269)96:0.1641344172,(Aaur__Aaur_scaffold48.g46.t3:0.4222378215,Aaur__Aaur_scaffold6.g16.t3:0.3976804827)100:0.2999193312)87:0.1108169429,(Aaur__Aaur_scaffold47.g45.t2:0.4237322203,Hvul__Hvul_NP_001296695.1:0.9626652545)94:0.1770013441)70:0.0657372017,(Hvul__Hvul_XP_065646353.1:1.4882032069,Hvul__Hvul_XP_065668721.1:0.6662578558)70:0.2473062702)36:0.0442361575)94:0.2813457890,(Hcoe__Hcoe_Hco02034-RA.p1:0.3673477422,Xesp__Xesp_Xe_015665-T1.p1:0.3729188991)100:0.5015469201)44:0.0700516456,(((((Ahya__Ahya_ahya_s0047.g16.t2.p1:0.0000022635,(Ahya__Ahya_ahya_s1848.g1.t1.p1:0.0401612669,Amur__Amur_amur_s0313.g10.t2.p1:0.0138277634)73:0.0062113800)100:0.3171953419,Gfas__Gfas_gfas1.m1.18023.m1.p1:0.2038732200)51:0.0877966565,Plut__Plut_plut2.m8.3131.m1.p1:0.1910377795)77:0.1118916913,(Pdam__Pdam_XM_027190379.1.p1:0.0921876214,Spis__Spis_Spis_XP_022800497_1:0.0698937663)100:0.2586446745)45:0.0519568624,(Fspp__Fspp_ffun1.m4.8046.m1.p1:0.0215595336,Pcru__Pcru_PcrG020036.mRNA1.p1:0.0250754337)97:0.1273369562)100:0.4968194314)96:0.1700482357,(Hvul__Hvul_XP_065663209.1:0.5218395383,Hvul__Hvul_XP_065663211.1:0.4541921592)100:0.3231189942)57:0.0682707662,Hvul__Hvul_XP_065646878.1:0.8353631646)80:0.1922122709,Aaur__Aaur_scaffold3.g222.t2:0.5561831146);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_orthogroup_genetree_versions/family_OG_filtered_SC11_Hvul_Aaur_261110/strict_candidates_dual70_corecomplete_261110/gene_tree_analysis/intermediate/07_iqtree/FAM_MEP1B/FAM_MEP1B.treefile -m "WAG+F+R6{0.0970297,0.0981134,0.155884,0.339978,0.21009,0.653199,0.24017,1.08518,0.203857,1.54123,0.092969,2.42484}" --length 293
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_orthogroup_genetree_versions/family_OG_filtered_SC11_Hvul_Aaur_261110/strict_candidates_dual70_corecomplete_261110/gene_tree_analysis/intermediate/06_alignments/FAM_MEP1B/FAM_MEP1B.clipkit.aln.faa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_orthogroup_genetree_versions/family_OG_filtered_SC11_Hvul_Aaur_261110/strict_candidates_dual70_corecomplete_261110/gene_tree_analysis/intermediate/06_alignments/FAM_MEP1B/FAM_MEP1B.clipkit.aln.faa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Nov 10 19:36:13 2026
+Total CPU time used: 15323.91405 seconds (4h:15m:23s)
+Total wall-clock time used: 1949.447706 seconds (0h:32m:29s)
+

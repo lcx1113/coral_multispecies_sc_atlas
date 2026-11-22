@@ -1,0 +1,2 @@
+object_species	n_candidate_ogs	n_reconstructed_ogs	raw_UMI_reconstruction_max_error	normalized_mean_reconstruction_max_error	source_RNA	source_RNA_sha256	reuse_policy
+Amur	202	175	0	1.27897692436818e-13	/absolute/path/seurat_objects/dat.Amur.seurat_final.rds	9386e7d4a13629707aa79c798a7eb03d1cef56efe3f094405d7b5a8ff1e66c9f	subset of validated current-version member contributions; excluded targets removed; original reconstruction error retained

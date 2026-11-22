@@ -1,0 +1,3 @@
+subset	definition	n_orthogroups	output_file
+Hcoe_specific_observed	n_positive_species == 1 && positive_species == 'Hcoe'	269	/absolute/path/external_inputs/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_find_conserved_OG_260909/results/comparisons/calicoblast/conservation/calicoblast.OG_SUM.Hcoe_specific_observed.tsv
+Hcoe_shared_conserved	positive_species contains 'Hcoe' && n_positive_species >= 2	257	/absolute/path/external_inputs/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_find_conserved_OG_260909/results/comparisons/calicoblast/conservation/calicoblast.OG_SUM.Hcoe_shared_conserved.tsv

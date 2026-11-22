@@ -1,0 +1,12 @@
+comparison_id	object_species	full_file_exists	filtered_file_exists	full_file_is_gzip	n_full_rows	n_filtered_rows	content_checks_pass	status	message
+cnidocyte	Adig	TRUE	TRUE	TRUE	3666	320	TRUE	PASS	NA
+cnidocyte	Ahya	TRUE	TRUE	TRUE	4083	256	TRUE	PASS	NA
+cnidocyte	Amur	TRUE	TRUE	TRUE	3571	361	TRUE	PASS	NA
+cnidocyte	Fspp	TRUE	TRUE	TRUE	2250	325	TRUE	PASS	NA
+cnidocyte	Gfas	TRUE	TRUE	TRUE	2865	264	TRUE	PASS	NA
+cnidocyte	Hcoe	TRUE	TRUE	TRUE	2481	183	TRUE	PASS	NA
+cnidocyte	Pcru	TRUE	TRUE	TRUE	2415	205	TRUE	PASS	NA
+cnidocyte	Pdam	TRUE	TRUE	TRUE	4430	379	TRUE	PASS	NA
+cnidocyte	Plut	TRUE	TRUE	TRUE	3368	494	TRUE	PASS	NA
+cnidocyte	Spin	TRUE	TRUE	TRUE	5403	773	TRUE	PASS	NA
+cnidocyte	Xesp	TRUE	TRUE	TRUE	3999	492	TRUE	PASS	NA

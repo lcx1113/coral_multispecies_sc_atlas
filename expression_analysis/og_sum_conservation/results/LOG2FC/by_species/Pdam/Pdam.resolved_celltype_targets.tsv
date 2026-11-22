@@ -1,0 +1,16 @@
+object_species	orthology_species	observed_label	target_celltype	n_cells	include_as_target	exclusion_reason	labels_merged
+Pdam	Pdam	calicoblast	calicoblast	227	TRUE	NA	FALSE
+Pdam	Pdam	cnidocyte	cnidocyte	352	TRUE	NA	FALSE
+Pdam	Pdam	digestive_filaments	digestive_filaments	637	TRUE	NA	FALSE
+Pdam	Pdam	epidermis	epidermis	2704	TRUE	NA	FALSE
+Pdam	Pdam	gastrodermis	gastrodermis	3603	TRUE	NA	FALSE
+Pdam	Pdam	gastrodermis_alga_hosting	gastrodermis_alga_hosting	573	TRUE	NA	FALSE
+Pdam	Pdam	gastrodermis_muscle	gastrodermis_muscle	425	TRUE	NA	FALSE
+Pdam	Pdam	germline_oocytes_1	germline_oocytes_1	889	TRUE	NA	FALSE
+Pdam	Pdam	gland_1_Xbp	gland_1_Xbp	476	TRUE	NA	FALSE
+Pdam	Pdam	gland_3	gland_3	725	TRUE	NA	FALSE
+Pdam	Pdam	immune_macrophage	immune_macrophage	502	TRUE	NA	FALSE
+Pdam	Pdam	immune_macrophage_like_2	immune_macrophage_like_2	44	TRUE	NA	FALSE
+Pdam	Pdam	neuron_Atoh8	neuron_Atoh8	223	TRUE	NA	FALSE
+Pdam	Pdam	neuron_Pou4_2	neuron_Pou4_2	200	TRUE	NA	FALSE
+Pdam	Pdam	neuron_Pou4_Otp	neuron_Pou4_Otp	126	TRUE	NA	FALSE

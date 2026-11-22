@@ -1,0 +1,5 @@
+orthogroup	has_TF	first_annotation	first_support	second_annotation	second_support	gene_change
+OG:004382	FALSE	ADA1B	1	Adora1/Adora2a/Adora2b/Adora3/Adra1a/Adra1b/Adra1d/Adra2a/Adra2b/Adra2c/Adrb2/Adrb3/Chrm1/Chrm2/Chrm3/Chrm4/Chrm5/Drd1/Drd2/Drd3/Drd4/Drd5/Hrh1/Hrh2/Hrh3/Htr1a/Htr1b/Htr1d/Htr1f/Htr2a/Htr2b/Htr2c/Htr4/Htr5a/Htr5b/Htr7/Taar1/Taar2/Taar4/Taar5/Taar6/Taar7a/Taar7b/Taar7d/Taar7e/Taar7f/Taar8a/Taar8b/Taar8c/Taar9	1	TRUE
+OG:005939	FALSE	LONF3	1	NA	NA	FALSE
+OG:007803	FALSE	NA	NA	NA	NA	FALSE
+OG:018502	FALSE	UNG	1	Ung	0.8	FALSE

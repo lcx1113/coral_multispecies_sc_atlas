@@ -1,0 +1,15 @@
+object_species	orthology_species	observed_label	target_celltype	n_cells	include_as_target	exclusion_reason	labels_merged
+Adig	Adig	calicoblast	calicoblast	567	TRUE	NA	FALSE
+Adig	Adig	cnidocyte	cnidocyte	321	TRUE	NA	FALSE
+Adig	Adig	epidermis	epidermis	2766	TRUE	NA	FALSE
+Adig	Adig	gastrodermis	gastrodermis	2610	TRUE	NA	FALSE
+Adig	Adig	gastrodermis_alga_hosting	gastrodermis_alga_hosting	195	TRUE	NA	FALSE
+Adig	Adig	gastrodermis_muscle	gastrodermis_muscle	704	TRUE	NA	FALSE
+Adig	Adig	gland_1_Xbp	gland_1_Xbp	106	TRUE	NA	FALSE
+Adig	Adig	gland_2	gland_2	831	TRUE	NA	FALSE
+Adig	Adig	gland_3	gland_3	618	TRUE	NA	FALSE
+Adig	Adig	immune_macrophage	immune_macrophage	258	TRUE	NA	FALSE
+Adig	Adig	neuron_Isl_Nkx6	neuron_Isl_Nkx6	268	TRUE	NA	FALSE
+Adig	Adig	neuron_Pou4_1	neuron_Pou4_1	869	TRUE	NA	FALSE
+Adig	Adig	unknown7	unknown7	191	FALSE	excluded_by_regex_but_retained_in_background	FALSE
+Adig	Adig	unknown8	unknown8	167	FALSE	excluded_by_regex_but_retained_in_background	FALSE

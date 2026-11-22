@@ -1,0 +1,30 @@
+cluster	cell_type	color	broad_cell_type	cluster_class	legacy_annotation_string
+1	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.51)
+2	gastrodermis	wheat1	gastrodermis	leiden	unknown1(1.00); gastrodermis(0.42); gastrodermis_muscle(0.31); correlation_best:gastrodermis_muscle(r=0.380); manual
+3	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.59); gastrodermis_like_2(0.42); immune_macrophage_like_1(0.17)
+4	epidermis	cadetblue2	epidermis	leiden	epidermis(0.63); germline_oocytes_1(0.24); digestive_filaments(0.10)
+5	gastrodermis_muscle	burlywood4	gastrodermis	leiden	gastrodermis_muscle(0.60); epidermis(0.22)
+6	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.59); gastrodermis_muscle(0.12)
+7	gastrodermis	wheat1	gastrodermis	leiden	unknown2(1.00); gastrodermis(0.28); gastrodermis_muscle(0.17); correlation_suppoted:gastrodermis(r=0.058); manual
+8	gastrodermis	wheat1	gastrodermis	leiden	unknown3(1.00); gastrodermis(0.41); correlation_best:digestive_filaments(r=0.091); manual
+9	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.52); gastrodermis_muscle(0.12)
+10	gastrodermis	wheat1	gastrodermis	leiden	unknown4(1.00); gastrodermis(0.43); correlation_suppoted:gastrodermis(r=0.191)
+11	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.71)
+12	gastrodermis	wheat1	gastrodermis	leiden	unknown5(1.00); gastrodermis(0.41); correlation_suppoted:gastrodermis(r=0.246)
+13	gastrodermis_alga_hosting	darkolivegreen3	gastrodermis	leiden	gastrodermis_alga_hosting(0.71)
+14	germline_oocytes_2	khaki3	germline	leiden	germline_oocytes_2(0.90); neurosecretory_progenitors(0.73); neuron_Isl_Nkx6(0.15)
+15	neuron_Pou4_2	royalblue2	neuron	leiden	neuron_Pou4_2(0.59); neuron_Pou4_1(0.52); neuron_Pou4_Otp(0.48); neuron_Atoh8(0.44); neuron_Isl(0.27); gland_3(0.20); neuron_Pou4_Gsx(0.20); gland_2(0.12)
+16	gland_1_Xbp	sienna1	gland	leiden	unknown6(1.00); gland_1_Xbp(0.20); epidermis(0.14); digestive_filaments(0.11); correlation_best:gland_1_Xbp(r=0.357); manual
+17	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.54); gastrodermis_muscle(0.15)
+18	gland_3	sienna3	gland	leiden	unknown7(1.00); gland_3(0.29); neuron_Isl(0.17); gland_2(0.15); correlation_best:gland_2(r=0.163); manual
+19	epidermis	cadetblue2	epidermis	leiden	unknown8(1.00); epidermis(0.34); correlation_best:gland_1_Xbp(r=0.557); manual
+20	cnidocyte	mediumorchid3	cnidocyte	leiden	cnidocyte(0.72)
+21	calicoblast	mediumpurple1	calicoblast	leiden	calicoblast(0.87)
+22	gastrodermis_alga_hosting	darkolivegreen3	gastrodermis	leiden	gastrodermis_alga_hosting(0.91)
+23	gastrodermis	wheat1	gastrodermis	leiden	gastrodermis(0.85)
+24	gland_1_Xbp	sienna1	gland	leiden	gland_1_Xbp(0.81)
+25	immune_macrophage	plum2	immune	leiden	immune_macrophage(0.95); immune_macrophage_like_1(0.35)
+26	unknown9	#AFAFAF	undefined	leiden	unknown9(1.00); correlation_best:immune_macrophage(r=0.053); manual
+27	immune_nascent	plum1	immune	leiden	immune_nascent(0.80)
+28	germline_oocytes_1	khaki2	germline	leiden	unknown10(1.00); gastrodermis(0.41); germline_oocytes_1(0.31); correlation_best:germline_oocytes_1(r=0.566); manual
+29	gastrodermis_alga_hosting	darkolivegreen3	gastrodermis	leiden	unknown11(1.00); gastrodermis_alga_hosting(0.28); correlation_best:gland_1_Xbp(r=0.119); manual

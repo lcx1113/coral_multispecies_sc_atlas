@@ -1,0 +1,2 @@
+orthogroup	n_species_present_in_broccoli	n_species_mapped_to_expression	n_species_tested	n_positive_species	positive_species	comparison_id	n_species_in_comparison	core_min_species	broad_min_species	majority_min_species	shared_min_species	conservation_class	has_TF	first_annotation	first_support	second_annotation	second_support
+OG:010252	11	11	11	11	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Plut;Spin;Xesp	gastrodermis_alga_hosting	11	11	9	6	2	core	FALSE	Npc2	1	NPC2	0.8484848484848485

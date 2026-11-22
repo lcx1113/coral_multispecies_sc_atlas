@@ -1,0 +1,16 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Deposited data,,
+Xenia genome assembly (xenia.contigs.FINAL.fasta),[REPOSITORY],[ACCESSION]
+Xenia long-read annotation (Xesp_long.annot.gtf),[REPOSITORY],[ACCESSION]
+Single-cell RNA-seq atlas of Xenia,GEO,[GSE ACCESSION]
+Cell-type marker table (seu.Xesp.markers.cts.csv),This paper / GEO,[DATA S1 / SUPPLEMENTARY FILE]
+Analysis code,This paper,"GitHub: [GITHUB URL]; Zenodo: [DOI]"
+Source data for Figures 1 and 2,This paper,results/tables/
+Software and algorithms,,
+Python 3.8.10,Python Software Foundation,https://www.python.org
+NumPy 1.23.5,NumPy developers,https://numpy.org
+pandas 2.0.3,pandas developers,https://pandas.pydata.org
+SciPy 1.10.1,SciPy developers,https://scipy.org
+Matplotlib 3.7.5,Matplotlib developers,https://matplotlib.org
+JASPAR CORE 2026 (11th release),JASPAR,https://jaspar.genereg.net; doi:10.1093/nar/gkaf1209
+PWM scanner and enrichment pipeline (code/),This paper,"GitHub: [GITHUB URL]; Zenodo: [DOI]"

@@ -1,0 +1,13 @@
+validation_scope	comparison_id	object_species	n_rows	threshold_ok	identity_ok	duplicate_ok	status
+species_filtered	cnidocyte	Adig	274	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Ahya	291	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Amur	150	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Fspp	206	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Gfas	132	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Hcoe	292	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Pcru	124	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Pdam	371	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Plut	458	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Spin	20	TRUE	TRUE	TRUE	PASS
+species_filtered	cnidocyte	Xesp	1695	TRUE	TRUE	TRUE	PASS
+comparison_conservation	cnidocyte	NA	21743	TRUE	TRUE	TRUE	PASS

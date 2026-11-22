@@ -1,0 +1,12 @@
+orthogroup	n_species_present_in_broccoli	n_species_mapped_to_expression	n_species_tested	n_positive_species	positive_species	comparison_id	n_species_in_comparison	core_min_species	broad_min_species	majority_min_species	shared_min_species	conservation_class	has_TF	first_annotation	first_support	second_annotation	second_support
+OG:003397	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	FLNC	0.5714285714285714	FLNA	0.2857142857142857
+OG:006927	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	NA	NA	NA	NA
+OG:007170	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	NA	NA	NA	NA
+OG:008250	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	Dysf/Fer1l5/Myof	0.928571428571429	MYOF	0.7857142857142857
+OG:008876	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	NA	NA	TLL1	0.2713178294573643
+OG:010522	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	NA	NA	DMBT1	0.3263157894736842
+OG:010619	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	NA	NA	NA	NA
+OG:015112	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	NA	NA	NA	NA
+OG:015319	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	NA	NA	NA	NA
+OG:016160	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	MEP1B	1	NA	NA
+OG:018802	9	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pcru;Pdam;Plut;Spin	calicoblast_stony	9	9	7	5	2	core	FALSE	YXIE	0.9166666666666666	NA	NA

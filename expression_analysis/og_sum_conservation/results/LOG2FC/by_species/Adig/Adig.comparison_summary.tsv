@@ -1,0 +1,13 @@
+object_species	orthology_species	target_celltype	n_target_cells	n_background_cells	n_ogs	n_wilcox_tested	n_fold_change_only
+Adig	Adig	calicoblast	567	9904	12265	12265	0
+Adig	Adig	cnidocyte	321	10150	12265	12265	0
+Adig	Adig	epidermis	2766	7705	12265	12265	0
+Adig	Adig	gastrodermis	2610	7861	12265	12265	0
+Adig	Adig	gastrodermis_alga_hosting	195	10276	12265	12265	0
+Adig	Adig	gastrodermis_muscle	704	9767	12265	12265	0
+Adig	Adig	gland_1_Xbp	106	10365	12265	12265	0
+Adig	Adig	gland_2	831	9640	12265	12265	0
+Adig	Adig	gland_3	618	9853	12265	12265	0
+Adig	Adig	immune_macrophage	258	10213	12265	12265	0
+Adig	Adig	neuron_Isl_Nkx6	268	10203	12265	12265	0
+Adig	Adig	neuron_Pou4_1	869	9602	12265	12265	0

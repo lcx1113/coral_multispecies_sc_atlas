@@ -1,0 +1,17 @@
+object_species	orthology_species	target_celltype	n_target_cells	n_background_cells	n_ogs	n_wilcox_tested	n_fold_change_only
+Plut	Plut	calicoblast	133	9601	12889	12889	0
+Plut	Plut	cnidocyte	177	9557	12889	12889	0
+Plut	Plut	digestive_filaments	359	9375	12889	12889	0
+Plut	Plut	epidermis	2651	7083	12889	12889	0
+Plut	Plut	gastrodermis	3331	6403	12889	12889	0
+Plut	Plut	gastrodermis_alga_hosting	443	9291	12889	12889	0
+Plut	Plut	gastrodermis_muscle	265	9469	12889	12889	0
+Plut	Plut	germline_oocytes_1	348	9386	12889	12889	0
+Plut	Plut	gland_1_Xbp	213	9521	12889	12889	0
+Plut	Plut	gland_2	287	9447	12889	12889	0
+Plut	Plut	gland_3	460	9274	12889	12889	0
+Plut	Plut	immune_macrophage	232	9502	12889	12889	0
+Plut	Plut	neuron_Isl_Nkx6	152	9582	12889	12889	0
+Plut	Plut	neuron_Pou4_1	146	9588	12889	12889	0
+Plut	Plut	neuron_Pou4_Otp	337	9397	12889	12889	0
+Plut	Plut	neurosecretory_progenitors	83	9651	12889	12889	0

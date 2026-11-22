@@ -1,0 +1,12 @@
+object_species	orthology_species	include	seurat_file	assay	counts_layer	celltype_column	notes
+Adig	Adig	TRUE	/absolute/path/seurat_objects/dat.Adig.seurat_final.rds	RNA	counts	cell_type	
+Ahya	Ahya	TRUE	/absolute/path/seurat_objects/dat.Ahya.seurat_final.rds	RNA	counts	cell_type	
+Amur	Amur	TRUE	/absolute/path/seurat_objects/dat.Amur.seurat_final.rds	RNA	counts	cell_type	
+Fspp	Fspp	TRUE	/absolute/path/seurat_objects/dat.Fspp.seurat_final.rds	RNA	counts	cell_type	
+Gfas	Gfas	TRUE	/absolute/path/seurat_objects/dat.Gfas.seurat_final.rds	RNA	counts	cell_type	
+Hcoe	Hcoe	TRUE	/absolute/path/seurat_objects/dat.Hcoe.seurat_final.rds	RNA	counts	cell_type	
+Pcru	Pcru	TRUE	/absolute/path/seurat_objects/dat.Pcru.seurat_final.rds	RNA	counts	cell_type	
+Pdam	Pdam	TRUE	/absolute/path/seurat_objects/dat.Pdam.seurat_final.rds	RNA	counts	cell_type	
+Plut	Plut	TRUE	/absolute/path/seurat_objects/dat.Plut.seurat_final.rds	RNA	counts	cell_type	
+Spin	Spis	TRUE	/absolute/path/seurat_objects/dat.Spin.seurat_final.rds	RNA	counts	cell_type	Spin object maps to Spis in Broccoli
+Xesp	Xesp	TRUE	/absolute/path/seurat_objects/dat.Xesp.seurat_final.rds	RNA	counts	cell_type	

@@ -1,0 +1,5 @@
+family_id	family_name	original_orthogroups	n_members	n_species	combined_fasta	combined_fasta_sha256	status
+FAM_CA	Carbonic_anhydrase	OG:000838;OG:018859;OG:000391	95	13	./intermediate/05_sequences/FAM_CA/FAM_CA.clean.faa	ccf660d28a5613b90dd0904d35d724d542a4ac477b38919545e0c56e6f99a7d5	PASS
+FAM_FERLIN	Ferlin	OG:009628;OG:008250	27	13	./intermediate/05_sequences/FAM_FERLIN/FAM_FERLIN.clean.faa	01909d86166ac0dc76ceab4a185c5b3303221d9a76dcae59c89ad78617d4866e	PASS
+FAM_MEP1B	MEP1B_related	OG:008876;OG:016160;OG:011639;OG:015057	215	13	./intermediate/05_sequences/FAM_MEP1B/FAM_MEP1B.clean.faa	4466cf4d30052599b6ace998f6d2690a652de39b18b82faa31f46caf73173427	PASS
+FAM_SLC4	SLC4	OG:019268;OG:018739	39	13	./intermediate/05_sequences/FAM_SLC4/FAM_SLC4.clean.faa	9fb4694f62e97b0c69792f48f56dfac7041504248e51738d275aa4313663795b	PASS

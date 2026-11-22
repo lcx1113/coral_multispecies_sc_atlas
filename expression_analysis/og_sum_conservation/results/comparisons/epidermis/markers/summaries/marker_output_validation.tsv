@@ -1,0 +1,11 @@
+comparison_id	object_species	full_file_exists	filtered_file_exists	full_file_is_gzip	n_full_rows	n_filtered_rows	content_checks_pass	status	message
+epidermis	Adig	TRUE	TRUE	TRUE	3897	1549	TRUE	PASS	NA
+epidermis	Ahya	TRUE	TRUE	TRUE	4134	671	TRUE	PASS	NA
+epidermis	Amur	TRUE	TRUE	TRUE	3139	281	TRUE	PASS	NA
+epidermis	Fspp	TRUE	TRUE	TRUE	2428	700	TRUE	PASS	NA
+epidermis	Gfas	TRUE	TRUE	TRUE	2892	498	TRUE	PASS	NA
+epidermis	Hcoe	TRUE	TRUE	TRUE	2469	110	TRUE	PASS	NA
+epidermis	Pcru	TRUE	TRUE	TRUE	2260	643	TRUE	PASS	NA
+epidermis	Pdam	TRUE	TRUE	TRUE	4311	858	TRUE	PASS	NA
+epidermis	Plut	TRUE	TRUE	TRUE	3041	888	TRUE	PASS	NA
+epidermis	Spin	TRUE	TRUE	TRUE	3674	460	TRUE	PASS	NA

@@ -1,0 +1,14 @@
+object_species	orthology_species	target_celltype	n_target_cells	n_background_cells	n_ogs	n_wilcox_tested	n_fold_change_only
+Fspp	Fspp	calicoblast	195	9694	13189	13189	0
+Fspp	Fspp	cnidocyte	204	9685	13189	13189	0
+Fspp	Fspp	epidermis	861	9028	13189	13189	0
+Fspp	Fspp	gastrodermis	5704	4185	13189	13189	0
+Fspp	Fspp	gastrodermis_alga_hosting	565	9324	13189	13189	0
+Fspp	Fspp	gastrodermis_muscle	621	9268	13189	13189	0
+Fspp	Fspp	germline_oocytes_1	51	9838	13189	13189	0
+Fspp	Fspp	germline_oocytes_2	373	9516	13189	13189	0
+Fspp	Fspp	gland_1_Xbp	438	9451	13189	13189	0
+Fspp	Fspp	gland_3	276	9613	13189	13189	0
+Fspp	Fspp	immune_macrophage	88	9801	13189	13189	0
+Fspp	Fspp	immune_nascent	76	9813	13189	13189	0
+Fspp	Fspp	neuron_Pou4_2	352	9537	13189	13189	0

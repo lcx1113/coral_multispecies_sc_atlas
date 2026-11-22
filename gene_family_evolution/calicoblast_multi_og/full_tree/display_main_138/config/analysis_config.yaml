@@ -1,0 +1,98 @@
+project:
+  label: four_families_SC11_Hvul_Aaur_strict70_261110
+  analysis_role: display_only_pruning_of_existing_family_trees
+source:
+  project: ..
+  family_definitions: config/run_family_sets.tsv
+  expression: results/05_tip_tracks/sc11_hvul_aaur_strict70_all_members/tip_relative_expression.tsv
+  cdd_domain_hits: results/05_tip_tracks/sc11_hvul_aaur_strict70_all_members/cdd_domain_hits.tsv
+  cdd_sequence_status: results/05_tip_tracks/sc11_hvul_aaur_strict70_all_members/cdd_sequence_status.tsv
+  reconciliation_nodes: results/03_reconciliation/sc11_hvul_aaur_strict70_all_members/reconciliation_nodes.tsv
+  reconciliation_events: results/03_reconciliation/sc11_hvul_aaur_strict70_all_members/reconciliation_events.tsv
+  reconciliation_summary: results/03_reconciliation/sc11_hvul_aaur_strict70_all_members/reconciliation_summary.tsv
+selection:
+  retain_all_species_without_expression: []
+  unit: species_within_original_orthogroup_within_family
+  retain_if_marker: all_positive_marker_tips
+  marker_column: positive_marker
+  additionally_retain_per_species: highest_observed_avg_log2FC_tip
+  top_tip_order:
+  - avg_log2FC_descending
+  - pct_target_descending
+  - p_val_adj_ascending
+  - leaf_id_lexical_ascending
+  no_observed_species_fallback: lexical_first_leaf_flagged
+  missing_expression_is_zero: false
+  reference_display_policy: one_per_species_per_maximal_pure_reference_clade_in_full_tree
+  reference_species:
+  - Hvul
+  - Aaur
+  coral_selection: exact_copy_of_parent_display_selection
+  representative_ranking:
+  - trimmed_alignment_canonical_AA_fraction_desc
+  - mean_patristic_distance_same_species_same_clade_asc
+  - protein_id_lexical_asc
+tree:
+  action: prune_existing_reconciled_gene_tree
+  realign: false
+  reinfer_gene_tree: false
+  rerun_reconciliation: false
+  preserve_original_tip_order: true
+  pruned_tree_branch_lengths: inherited_from_source_tree
+  internal_annotation_policy: inherit_only_when_one_informative_original_node_maps_uniquely
+  ambiguous_internal_annotation: hide_and_record
+  losses_displayed: false
+visualization:
+  rscript: /absolute/path/tools/anaconda3/envs/r-env/bin/Rscript
+  ghostscript: /usr/bin/gs
+  tree_layout: rectangular_cladogram
+  branch_length_display: cladogram
+  expression_display_limit: 5.0
+  expression_low_color: '#2166AC'
+  expression_mid_color: '#F7F7F7'
+  expression_high_color: '#B2182B'
+  no_dataset_color: '#D9D9D9'
+  gene_not_tested_color: '#737373'
+  celltype_not_present_color: '#FDD0A2'
+  node_color_speciation: '#2C7FB8'
+  node_color_duplication: '#D95F0E'
+  protein_backbone_color: '#969696'
+  domain_label_font_size: 1.65
+  domain_label_angle_degrees: 25
+  domain_lane_spacing: 0.2
+  domain_rectangle_half_height: 0.075
+  domain_label_offset: 0.055
+  tip_label_font_size: 2.35
+  expression_text_font_size: 1.9
+  internal_event_point_size: 2.1
+  support_font_size: 1.55
+  pct_point_size_min: 2.4
+  pct_point_size_max: 6.2
+  show_all_inherited_ufboot: true
+  emphasize_fallback_tip: true
+  create_article_final_variant: true
+  article_branch_x_scale: 0.48
+  article_pdf_width_inches: 18
+  article_pdf_height_per_tip_inches: 0.34
+  article_pdf_minimum_height_inches: 7
+  article_tip_label_font_size: 3.05
+  article_header_font_size: 3.35
+  article_support_font_size: 2.15
+  article_event_point_size: 3.0
+  article_expression_point_size_min: 3.8
+  article_expression_point_size_max: 8.6
+  article_marker_ring_stroke: 1.25
+  article_domain_height: 0.26
+  article_legend_title_size: 10.5
+  article_legend_text_size: 9.5
+  article_hcoe_label_color: '#0072B2'
+  article_xesp_label_color: '#009E73'
+  article_other_label_color: '#202020'
+  article_cross_og_support_minimum: 0
+  article_domain_legend_max_columns: 6
+outputs:
+  selection_dir: results/01_tip_selection
+  tree_dir: results/02_pruned_trees
+  validation_dir: results/04_validation
+  article_figure_dir: results/05_article_figures
+family_definitions: config/family_sets.tsv

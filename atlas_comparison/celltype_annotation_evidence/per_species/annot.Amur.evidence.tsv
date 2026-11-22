@@ -1,0 +1,25 @@
+species	cluster	SAMap_best_cell_type	SAMap_similarity	correlation_best_cell_type	correlation_similarity	SATURN_nearest_cell_type	SATURN_second_nearest_cell_type
+Amur	1	calicoblast	calicoblast(0.85)	calicoblast	calicoblast(0.302)	calicoblast	epidermis
+Amur	2	gastrodermis	gastrodermis(0.60); gastrodermis_like_2(0.16)	gastrodermis_like_2	gastrodermis_like_2(0.301); gastrodermis(0.292); gastrodermis_muscle(0.248); immune_macrophage(0.150); digestive_filaments(0.137); immune_nascent(0.129)	gastrodermis_like_2	gastrodermis_like_2
+Amur	3	gastrodermis	gastrodermis(0.65); gastrodermis_like_2(0.11)	gastrodermis	gastrodermis(0.310); gastrodermis_muscle(0.276); gastrodermis_like_2(0.261); digestive_filaments(0.144)	gastrodermis	gastrodermis
+Amur	4	gastrodermis	gastrodermis(0.66); gastrodermis_muscle(0.27); gastrodermis_like_2(0.18)	gastrodermis_muscle	gastrodermis_muscle(0.365); gastrodermis(0.314); gastrodermis_like_2(0.289); digestive_filaments(0.183)	gastrodermis	gastrodermis
+Amur	5	gland_2	gland_2(0.29); digestive_filaments(0.28); gland_3(0.13); gland_1_Xbp(0.11)	digestive_filaments	digestive_filaments(0.210); gland_3(0.175); gland_2(0.157); neuron_Pou4_2(0.112); neuron_Isl(0.107)	gland_2	digestive_filaments
+Amur	6	neuron_Pou4_1	neuron_Pou4_1(0.55); neuron_Pou4_Otp(0.46); neuron_Isl(0.44); neuron_Pou4_Gsx(0.34); neuron_Pou4_2(0.27); neuron_Isl_Nkx6(0.15); gland_3(0.13); gland_2(0.12)	neuron_Isl	neuron_Isl(0.446); gland_2(0.378); neuron_Pou4_Otp(0.355); neuron_Pou4_2(0.351); gland_3(0.268); neuron_Isl_Nkx6(0.256); neuron_Pou4_1(0.225); neuron_Pou4_Gsx(0.182); neuron_Atoh8(0.171)	neuron_Isl	neuron_Isl_Nkx6
+Amur	7	calicoblast	calicoblast(0.46)	calicoblast	calicoblast(0.317); epidermis(0.112)	gastrodermis_like_2	gastrodermis
+Amur	8	epidermis	epidermis(0.80)	epidermis	epidermis(0.320); digestive_filaments(0.130); calicoblast(0.115)	epidermis	epidermis
+Amur	9	gastrodermis	gastrodermis(0.65); neuron_Pou4_2(0.12)	gastrodermis_like_2	gastrodermis_like_2(0.219); gastrodermis_muscle(0.217); gastrodermis(0.215); immune_nascent(0.135); immune_macrophage(0.106)	gastrodermis	gastrodermis_muscle
+Amur	10	germline_oocytes_1	germline_oocytes_1(0.74); neurosecretory_progenitors(0.65); neuron_Pou4_Otp(0.20); neuron_Isl_Nkx6(0.13)	germline_oocytes_1	germline_oocytes_1(0.407); neurosecretory_progenitors(0.315); neuron_Pou4_Otp(0.139)	germline_oocytes_1	neurosecretory_progenitors
+Amur	11	gastrodermis	gastrodermis(0.57); gastrodermis_muscle(0.28); gastrodermis_like_2(0.12)	gastrodermis_muscle	gastrodermis_muscle(0.342); gastrodermis(0.331); gastrodermis_like_2(0.326); digestive_filaments(0.187); immune_macrophage(0.165)	gastrodermis	gastrodermis
+Amur	12	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.94)	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.679); gastrodermis(0.131); gastrodermis_muscle(0.110); gastrodermis_like_2(0.104)	gastrodermis_alga_hosting	gastrodermis_alga_hosting
+Amur	13	epidermis	epidermis(0.80)	epidermis	epidermis(0.222); calicoblast(0.103)	epidermis	epidermis
+Amur	14	gastrodermis	gastrodermis(0.40); immune_nascent(0.22)	gastrodermis_like_2	gastrodermis_like_2(0.200); gastrodermis_muscle(0.183); gastrodermis(0.176); immune_nascent(0.118); digestive_filaments(0.104)	gastrodermis_muscle	gastrodermis
+Amur	15	calicoblast	calicoblast(0.59)	calicoblast	calicoblast(0.293)	calicoblast	gastrodermis_like_2
+Amur	16	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.72)	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.665); gastrodermis(0.157); gastrodermis_muscle(0.133); gastrodermis_like_2(0.128); digestive_filaments(0.114)	gastrodermis	gastrodermis_like_2
+Amur	17	gastrodermis	gastrodermis(0.54)	gastrodermis_like_2	gastrodermis_like_2(0.223); gastrodermis(0.207); gastrodermis_muscle(0.201); digestive_filaments(0.148); germline_oocytes_1(0.118)	gastrodermis	gastrodermis
+Amur	18	cnidocyte	cnidocyte(0.75)	cnidocyte	cnidocyte(0.838)	cnidocyte	epidermis
+Amur	19	neuron_Pou4_2	neuron_Pou4_2(0.39); neuron_Pou4_1(0.11)	neuron_Pou4_2	neuron_Pou4_2(0.426); neuron_Pou4_1(0.235); gland_3(0.218); neuron_Isl_Nkx6(0.193); neuron_Pou4_Gsx(0.192); gland_2(0.160); neuron_Isl(0.150); neuron_Atoh8(0.111)	neuron_Pou4_Gsx	neuron_Pou4_2
+Amur	20	immune_macrophage	immune_macrophage(0.87); immune_macrophage_like_2(0.85); immune_macrophage_like_1(0.39)	immune_macrophage	immune_macrophage(0.231); immune_macrophage_like_2(0.199); immune_nascent(0.115)	immune_macrophage	immune_macrophage_like_2
+Amur	21	neuron_Atoh8	neuron_Atoh8(0.55)	neuron_Pou4_2	neuron_Pou4_2(0.289); neuron_Isl_Nkx6(0.237); gland_2(0.205); neuron_Isl(0.190); neuron_Atoh8(0.170); gland_3(0.134); neuron_Pou4_1(0.102)	neuron_Pou4_2	neuron_Pou4_2
+Amur	22	calicoblast	calicoblast(0.38)	calicoblast	calicoblast(0.242)	epidermis	epidermis
+Amur	23	gland_3	gland_3(0.53); gland_2(0.16)	gland_3	gland_3(0.345); gland_2(0.104)	epidermis	epidermis
+Amur	24	gland_1_Xbp	gland_1_Xbp(0.47); neuron_Pou4_2(0.11)	gland_1_Xbp	gland_1_Xbp(0.169); gland_3(0.108); gland_2(0.101)	gland_3	gland_1_Xbp

@@ -1,0 +1,4 @@
+orthogroup	n_species_present_in_broccoli	n_species_mapped_to_expression	n_species_tested	n_downregulated_species	downregulated_species	comparison_id	direction	n_species_in_comparison	core_min_species	broad_min_species	majority_min_species	shared_min_species	conservation_class	has_TF	first_annotation	first_support	second_annotation	second_support
+OG:005383	11	11	11	10	Adig;Ahya;Amur;Fspp;Gfas;Hcoe;Pcru;Pdam;Plut;Xesp	cnidocyte	downregulated	11	11	9	6	2	broad_only	TRUE	Ets:Ets1/Ets2/Etv2	0.923076923076923	ETS1	0.8076923076923077
+OG:007028	11	11	10	9	Adig;Ahya;Fspp;Gfas;Hcoe;Pcru;Plut;Spin;Xesp	cnidocyte	downregulated	11	11	9	6	2	broad_only	FALSE	FRIH	0.769230769230769	Fth1/Fthl17_ps1/Fthl17b/Fthl17c/Fthl17d/Fthl17e/Fthl17f/Ftl1/Ftl1_ps2/Ftmt	0.7692307692307693
+OG:013856	10	9	9	9	Adig;Ahya;Amur;Fspp;Gfas;Pdam;Plut;Spin;Xesp	cnidocyte	downregulated	11	11	9	6	2	broad_only	TRUE	bZIP:Cebpa/Cebpb/Cebpd/Cebpe	1	CEBPG	0.7

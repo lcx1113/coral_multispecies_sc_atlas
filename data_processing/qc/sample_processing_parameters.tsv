@@ -1,0 +1,10 @@
+sample_id	emptydrops_by_rank	emptydrops_fdr_cutoff	emptydrops_niters	workflow_seed	marker_random_seed	soupx_force_accept	marker_filter_cutoff	apply_mito_filter	parameter_status
+Ahya	40000	0.001	100000	100	123	default	15	TRUE	adopted
+Adig	40000	0.001	100000	100	123	default	15	TRUE	adopted
+Amur	40000	0.001	100000	100	123	default	15	TRUE	adopted
+Fusp	40000	0.001	100000	100	123	default	15	TRUE	adopted
+Gfas	40000	0.001	100000	100	123	default	15	TRUE	adopted
+Hcoe	40000	0.001	100000	100	123	default	15	FALSE	adopted
+Pcru	40000	0.001	10000	100	100	TRUE	15	FALSE	adopted
+Pdam	40000	0.001	100000	100	123	default	15	TRUE	adopted
+Plut	40000	0.001	100000	100	123	default	15	TRUE	adopted

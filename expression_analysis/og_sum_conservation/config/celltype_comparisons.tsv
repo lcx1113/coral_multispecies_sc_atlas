@@ -1,0 +1,56 @@
+comparison_id	object_species	include	species_order	target_labels	display_name	notes
+cnidocyte	Adig	TRUE	1	cnidocyte	cnidocyte	
+cnidocyte	Ahya	TRUE	2	cnidocyte	cnidocyte	
+cnidocyte	Amur	TRUE	3	cnidocyte	cnidocyte	
+cnidocyte	Fspp	TRUE	4	cnidocyte	cnidocyte	
+cnidocyte	Gfas	TRUE	5	cnidocyte	cnidocyte	
+cnidocyte	Hcoe	TRUE	6	cnidocyte	cnidocyte	
+cnidocyte	Pcru	TRUE	7	cnidocyte	cnidocyte	
+cnidocyte	Pdam	TRUE	8	cnidocyte	cnidocyte	
+cnidocyte	Plut	TRUE	9	cnidocyte	cnidocyte	
+cnidocyte	Spin	TRUE	10	cnidocyte	cnidocyte	
+cnidocyte	Xesp	TRUE	11	cnidocyte	cnidocyte	
+gastrodermis_alga_hosting	Adig	TRUE	1	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Ahya	TRUE	2	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Amur	TRUE	3	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Fspp	TRUE	4	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Gfas	TRUE	5	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Hcoe	TRUE	6	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Pcru	TRUE	7	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Pdam	TRUE	8	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Plut	TRUE	9	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Spin	TRUE	10	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+gastrodermis_alga_hosting	Xesp	TRUE	11	gastrodermis_alga_hosting	gastrodermis alga-hosting	
+calicoblast	Adig	TRUE	1	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Ahya	TRUE	2	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Amur	TRUE	3	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Fspp	TRUE	4	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Gfas	TRUE	5	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Hcoe	TRUE	6	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Pcru	TRUE	7	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Pdam	TRUE	8	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Plut	TRUE	9	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Spin	TRUE	10	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast	Xesp	TRUE	11	calicoblast	calicoblast	calicoblast only; calicoblast-like excluded
+calicoblast_stony	Adig	TRUE	1	calicoblast	calicoblast stony	included in nine-species comparison
+calicoblast_stony	Ahya	TRUE	2	calicoblast	calicoblast stony	included in nine-species comparison
+calicoblast_stony	Amur	TRUE	3	calicoblast	calicoblast stony	included in nine-species comparison
+calicoblast_stony	Fspp	TRUE	4	calicoblast	calicoblast stony	included in nine-species comparison
+calicoblast_stony	Gfas	TRUE	5	calicoblast	calicoblast stony	included in nine-species comparison
+calicoblast_stony	Hcoe	FALSE	6	calicoblast	calicoblast stony	excluded from nine-species comparison
+calicoblast_stony	Pcru	TRUE	7	calicoblast	calicoblast stony	included in nine-species comparison
+calicoblast_stony	Pdam	TRUE	8	calicoblast	calicoblast stony	included in nine-species comparison
+calicoblast_stony	Plut	TRUE	9	calicoblast	calicoblast stony	included in nine-species comparison
+calicoblast_stony	Spin	TRUE	10	calicoblast	calicoblast stony	included in nine-species comparison
+calicoblast_stony	Xesp	FALSE	11	calicoblast	calicoblast stony	excluded from nine-species comparison
+epidermis	Adig	TRUE	1	epidermis	epidermis	included in ten-species comparison
+epidermis	Ahya	TRUE	2	epidermis	epidermis	included in ten-species comparison
+epidermis	Amur	TRUE	3	epidermis	epidermis	included in ten-species comparison
+epidermis	Fspp	TRUE	4	epidermis	epidermis	included in ten-species comparison
+epidermis	Gfas	TRUE	5	epidermis	epidermis	included in ten-species comparison
+epidermis	Hcoe	TRUE	6	epidermis	epidermis	included in ten-species comparison
+epidermis	Pcru	TRUE	7	epidermis	epidermis	included in ten-species comparison
+epidermis	Pdam	TRUE	8	epidermis	epidermis	included in ten-species comparison
+epidermis	Plut	TRUE	9	epidermis	epidermis	included in ten-species comparison
+epidermis	Spin	TRUE	10	epidermis	epidermis	included in ten-species comparison
+epidermis	Xesp	FALSE	11	epidermis	epidermis	excluded from ten-species comparison

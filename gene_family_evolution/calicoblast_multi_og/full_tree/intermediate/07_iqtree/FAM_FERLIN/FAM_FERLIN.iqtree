@@ -1,0 +1,290 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: /home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_orthogroup_genetree_versions/family_OG_filtered_SC11_Hvul_Aaur_261110/strict_candidates_dual70_corecomplete_261110/gene_tree_analysis/intermediate/06_alignments/FAM_FERLIN/FAM_FERLIN.clipkit.aln.faa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 1234
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 27 sequences with 1805 amino-acid sites
+Number of constant sites: 210 (= 11.6343% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 210 (= 11.6343% of all sites)
+Number of parsimony informative sites: 1595
+Number of distinct site patterns: 1725
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+F+I+G4        -43254.100   86652.201 -  0.00159   86658.270 -  0.00207   87048.080 +    0.859
+LG+F+I+R3        -43244.659   86639.318 +    0.998   86645.912 +    0.998   87051.692 +    0.141
+LG+I+G4          -43400.895   86907.791 - 5.03e-59   86911.060 - 2.65e-58   87199.201 - 1.31e-33
+LG+I+R3          -43393.906   86899.812 - 2.72e-57   86903.464 - 1.18e-56   87207.717 - 1.86e-35
+LG+I+R4          -43393.613   86903.225 - 4.93e-58   86907.145 - 1.87e-57   87222.128 - 1.38e-38
+LG+I+R2          -43423.185   86954.371 - 3.86e-69   86957.765 - 1.91e-68   87251.280 - 6.45e-45
+LG+R5            -43406.852   86931.703 - 3.23e-64   86935.761 - 1.15e-63   87256.104 - 5.78e-46
+LG+R4            -43419.831   86953.662 -  5.5e-69   86957.447 - 2.24e-68   87267.066 - 2.41e-48
+LG+R6            -43405.401   86932.802 - 1.86e-64   86937.141 - 5.75e-64   87268.199 - 1.37e-48
+LG+R3            -43450.566   87011.132 - 1.82e-81   87014.654 - 8.47e-81   87313.539 - 1.95e-58
+LG+G4            -43476.792   87057.583 - 1.49e-91   87060.729 - 8.37e-91   87343.496 -  6.1e-65
+WAG+F+I+G4       -43445.902   87035.804 - 8.01e-87   87041.874 - 1.04e-86   87431.683 - 4.32e-84
+WAG+F+I+R3       -43438.525   87027.050 - 6.37e-85   87033.644 - 6.37e-85   87439.424 - 9.01e-86
+LG+R2            -43552.926   87211.851 - 4.74e-125   87215.120 - 2.5e-124   87503.262 - 1.24e-99
+WAG+I+G4         -43612.049   87330.099 - 9.96e-151   87333.368 - 5.25e-150   87621.509 - 2.6e-125
+WAG+I+R3         -43606.110   87324.220 - 1.88e-149   87327.872 - 8.19e-149   87632.126 - 1.29e-127
+JTT+F+I+G4       -43579.347   87302.694 - 8.9e-145   87308.763 - 1.16e-144   87698.572 - 4.8e-142
+JTT+F+I+R3       -43573.015   87296.031 - 2.49e-143   87302.624 - 2.49e-143   87708.404 - 3.52e-144
+JTT+I+G4         -43777.188   87660.376 - 1.9e-222   87663.645 -   1e-221   87951.787 - 4.97e-197
+JTT+I+R3         -43772.076   87656.152 - 1.57e-221   87659.804 - 6.84e-221   87964.058 - 1.08e-199
+LG+I             -43818.154   87740.307 - 8.37e-240   87743.453 - 4.69e-239   88026.220 - 3.42e-213
+LG               -44246.119   88594.238 -        0   88597.264 -        0   88874.653 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+F+I+G4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0507
+  pi(R) = 0.0507
+  pi(N) = 0.0416
+  pi(D) = 0.0721
+  pi(C) = 0.0162
+  pi(Q) = 0.0360
+  pi(E) = 0.0825
+  pi(G) = 0.0558
+  pi(H) = 0.0164
+  pi(I) = 0.0604
+  pi(L) = 0.0852
+  pi(K) = 0.0836
+  pi(M) = 0.0242
+  pi(F) = 0.0494
+  pi(P) = 0.0568
+  pi(S) = 0.0587
+  pi(T) = 0.0466
+  pi(W) = 0.0150
+  pi(Y) = 0.0304
+  pi(V) = 0.0677
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.0751
+Gamma shape alpha: 2.5066
+
+ Category  Relative_rate  Proportion
+  0         0              0.0751
+  1         0.3752         0.2312
+  2         0.7568         0.2312
+  3         1.1663         0.2312
+  4         2.0264         0.2312
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -43253.4580 (s.e. 469.8500)
+Unconstrained log-likelihood (without tree): -13381.0171
+Number of free parameters (#branches + #model parameters): 72
+Akaike information criterion (AIC) score: 86650.9161
+Corrected Akaike information criterion (AICc) score: 86656.9854
+Bayesian information criterion (BIC) score: 87046.7948
+
+Total tree length (sum of branch lengths): 10.5570
+Sum of internal branch lengths: 4.7376 (44.8759% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Aaur__Aaur_scaffold142.g27.t3' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-------Aaur__Aaur_scaffold142.g27.t3
+|
+|                                                         +--Adig__Adig_XM_015903978.1.p1
+|                                                      +--| (53)
+|                                                      |  +--Ahya__Ahya_ahya_s0142.g31.t1.p1
+|                                                   +--| (100)
+|                                                   |  +--Amur__Amur_amur_s0236.g9.t1.p1
+|                                                +--| (78)
+|                                                |  +--Gfas__Gfas_gfas1.m1.2396.m1.p1
+|                                             +--| (85)
+|                                             |  +--Plut__Plut_plut2.m8.14669.m1.p1
+|                                          +--| (55)
+|                                          |  |  +--Pdam__Pdam_XM_027201233.1.p1
+|                                          |  +--| (100)
+|                                          |     |     +**Spis__Spis_Spis_Spis25275_1
+|                                          |     |  +**| (52)
+|                                          |     |  |  +**Spis__Spis_Spis_XP_022778602_1
+|                                          |     +--| (100)
+|                                          |        +**Spis__Spis_Spis_XP_022792926_1
+|                            +-------------| (100)
+|                            |             |          +--Fspp__Fspp_ffun1.m4.22289.m1.p1
+|                            |             |     +----| (99)
+|                            |             |     |    +**Fspp__Fspp_ffun1.m4.22290.m1.p1
+|                            |             |  +--| (78)
+|                            |             |  |  |  +--Fspp__Fspp_ffun1.m4.9218.m1.p1
+|                            |             |  |  +--| (70)
+|                            |             |  |     +--Pcru__Pcru_PcrG004146.mRNA1.p1
+|                            |             +--| (71)
+|                            |                +---Fspp__Fspp_ffun1.m4.9219.m1.p1
+|           +----------------| (100)
+|           |                |                 +------------Hcoe__Hcoe_Hco01311-RA.p1
+|           |                |              +--| (72)
+|           |                |              |  |     +**Hcoe__Hcoe_Hco01312-RA.p1
+|           |                |              |  +-----| (57)
+|           |                |              |        +--Hcoe__Hcoe_Hco24595-RA.p1
+|           |                |     +--------| (100)
+|           |                |     |        +---Hcoe__Hcoe_Hco01313-RA.p1
+|           |                |  +--| (99)
+|           |                |  |  |     +--Hcoe__Hcoe_Hco01314-RA.p1
+|           |                |  |  +-----| (100)
+|           |                |  |        +---Xesp__Xesp_Xe_013612-T1.p1
+|           |                +--| (78)
+|           |                   +------------Hvul__Hvul_XP_065650061.1
+|     +-----| (86)
+|     |     +--------------------------------Hvul__Hvul_XP_065669780.1
++-----| (100)
+|     |              +----------Hvul__Hvul_XP_065652285.1
+|     |   +----------| (100)
+|     |   |          +---Hvul__Hvul_XP_065652291.1
+|     +---| (100)
+|         +----Hvul__Hvul_XP_065666009.1
+|
++---------Hvul__Hvul_XP_065667350.1
+
+Tree in newick format:
+
+(Aaur__Aaur_scaffold142.g27.t3:0.3943685007,(((((((((Adig__Adig_XM_015903978.1.p1:0.0798459397,Ahya__Ahya_ahya_s0142.g31.t1.p1:0.0024114703)53:0.0012891497,Amur__Amur_amur_s0236.g9.t1.p1:0.0014596764)100:0.1682705541,Gfas__Gfas_gfas1.m1.2396.m1.p1:0.0540532643)78:0.0263449142,Plut__Plut_plut2.m8.14669.m1.p1:0.0975313051)85:0.0616721167,(Pdam__Pdam_XM_027201233.1.p1:0.0297659689,((Spis__Spis_Spis_Spis25275_1:0.0000010000,Spis__Spis_Spis_XP_022778602_1:0.0000010000)52:0.0000010000,Spis__Spis_Spis_XP_022792926_1:0.0000023593)100:0.0366910746)100:0.1399213582)55:0.0190647282,(((Fspp__Fspp_ffun1.m4.22289.m1.p1:0.0531998114,Fspp__Fspp_ffun1.m4.22290.m1.p1:0.0000010000)99:0.2416779571,(Fspp__Fspp_ffun1.m4.9218.m1.p1:0.1025855191,Pcru__Pcru_PcrG004146.mRNA1.p1:0.0081672809)70:0.0101969277)78:0.0167801403,Fspp__Fspp_ffun1.m4.9219.m1.p1:0.1945693574)71:0.0286081518)100:0.6326198421,((((Hcoe__Hcoe_Hco01311-RA.p1:0.6039239385,(Hcoe__Hcoe_Hco01312-RA.p1:0.0000010000,Hcoe__Hcoe_Hco24595-RA.p1:0.1011935820)57:0.2977238040)72:0.0540605521,Hcoe__Hcoe_Hco01313-RA.p1:0.1914769496)100:0.4075848205,(Hcoe__Hcoe_Hco01314-RA.p1:0.1262498639,Xesp__Xesp_Xe_013612-T1.p1:0.1907396977)100:0.2784161618)99:0.1488138433,Hvul__Hvul_XP_065650061.1:0.6175298948)78:0.1151228685)100:0.7851395716,Hvul__Hvul_XP_065669780.1:1.5117481088)86:0.3143982178,((Hvul__Hvul_XP_065652285.1:0.5263737125,Hvul__Hvul_XP_065652291.1:0.1809487782)100:0.5202013590,Hvul__Hvul_XP_065666009.1:0.2559313295)100:0.1914222131)100:0.2782369412,Hvul__Hvul_XP_065667350.1:0.4586960187);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -43253.457992
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-------Aaur__Aaur_scaffold142.g27.t3
+|
+|                                                         +--Adig__Adig_XM_015903978.1.p1
+|                                                      +--| (53)
+|                                                      |  +--Ahya__Ahya_ahya_s0142.g31.t1.p1
+|                                                   +--| (100)
+|                                                   |  +--Amur__Amur_amur_s0236.g9.t1.p1
+|                                                +--| (78)
+|                                                |  +--Gfas__Gfas_gfas1.m1.2396.m1.p1
+|                                             +--| (85)
+|                                             |  +--Plut__Plut_plut2.m8.14669.m1.p1
+|                                          +--| (55)
+|                                          |  |  +--Pdam__Pdam_XM_027201233.1.p1
+|                                          |  +--| (100)
+|                                          |     |     +--Spis__Spis_Spis_Spis25275_1
+|                                          |     |  +--| (52)
+|                                          |     |  |  +--Spis__Spis_Spis_XP_022778602_1
+|                                          |     +--| (100)
+|                                          |        +--Spis__Spis_Spis_XP_022792926_1
+|                            +-------------| (100)
+|                            |             |          +--Fspp__Fspp_ffun1.m4.22289.m1.p1
+|                            |             |     +----| (99)
+|                            |             |     |    +--Fspp__Fspp_ffun1.m4.22290.m1.p1
+|                            |             |  +--| (78)
+|                            |             |  |  |  +--Fspp__Fspp_ffun1.m4.9218.m1.p1
+|                            |             |  |  +--| (70)
+|                            |             |  |     +--Pcru__Pcru_PcrG004146.mRNA1.p1
+|                            |             +--| (71)
+|                            |                +---Fspp__Fspp_ffun1.m4.9219.m1.p1
+|           +----------------| (100)
+|           |                |                 +------------Hcoe__Hcoe_Hco01311-RA.p1
+|           |                |              +--| (72)
+|           |                |              |  |     +--Hcoe__Hcoe_Hco01312-RA.p1
+|           |                |              |  +-----| (57)
+|           |                |              |        +--Hcoe__Hcoe_Hco24595-RA.p1
+|           |                |     +--------| (100)
+|           |                |     |        +---Hcoe__Hcoe_Hco01313-RA.p1
+|           |                |  +--| (99)
+|           |                |  |  |     +--Hcoe__Hcoe_Hco01314-RA.p1
+|           |                |  |  +-----| (100)
+|           |                |  |        +---Xesp__Xesp_Xe_013612-T1.p1
+|           |                +--| (78)
+|           |                   +------------Hvul__Hvul_XP_065650061.1
+|     +-----| (86)
+|     |     +--------------------------------Hvul__Hvul_XP_065669780.1
++-----| (100)
+|     |              +----------Hvul__Hvul_XP_065652285.1
+|     |   +----------| (100)
+|     |   |          +---Hvul__Hvul_XP_065652291.1
+|     +---| (100)
+|         +----Hvul__Hvul_XP_065666009.1
+|
++---------Hvul__Hvul_XP_065667350.1
+
+
+Consensus tree in newick format: 
+
+(Aaur__Aaur_scaffold142.g27.t3:0.3943594133,(((((((((Adig__Adig_XM_015903978.1.p1:0.0798429997,Ahya__Ahya_ahya_s0142.g31.t1.p1:0.0024116070)53:0.0012888617,Amur__Amur_amur_s0236.g9.t1.p1:0.0014595666)100:0.1682651030,Gfas__Gfas_gfas1.m1.2396.m1.p1:0.0540515799)78:0.0263355393,Plut__Plut_plut2.m8.14669.m1.p1:0.0975369946)85:0.0616748071,(Pdam__Pdam_XM_027201233.1.p1:0.0297661923,((Spis__Spis_Spis_Spis25275_1:0.0000020806,Spis__Spis_Spis_XP_022778602_1:0.0000020806)52:0.0000020806,Spis__Spis_Spis_XP_022792926_1:0.0000026153)100:0.0366890506)100:0.1399213811)55:0.0192010159,(((Fspp__Fspp_ffun1.m4.22289.m1.p1:0.0531950235,Fspp__Fspp_ffun1.m4.22290.m1.p1:0.0000021577)99:0.2416565069,(Fspp__Fspp_ffun1.m4.9218.m1.p1:0.1025812760,Pcru__Pcru_PcrG004146.mRNA1.p1:0.0081641677)70:0.0102172765)78:0.0170853534,Fspp__Fspp_ffun1.m4.9219.m1.p1:0.1945051224)71:0.0281159329)100:0.6325679657,((((Hcoe__Hcoe_Hco01311-RA.p1:0.6041236247,(Hcoe__Hcoe_Hco01312-RA.p1:0.0000026441,Hcoe__Hcoe_Hco24595-RA.p1:0.1013331551)57:0.2975408321)72:0.0537888839,Hcoe__Hcoe_Hco01313-RA.p1:0.1913999234)100:0.4079491207,(Hcoe__Hcoe_Hco01314-RA.p1:0.1262531882,Xesp__Xesp_Xe_013612-T1.p1:0.1907361570)100:0.2783861529)99:0.1488080734,Hvul__Hvul_XP_065650061.1:0.6175175618)78:0.1151477194)100:0.7850862257,Hvul__Hvul_XP_065669780.1:1.5116414442)86:0.3144210485,((Hvul__Hvul_XP_065652285.1:0.5263632900,Hvul__Hvul_XP_065652291.1:0.1809455669)100:0.5201841130,Hvul__Hvul_XP_065666009.1:0.2559317318)100:0.1914193135)100:0.2782379110,Hvul__Hvul_XP_065667350.1:0.4586793631);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_orthogroup_genetree_versions/family_OG_filtered_SC11_Hvul_Aaur_261110/strict_candidates_dual70_corecomplete_261110/gene_tree_analysis/intermediate/07_iqtree/FAM_FERLIN/FAM_FERLIN.treefile -m "LG+F+I{0.0750715}+G4{2.50656}" --length 1805
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_orthogroup_genetree_versions/family_OG_filtered_SC11_Hvul_Aaur_261110/strict_candidates_dual70_corecomplete_261110/gene_tree_analysis/intermediate/06_alignments/FAM_FERLIN/FAM_FERLIN.clipkit.aln.faa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/data/Chenxi/workplace/scRNAseq/cross_species_scRNAseq/scripts_260424/scatlas_orthogroup_genetree_versions/family_OG_filtered_SC11_Hvul_Aaur_261110/strict_candidates_dual70_corecomplete_261110/gene_tree_analysis/intermediate/06_alignments/FAM_FERLIN/FAM_FERLIN.clipkit.aln.faa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Nov 10 19:03:43 2026
+Total CPU time used: 2318.736735 seconds (0h:38m:38s)
+Total wall-clock time used: 291.9544146 seconds (0h:4m:51s)
+

@@ -1,0 +1,2 @@
+object_species	n_candidate_ogs	n_reconstructed_ogs	raw_UMI_reconstruction_max_error	normalized_mean_reconstruction_max_error	source_RNA	source_RNA_sha256	reuse_policy
+Pcru	202	175	0	1.13686837721616e-13	/absolute/path/seurat_objects/dat.Pcru.seurat_final.rds	cccd8016345791c10e0447826b8bb75232520e9c22cff95b9860cfe58f88b904	subset of validated current-version member contributions; excluded targets removed; original reconstruction error retained

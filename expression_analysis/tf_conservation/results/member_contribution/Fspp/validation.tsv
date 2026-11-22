@@ -1,0 +1,2 @@
+object_species	n_candidate_ogs	n_reconstructed_ogs	raw_UMI_reconstruction_max_error	normalized_mean_reconstruction_max_error	source_RNA	source_RNA_sha256	reuse_policy
+Fspp	202	172	0	1.4210854715202e-13	/absolute/path/seurat_objects/dat.Fspp.seurat_final.rds	9ff76bc0da9cc36f5351846ebe1c916271832f7243510926ebaa1a81959c3e48	subset of validated current-version member contributions; excluded targets removed; original reconstruction error retained

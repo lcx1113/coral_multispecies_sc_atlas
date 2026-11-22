@@ -1,0 +1,5 @@
+orthogroup	family	n_leaves	n_internal_nodes	n_gene_nodes	n_speciation_events	n_duplication_events	n_speciation_loss_events	n_loss_events	n_support_mapped_nodes	n_distinct_mapped_splits	n_unique_split_nodes	n_root_edge_pair_nodes	root_node_id	root_species_location	root_edge_split_id	status
+FAM_CA	FAM_CA	95	94	189	36	58	44	44	93	92	91	2	GN_6ed53efdd49f9e124f43	Cnidaria	8e47e52ac80a1045ac7e4b67860653025bedf4e2c820bceacc45ef9f2c8203eb	PASS
+FAM_FERLIN	FAM_FERLIN	27	26	53	10	16	14	14	25	24	23	2	GN_1e6bccac84fb2d27ea24	Cnidaria	dd40b6cfbb4e8b522d9a2c8ff56b5f2ac33e3be70ed7727bad6711007aa1af84	PASS
+FAM_MEP1B	FAM_MEP1B	215	214	429	81	133	182	182	212	212	212	0	GN_b07b22338a4d35a607af	Cnidaria		PASS
+FAM_SLC4	FAM_SLC4	39	38	77	29	9	13	13	36	36	36	0	GN_87858b891778282ee658	Cnidaria		PASS

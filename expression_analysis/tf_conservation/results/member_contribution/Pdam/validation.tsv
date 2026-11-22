@@ -1,0 +1,2 @@
+object_species	n_candidate_ogs	n_reconstructed_ogs	raw_UMI_reconstruction_max_error	normalized_mean_reconstruction_max_error	source_RNA	source_RNA_sha256	reuse_policy
+Pdam	202	180	0	4.2632564145606e-14	/absolute/path/seurat_objects/dat.Pdam.seurat_final.rds	494392187cd3467d495e50146ee8780b19aa00ea8707196cb4858e9a9047c69a	subset of validated current-version member contributions; excluded targets removed; original reconstruction error retained

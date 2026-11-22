@@ -1,0 +1,18 @@
+# Input data (large; see the README for file names and checksums)
+data/
+
+# Intermediate outputs
+results/promoters.bed
+results/promoters.fa
+results/gene_tss.tsv
+results/scans/
+results/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+*.swp

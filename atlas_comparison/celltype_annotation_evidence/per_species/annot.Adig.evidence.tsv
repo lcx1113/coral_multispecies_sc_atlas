@@ -1,0 +1,23 @@
+species	cluster	SAMap_best_cell_type	SAMap_similarity	correlation_best_cell_type	correlation_similarity	SATURN_nearest_cell_type	SATURN_second_nearest_cell_type
+Adig	1	neuron_Pou4_1	neuron_Pou4_1(0.79); neuron_Pou4_Otp(0.72); neuron_Pou4_2(0.66); neuron_Pou4_Gsx(0.60); neuron_Isl(0.38); neurosecretory_progenitors(0.23); gland_3(0.18); neuron_Atoh8(0.15)	neuron_Isl	neuron_Isl(0.453); neuron_Pou4_Otp(0.447); neuron_Pou4_Gsx(0.372); neuron_Pou4_2(0.349); gland_2(0.304); gland_3(0.288); neuron_Pou4_1(0.271); neuron_Isl_Nkx6(0.161); neuron_Atoh8(0.139)	neuron_Pou4_Otp	neuron_Pou4_Gsx
+Adig	2	gastrodermis	gastrodermis(0.68)	gastrodermis_muscle	gastrodermis_muscle(0.190); gastrodermis_like_2(0.180); gastrodermis(0.177); digestive_filaments(0.131)	gastrodermis	neuron_Pou4_1
+Adig	3	epidermis	epidermis(0.51); germline_oocytes_1(0.41); neurosecretory_progenitors(0.38)	neurosecretory_progenitors	neurosecretory_progenitors(0.213); epidermis(0.189); germline_oocytes_1(0.157)	epidermis	epidermis
+Adig	4	epidermis	epidermis(0.49)	epidermis	epidermis(0.175)	epidermis	epidermis
+Adig	5	gastrodermis	gastrodermis(0.46)	gastrodermis_muscle	gastrodermis_muscle(0.268); gastrodermis(0.239); gastrodermis_like_2(0.230); digestive_filaments(0.191); epidermis(0.105)	gastrodermis	gastrodermis
+Adig	6	gastrodermis_muscle	gastrodermis_muscle(0.49); gastrodermis(0.40); gastrodermis_like_2(0.18)	gastrodermis_muscle	gastrodermis_muscle(0.365); gastrodermis_like_2(0.274); gastrodermis(0.262); digestive_filaments(0.173)	gastrodermis_muscle	gastrodermis
+Adig	7	gland_2	gland_2(0.12)	digestive_filaments	digestive_filaments(0.147); neuron_Isl(0.112); gland_3(0.105)	gland_2	gland_3
+Adig	8	epidermis	epidermis(0.61)	epidermis	epidermis(0.141)	gastrodermis_like_2	epidermis
+Adig	9	gland_3	gland_3(0.29); neuron_Isl_Nkx6(0.16); epidermis(0.13)	gland_3	gland_3(0.470)	gland_3	neuron_Pou4_2
+Adig	10	calicoblast	calicoblast(0.70)	calicoblast	calicoblast(0.230)	calicoblast	neuron_Pou4_2
+Adig	11	gastrodermis	gastrodermis(0.73); gastrodermis_like_2(0.14)	gastrodermis_like_2	gastrodermis_like_2(0.193); gastrodermis(0.187); gastrodermis_muscle(0.178); digestive_filaments(0.141)	gastrodermis	gastrodermis
+Adig	12	epidermis	epidermis(0.66); germline_oocytes_1(0.16)	epidermis	epidermis(0.211); germline_oocytes_1(0.180); neurosecretory_progenitors(0.175)	epidermis	epidermis
+Adig	13	gastrodermis	gastrodermis(0.64)	gastrodermis_muscle	gastrodermis_muscle(0.290); gastrodermis(0.271); gastrodermis_like_2(0.236); digestive_filaments(0.156)	gastrodermis	gastrodermis
+Adig	14	cnidocyte	cnidocyte(0.66)	cnidocyte	cnidocyte(0.743)	cnidocyte	epidermis
+Adig	15	neuron_Atoh8	neuron_Atoh8(0.37); neuron_Isl_Nkx6(0.14)	neuron_Isl_Nkx6	neuron_Isl_Nkx6(0.374); neuron_Pou4_2(0.371); gland_2(0.342); neuron_Isl(0.309); gland_3(0.212); neuron_Atoh8(0.186); neuron_Pou4_Otp(0.147); neuron_Pou4_Gsx(0.143); neuron_Pou4_1(0.136)	neuron_Isl_Nkx6	neuron_Pou4_2
+Adig	16	immune_macrophage	immune_macrophage(0.93); immune_nascent(0.68); immune_macrophage_like_2(0.21)	immune_macrophage_like_2	immune_macrophage_like_2(0.449); immune_nascent(0.216); immune_macrophage(0.207)	immune_macrophage	immune_macrophage_like_2
+Adig	17	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.89)	gastrodermis_alga_hosting	gastrodermis_alga_hosting(0.153); gastrodermis(0.130); gastrodermis_muscle(0.115)	gastrodermis_alga_hosting	gastrodermis_alga_hosting
+Adig	18	neuron_Isl	neuron_Isl(0.22)	calicoblast	calicoblast(0.020)	digestive_filaments	germline_oocytes_1
+Adig	19	gastrodermis	gastrodermis(0.50); epidermis(0.12)	gland_3	gland_3(0.163); gland_2(0.130); neuron_Pou4_2(0.128)	neuron_Pou4_2	neuron_Atoh8
+Adig	20	gastrodermis	gastrodermis(0.63); gastrodermis_muscle(0.11)	gastrodermis	gastrodermis(0.445); gastrodermis_like_2(0.346); gastrodermis_muscle(0.294); immune_macrophage(0.265); digestive_filaments(0.155); immune_macrophage_like_1(0.109); gastrodermis_alga_hosting(0.106)	gastrodermis	gastrodermis
+Adig	21	gland_2	gland_2(0.21); neuron_Isl(0.20)	gland_2	gland_2(0.074)	gland_2	gland_2
+Adig	22	gland_1_Xbp	gland_1_Xbp(0.83)	gland_1_Xbp	gland_1_Xbp(0.985)	gland_1_Xbp	germline_oocytes_2
