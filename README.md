@@ -58,6 +58,4 @@ Use the software requirements in each module README. R/Seurat analyses, Python-b
 
 ## Attribution
 
-Several workflows and helper libraries draw on [Levy et al. (2025)](https://doi.org/10.1038/s41586-025-09
-        
-        ) and the [oculina-coral-sc-atlas repository](https://github.com/sebepedroslab/oculina-coral-sc-atlas/) ([original repository](https://github.com/xgrau/oculina-coral-sc-atlas)). Method-specific references, upstream attribution and any supplied third-party licenses are retained in the respective modules.
+Several workflows and helper libraries draw on [Levy et al. (2025)](https://doi.org/10.1038/s41586-025-09) and the [oculina-coral-sc-atlas repository](https://github.com/sebepedroslab/oculina-coral-sc-atlas/) ([original repository](https://github.com/xgrau/oculina-coral-sc-atlas)). Method-specific references, upstream attribution and any supplied third-party licenses are retained in the respective modules.
